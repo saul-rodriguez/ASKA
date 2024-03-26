@@ -1,0 +1,2098 @@
+\# Program start time:     UTC 2024.03.26 14:37:52.574
+\# Local time: EDT (UTC-04:00) 2024.03.26 10:37:52.574
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
+\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso24529 -mpshost phoenix -davinciService DaVinciService_24529_1711437775 -log /home/saul/projects/ASKA/logs_saul/logs0/Job139.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_24529 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 139
+\# Host name (type):	phoenix (x86_64)
+\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:1841 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12004000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        646 MB
+\# Available memory:	     20,395 MB
+\# System memory:	     23,948 MB
+\# Maximum memory size:	     23,513 MB
+\# Max mem available:	     20,605 MB
+\# Initial memory used:	        210 MB
+\#        process size:	      1,813 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 6.00/6.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	phoenix:/home/saul/projects/ASKA
+\# Process Id:		20575
+\o 
+\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\# Memory report: using         321 MB, process size 1,931 MB at UTC 2024.03.26 14:37:57.013
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso24529, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 20575 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [10:37:52.512401] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/PDK/IC61/v9_0_4"
+\o Loading XfSktTools.cxt
+\o Loading XfMenu.cxt
+\o Loading XfTechXh018.cxt
+\o Loading XfPcellCore.cxt
+\o function ansiSpicePrintProperties_subcircuit redefined
+\o Loading XfSkillExt.cxt
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\# Memory report: using         463 MB, process size 2,196 MB at UTC 2024.03.26 14:37:59.081
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o  --> AssuraTools Setup not available
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 20575' to open it when Virtuoso freezes.
+\# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = BANDGAP
+\o 	Cell         = bandgap_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = BANDGAP:bandgap_tb:1_none_Interactive.40
+\o 	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/7/BANDGAP:bandgap_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  loading default key binding 
+\o  -> END LOAD ".cdsinit" FILE
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 10) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var IBIAS = "1u"
+\o Setting var IBIAS_PULSE = "0"
+\o Setting var IPULSE = "0"
+\o Setting var VDD3 = "3"
+\o Setting var VDD_PULSE = "0"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/10/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/10/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 10)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [10:38:00.146114] Periodic Lic check successful
+\# [10:38:00.146122] Feature usage summary:
+\o Begin Incremental Netlisting Mar 26 10:38:00 2024
+\o End netlisting Mar 26 10:38:00 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 10).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/10/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: using         611 MB, process size 2,400 MB at UTC 2024.03.26 14:38:01.118
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 10) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 15) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/15/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/15/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:01 2024
+\o End netlisting Mar 26 10:38:01 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 15).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/15/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Available memory:         18,091 MB at UTC 2024.03.26 14:38:02.664
+\# Memory report: Maximum memory size now 18,728 MB at UTC 2024.03.26 14:38:02.664
+\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.03.26 14:38:02.664
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 15) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 20) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/20/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/20/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 20)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:03 2024
+\o End netlisting Mar 26 10:38:03 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 20).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/20/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 20) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 25) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/25/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/25/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 25)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:05 2024
+\o End netlisting Mar 26 10:38:05 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 25).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/25/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 25) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 30) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/30/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/30/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:06 2024
+\o End netlisting Mar 26 10:38:06 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 30).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/30/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 30) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 37) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/37/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/37/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 37)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:08 2024
+\o End netlisting Mar 26 10:38:08 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 37).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/37/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 37) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 41) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/41/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/41/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 41)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:10 2024
+\o End netlisting Mar 26 10:38:10 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 41).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/41/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: using         713 MB, process size 2,502 MB at UTC 2024.03.26 14:38:11.699
+\# Memory report: Maximum memory size now 18,262 MB at UTC 2024.03.26 14:38:12.152
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 41) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 48) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/48/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/48/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 48)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:12 2024
+\o End netlisting Mar 26 10:38:12 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 48).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/48/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 48) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 53) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/53/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/53/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 53)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:14 2024
+\o End netlisting Mar 26 10:38:14 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 53).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/53/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 53) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 59) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/59/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/59/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 59)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:16 2024
+\o End netlisting Mar 26 10:38:16 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 59).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/59/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 59) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 67) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/67/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/67/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 67)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:18 2024
+\o End netlisting Mar 26 10:38:18 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 67).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/67/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 67) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 73) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/73/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/73/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 73)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:20 2024
+\o End netlisting Mar 26 10:38:20 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 73).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/73/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 73) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 80) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/80/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/80/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 80)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:22 2024
+\o End netlisting Mar 26 10:38:22 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 80).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/80/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 80) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 85) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/85/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/85/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 85)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:24 2024
+\o End netlisting Mar 26 10:38:24 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 85).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/85/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: using         820 MB, process size 2,609 MB at UTC 2024.03.26 14:38:25.676
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 85) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 90) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/90/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/90/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 90)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:26 2024
+\o End netlisting Mar 26 10:38:26 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 90).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/90/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 90) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 96) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/96/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/96/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 96)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:28 2024
+\o End netlisting Mar 26 10:38:28 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 96).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/96/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 96) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 101) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/101/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/101/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 101)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:30 2024
+\o End netlisting Mar 26 10:38:30 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 101).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/101/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,491 MB at UTC 2024.03.26 14:38:32.183
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 101) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 108) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/108/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/108/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 108)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:32 2024
+\o End netlisting Mar 26 10:38:32 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 108).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/108/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 108) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 116) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/116/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/116/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 116)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:34 2024
+\o End netlisting Mar 26 10:38:34 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 116).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/116/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 116) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 119) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/119/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/119/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 119)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:36 2024
+\o End netlisting Mar 26 10:38:36 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 119).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/119/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 119) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (45 127) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/127/BANDGAP:bandgap_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/127/BANDGAP:bandgap_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (45 127)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:38:38 2024
+\o End netlisting Mar 26 10:38:38 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+\o           for Point ID (45 127).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.40/127/BANDGAP:bandgap_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: using         931 MB, process size 2,721 MB at UTC 2024.03.26 14:38:39.713
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (45 127) on testbench [
+\o           BANDGAP:bandgap_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         16,250 MB at UTC 2024.03.26 14:38:42.363
+\# Memory report: Maximum memory size now 17,135 MB at UTC 2024.03.26 14:38:52.364
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = BANDGAP
+\o 	Cell         = bandgap_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Montecarlo_BANDGAP:bandgap_tb:1:1_state_MonteCarlo.5
+\o 	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.5.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.5/1/Montecarlo
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (46 101) on testbench [ Montecarlo ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var IBIAS = "1u"
+\o Setting var IBIAS_PULSE = "0"
+\o Setting var IPULSE = "0"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD_PULSE = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.5/101/Montecarlo/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.5/101/Montecarlo/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (46 101)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:41:10 2024
+\o End netlisting Mar 26 10:41:10 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ Montecarlo ] for Point ID
+\o           (46 101).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.5/101/Montecarlo/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 26 10:41:10 2024
+\o End netlisting Mar 26 10:41:10 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,626 MB at UTC 2024.03.26 14:41:12.594
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 101) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 102) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 103) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 104) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 105) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 106) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,045 MB, process size 2,834 MB at UTC 2024.03.26 14:41:17.419
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 107) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 108) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 109) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 110) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 111) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         14,606 MB at UTC 2024.03.26 14:41:22.021
+\# Memory report: Maximum memory size now 15,733 MB at UTC 2024.03.26 14:41:22.021
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 112) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 113) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,149 MB, process size 2,938 MB at UTC 2024.03.26 14:41:23.078
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 114) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 115) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 116) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 117) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 118) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 119) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 120) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,277 MB, process size 3,066 MB at UTC 2024.03.26 14:41:29.189
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 121) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 122) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 123) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 14,685 MB at UTC 2024.03.26 14:41:32.147
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 124) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 125) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 126) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 127) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 128) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,397 MB, process size 3,186 MB at UTC 2024.03.26 14:41:35.499
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 129) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 130) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 131) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 132) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 133) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 134) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 135) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         12,212 MB at UTC 2024.03.26 14:41:42.330
+\# Memory report: Maximum memory size now 13,713 MB at UTC 2024.03.26 14:41:42.330
+\# Memory report: using       1,501 MB, process size 3,290 MB at UTC 2024.03.26 14:41:42.330
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 136) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 137) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 138) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 139) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 140) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 141) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 142) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,605 MB, process size 3,394 MB at UTC 2024.03.26 14:41:48.212
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 143) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 144) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 145) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 146) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 147) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 13,107 MB at UTC 2024.03.26 14:41:52.588
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 148) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 149) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (46 150) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\# Memory report: using       1,713 MB, process size 3,502 MB at UTC 2024.03.26 14:42:02.363
+\# Available memory:         11,072 MB at UTC 2024.03.26 14:44:02.363
+\# Memory report: Maximum memory size now 12,784 MB at UTC 2024.03.26 14:44:02.363
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [10:46:58.410152] Cdslmd servers:3000@lic08.ug.kth.se
+\# [10:46:58.410163] Feature usage summary:
+\# Memory report: on exit          1,713 MB, process size 3,502 MB at UTC 2024.03.26 14:46:58.410
+\# Memory report: peak usage       1,713 MB, process size 3,502 MB

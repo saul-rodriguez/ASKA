@@ -1,95 +1,2596 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = BANDGAP
-	Cell         = bandgap_tb
-	View         = config
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = BANDGAP:bandgap_tb:1_none_Interactive.17
-	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/Interactive.17.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.17/1/BANDGAP:bandgap_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (17 1) on testbench [
-          BANDGAP:bandgap_tb:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var VDD3 = "3.3"
-Setting var VDD_PULSE = "0.1"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.17/1/BANDGAP:bandgap_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.17/1/BANDGAP:bandgap_tb:1
-
-
-*Info*    Creating Netlist for Point ID (17 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 26 08:37:50 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/BANDGAP/bandgap_noop/adexl/results/data/Interactive.0/1/BANDGAP:bandgap_noop:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting Mar 26 08:37:50 2024
-
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-          for Point ID (17 1).
-
-Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.17/1/BANDGAP:bandgap_tb:1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (17 1) on testbench [
-          BANDGAP:bandgap_tb:1 ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+\# Program start time:     UTC 2024.04.04 08:48:45.722
+\# Local time: EDT (UTC-04:00) 2024.04.04 04:48:45.722
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
+\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5606 -mpshost phoenix -davinciService DaVinciService_5606_1712123584 -log /home/saul/projects/ASKA/logs_saul/logs0/Job86.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5606 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 86
+\# Host name (type):	phoenix (x86_64)
+\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:3078 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12004000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        635 MB
+\# Available memory:	     19,370 MB
+\# System memory:	     23,948 MB
+\# Maximum memory size:	     23,523 MB
+\# Max mem available:	     19,580 MB
+\# Initial memory used:	        210 MB
+\#        process size:	      1,813 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 6.00/6.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	phoenix:/home/saul/projects/ASKA
+\# Process Id:		2602
+\o 
+\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5606, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 2602 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [04:48:45.512457] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         362 MB, process size 2,094 MB at UTC 2024.04.04 08:48:47.617
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/PDK/IC61/v9_0_4"
+\o Loading XfSktTools.cxt
+\o Loading XfMenu.cxt
+\o Loading XfTechXh018.cxt
+\o Loading XfPcellCore.cxt
+\o function ansiSpicePrintProperties_subcircuit redefined
+\o Loading XfSkillExt.cxt
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o  --> AssuraTools Setup not available
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 2602' to open it when Virtuoso freezes.
+\# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = CONSTANT_GM
+\o 	Cell         = constant_gm_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = CONSTANT_GM:constant_gm_tb:1_none_Interactive.11
+\o 	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/5/CONSTANT_GM:constant_gm_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
+\# Memory report: using         485 MB, process size 2,224 MB at UTC 2024.04.04 08:48:49.073
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  loading default key binding 
+\o  -> END LOAD ".cdsinit" FILE
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 8) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/8/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/8/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 8)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [04:48:49.022914] Periodic Lic check successful
+\# [04:48:49.022915] Feature usage summary:
+\o Begin Incremental Netlisting Apr  4 04:48:49 2024
+\o End netlisting Apr  4 04:48:49 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 8).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/8/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: using         609 MB, process size 2,398 MB at UTC 2024.04.04 08:48:50.136
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 8) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 13) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/13/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/13/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:50 2024
+\o End netlisting Apr  4 04:48:50 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 13).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/13/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 13) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 17) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/17/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/17/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:51 2024
+\o End netlisting Apr  4 04:48:51 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 17).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/17/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 17) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 19) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/19/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/19/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:52 2024
+\o End netlisting Apr  4 04:48:52 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 19).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/19/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 19) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 26) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/26/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/26/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:53 2024
+\o End netlisting Apr  4 04:48:53 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 26).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/26/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 26) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 30) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/30/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/30/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:54 2024
+\o End netlisting Apr  4 04:48:54 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 30).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/30/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Available memory:         18,249 MB at UTC 2024.04.04 08:48:55.078
+\# Memory report: Maximum memory size now 18,872 MB at UTC 2024.04.04 08:48:55.078
+\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.04.04 08:48:55.078
+\o 
+\o *Info*    Run complete for Point ID (0 30) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 37) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/37/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/37/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 37)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:55 2024
+\o End netlisting Apr  4 04:48:55 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 37).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/37/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 37) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 42) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/42/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/42/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 42)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:56 2024
+\o End netlisting Apr  4 04:48:56 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 42).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/42/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 42) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 46) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/46/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/46/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 46)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:57 2024
+\o End netlisting Apr  4 04:48:57 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 46).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/46/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 46) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 53) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/53/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/53/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 53)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:58 2024
+\o End netlisting Apr  4 04:48:58 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 53).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/53/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 53) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 54) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/54/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/54/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 54)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:48:59 2024
+\o End netlisting Apr  4 04:48:59 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 54).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/54/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 54) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 60) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/60/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/60/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 60)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:49:00 2024
+\o End netlisting Apr  4 04:49:00 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (0 60).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.11/60/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 60) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = CONSTANT_GM
+\o 	Cell         = constant_gm_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = CONSTANT_GM:constant_gm_tb:1_none_Interactive.12
+\o 	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/1/CONSTANT_GM:constant_gm_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.3"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/1/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/1/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:47 2024
+\o Loading json.cxt 
+\o End netlisting Apr  4 04:50:48 2024
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   11
+\o 
+\o 	Elapsed time:          1.0s (11.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 1).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/1/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 1) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 8) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/8/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/8/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:49 2024
+\o End netlisting Apr  4 04:50:49 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 8).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/8/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 8) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 13) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/13/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/13/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:50 2024
+\o End netlisting Apr  4 04:50:50 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 13).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/13/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 13) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 17) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/17/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/17/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:51 2024
+\o End netlisting Apr  4 04:50:51 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 17).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/17/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 17) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 21) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/21/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/21/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:52 2024
+\o End netlisting Apr  4 04:50:52 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 21).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/21/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 21) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 28) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/28/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/28/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:53 2024
+\o End netlisting Apr  4 04:50:53 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 28).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/28/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 28) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 33) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/33/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/33/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:54 2024
+\o End netlisting Apr  4 04:50:54 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 33).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/33/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 33) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 38) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/38/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/38/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 38)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:55 2024
+\o End netlisting Apr  4 04:50:55 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 38).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/38/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 38) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 45) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/45/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/45/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 45)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:56 2024
+\o End netlisting Apr  4 04:50:56 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 45).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/45/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 45) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 50) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/50/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/50/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 50)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:57 2024
+\o End netlisting Apr  4 04:50:57 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 50).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/50/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 50) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 53) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/53/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/53/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 53)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:58 2024
+\o End netlisting Apr  4 04:50:58 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 53).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/53/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 53) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 56) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/56/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/56/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 56)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:50:59 2024
+\o End netlisting Apr  4 04:50:59 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 56).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/56/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 56) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 65) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/65/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/65/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 65)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:51:00 2024
+\o End netlisting Apr  4 04:51:00 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 65).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.12/65/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 65) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = CONSTANT_GM
+\o 	Cell         = constant_gm_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = CONSTANT_GM:constant_gm_tb:1_none_Interactive.13
+\o 	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/1/CONSTANT_GM:constant_gm_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 4) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var VDD_PULSE = "0"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/4/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/4/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:01 2024
+\o WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
+\o compared to the last session in the current run directory. The netlist(s)
+\o generated in the last netlisting session cannot be reused for incremental
+\o netlisting. Therefore re-netlisting the design.
+\o 
+\o End netlisting Apr  4 04:53:01 2024
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   15
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 4).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/4/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 4) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 6) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/6/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/6/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:02 2024
+\o End netlisting Apr  4 04:53:02 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 6).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/6/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\# Memory report: Maximum memory size now 18,483 MB at UTC 2024.04.04 08:53:03.070
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 6) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 11) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/11/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/11/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:03 2024
+\o End netlisting Apr  4 04:53:03 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 11).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/11/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 11) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 16) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/16/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/16/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:04 2024
+\o End netlisting Apr  4 04:53:04 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 16).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/16/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 16) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 22) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/22/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/22/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:05 2024
+\o End netlisting Apr  4 04:53:05 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 22).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/22/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 22) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 27) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/27/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/27/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 27)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:06 2024
+\o End netlisting Apr  4 04:53:06 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 27).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/27/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 27) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 31) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/31/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/31/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:07 2024
+\o End netlisting Apr  4 04:53:07 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 31).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/31/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 31) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 36) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/36/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/36/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 36)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:08 2024
+\o End netlisting Apr  4 04:53:08 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 36).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/36/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 36) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 43) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/43/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/43/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 43)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:09 2024
+\o End netlisting Apr  4 04:53:09 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 43).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/43/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 43) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 49) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD3 = "3.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/49/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/49/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 49)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:10 2024
+\o End netlisting Apr  4 04:53:10 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 49).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/49/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 49) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 53) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/53/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/53/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 53)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:11 2024
+\o End netlisting Apr  4 04:53:11 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 53).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/53/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 53) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 56) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/56/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/56/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 56)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:12 2024
+\o End netlisting Apr  4 04:53:12 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 56).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/56/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 56) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 65) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/65/CONSTANT_GM:constant_gm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/65/CONSTANT_GM:constant_gm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 65)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 04:53:13 2024
+\o End netlisting Apr  4 04:53:13 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (2 65).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.13/65/CONSTANT_GM:constant_gm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 65) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [04:58:16.335513] Cdslmd servers:3000@lic08.ug.kth.se
+\# [04:58:16.335521] Feature usage summary:
+\# Memory report: on exit            705 MB, process size 2,494 MB at UTC 2024.04.04 08:58:16.859
+\# Memory report: peak usage         705 MB, process size 2,494 MB

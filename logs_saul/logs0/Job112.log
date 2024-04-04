@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.03.26 13:06:48.960
-\# Local time: EDT (UTC-04:00) 2024.03.26 09:06:48.960
+\# Program start time:     UTC 2024.04.04 11:33:42.816
+\# Local time: EDT (UTC-04:00) 2024.04.04 07:33:42.816
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso24529 -mpshost phoenix -davinciService DaVinciService_24529_1711437775 -log /home/saul/projects/ASKA/logs_saul/logs0/Job112.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_24529 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 112
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5606 -mpshost phoenix -davinciService DaVinciService_5606_1712123584 -log /home/saul/projects/ASKA/logs_saul/logs0/Job112.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5606 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 112
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:6542 (1024x868)
+\# X display name (WxH):	:8418 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        647 MB
-\# Available memory:	     17,995 MB
+\# Initial sbrk value:	        635 MB
+\# Available memory:	     19,119 MB
 \# System memory:	     23,948 MB
-\# Maximum memory size:	     23,511 MB
-\# Max mem available:	     18,206 MB
+\# Maximum memory size:	     23,524 MB
+\# Max mem available:	     19,329 MB
 \# Initial memory used:	        210 MB
 \#        process size:	      1,813 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 6.00/6.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		18572
+\# Process Id:		9980
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -67,7 +67,6 @@
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
-\# Memory report: using         323 MB, process size 2,048 MB at UTC 2024.03.26 13:06:50.164
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
@@ -75,12 +74,13 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso24529, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5606, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 18572 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 9980 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [09:06:48.512473] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# [07:33:42.512409] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         362 MB, process size 2,094 MB at UTC 2024.04.04 11:33:44.702
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -111,7 +111,6 @@
 \o Loading msgHandler.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
-\# Memory report: using         463 MB, process size 2,195 MB at UTC 2024.03.26 13:06:52.219
 \o  --> Finished setting the required PDK definitions
 \o  --> Setting the recommended EDA tool defaults...
 \o  --> Finished setting the recommended EDA tool defaults
@@ -123,7 +122,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 18572' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 9980' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -132,20 +131,21 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = BANDGAP
-\o 	Cell         = bandgap_tb
+\o 	Library      = CONSTANT_GM
+\o 	Cell         = constant_gm_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = BANDGAP:bandgap_tb:1_none_Interactive.26
-\o 	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/1/BANDGAP:bandgap_tb:1
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
+\o 	State Name   = Montecarlo_CONSTANT_GM:constant_gm_tb:1:1_state_MonteCarlo.1
+\o 	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/1/Montecarlo
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
+\# Memory report: using         486 MB, process size 2,224 MB at UTC 2024.04.04 11:33:46.147
 \o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
 \o 
 \o *Info*    The auto suspension is disabled.
@@ -168,37 +168,36 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (26 5) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run start for Point ID (17 181) on testbench [ Montecarlo ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD3 = "3.6"
-\o Setting var VDD_PULSE = "3.3"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD_PULSE = "100m"
 \o Setting var temperature = "27"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/5/BANDGAP:bandgap_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/181/Montecarlo/groupRunDataDir/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/5/BANDGAP:bandgap_tb:1
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/181/Montecarlo/groupRunDataDir
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (26 5)
+\o *Info*    Creating Netlist for Point ID (17 181)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [09:06:53.256761] Periodic Lic check successful
-\# [09:06:53.256762] Feature usage summary:
-\o Begin Incremental Netlisting Mar 26 09:06:53 2024
-\o End netlisting Mar 26 09:06:53 2024
+\# [07:33:46.190048] periodic Lic check successful
+\# [07:33:46.190051] Feature usage summary:
+\o Begin Incremental Netlisting Apr  4 07:33:46 2024
+\o End netlisting Apr  4 07:33:46 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -206,10 +205,21 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 5).
+\o *Info*    Running simulation on testbench [ Montecarlo ] for Point ID
+\o           (17 181).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/5/BANDGAP:bandgap_tb:1/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/181/Montecarlo/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  4 07:33:46 2024
+\o End netlisting Apr  4 07:33:46 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -218,1023 +228,876 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: using         610 MB, process size 2,399 MB at UTC 2024.04.04 11:33:47.073
 \o Loading paraplot.cxt 
-\# Memory report: using         610 MB, process size 2,399 MB at UTC 2024.03.26 13:06:54.330
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'181' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 5) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 181) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'182' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 11) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/11/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/11/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 11)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:06:54 2024
-\o End netlisting Mar 26 09:06:54 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 11).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/11/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 11) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 182) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'183' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 16) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/16/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/16/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 16)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:06:56 2024
-\o End netlisting Mar 26 09:06:56 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 16).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/16/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 16) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 183) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'184' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 22) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/22/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/22/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 22)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:06:57 2024
-\o End netlisting Mar 26 09:06:57 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 22).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/22/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Available memory:         15,971 MB at UTC 2024.03.26 13:06:59.137
-\# Memory report: Maximum memory size now 16,618 MB at UTC 2024.03.26 13:06:59.137
-\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.03.26 13:06:59.137
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 22) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 184) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'185' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 27) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3.6"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/27/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/27/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 27)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:06:59 2024
-\o End netlisting Mar 26 09:06:59 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 27).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/27/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 27) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 185) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'186' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 33) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/33/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/33/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 33)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:07:01 2024
-\o End netlisting Mar 26 09:07:01 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 33).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/33/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 33) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 186) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'187' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 39) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/39/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/39/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 39)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:07:02 2024
-\o End netlisting Mar 26 09:07:02 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 39).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/39/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\# Memory report: using         725 MB, process size 2,514 MB at UTC 2024.04.04 11:33:52.444
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 39) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 187) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\# Available memory:         16,989 MB at UTC 2024.04.04 11:33:52.848
+\# Memory report: Maximum memory size now 17,713 MB at UTC 2024.04.04 11:33:52.848
+\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.04.04 11:33:52.848
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'188' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 45) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/45/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/45/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 45)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:07:04 2024
-\o End netlisting Mar 26 09:07:04 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 45).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/45/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 45) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 188) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'189' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 51) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/51/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/51/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 51)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:07:05 2024
-\o End netlisting Mar 26 09:07:05 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 51).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/51/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 51) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 189) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'190' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 59) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/59/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/59/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 59)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:07:07 2024
-\o End netlisting Mar 26 09:07:07 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 59).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/59/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 59) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 190) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'191' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 63) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/63/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/63/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 63)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:07:09 2024
-\o End netlisting Mar 26 09:07:09 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\# Memory report: Maximum memory size now 16,213 MB at UTC 2024.03.26 13:07:09.108
-\# Memory report: using         720 MB, process size 2,509 MB at UTC 2024.03.26 13:07:09.108
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (26 63).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.26/63/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 63) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
+\o *Info*    Run complete for Point ID (17 191) on testbench [
+\o           Montecarlo ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'192' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 192) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'193' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 193) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'194' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 194) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'195' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: using         837 MB, process size 2,626 MB at UTC 2024.04.04 11:33:59.154
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 195) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'196' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 196) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'197' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 197) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'198' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 198) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'199' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 199) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'200' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: Maximum memory size now 17,194 MB at UTC 2024.04.04 11:34:02.463
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 200) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'201' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 201) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'202' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 202) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'203' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: using         969 MB, process size 2,758 MB at UTC 2024.04.04 11:34:05.251
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 203) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'204' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 204) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'205' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 205) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'206' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 206) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'207' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 207) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'208' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 208) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'209' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 209) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'210' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 210) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'211' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: using       1,084 MB, process size 2,873 MB at UTC 2024.04.04 11:34:10.091
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 211) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'212' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 212) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'213' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 213) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'214' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 214) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         15,162 MB at UTC 2024.04.04 11:34:12.050
+\# Memory report: Maximum memory size now 16,289 MB at UTC 2024.04.04 11:34:12.050
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'215' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 215) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'216' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 216) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'217' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 217) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'218' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: using       1,185 MB, process size 2,974 MB at UTC 2024.04.04 11:34:14.357
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 218) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'219' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 219) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'220' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 220) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'221' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 221) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'222' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 222) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'223' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 223) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'224' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: using       1,287 MB, process size 3,076 MB at UTC 2024.04.04 11:34:18.108
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 224) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'225' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 225) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'226' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 226) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'227' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 227) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'228' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 228) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'229' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 229) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'230' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 230) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'231' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: Maximum memory size now 15,281 MB at UTC 2024.04.04 11:34:22.233
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 231) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'232' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: using       1,402 MB, process size 3,191 MB at UTC 2024.04.04 11:34:23.092
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 232) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'233' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 233) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'234' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 234) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'235' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 235) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'236' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 236) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'237' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 237) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'238' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 238) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'239' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: using       1,503 MB, process size 3,292 MB at UTC 2024.04.04 11:34:27.394
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 239) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'240' test:'Montecarlo'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 240) on testbench [
+\o           Montecarlo ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\# Available memory:         13,162 MB at UTC 2024.04.04 11:34:31.849
+\# Memory report: Maximum memory size now 14,680 MB at UTC 2024.04.04 11:34:31.849
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = BANDGAP
-\o 	Cell         = bandgap_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = BANDGAP:bandgap_tb:1_none_Interactive.28
-\o 	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/1/BANDGAP:bandgap_tb:1
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (28 3) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD_PULSE = "3.3"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/3/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/3/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (28 3)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:11:24 2024
-\o End netlisting Mar 26 09:11:24 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (28 3).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/3/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (28 3) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (28 11) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/11/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/11/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (28 11)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:11:26 2024
-\o End netlisting Mar 26 09:11:26 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (28 11).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/11/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (28 11) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (28 16) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/16/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/16/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (28 16)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:11:28 2024
-\o End netlisting Mar 26 09:11:28 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (28 16).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/16/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 15,860 MB at UTC 2024.03.26 13:11:29.363
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (28 16) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (28 20) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/20/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/20/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (28 20)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:11:30 2024
-\o End netlisting Mar 26 09:11:30 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (28 20).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/20/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (28 20) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (28 26) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/26/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/26/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (28 26)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:11:32 2024
-\o End netlisting Mar 26 09:11:32 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (28 26).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/26/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (28 26) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (28 31) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/31/BANDGAP:bandgap_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/31/BANDGAP:bandgap_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (28 31)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 26 09:11:33 2024
-\o End netlisting Mar 26 09:11:33 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
-\o           for Point ID (28 31).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.28/31/BANDGAP:bandgap_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (28 31) on testbench [
-\o           BANDGAP:bandgap_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 16,501 MB at UTC 2024.03.26 13:16:39.363
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
+\# Available memory:         15,678 MB at UTC 2024.04.04 11:39:31.878
+\# Memory report: Maximum memory size now 17,195 MB at UTC 2024.04.04 11:39:31.878
 \# Lic Summary:
-\# [09:16:40.374497] Cdslmd servers:3000@lic08.ug.kth.se
-\# [09:16:40.374504] Feature usage summary:
-\# Memory report: on exit            796 MB, process size 2,585 MB at UTC 2024.03.26 13:16:40.374
-\# Memory report: peak usage         796 MB, process size 2,585 MB
+\# [07:39:31.353808] Cdslmd servers:3000@lic08.ug.kth.se
+\# [07:39:31.353811] Feature usage summary:
+\# Memory report: on exit          1,518 MB, process size 3,307 MB at UTC 2024.04.04 11:39:31.878
+\# Memory report: peak usage       1,518 MB, process size 3,307 MB

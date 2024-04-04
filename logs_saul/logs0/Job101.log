@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.03.22 09:30:21.137
-\# Local time: EDT (UTC-04:00) 2024.03.22 05:30:21.137
+\# Program start time:     UTC 2024.04.04 11:10:26.791
+\# Local time: EDT (UTC-04:00) 2024.04.04 07:10:26.791
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso30923 -mpshost phoenix -davinciService DaVinciService_30923_1711084774 -log /home/saul/projects/ASKA/logs_saul/logs0/Job101.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_30923 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 101
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5606 -mpshost phoenix -davinciService DaVinciService_5606_1712123584 -log /home/saul/projects/ASKA/logs_saul/logs0/Job101.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5606 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 101
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:1052 (1024x868)
+\# X display name (WxH):	:3537 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        633 MB
-\# Available memory:	     16,726 MB
+\# Initial sbrk value:	        625 MB
+\# Available memory:	     19,161 MB
 \# System memory:	     23,948 MB
-\# Maximum memory size:	     23,526 MB
-\# Max mem available:	     16,937 MB
+\# Maximum memory size:	     23,534 MB
+\# Max mem available:	     19,372 MB
 \# Initial memory used:	        210 MB
 \#        process size:	      1,813 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 6.00/6.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		10539
+\# Process Id:		32094
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -74,13 +74,13 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso30923, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5606, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 10539 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 32094 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [05:30:21.512345] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         362 MB, process size 2,094 MB at UTC 2024.03.22 09:30:23.534
+\# [07:10:26.512385] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         362 MB, process size 2,094 MB at UTC 2024.04.04 11:10:28.724
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -122,7 +122,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 10539' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 32094' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -131,22 +131,22 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = HVSWITCH
-\o 	Cell         = hvswitch_tb
+\o 	Library      = CONSTANT_GM
+\o 	Cell         = constant_gm_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.264
-\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/1/HVSWITCH:hvswitch_tb:1
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	State Name   = CONSTANT_GM:constant_gm_tb:1_none_Interactive.25
+\o 	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/1/CONSTANT_GM:constant_gm_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
 \o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
-\# Memory report: using         486 MB, process size 2,225 MB at UTC 2024.03.22 09:30:25.057
+\# Memory report: using         486 MB, process size 2,224 MB at UTC 2024.04.04 11:10:30.198
 \o 
 \o *Info*    The auto suspension is disabled.
 \o 
@@ -168,45 +168,37 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (65 1) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (15 5) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_EXT = "0"
-\o Setting var DN1 = "3.3"
-\o Setting var DN2 = "0"
-\o Setting var IDC = "50m"
-\o Setting var UP1 = "0"
-\o Setting var UP2 = "3.3"
-\o Setting var VDAC = "0"
-\o Setting var VDD = "3.3"
-\o Setting var VDDHV = "0"
-\o Setting var VDDHV_PULSE = "40"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
+\o Setting var VDD3 = "0"
+\o Setting var VDD_PULSE = "3.3"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/1/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/5/CONSTANT_GM:constant_gm_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/1/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/5/CONSTANT_GM:constant_gm_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (65 1)
+\o *Info*    Creating Netlist for Point ID (15 5)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [05:30:25.157794] Periodic Lic check successful
-\# [05:30:25.157795] Feature usage summary:
-\o Begin Incremental Netlisting Mar 22 05:30:25 2024
-\o End netlisting Mar 22 05:30:25 2024
+\# [07:10:30.037881] Periodic Lic check successful
+\# [07:10:30.037883] Feature usage summary:
+\o Begin Incremental Netlisting Apr  4 07:10:30 2024
+\o End netlisting Apr  4 07:10:30 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -214,13 +206,12 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 1).
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (15 5).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/1/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/5/CONSTANT_GM:constant_gm_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
-\# Memory report: using         593 MB, process size 2,331 MB at UTC 2024.03.22 09:30:26.009
 \o start simulator if needed...
 \o       ...successful.
 \o simulate...
@@ -228,50 +219,54 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
+\# Memory report: using         609 MB, process size 2,398 MB at UTC 2024.04.04 11:10:31.259
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (65 1) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'5' test:'CONSTANT_GM:constant_gm_tb:1'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (15 5) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (65 10) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 10) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD = "3"
 \o Setting var temperature = "-40"
 \o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/10/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/10/CONSTANT_GM:constant_gm_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/10/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/10/CONSTANT_GM:constant_gm_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (65 10)
+\o *Info*    Creating Netlist for Point ID (15 10)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:28 2024
-\o End netlisting Mar 22 05:30:28 2024
+\o Begin Incremental Netlisting Apr  4 07:10:31 2024
+\o End netlisting Apr  4 07:10:31 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -279,10 +274,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 10).
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (15 10).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/10/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/10/CONSTANT_GM:constant_gm_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -296,45 +291,48 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (65 10) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'10' test:'CONSTANT_GM:constant_gm_tb:1'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (15 10) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (65 17) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 13) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD = "3.6"
 \o Setting var temperature = "85"
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/17/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/13/CONSTANT_GM:constant_gm_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/17/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/13/CONSTANT_GM:constant_gm_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (65 17)
+\o *Info*    Creating Netlist for Point ID (15 13)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:30 2024
-\o End netlisting Mar 22 05:30:30 2024
+\o Begin Incremental Netlisting Apr  4 07:10:33 2024
+\o End netlisting Apr  4 07:10:33 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -342,10 +340,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 17).
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (15 13).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/17/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/13/CONSTANT_GM:constant_gm_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -354,53 +352,53 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Available memory:         13,993 MB at UTC 2024.03.22 09:30:31.077
-\# Memory report: Maximum memory size now 14,634 MB at UTC 2024.03.22 09:30:31.077
-\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.03.22 09:30:31.077
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (65 17) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'13' test:'CONSTANT_GM:constant_gm_tb:1'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (15 13) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (65 22) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 18) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD = "3"
 \o Setting var temperature = "-40"
 \o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/22/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/18/CONSTANT_GM:constant_gm_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/22/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/18/CONSTANT_GM:constant_gm_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (65 22)
+\o *Info*    Creating Netlist for Point ID (15 18)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:32 2024
-\o End netlisting Mar 22 05:30:32 2024
+\o Begin Incremental Netlisting Apr  4 07:10:34 2024
+\o End netlisting Apr  4 07:10:34 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -408,10 +406,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 22).
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (15 18).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/22/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/18/CONSTANT_GM:constant_gm_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -425,21 +423,25 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (65 22) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'18' test:'CONSTANT_GM:constant_gm_tb:1'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (15 18) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (65 30) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 24) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -447,20 +449,20 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/30/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/24/CONSTANT_GM:constant_gm_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/30/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/24/CONSTANT_GM:constant_gm_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (65 30)
+\o *Info*    Creating Netlist for Point ID (15 24)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:34 2024
-\o End netlisting Mar 22 05:30:34 2024
+\o Begin Incremental Netlisting Apr  4 07:10:36 2024
+\o End netlisting Apr  4 07:10:36 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -468,10 +470,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 30).
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (15 24).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/30/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/24/CONSTANT_GM:constant_gm_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -480,26 +482,33 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Available memory:         17,332 MB at UTC 2024.04.04 11:10:36.848
+\# Memory report: Maximum memory size now 18,010 MB at UTC 2024.04.04 11:10:36.848
+\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.04.04 11:10:36.848
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (65 30) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'24' test:'CONSTANT_GM:constant_gm_tb:1'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (15 24) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (65 38) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 28) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -507,20 +516,20 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/38/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/28/CONSTANT_GM:constant_gm_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/38/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/28/CONSTANT_GM:constant_gm_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (65 38)
+\o *Info*    Creating Netlist for Point ID (15 28)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:37 2024
-\o End netlisting Mar 22 05:30:37 2024
+\o Begin Incremental Netlisting Apr  4 07:10:37 2024
+\o End netlisting Apr  4 07:10:37 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -528,10 +537,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 38).
+\o *Info*    Running simulation on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ] for Point ID (15 28).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/38/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.25/28/CONSTANT_GM:constant_gm_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -545,191 +554,13 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\o ERROR (ADE-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'28' test:'CONSTANT_GM:constant_gm_tb:1'
+\o 	Expression:'IDC("/I0/M7/D")'.
+\o Ensure that the definition of output is correct.
 \o 
-\o *Info*    Run complete for Point ID (65 38) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (65 46) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/46/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/46/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (65 46)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:39 2024
-\o End netlisting Mar 22 05:30:39 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 46).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/46/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 14,155 MB at UTC 2024.03.22 09:30:40.894
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\# Memory report: using         694 MB, process size 2,484 MB at UTC 2024.03.22 09:30:42.183
-\o 
-\o *Info*    Run complete for Point ID (65 46) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (65 54) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/54/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/54/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (65 54)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:42 2024
-\o End netlisting Mar 22 05:30:42 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 54).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/54/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (65 54) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (65 62) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/62/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/62/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (65 62)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 22 05:30:44 2024
-\o End netlisting Mar 22 05:30:44 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (65 62).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.264/62/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (65 62) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (15 28) on testbench [
+\o           CONSTANT_GM:constant_gm_tb:1 ].
 \o 
 \o 
 \o 
@@ -738,9 +569,8 @@
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: Maximum memory size now 15,292 MB at UTC 2024.03.22 09:35:50.918
 \# Lic Summary:
-\# [05:35:50.393912] Cdslmd servers:3000@lic08.ug.kth.se
-\# [05:35:50.393921] Feature usage summary:
-\# Memory report: on exit            718 MB, process size 2,507 MB at UTC 2024.03.22 09:35:50.918
-\# Memory report: peak usage         718 MB, process size 2,507 MB
+\# [07:15:45.330427] Cdslmd servers:3000@lic08.ug.kth.se
+\# [07:15:45.330432] Feature usage summary:
+\# Memory report: on exit            709 MB, process size 2,498 MB at UTC 2024.04.04 11:15:45.854
+\# Memory report: peak usage         709 MB, process size 2,498 MB

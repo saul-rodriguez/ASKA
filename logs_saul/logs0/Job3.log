@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = BANDGAP
-	Cell         = bandgap_noop
-	View         = schematic
+	Cell         = bandgap_tb
+	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = BANDGAP:bandgap_noop:1_none_Interactive.1
-	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_noop/adexl/results/data/Interactive.1.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_noop/adexl/results/data/Interactive.1/1/BANDGAP:bandgap_noop:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_noop/adexl/results/data
+	State Name   = BANDGAP:bandgap_tb:1_none_Interactive.49
+	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/Interactive.49.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.49/1/BANDGAP:bandgap_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_noop/adexl
+	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
 	File Encoding = 0
 
 
@@ -28,45 +28,47 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [
-          BANDGAP:bandgap_noop:1 ].
+*Info*    Run start for Point ID (2 1) on testbench [
+          BANDGAP:bandgap_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
+Setting var IBIAS = "1u"
+Setting var IBIAS_PULSE = "0"
+Setting var IPULSE = "0"
+Setting var VDD3 = "3.3"
+Setting var VDD_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_noop/adexl/results/data/Interactive.1/1/BANDGAP:bandgap_noop:1/netlist
+          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.49/1/BANDGAP:bandgap_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_noop/adexl/results/data/Interactive.1/1/BANDGAP:bandgap_noop:1
+          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.49/1/BANDGAP:bandgap_tb:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (2 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 26 03:23:59 2024
-End netlisting Mar 26 03:23:59 2024
+Begin Incremental Netlisting Apr  3 02:04:30 2024
+End netlisting Apr  3 02:04:30 2024
 
-Netlisting Statistics:
-	Number of components:    6
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ BANDGAP:bandgap_noop:1 ]
-          for Point ID (1 1).
+*Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+          for Point ID (2 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_noop/adexl/results/data/Interactive.1/1/BANDGAP:bandgap_noop:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.49/1/BANDGAP:bandgap_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -81,8 +83,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (1 1) on testbench [
-          BANDGAP:bandgap_noop:1 ].
+*Info*    Run complete for Point ID (2 1) on testbench [
+          BANDGAP:bandgap_tb:1 ].
 
 
 

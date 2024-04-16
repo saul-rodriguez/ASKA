@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = CONSTANT_GM:constant_gm_tb:1_none_Interactive.1
-	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.1.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.1/1/CONSTANT_GM:constant_gm_tb:1
+	State Name   = CONSTANT_GM:constant_gm_tb:1_none_Interactive.99
+	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.99.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.99/1/CONSTANT_GM:constant_gm_tb:1
 	Results Loc  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl
@@ -28,7 +28,7 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [
+*Info*    Run start for Point ID (62 1) on testbench [
           CONSTANT_GM:constant_gm_tb:1 ].
 
 Resetting statistical vars
@@ -36,41 +36,39 @@ Resetting statistical vars
 *Info*    Setting parameter values ...
 
 Setting var VDD3 = "3.3"
+Setting var VDD_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.1/1/CONSTANT_GM:constant_gm_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.99/1/CONSTANT_GM:constant_gm_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.1/1/CONSTANT_GM:constant_gm_tb:1
+          /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.99/1/CONSTANT_GM:constant_gm_tb:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (62 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  4 04:28:00 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.48/1/BANDGAP:bandgap_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Apr  9 04:55:55 2024
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.57/1/CONSTANT_GM:constant_gm_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Apr  4 04:28:00 2024
+End netlisting Apr  9 04:55:55 2024
 
-Netlisting Statistics:
-	Number of components:   11
-
-	Elapsed time:          1.0s (11.00/s)
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 1).
+          CONSTANT_GM:constant_gm_tb:1 ] for Point ID (62 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.1/1/CONSTANT_GM:constant_gm_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.99/1/CONSTANT_GM:constant_gm_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -84,8 +82,18 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.99/1/CONSTANT_GM:constant_gm_tb:1. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.99/1/CONSTANT_GM:constant_gm_tb:1. Use results() for a list of available results.
+ERROR (ADEXL-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'1' test:'CONSTANT_GM:constant_gm_tb:1'
+	Expression:'db(getData("/V0" ?result "xf"))'.
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (1 1) on testbench [
+ERROR (ADEXL-2709): Evaluation of output 'IDC("/I0/M7/D")' returned 'nil' for point:'1' test:'CONSTANT_GM:constant_gm_tb:1'
+	Expression:'IDC("/I0/M7/D")'.
+Ensure that the definition of output is correct.
+
+
+*Info*    Run complete for Point ID (62 1) on testbench [
           CONSTANT_GM:constant_gm_tb:1 ].
 
 

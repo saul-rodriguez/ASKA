@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.04.03 07:15:37.891
-\# Local time: EDT (UTC-04:00) 2024.04.03 03:15:37.891
+\# Program start time:     UTC 2024.04.11 09:22:47.507
+\# Local time: EDT (UTC-04:00) 2024.04.11 05:22:47.507
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5606 -mpshost phoenix -davinciService DaVinciService_5606_1712123584 -log /home/saul/projects/ASKA/logs_saul/logs0/Job23.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5606 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 23
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso2718 -mpshost phoenix -davinciService DaVinciService_2718_1712819406 -log /home/saul/projects/ASKA/logs_saul/logs0/Job23.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_2718 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 23
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:2023 (1024x868)
+\# X display name (WxH):	:1289 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,19 +18,19 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        632 MB
-\# Available memory:	     21,556 MB
-\# System memory:	     23,948 MB
-\# Maximum memory size:	     23,527 MB
-\# Max mem available:	     21,767 MB
-\# Initial memory used:	        210 MB
-\#        process size:	      1,813 MB
-\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 6.00/6.00
+\# Initial sbrk value:	        629 MB
+\# Available memory:	     17,071 MB
+\# System memory:	     25,561 MB
+\# Maximum memory size:	     25,151 MB
+\# Max mem available:	     17,290 MB
+\# Initial memory used:	        218 MB
+\#        process size:	      1,821 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
 \# Qt version:		5.9.1
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		12129
+\# Process Id:		22278
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -74,13 +74,13 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5606, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso2718, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 12129 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 22278 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [03:15:37.512409] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         362 MB, process size 2,094 MB at UTC 2024.04.03 07:15:39.622
+\# [05:22:47.512417] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.04.11 09:22:49.466
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -111,6 +111,7 @@
 \o Loading msgHandler.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
+\# Memory report: using         471 MB, process size 2,203 MB at UTC 2024.04.11 09:22:50.404
 \o  --> Finished setting the required PDK definitions
 \o  --> Setting the recommended EDA tool defaults...
 \o  --> Finished setting the recommended EDA tool defaults
@@ -122,8 +123,33 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 12129' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 22278' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = HVSWITCH
+\o 	Cell         = hvswitch_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Montecarlo_HVSWITCH:hvswitch_tb:1:2_state_MonteCarlo.5
+\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.5.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.5/61/Montecarlo
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
 \o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
 \o  - Menu "XKit Utilities" installed to CIW.
 \o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
@@ -136,74 +162,51 @@
 \o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
 \o  loading default key binding 
 \o  -> END LOAD ".cdsinit" FILE
-\# Available memory:         21,297 MB at UTC 2024.04.03 07:15:47.850
-\# Memory report: Maximum memory size now 21,781 MB at UTC 2024.04.03 07:15:47.850
-\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.04.03 07:15:47.850
-\# Memory report: using         484 MB, process size 2,223 MB at UTC 2024.04.03 07:15:47.850
-\o Loading vqp.cxt 
-\o Loading hdlPkg.cxt 
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o Loading simui.cxt 
-\o 	Library      = BANDGAP
-\o 	Cell         = bandgap_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = Montecarlo_BANDGAP:bandgap_tb:1:1_state_MonteCarlo.18
-\o 	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.18.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.18/1/Montecarlo
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
 \o Loading monte.cxt 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 1) on testbench [ Montecarlo ].
+\o *Info*    Run start for Point ID (0 181) on testbench [ Montecarlo ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var IBIAS = "1u"
-\o Setting var IBIAS_PULSE = "0"
-\o Setting var IPULSE = "0"
-\o Setting var VDD3 = "0"
-\o Setting var VDD_PULSE = "3.3"
+\o Setting var CAP_EXT = "0"
+\o Setting var DN1 = "3.3"
+\o Setting var DN2 = "0"
+\o Setting var IDC = "50m"
+\o Setting var UP1 = "0"
+\o Setting var UP2 = "3.3"
+\o Setting var VDAC = "0.33"
+\o Setting var VDAC2 = "1.65"
+\o Setting var VDD = "3.3"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
 \o Setting var temperature = "27"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.18/1/Montecarlo/groupRunDataDir/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.5/181/Montecarlo/groupRunDataDir/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.18/1/Montecarlo/groupRunDataDir
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.5/181/Montecarlo/groupRunDataDir
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 1)
+\o *Info*    Creating Netlist for Point ID (0 181)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [03:15:54.264936] periodic Lic check successful
-\# [03:15:54.264939] Feature usage summary:
-\o Begin Incremental Netlisting Apr  3 03:15:54 2024
-\o End netlisting Apr  3 03:15:54 2024
+\# [05:22:51.043561] Periodic Lic check successful
+\# [05:22:51.043562] Feature usage summary:
+\o Begin Incremental Netlisting Apr 11 05:22:51 2024
+\o End netlisting Apr 11 05:22:51 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -212,16 +215,16 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ Montecarlo ] for Point ID
-\o           (0 1).
+\o           (0 181).
 \o 
 \o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/MonteCarlo.18/1/Montecarlo/groupRunDataDir/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.5/181/Montecarlo/groupRunDataDir/psf.
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  3 03:15:54 2024
-\o End netlisting Apr  3 03:15:54 2024
+\o Begin Incremental Netlisting Apr 11 05:22:51 2024
+\o End netlisting Apr 11 05:22:51 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -235,94 +238,11 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: using         611 MB, process size 2,400 MB at UTC 2024.04.03 07:15:55.669
+\# Memory report: using         623 MB, process size 2,412 MB at UTC 2024.04.11 09:22:52.796
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 1) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 2) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 20,691 MB at UTC 2024.04.03 07:15:57.546
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 3) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 4) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 5) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         713 MB, process size 2,502 MB at UTC 2024.04.03 07:15:59.408
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 6) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 7) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 8) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 9) on testbench [ Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 10) on testbench [ Montecarlo
+\o *Info*    Run complete for Point ID (0 181) on testbench [ Montecarlo
 \o           ].
 \o 
 \o 
@@ -332,528 +252,52 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 11) on testbench [ Montecarlo
+\o *Info*    Run complete for Point ID (0 182) on testbench [ Montecarlo
 \o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\# Available memory:         15,140 MB at UTC 2024.04.11 09:22:57.097
+\# Memory report: Maximum memory size now 15,803 MB at UTC 2024.04.11 09:22:57.097
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.11 09:22:57.097
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 12) on testbench [ Montecarlo
+\o *Info*    Run complete for Point ID (0 183) on testbench [ Montecarlo
 \o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Client has finished evaluating ... 
+\o *Info*    Current simulation for points ((0 181) (0 182) (0 183) (0
+\o           184) (0 185) (0 186) (0 187) (0 188) (0 189) (0 190) (0
+\o           191) (0 192) (0 193) (0 194) (0 195) (0 196) (0 197) (0
+\o           198) (0 199) (0 200) (0 201) (0 202) (0 203) (0 204) (0
+\o           205) (0 206) (0 207) (0 208) (0 209) (0 210) (0 211) (0
+\o           212) (0 213) (0 214) (0 215) (0 216) (0 217) (0 218) (0
+\o           219) (0 220) (0 221) (0 222) (0 223) (0 224) (0 225) (0
+\o           226) (0 227) (0 228) (0 229) (0 230) (0 231) (0 232) (0
+\o           233) (0 234) (0 235) (0 236) (0 237) (0 238) (0 239) (0
+\o           240)).
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
 \o 
-\o 
-\o *Info*    Run complete for Point ID (0 13) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         826 MB, process size 2,615 MB at UTC 2024.04.03 07:16:06.214
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 14) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         18,531 MB at UTC 2024.04.03 07:16:07.112
-\# Memory report: Maximum memory size now 19,380 MB at UTC 2024.04.03 07:16:07.112
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 15) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 16) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 17) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 18) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o INFO (ADE-3071): Simulation completed successfully.
+\o *Info*    Monte Carlo Simulation unsuccessful...
+\o *Info*    See simulation output log for more information.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 19) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 20) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 21) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         962 MB, process size 2,751 MB at UTC 2024.04.03 07:16:12.646
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 22) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 23) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 24) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 25) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 26) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 27) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 28) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 29) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 18,559 MB at UTC 2024.04.03 07:16:17.694
-\# Memory report: using       1,079 MB, process size 2,868 MB at UTC 2024.04.03 07:16:17.694
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 30) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 31) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 32) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 33) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 34) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 35) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 36) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,181 MB, process size 2,970 MB at UTC 2024.04.03 07:16:22.110
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 37) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 38) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 39) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 40) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 41) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 42) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 43) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,293 MB, process size 3,082 MB at UTC 2024.04.03 07:16:26.324
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 44) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         16,665 MB at UTC 2024.04.03 07:16:27.214
-\# Memory report: Maximum memory size now 17,979 MB at UTC 2024.04.03 07:16:27.214
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 45) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 46) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 47) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 48) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 49) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 50) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 51) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,417 MB, process size 3,206 MB at UTC 2024.04.03 07:16:31.633
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 52) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 53) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 54) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 55) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 56) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 57) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 58) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,520 MB, process size 3,309 MB at UTC 2024.04.03 07:16:36.043
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 59) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 60) on testbench [ Montecarlo
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Monte Carlo Simulation completed successfully...
-\# Memory report: Maximum memory size now 17,027 MB at UTC 2024.04.03 07:16:36.858
-\# Available memory:         14,901 MB at UTC 2024.04.03 07:16:46.849
-\# Memory report: Maximum memory size now 16,436 MB at UTC 2024.04.03 07:16:46.849
-\# Memory report: Maximum memory size now 17,709 MB at UTC 2024.04.03 07:21:46.848
+\# Memory report: Maximum memory size now 16,279 MB at UTC 2024.04.11 09:23:06.632
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \# Lic Summary:
-\# [03:21:48.370416] Cdslmd servers:3000@lic08.ug.kth.se
-\# [03:21:48.370425] Feature usage summary:
-\# Memory report: on exit          1,534 MB, process size 3,323 MB at UTC 2024.04.03 07:21:48.894
-\# Memory report: peak usage       1,534 MB, process size 3,323 MB
+\# [05:27:58.131658] Cdslmd servers:3000@lic08.ug.kth.se
+\# [05:27:58.131704] Feature usage summary:
+\# Memory report: on exit            663 MB, process size 2,452 MB at UTC 2024.04.11 09:27:58.656
+\# Memory report: peak usage         663 MB, process size 2,452 MB

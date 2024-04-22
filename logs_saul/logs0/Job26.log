@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = REF_BIAS
-	Cell         = ref_bias_tb
+	Library      = HVSWITCH
+	Cell         = hvswitch_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = REF_BIAS:ref_bias_tb:1_none_Interactive.48
-	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.48.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.48/1/REF_BIAS:ref_bias_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
+	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.412
+	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.412.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.412/1/HVSWITCH:hvswitch_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
 	File Encoding = 0
 
 
@@ -28,40 +28,49 @@
 
 
 
-*Info*    Run start for Point ID (9 1) on testbench [
-          REF_BIAS:ref_bias_tb:1 ].
+*Info*    Run start for Point ID (13 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "3.3"
-Setting var VREF = "1.21"
-Setting var VREF_PULSE = "10m"
+Setting var CAP_EXT = "10p"
+Setting var DN1 = "0"
+Setting var DN2 = "3.3"
+Setting var IDC = "50m"
+Setting var START_DELAY = "20u"
+Setting var UP1 = "3.3"
+Setting var UP2 = "0"
+Setting var VDAC = "33m"
+Setting var VDAC2 = "330m"
+Setting var VDD = "3.3"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.48/1/REF_BIAS:ref_bias_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.412/1/HVSWITCH:hvswitch_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.48/1/REF_BIAS:ref_bias_tb:1
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.412/1/HVSWITCH:hvswitch_tb:1
 
 
-*Info*    Creating Netlist for Point ID (9 1)
+*Info*    Creating Netlist for Point ID (13 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  8 00:53:02 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.36/1/REF_BIAS:ref_bias_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Apr 19 11:08:38 2024
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.400/1/HVSWITCH:hvswitch_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Apr  8 00:53:02 2024
+End netlisting Apr 19 11:08:38 2024
 
 Netlisting Statistics:
-	Number of components:   17
+	Number of components:   21
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -69,10 +78,10 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ REF_BIAS:ref_bias_tb:1 ]
-          for Point ID (9 1).
+*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
+          for Point ID (13 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.48/1/REF_BIAS:ref_bias_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.412/1/HVSWITCH:hvswitch_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -87,8 +96,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (9 1) on testbench [
-          REF_BIAS:ref_bias_tb:1 ].
+*Info*    Run complete for Point ID (13 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 
 

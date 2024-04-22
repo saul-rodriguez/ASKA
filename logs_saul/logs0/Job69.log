@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = REF_BIAS
-	Cell         = ref_bias_tb
+	Library      = HVSWITCH
+	Cell         = hvswitch_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = corner_none_Interactive.84
-	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner
-	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
+	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.437
+	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.437.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.437/1/HVSWITCH:hvswitch_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
 	File Encoding = 0
 
 
@@ -28,44 +28,49 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [ corner ].
+*Info*    Run start for Point ID (38 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "3.3"
-Setting var VDD3_PULSE = "0"
-Setting var VREF = "1.21"
-Setting var VREF_PULSE = "0"
+Setting var CAP_EXT = "10p"
+Setting var DN1 = "0"
+Setting var DN2 = "3.3"
+Setting var IDC = "50m"
+Setting var START_DELAY = "20u"
+Setting var UP1 = "3.3"
+Setting var UP2 = "0"
+Setting var VDAC = "33m"
+Setting var VDAC2 = "1.65"
+Setting var VDD = "3.3"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner/netlist
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.437/1/HVSWITCH:hvswitch_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.437/1/HVSWITCH:hvswitch_tb:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (38 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  9 05:21:16 2024
-WARNING (OSSHNL-160): The primitive, 'analogLib/iprobe/spectre', was not used in the last netlisting session in this
-current run directory. Therefore, re-netlisting all cell views where this
-primitive is instantiated.
-
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.57/1/CONSTANT_GM:constant_gm_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Apr 19 11:50:50 2024
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.400/1/HVSWITCH:hvswitch_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Apr  9 05:21:16 2024
+End netlisting Apr 19 11:50:50 2024
 
 Netlisting Statistics:
-	Number of components:   18
+	Number of components:   21
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -73,10 +78,10 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ corner ] for Point ID (1
-          1).
+*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
+          for Point ID (38 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.437/1/HVSWITCH:hvswitch_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -90,20 +95,9 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner. Use results() for a list of available results.
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'Zeros' returned 'nil' for point:'1' test:'corner'
-	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-Ensure that the definition of output is correct.
 
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner. Use results() for a list of available results.
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.84/1/corner. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'Poles' returned 'nil' for point:'1' test:'corner'
-	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-Ensure that the definition of output is correct.
-
-
-*Info*    Run complete for Point ID (1 1) on testbench [ corner ].
+*Info*    Run complete for Point ID (38 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 
 

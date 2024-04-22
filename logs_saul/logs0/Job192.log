@@ -1,0 +1,1358 @@
+\# Program start time:     UTC 2024.04.17 10:49:29.768
+\# Local time: EDT (UTC-04:00) 2024.04.17 06:49:29.768
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
+\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5839 -mpshost phoenix -davinciService DaVinciService_5839_1713327833 -log /home/saul/projects/ASKA/logs_saul/logs0/Job192.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5839 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 192
+\# Host name (type):	phoenix (x86_64)
+\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:4857 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12004000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        631 MB
+\# Available memory:	     15,867 MB
+\# System memory:	     25,561 MB
+\# Maximum memory size:	     25,148 MB
+\# Max mem available:	     16,086 MB
+\# Initial memory used:	        218 MB
+\#        process size:	      1,821 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	phoenix:/home/saul/projects/ASKA
+\# Process Id:		17224
+\o 
+\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\# Memory report: using         348 MB, process size 2,073 MB at UTC 2024.04.17 10:49:31.018
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5839, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 17224 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [06:49:29.512497] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/PDK/IC61/v9_0_4"
+\o Loading XfSktTools.cxt
+\o Loading XfMenu.cxt
+\o Loading XfTechXh018.cxt
+\o Loading XfPcellCore.cxt
+\o function ansiSpicePrintProperties_subcircuit redefined
+\o Loading XfSkillExt.cxt
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o  --> AssuraTools Setup not available
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 17224' to open it when Virtuoso freezes.
+\# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = HVSWITCH
+\o 	Cell         = hvswitch_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.370
+\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.370.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.370/1/SOA
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.04.17 10:49:33.188
+\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  loading default key binding 
+\o  -> END LOAD ".cdsinit" FILE
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (17 2) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CAP_EXT = "0"
+\o Setting var DN1 = "0"
+\o Setting var DN2 = "0"
+\o Setting var IDC = "50m"
+\o Setting var START_DELAY = "20u"
+\o Setting var UP1 = "0"
+\o Setting var UP2 = "0"
+\o Setting var VDAC = "330m"
+\o Setting var VDAC2 = "1.65"
+\o Setting var VDD = "3"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.370/2/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.370/2/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (17 2)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [06:49:33.260352] periodic Lic check successful
+\# [06:49:33.260355] Feature usage summary:
+\o Begin Incremental Netlisting Apr 17 06:49:33 2024
+\o Loading json.cxt 
+\o End netlisting Apr 17 06:49:33 2024
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   21
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: using         605 MB, process size 2,344 MB at UTC 2024.04.17 10:49:34.260
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (17 2).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.370/2/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Available memory:         13,745 MB at UTC 2024.04.17 10:49:39.631
+\# Memory report: Maximum memory size now 14,371 MB at UTC 2024.04.17 10:49:39.631
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.17 10:49:39.631
+\# Memory report: Maximum memory size now 13,984 MB at UTC 2024.04.17 10:49:49.631
+\# Memory report: Maximum memory size now 13,351 MB at UTC 2024.04.17 10:49:59.631
+\o *Info*    Current simulation for points ((17 2)).
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 2) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 14,874 MB at UTC 2024.04.17 10:50:09.641
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = HVSWITCH
+\o 	Cell         = hvswitch_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.371
+\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.371.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.371/1/SOA
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 2) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CAP_EXT = "0"
+\o Setting var DN1 = "0"
+\o Setting var DN2 = "0"
+\o Setting var IDC = "50m"
+\o Setting var START_DELAY = "20u"
+\o Setting var UP1 = "0"
+\o Setting var UP2 = "0"
+\o Setting var VDAC = "330m"
+\o Setting var VDAC2 = "1.65"
+\o Setting var VDD = "3.3"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.371/2/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.371/2/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 06:50:20 2024
+\o End netlisting Apr 17 06:50:20 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (18 2).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.371/2/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,421 MB at UTC 2024.04.17 10:50:29.630
+\# Memory report: Maximum memory size now 13,772 MB at UTC 2024.04.17 10:50:49.632
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: using         732 MB, process size 2,521 MB at UTC 2024.04.17 10:52:46.033
+\o 
+\o *Info*    Run complete for Point ID (18 2) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 14,721 MB at UTC 2024.04.17 10:52:49.632
+\# Memory report: Maximum memory size now 14,332 MB at UTC 2024.04.17 10:53:49.636
+\# Memory report: Maximum memory size now 14,717 MB at UTC 2024.04.17 10:54:09.637
+\# Memory report: Maximum memory size now 15,662 MB at UTC 2024.04.17 10:55:09.633
+\# Memory report: Maximum memory size now 15,331 MB at UTC 2024.04.17 10:55:29.634
+\# Available memory:         15,101 MB at UTC 2024.04.17 10:56:59.631
+\# Memory report: Maximum memory size now 15,833 MB at UTC 2024.04.17 10:56:59.631
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = HVSWITCH
+\o 	Cell         = hvswitch_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.374
+\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.374.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.374/1/SOA
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\# Memory report: Maximum memory size now 16,318 MB at UTC 2024.04.17 10:57:09.242
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 2) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CAP_EXT = "0"
+\o Setting var DN1 = "0"
+\o Setting var DN2 = "0"
+\o Setting var IDC = "50m"
+\o Setting var START_DELAY = "20u"
+\o Setting var UP1 = "0"
+\o Setting var UP2 = "0"
+\o Setting var VDAC = "330m"
+\o Setting var VDAC2 = "1.65"
+\o Setting var VDD = "3"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.374/2/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.374/2/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 06:57:09 2024
+\o End netlisting Apr 17 06:57:09 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (21 2).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.374/2/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o *Info*    Current simulation for points ((21 2)).
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 2) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = HVSWITCH
+\o 	Cell         = hvswitch_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.375
+\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/1/SOA
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 2) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CAP_EXT = "0"
+\o Setting var DN1 = "0"
+\o Setting var DN2 = "0"
+\o Setting var IDC = "50m"
+\o Setting var START_DELAY = "20u"
+\o Setting var UP1 = "0"
+\o Setting var UP2 = "0"
+\o Setting var VDAC = "330m"
+\o Setting var VDAC2 = "1.65"
+\o Setting var VDD = "3"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/2/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/2/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 06:57:23 2024
+\o End netlisting Apr 17 06:57:23 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22 2).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/2/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 15,430 MB at UTC 2024.04.17 10:57:29.631
+\# Memory report: Maximum memory size now 14,784 MB at UTC 2024.04.17 10:57:39.631
+\# Available memory:         13,601 MB at UTC 2024.04.17 10:57:49.631
+\# Memory report: Maximum memory size now 14,333 MB at UTC 2024.04.17 10:57:49.631
+\# Memory report: Maximum memory size now 13,591 MB at UTC 2024.04.17 10:57:59.631
+\# Available memory:         12,313 MB at UTC 2024.04.17 10:58:09.632
+\# Memory report: Maximum memory size now 13,045 MB at UTC 2024.04.17 10:58:09.632
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 2) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 6) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/6/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/6/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:00:07 2024
+\o End netlisting Apr 17 07:00:07 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22 6).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/6/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 13,917 MB at UTC 2024.04.17 11:00:09.631
+\# Available memory:         13,528 MB at UTC 2024.04.17 11:00:29.631
+\# Memory report: Maximum memory size now 14,285 MB at UTC 2024.04.17 11:00:29.631
+\# Memory report: Maximum memory size now 13,625 MB at UTC 2024.04.17 11:00:39.631
+\# Available memory:         12,238 MB at UTC 2024.04.17 11:00:49.632
+\# Memory report: Maximum memory size now 12,994 MB at UTC 2024.04.17 11:00:49.632
+\# Memory report: Maximum memory size now 12,684 MB at UTC 2024.04.17 11:00:59.632
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 6) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 11) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/11/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/11/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:02:52 2024
+\o End netlisting Apr 17 07:02:52 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           11).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/11/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 13,126 MB at UTC 2024.04.17 11:02:59.631
+\# Available memory:         14,300 MB at UTC 2024.04.17 11:03:09.631
+\# Memory report: Maximum memory size now 15,068 MB at UTC 2024.04.17 11:03:09.631
+\# Memory report: Maximum memory size now 14,213 MB at UTC 2024.04.17 11:03:19.632
+\# Memory report: Maximum memory size now 13,850 MB at UTC 2024.04.17 11:03:29.631
+\# Available memory:         12,388 MB at UTC 2024.04.17 11:03:39.631
+\# Memory report: Maximum memory size now 13,156 MB at UTC 2024.04.17 11:03:39.631
+\# Memory report: Maximum memory size now 12,895 MB at UTC 2024.04.17 11:03:49.632
+\# Memory report: Maximum memory size now 13,155 MB at UTC 2024.04.17 11:05:29.630
+\# Available memory:         13,530 MB at UTC 2024.04.17 11:05:49.262
+\# Memory report: Maximum memory size now 14,298 MB at UTC 2024.04.17 11:05:49.262
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 11) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 17) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/17/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/17/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:05:49 2024
+\o End netlisting Apr 17 07:05:50 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           17).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/17/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,617 MB at UTC 2024.04.17 11:05:59.631
+\# Memory report: Maximum memory size now 14,176 MB at UTC 2024.04.17 11:06:19.631
+\# Memory report: Maximum memory size now 13,353 MB at UTC 2024.04.17 11:06:29.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 17) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 21) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/21/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/21/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:08:31 2024
+\o End netlisting Apr 17 07:08:31 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           21).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/21/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,075 MB at UTC 2024.04.17 11:08:39.631
+\# Memory report: Maximum memory size now 14,423 MB at UTC 2024.04.17 11:08:49.630
+\# Memory report: Maximum memory size now 13,798 MB at UTC 2024.04.17 11:09:19.631
+\# Memory report: Maximum memory size now 13,519 MB at UTC 2024.04.17 11:09:29.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 21) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 26) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/26/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/26/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:11:12 2024
+\o End netlisting Apr 17 07:11:12 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           26).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/26/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,223 MB at UTC 2024.04.17 11:11:19.631
+\# Memory report: Maximum memory size now 13,849 MB at UTC 2024.04.17 11:11:39.631
+\# Memory report: Maximum memory size now 14,358 MB at UTC 2024.04.17 11:11:59.632
+\# Memory report: Maximum memory size now 14,051 MB at UTC 2024.04.17 11:12:09.632
+\# Memory report: Maximum memory size now 13,614 MB at UTC 2024.04.17 11:12:19.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 26) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 31) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/31/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/31/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:13:52 2024
+\o End netlisting Apr 17 07:13:52 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           31).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/31/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 13,886 MB at UTC 2024.04.17 11:13:59.631
+\# Memory report: Maximum memory size now 14,476 MB at UTC 2024.04.17 11:14:29.631
+\# Memory report: Maximum memory size now 13,798 MB at UTC 2024.04.17 11:14:59.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 31) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 36) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/36/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/36/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 36)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:16:46 2024
+\o End netlisting Apr 17 07:16:46 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           36).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/36/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: using         837 MB, process size 2,626 MB at UTC 2024.04.17 11:16:47.193
+\# Memory report: Maximum memory size now 14,104 MB at UTC 2024.04.17 11:16:49.631
+\# Memory report: Maximum memory size now 14,658 MB at UTC 2024.04.17 11:17:09.630
+\# Memory report: Maximum memory size now 14,327 MB at UTC 2024.04.17 11:17:29.631
+\# Memory report: Maximum memory size now 13,852 MB at UTC 2024.04.17 11:17:49.630
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 36) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 41) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/41/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/41/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 41)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:19:39 2024
+\o End netlisting Apr 17 07:19:39 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           41).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/41/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 15,119 MB at UTC 2024.04.17 11:19:48.631
+\# Memory report: Maximum memory size now 14,655 MB at UTC 2024.04.17 11:19:58.631
+\# Memory report: Maximum memory size now 14,113 MB at UTC 2024.04.17 11:20:38.631
+\# Memory report: Maximum memory size now 13,778 MB at UTC 2024.04.17 11:20:58.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 41) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 46) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/46/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/46/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 46)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:22:22 2024
+\o End netlisting Apr 17 07:22:22 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           46).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/46/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,143 MB at UTC 2024.04.17 11:22:28.637
+\# Memory report: Maximum memory size now 14,803 MB at UTC 2024.04.17 11:22:48.632
+\# Memory report: Maximum memory size now 14,214 MB at UTC 2024.04.17 11:22:58.630
+\# Memory report: Maximum memory size now 14,658 MB at UTC 2024.04.17 11:23:08.630
+\# Memory report: Maximum memory size now 14,217 MB at UTC 2024.04.17 11:23:38.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 46) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 51) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/51/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/51/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 51)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:25:04 2024
+\o End netlisting Apr 17 07:25:04 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           51).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/51/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,677 MB at UTC 2024.04.17 11:25:47.631
+\# Memory report: Maximum memory size now 15,216 MB at UTC 2024.04.17 11:25:57.265
+\# Memory report: Maximum memory size now 14,730 MB at UTC 2024.04.17 11:26:07.630
+\# Memory report: Maximum memory size now 14,261 MB at UTC 2024.04.17 11:26:17.632
+\# Memory report: Maximum memory size now 13,848 MB at UTC 2024.04.17 11:26:27.630
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 51) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 56) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/56/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/56/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 56)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:28:02 2024
+\o End netlisting Apr 17 07:28:02 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           56).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/56/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,247 MB at UTC 2024.04.17 11:28:07.633
+\# Memory report: Maximum memory size now 14,832 MB at UTC 2024.04.17 11:28:27.539
+\# Memory report: Maximum memory size now 14,479 MB at UTC 2024.04.17 11:28:47.630
+\# Memory report: Maximum memory size now 13,994 MB at UTC 2024.04.17 11:29:07.632
+\# Memory report: Maximum memory size now 13,693 MB at UTC 2024.04.17 11:29:26.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 56) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 61) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/61/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/61/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 61)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 17 07:30:55 2024
+\o End netlisting Apr 17 07:30:55 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (22
+\o           61).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.375/61/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14,203 MB at UTC 2024.04.17 11:30:56.091
+\# Memory report: Maximum memory size now 14,492 MB at UTC 2024.04.17 11:31:05.630
+\# Memory report: Maximum memory size now 13,938 MB at UTC 2024.04.17 11:31:45.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 61) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 14,851 MB at UTC 2024.04.17 11:33:45.631
+\# Memory report: Maximum memory size now 15,403 MB at UTC 2024.04.17 11:34:05.631
+\# Available memory:         15,575 MB at UTC 2024.04.17 11:34:25.122
+\# Memory report: Maximum memory size now 16,468 MB at UTC 2024.04.17 11:34:25.122
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [07:39:28.121369] Cdslmd servers:3000@lic08.ug.kth.se
+\# [07:39:28.121409] Feature usage summary:
+\# Memory report: on exit            893 MB, process size 2,682 MB at UTC 2024.04.17 11:39:28.645
+\# Memory report: peak usage         920 MB, process size 2,691 MB

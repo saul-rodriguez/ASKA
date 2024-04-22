@@ -38,7 +38,8 @@ analog begin
 		d2 = init_dn2;
 		time_aux = start_delay+phase_duration+pause_duration+phase_duration;
 		time_aux2 = 2*time_aux + phase_duration;
-		vdac = vref;
+		//vdac = vref;
+		vdac = 0;
 		dummy = 0;
 	end
 

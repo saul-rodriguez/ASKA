@@ -1,71 +1,22 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 08/30/2023 13:17 (sjfdcl1037) $
 \o Sub version:		sub-version  s342 
-\o Arguments:		-mpssession virtuoso32763 -mpshost phoenix 
+\o Arguments:		-mpssession virtuoso5513 -mpshost phoenix 
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o Log file is "/home/saul/projects/ASKA/libManager.log".
 \o Opening libManager window.
-\a nrResizeWindow(cdsLibManager list(838 207 1082 836))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1082 260 799 648))
 \o MPS virtuoso types registered: 68
 \o changeWorkingDir("/home/saul/projects/ASKA") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "REF_BIAS"
-\a cdsLibManager->libLineEdit->value = "REF_BIAS"
-\a cdsLibManager->cellListBox->value = "ref_bias"
-\a cdsLibManager->cellLineEdit->value = "ref_bias"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 33 7 2 "schematic")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "REF_BIAS"
-\a cdsLibManager->libLineEdit->value = "REF_BIAS"
-\a cdsLibManager->cellListBox->value = "ref_bias"
-\a cdsLibManager->cellLineEdit->value = "ref_bias"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "BANDGAP"
-\a cdsLibManager->libLineEdit->value = "BANDGAP"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "bandgap_tb"
-\a cdsLibManager->cellLineEdit->value = "bandgap_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a lmgrLogShowPopup("mainListPopup2" 60 25 2 "config")
-\a cdsLibManager->cellListBox->value = "bandgap_su"
-\a cdsLibManager->cellLineEdit->value = "bandgap_su"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "bandgap_tb"
-\a cdsLibManager->cellLineEdit->value = "bandgap_tb"
+\a cdsLibManager->libListBox->value = "HVSWITCH"
+\a cdsLibManager->libLineEdit->value = "HVSWITCH"
+\a cdsLibManager->cellListBox->value = "hvswitch_tb"
+\a cdsLibManager->cellLineEdit->value = "hvswitch_tb"
 \a cdsLibManager->viewListBox->value = "config"
 \a cdsLibManager->viewLineEdit->value = "config"
 \a cdsLibManager->viewListBox->value = nil
@@ -75,73 +26,51 @@
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "bandgap"
-\a cdsLibManager->cellLineEdit->value = "bandgap"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 42 9 2 "schematic")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "CONSTANT_GM"
-\a cdsLibManager->libLineEdit->value = "CONSTANT_GM"
-\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "constant_gm_tb"
-\a cdsLibManager->cellLineEdit->value = "constant_gm_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "HVSWITCH"
+\a cdsLibManager->libLineEdit->value = "HVSWITCH"
+\a cdsLibManager->cellListBox->value = "hvswitch_tb"
+\a cdsLibManager->cellLineEdit->value = "hvswitch_tb"
 \a cdsLibManager->viewListBox->value = "config"
 \a cdsLibManager->viewLineEdit->value = "config"
-\a lmgrLogShowPopup("mainListPopup2" 54 27 2 "config")
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 38 45 2 "schematic")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "REF_BIAS"
-\a cdsLibManager->libLineEdit->value = "REF_BIAS"
-\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "ref_bias_tb"
-\a cdsLibManager->cellLineEdit->value = "ref_bias_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "ref_bias"
-\a cdsLibManager->cellLineEdit->value = "ref_bias"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "HVSWITCH"
+\a cdsLibManager->libLineEdit->value = "HVSWITCH"
+\a cdsLibManager->cellListBox->value = "hvswitch_tb"
+\a cdsLibManager->cellLineEdit->value = "hvswitch_tb"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "hvswitch4"
+\a cdsLibManager->cellLineEdit->value = "hvswitch4"
 \a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "hvswitch3"
+\a cdsLibManager->cellLineEdit->value = "hvswitch3"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
@@ -150,55 +79,69 @@
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "CURRENT_SOURCE"
-\a cdsLibManager->libLineEdit->value = "CURRENT_SOURCE"
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "current_source_gm_tb"
-\a cdsLibManager->cellLineEdit->value = "current_source_gm_tb"
+\a cdsLibManager->cellListBox->value = "hvswitch3"
+\a cdsLibManager->cellLineEdit->value = "hvswitch3"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a lmgrLogShowPopup("mainListPopup2" 47 26 2 "config")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 3 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->libListBox->value = "HVSWITCH"
 \a cdsLibManager->libLineEdit->value = "HVSWITCH"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "hvswitch_tb"
-\a cdsLibManager->cellLineEdit->value = "hvswitch_tb"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 27 78 2 "hvswitch_tb")
+\a cdsLibManager->cellListBox->value = "hvswitch3"
+\a cdsLibManager->cellLineEdit->value = "hvswitch3"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a lmgrLogShowPopup("mainListPopup2" 32 45 2 "schematic")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "hvswitch_tb"
+\a cdsLibManager->cellLineEdit->value = "hvswitch_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1052 302 799 648))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "hbridge_stimulus"
+\a cdsLibManager->cellLineEdit->value = "hbridge_stimulus"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "veriloga"
+\a cdsLibManager->viewLineEdit->value = "veriloga"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \o MPS service: shutdown
 \o libManager is exiting.
 \a exit(0)

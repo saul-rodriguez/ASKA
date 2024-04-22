@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.04.09 09:58:48.030
-\# Local time: EDT (UTC-04:00) 2024.04.09 05:58:48.030
+\# Program start time:     UTC 2024.04.19 16:42:55.842
+\# Local time: EDT (UTC-04:00) 2024.04.19 12:42:55.842
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso22447 -mpshost phoenix -davinciService DaVinciService_22447_1712640478 -log /home/saul/projects/ASKA/logs_saul/logs0/Job91.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_22447 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 91
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5513 -mpshost phoenix -davinciService DaVinciService_5513_1713534710 -log /home/saul/projects/ASKA/logs_saul/logs0/Job91.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5513 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 91
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:5070 (1024x868)
+\# X display name (WxH):	:1245 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        638 MB
-\# Available memory:	     21,500 MB
+\# Initial sbrk value:	        618 MB
+\# Available memory:	     19,642 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,141 MB
-\# Max mem available:	     21,719 MB
+\# Maximum memory size:	     25,162 MB
+\# Max mem available:	     19,861 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		3093
+\# Process Id:		21956
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -68,19 +68,19 @@
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
 \o Loading adexl.cxt 
+\# Memory report: using         348 MB, process size 2,073 MB at UTC 2024.04.19 16:42:57.075
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading adexlDM.cxt 
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso22447, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5513, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 3093 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 21956 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [05:58:48.512497] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.04.09 09:58:50.294
+\# [12:42:55.512409] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -111,7 +111,6 @@
 \o Loading msgHandler.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
-\# Memory report: using         472 MB, process size 2,204 MB at UTC 2024.04.09 09:58:51.208
 \o  --> Finished setting the required PDK definitions
 \o  --> Setting the recommended EDA tool defaults...
 \o  --> Finished setting the recommended EDA tool defaults
@@ -123,8 +122,9 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 3093' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 21956' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\# Memory report: using         482 MB, process size 2,220 MB at UTC 2024.04.19 16:42:59.053
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
 \o 
@@ -132,17 +132,17 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = REF_BIAS
-\o 	Cell         = ref_bias_tb
+\o 	Library      = HVSWITCH
+\o 	Cell         = hvswitch_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = corner_none_Interactive.93
-\o 	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
+\o 	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.454
+\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/1/SOA
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -168,53 +168,57 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (10 1) on testbench [ corner ].
+\o *Info*    Run start for Point ID (6 3) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD3_PULSE = "3.3"
-\o Setting var VREF = "1.21"
-\o Setting var VREF_PULSE = "0"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
+\o Setting var CAP_EXT = "10p"
+\o Setting var DN1 = "0"
+\o Setting var DN2 = "0"
+\o Setting var IDC = "50m"
+\o Setting var START_DELAY = "20u"
+\o Setting var UP1 = "0"
+\o Setting var UP2 = "0"
+\o Setting var VDAC = "33m"
+\o Setting var VDAC2 = "330m"
+\o Setting var VDD = "3.3"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/3/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/3/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (10 1)
+\o *Info*    Creating Netlist for Point ID (6 3)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [05:58:52.240457] periodic Lic check successful
-\# [05:58:52.240459] Feature usage summary:
-\o Begin Incremental Netlisting Apr  9 05:58:52 2024
-\o Loading json.cxt 
-\o End netlisting Apr  9 05:58:52 2024
+\# [12:42:59.266360] Periodic Lic check successful
+\# [12:42:59.266361] Feature usage summary:
+\o Begin Incremental Netlisting Apr 19 12:42:59 2024
+\o End netlisting Apr 19 12:42:59 2024
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:   22
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
+\# Memory report: using         600 MB, process size 2,339 MB at UTC 2024.04.19 16:43:00.095
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (10
-\o           1).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (6 3).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/3/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -224,254 +228,29 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: using         625 MB, process size 2,414 MB at UTC 2024.04.09 09:58:53.279
+\# Available memory:         17,394 MB at UTC 2024.04.19 16:43:05.639
+\# Memory report: Maximum memory size now 18,015 MB at UTC 2024.04.19 16:43:05.639
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.19 16:43:05.639
+\# Memory report: Maximum memory size now 17,405 MB at UTC 2024.04.19 16:43:15.631
+\# Memory report: Maximum memory size now 16,687 MB at UTC 2024.04.19 16:43:25.632
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
+\o *Info*    Run complete for Point ID (6 3) on testbench [ SOA ].
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/1/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (10 1) on testbench [ corner ].
 \o 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (10 7) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (10 7)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 05:58:54 2024
-\o End netlisting Apr  9 05:58:54 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (10
-\o           7).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/7/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 7) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (10 13) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (10 13)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 05:58:56 2024
-\o End netlisting Apr  9 05:58:56 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (10
-\o           13).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/13/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 13) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         19,620 MB at UTC 2024.04.09 09:58:58.095
-\# Memory report: Maximum memory size now 20,298 MB at UTC 2024.04.09 09:58:58.095
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.09 09:58:58.095
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (10 18) on testbench [ corner ].
+\o *Info*    Run start for Point ID (6 8) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -479,22 +258,23 @@
 \o 
 \o Setting var temperature = "-40"
 \o Setting temp(T) = -40
+\# Memory report: using         709 MB, process size 2,498 MB at UTC 2024.04.19 16:44:28.052
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/8/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/8/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (10 18)
+\o *Info*    Creating Netlist for Point ID (6 8)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 05:58:58 2024
-\o End netlisting Apr  9 05:58:58 2024
+\o Begin Incremental Netlisting Apr 19 12:44:28 2024
+\o End netlisting Apr 19 12:44:28 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -502,10 +282,9 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (10
-\o           18).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (6 8).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/8/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -514,49 +293,16 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,236 MB at UTC 2024.04.19 16:44:35.370
+\# Available memory:         15,465 MB at UTC 2024.04.19 16:44:55.632
+\# Memory report: Maximum memory size now 16,174 MB at UTC 2024.04.19 16:44:55.632
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 18) on testbench [ corner ].
+\o *Info*    Run complete for Point ID (6 8) on testbench [ SOA ].
 \o 
 \o 
 \o 
@@ -567,7 +313,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (10 22) on testbench [ corner ].
+\o *Info*    Run start for Point ID (6 12) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -575,31 +321,30 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/12/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/12/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (10 22)
+\o *Info*    Creating Netlist for Point ID (6 12)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 05:58:59 2024
-\o End netlisting Apr  9 05:59:00 2024
+\o Begin Incremental Netlisting Apr 19 12:45:56 2024
+\o End netlisting Apr 19 12:45:56 2024
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
+\o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (10
-\o           22).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (6 12).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/12/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -608,49 +353,16 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,859 MB at UTC 2024.04.19 16:46:05.631
+\# Memory report: Maximum memory size now 15,979 MB at UTC 2024.04.19 16:46:25.631
+\# Memory report: Maximum memory size now 16,340 MB at UTC 2024.04.19 16:47:25.638
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/22/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 22) on testbench [ corner ].
+\o *Info*    Run complete for Point ID (6 12) on testbench [ SOA ].
 \o 
 \o 
 \o 
@@ -661,7 +373,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (10 26) on testbench [ corner ].
+\o *Info*    Run start for Point ID (6 18) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -669,31 +381,30 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/18/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/18/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (10 26)
+\o *Info*    Creating Netlist for Point ID (6 18)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 05:59:01 2024
-\o End netlisting Apr  9 05:59:02 2024
+\o Begin Incremental Netlisting Apr 19 12:47:27 2024
+\o End netlisting Apr 19 12:47:27 2024
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
+\o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (10
-\o           26).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (6 18).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/18/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -702,49 +413,14 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 15,785 MB at UTC 2024.04.19 16:47:55.631
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/26/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 26) on testbench [ corner ].
+\o *Info*    Run complete for Point ID (6 18) on testbench [ SOA ].
 \o 
 \o 
 \o 
@@ -755,7 +431,67 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (10 31) on testbench [ corner ].
+\o *Info*    Run start for Point ID (6 22) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/22/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/22/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (6 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 19 12:48:53 2024
+\o End netlisting Apr 19 12:48:53 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (6 22).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/22/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,479 MB at UTC 2024.04.19 16:48:55.636
+\# Memory report: Maximum memory size now 16,408 MB at UTC 2024.04.19 16:49:05.631
+\# Memory report: Maximum memory size now 15,931 MB at UTC 2024.04.19 16:49:15.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 22) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (6 29) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -765,20 +501,20 @@
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/29/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/29/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (10 31)
+\o *Info*    Creating Netlist for Point ID (6 29)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 05:59:04 2024
-\o End netlisting Apr  9 05:59:04 2024
+\o Begin Incremental Netlisting Apr 19 12:50:24 2024
+\o End netlisting Apr 19 12:50:24 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -786,10 +522,9 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (10
-\o           31).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (6 29).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.454/29/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -798,1973 +533,31 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,487 MB at UTC 2024.04.19 16:50:25.043
+\# Memory report: Maximum memory size now 16,327 MB at UTC 2024.04.19 16:50:34.631
+\# Memory report: Maximum memory size now 15,585 MB at UTC 2024.04.19 16:50:54.631
+\# Memory report: Maximum memory size now 17,401 MB at UTC 2024.04.19 16:51:54.081
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'31' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'31' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'31' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.93/31/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'31' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 31) on testbench [ corner ].
+\o *Info*    Run complete for Point ID (6 29) on testbench [ SOA ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: using         735 MB, process size 2,524 MB at UTC 2024.04.09 09:59:07.934
+\# Memory report: Maximum memory size now 16,719 MB at UTC 2024.04.19 16:52:03.631
+\# Memory report: Maximum memory size now 16,281 MB at UTC 2024.04.19 16:52:23.631
+\# Memory report: Maximum memory size now 17,462 MB at UTC 2024.04.19 16:53:23.634
+\# Available memory:         17,221 MB at UTC 2024.04.19 16:58:23.633
+\# Memory report: Maximum memory size now 17,992 MB at UTC 2024.04.19 16:58:23.633
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \o 
+\o *Info*    Received signal SIGTERM.
 \o 
-\o *Info*    Configuring the session ...
 \o 
-\o 	Library      = REF_BIAS
-\o 	Cell         = ref_bias_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = corner_none_Interactive.94
-\o 	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/1/corner
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (11 2) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD3_PULSE = "3.3"
-\o Setting var VREF = "1.21"
-\o Setting var VREF_PULSE = "0"
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (11 2)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:01:28 2024
-\o End netlisting Apr  9 06:01:28 2024
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   20
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (11
-\o           2).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'2' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'2' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'2' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/2/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'2' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (11 2) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (11 7) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (11 7)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:01:31 2024
-\o End netlisting Apr  9 06:01:31 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (11
-\o           7).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/7/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'7' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (11 7) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (11 15) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (11 15)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:01:33 2024
-\o End netlisting Apr  9 06:01:33 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (11
-\o           15).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'15' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'15' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'15' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/15/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'15' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (11 15) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (11 18) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (11 18)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:01:35 2024
-\o End netlisting Apr  9 06:01:35 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (11
-\o           18).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (11 18) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 19,779 MB at UTC 2024.04.09 10:01:37.109
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (11 23) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (11 23)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:01:37 2024
-\o End netlisting Apr  9 06:01:37 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (11
-\o           23).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/23/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (11 23) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (11 27) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (11 27)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:01:39 2024
-\o End netlisting Apr  9 06:01:39 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (11
-\o           27).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.94/27/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (11 27) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = REF_BIAS
-\o 	Cell         = ref_bias_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = corner_none_Interactive.95
-\o 	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/1/corner
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (12 3) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD3_PULSE = "3.3"
-\o Setting var VREF = "1.21"
-\o Setting var VREF_PULSE = "0"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (12 3)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:15 2024
-\o End netlisting Apr  9 06:02:15 2024
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   20
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (12
-\o           3).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 19,300 MB at UTC 2024.04.09 10:02:16.666
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/3/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\# Memory report: using         839 MB, process size 2,628 MB at UTC 2024.04.09 10:02:18.137
-\o 
-\o *Info*    Run complete for Point ID (12 3) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (12 10) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (12 10)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:18 2024
-\o End netlisting Apr  9 06:02:18 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (12
-\o           10).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'10' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'10' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'10' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/10/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'10' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (12 10) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (12 13) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (12 13)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:20 2024
-\o End netlisting Apr  9 06:02:20 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (12
-\o           13).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/13/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (12 13) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (12 18) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (12 18)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:22 2024
-\o End netlisting Apr  9 06:02:22 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (12
-\o           18).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (12 18) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (12 22) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (12 22)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:24 2024
-\o End netlisting Apr  9 06:02:24 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (12
-\o           22).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/22/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (12 22) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (12 27) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (12 27)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:26 2024
-\o End netlisting Apr  9 06:02:26 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (12
-\o           27).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.95/27/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'27' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (12 27) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = REF_BIAS
-\o 	Cell         = ref_bias_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = corner_none_Interactive.96
-\o 	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (13 1) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD3_PULSE = "3.3"
-\o Setting var VREF = "1.21"
-\o Setting var VREF_PULSE = "0"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (13 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:51 2024
-\o End netlisting Apr  9 06:02:51 2024
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   20
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (13
-\o           1).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/1/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'1' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (13 1) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (13 9) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (13 9)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:54 2024
-\o End netlisting Apr  9 06:02:54 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (13
-\o           9).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Available memory:         17,684 MB at UTC 2024.04.09 10:02:55.382
-\# Memory report: Maximum memory size now 18,606 MB at UTC 2024.04.09 10:02:55.382
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'9' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'9' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'9' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/9/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'9' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (13 9) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (13 13) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (13 13)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:56 2024
-\o End netlisting Apr  9 06:02:56 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (13
-\o           13).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/13/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'13' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\# Memory report: using         958 MB, process size 2,747 MB at UTC 2024.04.09 10:02:58.110
-\o 
-\o *Info*    Run complete for Point ID (13 13) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (13 20) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (13 20)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:02:58 2024
-\o End netlisting Apr  9 06:02:58 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (13
-\o           20).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'20' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'20' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'20' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/20/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'20' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (13 20) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (13 23) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (13 23)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:03:00 2024
-\o End netlisting Apr  9 06:03:00 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (13
-\o           23).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/23/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'23' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (13 23) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (13 30) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (13 30)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:03:02 2024
-\o End netlisting Apr  9 06:03:02 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (13
-\o           30).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'30' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'30' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'30' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/30/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'30' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (13 30) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (13 32) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (13 32)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:03:04 2024
-\o End netlisting Apr  9 06:03:04 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (13
-\o           32).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'32' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'32' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'32' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.96/32/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'32' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (13 32) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\# Lic Summary:
-\# [06:08:11.427162] Cdslmd servers:3000@lic08.ug.kth.se
-\# [06:08:11.427171] Feature usage summary:
-\# Memory report: on exit          1,014 MB, process size 2,803 MB at UTC 2024.04.09 10:08:11.951
-\# Memory report: peak usage       1,014 MB, process size 2,803 MB

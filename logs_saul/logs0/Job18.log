@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = CURRENT_SOURCE
-	Cell         = current_source_gm_switch_tb
-	View         = schematic
+	Library      = HVSWITCH
+	Cell         = hvswitch_tb
+	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = CURRENT_SOURCE:current_source_gm_switch_tb:1_none_Interactive.24
-	Results DB   = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_switch_tb/adexl/results/data/Interactive.24.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_switch_tb/adexl/results/data/Interactive.24/1/CURRENT_SOURCE:current_source_gm_switch_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_switch_tb/adexl/results/data
+	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.408
+	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.408.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.408/1/HVSWITCH:hvswitch_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_switch_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
 	File Encoding = 0
 
 
@@ -28,37 +28,46 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [
-          CURRENT_SOURCE:current_source_gm_switch_tb:1 ].
+*Info*    Run start for Point ID (9 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "3.3"
-Setting var VDDH = "40"
-Setting var VDD_AC = "0"
+Setting var CAP_EXT = "10p"
+Setting var DN1 = "0"
+Setting var DN2 = "3.3"
+Setting var IDC = "50m"
+Setting var START_DELAY = "20u"
+Setting var UP1 = "3.3"
+Setting var UP2 = "0"
+Setting var VDAC = "33m"
+Setting var VDAC2 = "330m"
+Setting var VDD = "3.3"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_switch_tb/adexl/results/data/Interactive.24/1/CURRENT_SOURCE:current_source_gm_switch_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.408/1/HVSWITCH:hvswitch_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_switch_tb/adexl/results/data/Interactive.24/1/CURRENT_SOURCE:current_source_gm_switch_tb:1
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.408/1/HVSWITCH:hvswitch_tb:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (9 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 11 05:18:50 2024
-End netlisting Apr 11 05:18:50 2024
+Begin Incremental Netlisting Apr 19 11:03:29 2024
+End netlisting Apr 19 11:03:29 2024
 
 Netlisting Statistics:
-	Number of components:   19
+	Number of components:   20
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -66,11 +75,10 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [
-          CURRENT_SOURCE:current_source_gm_switch_tb:1 ] for Point ID
-          (1 1).
+*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
+          for Point ID (9 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_switch_tb/adexl/results/data/Interactive.24/1/CURRENT_SOURCE:current_source_gm_switch_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.408/1/HVSWITCH:hvswitch_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -85,8 +93,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (1 1) on testbench [
-          CURRENT_SOURCE:current_source_gm_switch_tb:1 ].
+*Info*    Run complete for Point ID (9 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 
 

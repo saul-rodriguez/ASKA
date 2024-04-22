@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.04.09 10:49:26.818
-\# Local time: EDT (UTC-04:00) 2024.04.09 06:49:26.818
+\# Program start time:     UTC 2024.04.19 17:02:01.088
+\# Local time: EDT (UTC-04:00) 2024.04.19 13:02:01.088
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso22447 -mpshost phoenix -davinciService DaVinciService_22447_1712640478 -log /home/saul/projects/ASKA/logs_saul/logs0/Job98.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_22447 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 98
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5513 -mpshost phoenix -davinciService DaVinciService_5513_1713534710 -log /home/saul/projects/ASKA/logs_saul/logs0/Job98.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5513 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 98
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:4080 (1024x868)
+\# X display name (WxH):	:7259 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        627 MB
-\# Available memory:	     21,076 MB
+\# Initial sbrk value:	        645 MB
+\# Available memory:	     19,152 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,153 MB
-\# Max mem available:	     21,295 MB
+\# Maximum memory size:	     25,135 MB
+\# Max mem available:	     19,370 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		19591
+\# Process Id:		31180
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -73,14 +73,14 @@
 \o Loading adexlDM.cxt 
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
-\# Memory report: using         353 MB, process size 2,078 MB at UTC 2024.04.09 10:49:28.080
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso22447, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5513, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 19591 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 31180 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [06:49:26.512473] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# [13:02:01.512313] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.04.19 17:02:03.634
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -122,7 +122,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 19591' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 31180' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -131,21 +131,21 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = REF_BIAS
-\o 	Cell         = ref_bias_tb
+\o 	Library      = HVSWITCH
+\o 	Cell         = hvswitch_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = corner_none_Interactive.97
-\o 	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/1/corner
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
+\o 	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.456
+\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/1/SOA
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
-\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.04.09 10:49:30.252
+\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.04.19 17:02:05.137
 \o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
 \o 
 \o *Info*    The auto suspension is disabled.
@@ -168,49 +168,61 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (14 3) on testbench [ corner ].
+\o *Info*    Run start for Point ID (8 3) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD3_PULSE = "3.3"
-\o Setting var VREF = "1.21"
-\o Setting var VREF_PULSE = "0"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
+\o Setting var CAP_EXT = "10p"
+\o Setting var DN1 = "0"
+\o Setting var DN2 = "0"
+\o Setting var IDC = "50m"
+\o Setting var START_DELAY = "20u"
+\o Setting var UP1 = "0"
+\o Setting var UP2 = "0"
+\o Setting var VDAC = "33m"
+\o Setting var VDAC2 = "1.65"
+\o Setting var VDD = "3.3"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/3/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/3/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (14 3)
+\o *Info*    Creating Netlist for Point ID (8 3)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [06:49:30.282792] periodic Lic check successful
-\# [06:49:30.282795] Feature usage summary:
-\o Begin Incremental Netlisting Apr  9 06:49:30 2024
-\o End netlisting Apr  9 06:49:30 2024
+\# [13:02:05.249416] Periodic Lic check successful
+\# [13:02:05.249417] Feature usage summary:
+\o Begin Incremental Netlisting Apr 19 13:02:05 2024
+\o Loading json.cxt 
+\o End netlisting Apr 19 13:02:05 2024
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o Netlisting Statistics:
+\o 	Number of components:   21
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
+\# Memory report: using         602 MB, process size 2,340 MB at UTC 2024.04.19 17:02:06.221
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (14
-\o           3).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (8 3).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/3/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -219,51 +231,19 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: using         624 MB, process size 2,413 MB at UTC 2024.04.09 10:49:31.163
 \o Loading paraplot.cxt 
+\# Available memory:         16,768 MB at UTC 2024.04.19 17:02:11.632
+\# Memory report: Maximum memory size now 17,391 MB at UTC 2024.04.19 17:02:11.632
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.19 17:02:11.632
+\# Memory report: Maximum memory size now 16,749 MB at UTC 2024.04.19 17:02:21.631
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
+\# Memory report: using         710 MB, process size 2,500 MB at UTC 2024.04.19 17:03:39.144
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/3/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'3' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 3) on testbench [ corner ].
+\o *Info*    Run complete for Point ID (8 3) on testbench [ SOA ].
 \o 
 \o 
 \o 
@@ -274,7 +254,128 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (14 8) on testbench [ corner ].
+\o *Info*    Run start for Point ID (8 6) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/6/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/6/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 19 13:03:39 2024
+\o End netlisting Apr 19 13:03:39 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (8 6).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/6/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,500 MB at UTC 2024.04.19 17:03:41.631
+\# Memory report: Maximum memory size now 16,363 MB at UTC 2024.04.19 17:03:51.630
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 6) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 12) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/12/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/12/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 19 13:05:14 2024
+\o End netlisting Apr 19 13:05:14 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (8 12).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/12/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,834 MB at UTC 2024.04.19 17:05:21.631
+\# Memory report: Maximum memory size now 16,341 MB at UTC 2024.04.19 17:05:31.631
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: Maximum memory size now 17,362 MB at UTC 2024.04.19 17:06:51.022
+\o 
+\o *Info*    Run complete for Point ID (8 12) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 19) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -284,20 +385,20 @@
 \o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/19/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/19/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (14 8)
+\o *Info*    Creating Netlist for Point ID (8 19)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:49:33 2024
-\o End netlisting Apr  9 06:49:33 2024
+\o Begin Incremental Netlisting Apr 19 13:06:51 2024
+\o End netlisting Apr 19 13:06:51 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -305,10 +406,9 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (14
-\o           8).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (8 19).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/19/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -317,49 +417,14 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,301 MB at UTC 2024.04.19 17:07:00.630
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'8' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'8' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'8' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/8/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'8' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 8) on testbench [ corner ].
+\o *Info*    Run complete for Point ID (8 19) on testbench [ SOA ].
 \o 
 \o 
 \o 
@@ -370,7 +435,68 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (14 12) on testbench [ corner ].
+\o *Info*    Run start for Point ID (8 22) on testbench [ SOA ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/22/SOA/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/22/SOA
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 19 13:08:25 2024
+\o End netlisting Apr 19 13:08:25 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (8 22).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/22/SOA/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,875 MB at UTC 2024.04.19 17:08:30.631
+\# Memory report: Maximum memory size now 16,165 MB at UTC 2024.04.19 17:08:40.635
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 22) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 26) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -378,20 +504,20 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/26/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/26/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (14 12)
+\o *Info*    Creating Netlist for Point ID (8 26)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:49:35 2024
-\o End netlisting Apr  9 06:49:35 2024
+\o Begin Incremental Netlisting Apr 19 13:09:58 2024
+\o End netlisting Apr 19 13:09:58 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -399,10 +525,9 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (14
-\o           12).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (8 26).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/26/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -411,63 +536,27 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,312 MB at UTC 2024.04.19 17:10:00.630
+\# Memory report: Maximum memory size now 16,103 MB at UTC 2024.04.19 17:10:10.631
+\# Available memory:         15,222 MB at UTC 2024.04.19 17:10:30.631
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'12' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'12' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'12' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/12/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'12' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 12) on testbench [ corner ].
+\o *Info*    Run complete for Point ID (8 26) on testbench [ SOA ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Available memory:         19,303 MB at UTC 2024.04.09 10:49:37.040
-\# Memory report: Maximum memory size now 19,979 MB at UTC 2024.04.09 10:49:37.040
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.09 10:49:37.040
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (14 18) on testbench [ corner ].
+\o *Info*    Run start for Point ID (8 32) on testbench [ SOA ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -475,20 +564,20 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner/netlist
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/32/SOA/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner
+\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/32/SOA
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (14 18)
+\o *Info*    Creating Netlist for Point ID (8 32)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:49:37 2024
-\o End netlisting Apr  9 06:49:37 2024
+\o Begin Incremental Netlisting Apr 19 13:11:34 2024
+\o End netlisting Apr 19 13:11:34 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -496,10 +585,9 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (14
-\o           18).
+\o *Info*    Running simulation on testbench [ SOA ] for Point ID (8 32).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.456/32/SOA/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -508,249 +596,26 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,992 MB at UTC 2024.04.19 17:11:40.635
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
+\o *Info*    Run complete for Point ID (8 32) on testbench [ SOA ].
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/18/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'18' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (14 18) on testbench [ corner ].
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (14 22) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (14 22)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:49:39 2024
-\o End netlisting Apr  9 06:49:39 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (14
-\o           22).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/22/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'22' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 22) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (14 26) on testbench [ corner ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (14 26)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr  9 06:49:41 2024
-\o End netlisting Apr  9 06:49:41 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ corner ] for Point ID (14
-\o           26).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.97/26/corner. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'26' test:'corner'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 26) on testbench [ corner ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 20,510 MB at UTC 2024.04.09 10:54:46.934
+\# Memory report: Maximum memory size now 17,366 MB at UTC 2024.04.19 17:13:10.631
+\# Memory report: Maximum memory size now 15,340 MB at UTC 2024.04.19 17:13:30.631
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \# Lic Summary:
-\# [06:54:49.423459] Cdslmd servers:3000@lic08.ug.kth.se
-\# [06:54:49.423491] Feature usage summary:
-\# Memory report: on exit            720 MB, process size 2,509 MB at UTC 2024.04.09 10:54:49.947
-\# Memory report: peak usage         720 MB, process size 2,509 MB
-\w Qt Warning: Must construct a QGuiApplication first.
+\# [13:13:51.294971] Cdslmd servers:3000@lic08.ug.kth.se
+\# [13:13:51.294977] Feature usage summary:
+\# Memory report: on exit            793 MB, process size 2,582 MB at UTC 2024.04.19 17:13:51.295
+\# Memory report: peak usage         793 MB, process size 2,582 MB

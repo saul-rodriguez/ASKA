@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = CONSTANT_GM
-	Cell         = constant_gm_tb
+	Library      = HVSWITCH
+	Cell         = hvswitch_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = CONSTANT_GM:constant_gm_tb:1_none_Interactive.77
-	Results DB   = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.77.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.77/1/CONSTANT_GM:constant_gm_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data
+	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.287
+	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.287.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.287/1/HVSWITCH:hvswitch_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/CONSTANT_GM/constant_gm_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
 	File Encoding = 0
 
 
@@ -28,36 +28,43 @@
 
 
 
-*Info*    Run start for Point ID (35 1) on testbench [
-          CONSTANT_GM:constant_gm_tb:1 ].
+*Info*    Run start for Point ID (8 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "0"
-Setting var VDD_PULSE = "3.3"
+Setting var CAP_EXT = "0"
+Setting var DN1 = "0"
+Setting var DN2 = "0"
+Setting var IDC = "50m"
+Setting var START_DELAY = "200u"
+Setting var UP1 = "0"
+Setting var UP2 = "0"
+Setting var VDAC = "1.65"
+Setting var VDAC2 = "1.65"
+Setting var VDD = "3.3"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.77/1/CONSTANT_GM:constant_gm_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.287/1/HVSWITCH:hvswitch_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.77/1/CONSTANT_GM:constant_gm_tb:1
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.287/1/HVSWITCH:hvswitch_tb:1
 
 
-*Info*    Creating Netlist for Point ID (35 1)
+*Info*    Creating Netlist for Point ID (8 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  9 02:47:32 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.57/1/CONSTANT_GM:constant_gm_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting Apr  9 02:47:32 2024
+Begin Incremental Netlisting Apr 17 00:46:19 2024
+End netlisting Apr 17 00:46:19 2024
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -65,10 +72,10 @@ End netlisting Apr  9 02:47:32 2024
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [
-          CONSTANT_GM:constant_gm_tb:1 ] for Point ID (35 1).
+*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
+          for Point ID (8 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.77/1/CONSTANT_GM:constant_gm_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.287/1/HVSWITCH:hvswitch_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -82,15 +89,9 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.77/1/CONSTANT_GM:constant_gm_tb:1. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.77/1/CONSTANT_GM:constant_gm_tb:1. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'1' test:'CONSTANT_GM:constant_gm_tb:1'
-	Expression:'db(getData("/V0" ?result "xf"))'.
-Ensure that the definition of output is correct.
 
-
-*Info*    Run complete for Point ID (35 1) on testbench [
-          CONSTANT_GM:constant_gm_tb:1 ].
+*Info*    Run complete for Point ID (8 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 
 

@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.274
-	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.274.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.274/1/HVSWITCH:hvswitch_tb:1
+	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.291
+	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA
 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
@@ -28,60 +28,55 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+*Info*    Run start for Point ID (12 1) on testbench [ SOA ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
 Setting var CAP_EXT = "0"
-Setting var DN1 = "3.3"
+Setting var DN1 = "0"
 Setting var DN2 = "0"
 Setting var IDC = "50m"
+Setting var START_DELAY = "200u"
 Setting var UP1 = "0"
-Setting var UP2 = "3.3"
-Setting var VDAC = "0.33"
+Setting var UP2 = "0"
+Setting var VDAC = "330m"
 Setting var VDAC2 = "1.65"
 Setting var VDD = "3.3"
-Setting var VDDHV = "40"
-Setting var VDDHV_PULSE = "0"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.274/1/HVSWITCH:hvswitch_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.274/1/HVSWITCH:hvswitch_tb:1
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (12 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.274/1/HVSWITCH:hvswitch_tb:1/netlist/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting Apr 11 05:23:18 2024
-End netlisting Apr 11 05:23:18 2024
+Begin Incremental Netlisting Apr 17 00:51:14 2024
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.279/1/HVSWITCH:hvswitch_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
 
-Netlisting Statistics:
-	Number of components:   64
+End netlisting Apr 17 00:51:14 2024
 
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-          for Point ID (1 1).
+*Info*    Running simulation on testbench [ SOA ] for Point ID (12 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.274/1/HVSWITCH:hvswitch_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -96,8 +91,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (1 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+*Info*    Run complete for Point ID (12 1) on testbench [ SOA ].
 
 
 

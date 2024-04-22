@@ -21,6 +21,7 @@ parameter real init_dn1 = 0;
 parameter real init_dn2 = 0;
 
 parameter real vref = 0;
+parameter real vref2 = 1.65;
 
 real u1,u2,d1,d2;
 real time_aux;
@@ -38,6 +39,7 @@ analog begin
 		time_aux = start_delay+phase_duration+pause_duration+phase_duration;
 		time_aux2 = 2*time_aux + phase_duration;
 		vdac = vref;
+		//vdac = 0;
 		dummy = 0;
 	end
 

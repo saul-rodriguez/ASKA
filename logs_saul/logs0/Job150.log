@@ -1,64 +1,98 @@
-\# Program start time:     UTC 2024.03.22 14:55:50.429
-\# Local time: EDT (UTC-04:00) 2024.03.22 10:55:50.429
-\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
-\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
-\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso30923 -mpshost phoenix -davinciService DaVinciService_30923_1711084774 -log /home/saul/projects/ASKA/logs_saul/logs0/Job150.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_30923 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 150
-\# Host name (type):	phoenix (x86_64)
-\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
-\# Linux /etc/issue:	\S
-\# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:4981 (1024x868)
-\# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			The X.Org Foundation
-\# Depth of Visual (Root):	24 (24)
-\# Number of Planes Used:	24
-\# X version:		11.0 (vendor release 12004000)
-\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
-\# 			current id 0x0, current max 0x1ffffa (2097146)
-\# Max data seg size:	     unlimited
-\# Max process size:	     unlimited
-\# Initial sbrk value:	        617 MB
-\# Available memory:	      7,095 MB
-\# System memory:	     23,948 MB
-\# Maximum memory size:	     23,541 MB
-\# Max mem available:	      7,305 MB
-\# Initial memory used:	        210 MB
-\#        process size:	      1,813 MB
-\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 6.00/6.00
-\# Qt version:		5.9.1
-\# Window Manager:	other
-\# User Name:		saul
-\o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		24670
-\o 
-\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
-\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
-\o                          Reproduced with permission.
-\o 
-\o This Cadence Design Systems program and online documentation are
-\o proprietary/confidential information and may be disclosed/used only
-\o as authorized in a license agreement controlling such use and disclosure.
-\o 
-\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
-\o Use/reproduction/disclosure is subject to restriction
-\o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:          6,900 MB at UTC 2024.03.22 14:56:02.672
-\# Memory report: Maximum memory size now 7,162 MB at UTC 2024.03.22 14:56:02.696
-\# Thread usage report: 11 active threads, active load 1.40 at UTC 2024.03.22 14:56:02.771
-\o Loading geView.cxt 
-\o Loading menuBuilder.cxt 
-\o Loading schView.cxt 
-\o Loading selectSv.cxt 
-\o Loading pvsui.cxt
-\o Loading wireEdit.cxt 
-\# Memory report: Maximum memory size now 6,996 MB at UTC 2024.03.22 14:56:22.222
-\o Loading pte2.cxt 
-\o Loading xlUI.cxt 
-\o Loading auCore.cxt 
-\o Loading vhdl.cxt 
-\o Loading seismic.cxt 
-\o Loading ci.cxt 
-\o Loading ams.cxt 
-\o Loading oasis.cxt 
-\o Loading analog.cxt 
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = PULSE_GENERATOR
+	Cell         = pulse_generator_tb
+	View         = config
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.69
+	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.69.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.69/1/PULSE_GENERATOR:pulse_generator_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
+	Project Dir  = /home/saul/projects/ASKA/Sim
+	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
+	File Encoding = 0
+
+
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (69 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var DN1 = "0"
+Setting var DN2 = "0"
+Setting var UP1 = "0"
+Setting var UP2 = "0"
+Setting var VDD3 = "3.3"
+Setting var VDD3_PULSE = "0"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
+Setting var temperature = "27"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.69/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.69/1/PULSE_GENERATOR:pulse_generator_tb:1
+
+
+*Info*    Creating Netlist for Point ID (69 1)
+
+generate netlist...
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Begin Incremental Netlisting Apr 25 02:17:03 2024
+End netlisting Apr 25 02:17:03 2024
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (69 1).
+
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.69/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (69 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.291
-	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA
+	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.466
+	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.466.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.466/1/HVSWITCH:hvswitch_tb:1
 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
@@ -28,45 +28,44 @@
 
 
 
-*Info*    Run start for Point ID (12 1) on testbench [ SOA ].
+*Info*    Run start for Point ID (9 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var CAP_EXT = "0"
+Setting var CAP_EXT = "10p"
 Setting var DN1 = "0"
 Setting var DN2 = "0"
 Setting var IDC = "50m"
-Setting var START_DELAY = "200u"
+Setting var START_DELAY = "20u"
 Setting var UP1 = "0"
 Setting var UP2 = "0"
 Setting var VDAC = "330m"
 Setting var VDAC2 = "1.65"
 Setting var VDD = "3.3"
-Setting var VDDHV = "0"
-Setting var VDDHV_PULSE = "40"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
+Setting var VDD_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA/netlist
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.466/1/HVSWITCH:hvswitch_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA
+          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.466/1/HVSWITCH:hvswitch_tb:1
 
 
-*Info*    Creating Netlist for Point ID (12 1)
+*Info*    Creating Netlist for Point ID (9 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 17 00:51:14 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.279/1/HVSWITCH:hvswitch_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting Apr 17 00:51:14 2024
+Begin Incremental Netlisting Apr 22 05:32:51 2024
+End netlisting Apr 22 05:32:51 2024
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -74,9 +73,10 @@ End netlisting Apr 17 00:51:14 2024
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ SOA ] for Point ID (12 1).
+*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
+          for Point ID (9 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.291/1/SOA/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.466/1/HVSWITCH:hvswitch_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -91,7 +91,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (12 1) on testbench [ SOA ].
+*Info*    Run complete for Point ID (9 1) on testbench [
+          HVSWITCH:hvswitch_tb:1 ].
 
 
 

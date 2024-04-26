@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = HVSWITCH
-	Cell         = hvswitch_tb
+	Library      = PULSE_GENERATOR
+	Cell         = pulse_generator_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.298
-	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.298.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.298/1/HVSWITCH:hvswitch_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.13
+	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.13.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.13/1/PULSE_GENERATOR:pulse_generator_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 	File Encoding = 0
 
 
@@ -28,57 +28,61 @@
 
 
 
-*Info*    Run start for Point ID (19 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+*Info*    Run start for Point ID (13 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var CAP_EXT = "0"
-Setting var DN1 = "0"
-Setting var DN2 = "0"
-Setting var IDC = "50m"
-Setting var START_DELAY = "200u"
-Setting var UP1 = "0"
-Setting var UP2 = "0"
-Setting var VDAC = "33m"
-Setting var VDAC2 = "1.65"
-Setting var VDD = "3.3"
-Setting var VDDHV = "0"
-Setting var VDDHV_PULSE = "40"
+Setting var VDD3 = "3.3"
+Setting var VDD3_PULSE = "0"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.298/1/HVSWITCH:hvswitch_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.13/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.298/1/HVSWITCH:hvswitch_tb:1
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.13/1/PULSE_GENERATOR:pulse_generator_tb:1
 
 
-*Info*    Creating Netlist for Point ID (19 1)
+*Info*    Creating Netlist for Point ID (13 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 17 01:12:20 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.279/1/HVSWITCH:hvswitch_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
+Begin Incremental Netlisting Apr 24 09:08:35 2024
+WARNING (ADE-6003): Terminal "EN", specified in the CDF termOrder, does not exist
+           in the cell-view "PULSE_GENERATOR" "pulse_generator" "schematic"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+End netlisting Apr 24 09:08:35 2024
 
-End netlisting Apr 17 01:12:20 2024
+Netlisting Statistics:
+	Number of components:    2
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 2
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-          for Point ID (19 1).
+*Info*    Running simulation on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.298/1/HVSWITCH:hvswitch_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.13/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -93,8 +97,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (19 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+*Info*    Run complete for Point ID (13 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 
 

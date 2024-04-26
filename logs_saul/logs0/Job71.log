@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = HVSWITCH
-	Cell         = hvswitch_tb
+	Library      = BIAS
+	Cell         = bias_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.438
-	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.438.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.438/1/HVSWITCH:hvswitch_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+	State Name   = corner_BIAS:bias_tb:1_none_Interactive.11
+	Results DB   = /home/saul/projects/ASKA/BIAS/bias_tb/adexl/results/data/Interactive.11.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.11/1/corner_BIAS:bias_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/BIAS/bias_tb/adexl
 	File Encoding = 0
 
 
@@ -28,60 +28,72 @@
 
 
 
-*Info*    Run start for Point ID (39 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+*Info*    Run start for Point ID (14 1) on testbench [
+          corner_BIAS:bias_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var CAP_EXT = "10p"
-Setting var DN1 = "0"
-Setting var DN2 = "3.3"
-Setting var IDC = "50m"
-Setting var START_DELAY = "20u"
-Setting var UP1 = "3.3"
-Setting var UP2 = "0"
-Setting var VDAC = "33m"
-Setting var VDAC2 = "1.65"
-Setting var VDD = "3.3"
-Setting var VDDHV = "40"
-Setting var VDDHV_PULSE = "0"
+Setting var VDD3 = "3.3"
+Setting var VDD3_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.438/1/HVSWITCH:hvswitch_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.11/1/corner_BIAS:bias_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.438/1/HVSWITCH:hvswitch_tb:1
+          /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.11/1/corner_BIAS:bias_tb:1
 
 
-*Info*    Creating Netlist for Point ID (39 1)
+*Info*    Creating Netlist for Point ID (14 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 19 11:52:10 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.400/1/HVSWITCH:hvswitch_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
+Initializing the control file using cp:
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.11/1/corner_BIAS:bias_tb:1/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Apr 23 08:47:37 2024
+WARNING (OSSHNL-325): Place master 'BIAS/bias/symbol' for instance 'I0' has been modified since the last
+extraction of its parent cellview 'BIAS/bias_tb/schematic'.
+Connectivity changes in the place master can cause issues in the generated
+netlist. To resolve such issues:
+-Reextract the parent cellview 'BIAS/bias_tb/schematic' and regenerate the netlist. To avoid
+multiple Check and Save operations, use the Check Hierarchy form or the
+schHiCheckHier SKILL function to do a hierarchical check and save on the top
+cell and then generate the netlist.
+-Ignore all connectivity checks for this place master by specifying it to the
+list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
+-Change the severity of modification errors by setting the environment variable
+simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
+and non-connectivity changes, thereby generating an incorrect netlist.
+To avoid reporting of non-connectivity changes after performing a hierarchical
+check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
+'t' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
+variable, set simSymbolModifiedAction to 'error' to receive reports of only
+connectivity issues during netlisting.
+The variable simSymbolModifiedAction controls the severity of this message,
+which can be 'ignore', 'warning', or 'error'.
 
-End netlisting Apr 19 11:52:10 2024
+End netlisting Apr 23 08:47:37 2024
 
 Netlisting Statistics:
-	Number of components:   21
+	Number of components:  157
 
-	Elapsed time:          1.0s (21.00/s)
+	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-          for Point ID (39 1).
+*Info*    Running simulation on testbench [ corner_BIAS:bias_tb:1 ]
+          for Point ID (14 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.438/1/HVSWITCH:hvswitch_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.11/1/corner_BIAS:bias_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -96,8 +108,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (39 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+*Info*    Run complete for Point ID (14 1) on testbench [
+          corner_BIAS:bias_tb:1 ].
 
 
 

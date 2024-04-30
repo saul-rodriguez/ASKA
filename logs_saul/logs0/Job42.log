@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = BIAS
-	Cell         = bias_tb
+	Library      = PULSE_GENERATOR
+	Cell         = pulse_generator_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = BIAS:bias_tb:1_none_Interactive.1
-	Results DB   = /home/saul/projects/ASKA/BIAS/bias_tb/adexl/results/data/Interactive.1.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.1/1/BIAS:bias_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data
+	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.111
+	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.111.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.111/1/PULSE_GENERATOR:pulse_generator_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/BIAS/bias_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 	File Encoding = 0
 
 
@@ -28,287 +28,74 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [ BIAS:bias_tb:1
-          ].
+*Info*    Run start for Point ID (20 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "3.3"
-Setting var VDD3_PULSE = "0"
+Setting var DN1 = "0"
+Setting var DN2 = "0"
+Setting var RES = "100"
+Setting var UP1 = "0"
+Setting var UP2 = "0"
+Setting var VDD3 = "0"
+Setting var VDD3_PULSE = "3.3"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.1/1/BIAS:bias_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.111/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.1/1/BIAS:bias_tb:1
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.111/1/PULSE_GENERATOR:pulse_generator_tb:1
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (20 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 23 03:53:35 2024
-Netlist Error: Cannot find any info on instance "INS<1:2>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "INS<1:2>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "I3" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "I157" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-End netlisting Apr 23 03:53:35 2024
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
+Begin Incremental Netlisting Apr 26 10:12:38 2024
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.98/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
 
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
+End netlisting Apr 26 10:12:38 2024
+
+Netlisting Statistics:
+	Number of components:   41
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (20 1).
+
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.111/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
 
 
+*Info*    Run complete for Point ID (20 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
-
-
-
-
-
-
-*Info*    Run start for Point ID (1 1) on testbench [ BIAS:bias_tb:1
-          ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var VDD3 = "3.3"
-Setting var VDD3_PULSE = "0"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.1/1/BIAS:bias_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/BIAS/bias_tb/adexl/results/data/Interactive.1/1/BIAS:bias_tb:1
-
-
-*Info*    Creating Netlist for Point ID (1 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 23 03:53:35 2024
-Netlist Error: Cannot find any info on instance "INS<1:2>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "INS<1:2>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IN<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "I3" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "IP<1:24>" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-Netlist Error: Cannot find any info on instance "I157" in cell-view "IO_CELLS_JIC3V" "APR04DPC" "cmos_sch"
-Netlist Error: Some cell-views used inside this block could not be netlisted in analog context
-End netlisting Apr 23 03:53:35 2024
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
 
 
 

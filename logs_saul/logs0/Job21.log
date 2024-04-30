@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.04.22 09:07:54.808
-\# Local time: EDT (UTC-04:00) 2024.04.22 05:07:54.808
+\# Program start time:     UTC 2024.04.29 12:00:14.984
+\# Local time: EDT (UTC-04:00) 2024.04.29 08:00:14.984
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso2439 -mpshost phoenix -davinciService DaVinciService_2439_1713771131 -log /home/saul/projects/ASKA/logs_saul/logs0/Job21.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_2439 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 21
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso557 -mpshost phoenix -davinciService DaVinciService_557_1714388932 -log /home/saul/projects/ASKA/logs_saul/logs0/Job21.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_557 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 21
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:2356 (1024x868)
+\# X display name (WxH):	:4320 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        619 MB
-\# Available memory:	     18,771 MB
+\# Initial sbrk value:	        622 MB
+\# Available memory:	     22,194 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,160 MB
-\# Max mem available:	     18,989 MB
+\# Maximum memory size:	     25,158 MB
+\# Max mem available:	     22,412 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		26821
+\# Process Id:		23281
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -67,20 +67,20 @@
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
+\# Memory report: using         331 MB, process size 2,056 MB at UTC 2024.04.29 12:00:16.005
 \o Loading adexl.cxt 
-\# Memory report: using         348 MB, process size 2,073 MB at UTC 2024.04.22 09:07:56.134
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading adexlDM.cxt 
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso2439, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso557, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 26821 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 23281 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [05:07:54.512425] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# [08:00:14.512361] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -111,6 +111,7 @@
 \o Loading msgHandler.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
+\# Memory report: using         472 MB, process size 2,204 MB at UTC 2024.04.29 12:00:18.055
 \o  --> Finished setting the required PDK definitions
 \o  --> Setting the recommended EDA tool defaults...
 \o  --> Finished setting the recommended EDA tool defaults
@@ -122,7 +123,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 26821' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 23281' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -131,21 +132,20 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = HVSWITCH
-\o 	Cell         = hvswitch_tb
+\o 	Library      = PULSE_GENERATOR
+\o 	Cell         = pulse_generator_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.463
-\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/1/HVSWITCH:hvswitch_tb:1
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.128
+\o 	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/1/PULSE_GENERATOR:pulse_generator_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
-\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.04.22 09:07:58.275
 \o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
 \o 
 \o *Info*    The auto suspension is disabled.
@@ -168,48 +168,44 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (6 5) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (13 1) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_EXT = "10p"
 \o Setting var DN1 = "0"
 \o Setting var DN2 = "0"
-\o Setting var IDC = "50m"
-\o Setting var START_DELAY = "200u"
+\o Setting var RES = "100"
 \o Setting var UP1 = "0"
 \o Setting var UP2 = "0"
-\o Setting var VDAC = "1.65"
-\o Setting var VDAC2 = "1.65"
-\o Setting var VDD = "0"
-\o Setting var VDDHV = "0"
-\o Setting var VDDHV_PULSE = "40"
-\o Setting var VDD_PULSE = "3.3"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD3_PULSE = "0"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/5/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/5/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/1/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (6 5)
+\o *Info*    Creating Netlist for Point ID (13 1)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [05:07:58.225896] Periodic Lic check successful
-\# [05:07:58.225897] Feature usage summary:
-\o Begin Incremental Netlisting Apr 22 05:07:58 2024
-\o End netlisting Apr 22 05:07:58 2024
+\# [08:00:19.104144] Periodic Lic check successful
+\# [08:00:19.104145] Feature usage summary:
+\o Begin Incremental Netlisting Apr 29 08:00:19 2024
+\o End netlisting Apr 29 08:00:19 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -217,10 +213,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (6 5).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 1).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/5/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -229,16 +225,19 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: using         600 MB, process size 2,339 MB at UTC 2024.04.22 09:07:59.039
 \o Loading paraplot.cxt 
+\# Available memory:         20,121 MB at UTC 2024.04.29 12:00:25.184
+\# Memory report: Maximum memory size now 20,744 MB at UTC 2024.04.29 12:00:25.184
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.29 12:00:25.184
+\# Memory report: using         623 MB, process size 2,412 MB at UTC 2024.04.29 12:00:25.184
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (6 5) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (13 1) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -249,8 +248,8 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (6 6) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (13 6) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -260,20 +259,20 @@
 \o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/6/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/6/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/6/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/6/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (6 6)
+\o *Info*    Creating Netlist for Point ID (13 6)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:08:01 2024
-\o End netlisting Apr 22 05:08:01 2024
+\o Begin Incremental Netlisting Apr 29 08:00:27 2024
+\o End netlisting Apr 29 08:00:27 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -281,10 +280,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (6 6).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 6).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/6/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/6/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -299,8 +298,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (6 6) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (13 6) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -311,29 +310,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (6 12) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (13 11) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/12/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/11/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/12/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/11/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (6 12)
+\o *Info*    Creating Netlist for Point ID (13 11)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:08:03 2024
-\o End netlisting Apr 22 05:08:03 2024
+\o Begin Incremental Netlisting Apr 29 08:00:38 2024
+\o End netlisting Apr 29 08:00:38 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -341,10 +342,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (6 12).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 11).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/12/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/11/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -353,17 +354,14 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Available memory:         16,871 MB at UTC 2024.04.22 09:08:05.117
-\# Memory report: Maximum memory size now 17,528 MB at UTC 2024.04.22 09:08:05.117
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.22 09:08:05.117
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (6 12) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (13 11) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -374,29 +372,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (6 18) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (13 16) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/18/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/16/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/18/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/16/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (6 18)
+\o *Info*    Creating Netlist for Point ID (13 16)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:08:05 2024
-\o End netlisting Apr 22 05:08:05 2024
+\o Begin Incremental Netlisting Apr 29 08:00:47 2024
+\o End netlisting Apr 29 08:00:47 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -404,10 +404,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (6 18).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 16).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/18/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/16/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -422,8 +422,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (6 18) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (13 16) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -434,29 +434,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (6 24) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (13 21) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/24/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/21/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/24/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/21/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (6 24)
+\o *Info*    Creating Netlist for Point ID (13 21)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:08:07 2024
-\o End netlisting Apr 22 05:08:07 2024
+\o Begin Incremental Netlisting Apr 29 08:00:59 2024
+\o End netlisting Apr 29 08:00:59 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -464,10 +466,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (6 24).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 21).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/24/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/21/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -476,14 +478,15 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 20,330 MB at UTC 2024.04.29 12:01:05.196
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (6 24) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (13 21) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -494,29 +497,31 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (6 30) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (13 26) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/30/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/26/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/30/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/26/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (6 30)
+\o *Info*    Creating Netlist for Point ID (13 26)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:08:10 2024
-\o End netlisting Apr 22 05:08:10 2024
+\o Begin Incremental Netlisting Apr 29 08:01:08 2024
+\o End netlisting Apr 29 08:01:08 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -524,10 +529,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (6 30).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 26).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.463/30/HVSWITCH:hvswitch_tb:1/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/26/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -541,10 +546,72 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\# Memory report: using         706 MB, process size 2,495 MB at UTC 2024.04.22 09:08:12.383
+\# Memory report: using         738 MB, process size 2,527 MB at UTC 2024.04.29 12:01:21.282
 \o 
-\o *Info*    Run complete for Point ID (6 30) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (13 26) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 31) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/31/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/31/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 29 08:01:21 2024
+\o End netlisting Apr 29 08:01:21 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (13 31).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.128/31/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 31) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -557,17 +624,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = HVSWITCH
-\o 	Cell         = hvswitch_tb
+\o 	Library      = PULSE_GENERATOR
+\o 	Cell         = pulse_generator_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = SOA_HVSWITCH:hvswitch_tb:1:1_state_Interactive.464
-\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/1/SOA
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.129
+\o 	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/1/PULSE_GENERATOR:pulse_generator_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -579,112 +646,40 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (7 4) on testbench [ SOA ].
+\o *Info*    Run start for Point ID (14 2) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_EXT = "10p"
 \o Setting var DN1 = "0"
 \o Setting var DN2 = "0"
-\o Setting var IDC = "50m"
-\o Setting var START_DELAY = "200u"
+\o Setting var RES = "100"
 \o Setting var UP1 = "0"
 \o Setting var UP2 = "0"
-\o Setting var VDAC = "1.65"
-\o Setting var VDAC2 = "1.65"
-\o Setting var VDD = "0"
-\o Setting var VDDHV = "0"
-\o Setting var VDDHV_PULSE = "40"
-\o Setting var VDD_PULSE = "3.3"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD3_PULSE = "0"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
 \o Setting var temperature = "85"
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/4/SOA/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/2/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/4/SOA
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/2/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (7 4)
+\o *Info*    Creating Netlist for Point ID (14 2)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:12:00 2024
-\o WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
-\o compared to the last session in the current run directory. The netlist(s)
-\o generated in the last netlisting session cannot be reused for incremental
-\o netlisting. Therefore re-netlisting the design.
-\o 
-\o Loading json.cxt 
-\o End netlisting Apr 22 05:12:00 2024
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   73
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ SOA ] for Point ID (7 4).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/4/SOA/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 16,422 MB at UTC 2024.04.22 09:12:05.185
-\# Available memory:         15,030 MB at UTC 2024.04.22 09:12:15.188
-\# Memory report: Maximum memory size now 15,741 MB at UTC 2024.04.22 09:12:15.188
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (7 4) on testbench [ SOA ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (7 10) on testbench [ SOA ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/10/SOA/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/10/SOA
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (7 10)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:13:32 2024
-\o End netlisting Apr 22 05:13:32 2024
+\o Begin Incremental Netlisting Apr 29 08:03:05 2024
+\o End netlisting Apr 29 08:03:05 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -692,9 +687,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ SOA ] for Point ID (7 10).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (14 2).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/10/SOA/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/2/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -703,15 +699,20 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 16,208 MB at UTC 2024.04.22 09:13:35.185
-\# Memory report: Maximum memory size now 15,496 MB at UTC 2024.04.22 09:13:45.184
+\# Memory report: Maximum memory size now 19,729 MB at UTC 2024.04.29 12:03:15.185
+\# Memory report: Maximum memory size now 19,334 MB at UTC 2024.04.29 12:03:35.192
+\# Available memory:         18,001 MB at UTC 2024.04.29 12:03:45.184
+\# Memory report: Maximum memory size now 18,755 MB at UTC 2024.04.29 12:03:45.184
+\# Memory report: Maximum memory size now 18,378 MB at UTC 2024.04.29 12:09:35.184
+\# Memory report: Maximum memory size now 18,016 MB at UTC 2024.04.29 12:17:05.184
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (7 10) on testbench [ SOA ].
+\o *Info*    Run complete for Point ID (14 2) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -722,184 +723,8 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (7 14) on testbench [ SOA ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/14/SOA/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/14/SOA
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (7 14)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:15:00 2024
-\o End netlisting Apr 22 05:15:00 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ SOA ] for Point ID (7 14).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/14/SOA/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 16,204 MB at UTC 2024.04.22 09:15:05.184
-\# Memory report: Maximum memory size now 15,696 MB at UTC 2024.04.22 09:15:15.185
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (7 14) on testbench [ SOA ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (7 20) on testbench [ SOA ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/20/SOA/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/20/SOA
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (7 20)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:16:30 2024
-\o End netlisting Apr 22 05:16:30 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ SOA ] for Point ID (7 20).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/20/SOA/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: using         813 MB, process size 2,602 MB at UTC 2024.04.22 09:16:31.100
-\# Memory report: Maximum memory size now 16,021 MB at UTC 2024.04.22 09:16:35.184
-\# Memory report: Maximum memory size now 15,535 MB at UTC 2024.04.22 09:16:45.184
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (7 20) on testbench [ SOA ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (7 24) on testbench [ SOA ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/24/SOA/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/24/SOA
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (7 24)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:17:58 2024
-\o End netlisting Apr 22 05:17:58 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ SOA ] for Point ID (7 24).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/24/SOA/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 16,059 MB at UTC 2024.04.22 09:19:25.184
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (7 24) on testbench [ SOA ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (7 29) on testbench [ SOA ].
+\o *Info*    Run start for Point ID (14 9) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -909,20 +734,20 @@
 \o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/29/SOA/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/9/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/29/SOA
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/9/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (7 29)
+\o *Info*    Creating Netlist for Point ID (14 9)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:19:26 2024
-\o End netlisting Apr 22 05:19:26 2024
+\o Begin Incremental Netlisting Apr 29 08:17:14 2024
+\o End netlisting Apr 29 08:17:14 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -930,9 +755,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ SOA ] for Point ID (7 29).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (14 9).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/29/SOA/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/9/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -941,18 +767,16 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 15,492 MB at UTC 2024.04.22 09:19:35.185
+\# Memory report: Maximum memory size now 17,652 MB at UTC 2024.04.29 12:19:05.184
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\# Memory report: Maximum memory size now 16,229 MB at UTC 2024.04.22 09:20:55.104
+\# Memory report: using         858 MB, process size 2,647 MB at UTC 2024.04.29 12:31:23.239
 \o 
-\o *Info*    Run complete for Point ID (7 29) on testbench [ SOA ].
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (14 9) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -960,7 +784,76 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (7 32) on testbench [ SOA ].
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 15) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/15/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/15/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 29 08:31:23 2024
+\o End netlisting Apr 29 08:31:23 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (14 15).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/15/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,281 MB at UTC 2024.04.29 12:31:55.184
+\# Available memory:         16,285 MB at UTC 2024.04.29 12:32:15.184
+\# Memory report: Maximum memory size now 16,935 MB at UTC 2024.04.29 12:44:45.184
+\# Memory report: Maximum memory size now 17,338 MB at UTC 2024.04.29 12:45:15.193
+\# Memory report: Maximum memory size now 16,851 MB at UTC 2024.04.29 12:45:45.184
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 15) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 20) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -970,20 +863,20 @@
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/32/SOA/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/20/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/32/SOA
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/20/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (7 32)
+\o *Info*    Creating Netlist for Point ID (14 20)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:20:55 2024
-\o End netlisting Apr 22 05:20:55 2024
+\o Begin Incremental Netlisting Apr 29 08:46:32 2024
+\o End netlisting Apr 29 08:46:32 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -991,9 +884,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ SOA ] for Point ID (7 32).
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (14 20).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.464/32/SOA/psf.
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/20/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1002,22 +896,210 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 15,846 MB at UTC 2024.04.22 09:21:05.184
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (7 32) on testbench [ SOA ].
+\o *Info*    Run complete for Point ID (14 20) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 16,748 MB at UTC 2024.04.22 09:22:25.185
-\# Memory report: Maximum memory size now 15,618 MB at UTC 2024.04.22 09:22:35.184
-\o Job 21 timed out after no activity in 300 seconds.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 24) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/24/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/24/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 29 09:01:42 2024
+\o End netlisting Apr 29 09:01:42 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (14 24).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/24/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,514 MB at UTC 2024.04.29 13:03:45.184
+\# Memory report: Maximum memory size now 16,184 MB at UTC 2024.04.29 13:14:35.184
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 24) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 28) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/28/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/28/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 29 09:15:39 2024
+\o End netlisting Apr 29 09:15:39 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (14 28).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/28/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,587 MB at UTC 2024.04.29 13:26:35.184
+\# Memory report: Maximum memory size now 16,241 MB at UTC 2024.04.29 13:27:15.185
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 28) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 33) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/33/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/33/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 29 09:29:40 2024
+\o End netlisting Apr 29 09:29:40 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (14 33).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.129/33/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16,749 MB at UTC 2024.04.29 13:31:15.184
+\# Memory report: Maximum memory size now 17,280 MB at UTC 2024.04.29 13:35:45.184
+\# Memory report: Maximum memory size now 18,217 MB at UTC 2024.04.29 13:36:15.184
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 33) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         17,924 MB at UTC 2024.04.29 13:36:45.185
+\# Memory report: Maximum memory size now 18,870 MB at UTC 2024.04.29 13:36:45.185
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.

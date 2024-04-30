@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.04.22 09:34:00.983
-\# Local time: EDT (UTC-04:00) 2024.04.22 05:34:00.983
+\# Program start time:     UTC 2024.04.30 05:24:18.799
+\# Local time: EDT (UTC-04:00) 2024.04.30 01:24:18.799
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso2439 -mpshost phoenix -davinciService DaVinciService_2439_1713771131 -log /home/saul/projects/ASKA/logs_saul/logs0/Job29.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_2439 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 29
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso557 -mpshost phoenix -davinciService DaVinciService_557_1714388932 -log /home/saul/projects/ASKA/logs_saul/logs0/Job29.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_557 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 29
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:6074 (1024x868)
+\# X display name (WxH):	:5921 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        631 MB
-\# Available memory:	     17,617 MB
+\# Initial sbrk value:	        640 MB
+\# Available memory:	     19,003 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,148 MB
-\# Max mem available:	     17,835 MB
+\# Maximum memory size:	     25,140 MB
+\# Max mem available:	     19,222 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		7458
+\# Process Id:		15864
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -67,20 +67,20 @@
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
-\# Memory report: using         330 MB, process size 2,018 MB at UTC 2024.04.22 09:34:02.077
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading adexlDM.cxt 
 \o Loading cpf.cxt 
+\# Memory report: using         352 MB, process size 2,077 MB at UTC 2024.04.30 05:24:20.091
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso2439, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso557, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 7458 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 15864 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [05:34:00.512353] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# [01:24:18.512385] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -102,7 +102,6 @@
 \o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
 \o Use model setup from PDK...
 \o Loading spectrei.cxt 
-\# Memory report: using         440 MB, process size 2,172 MB at UTC 2024.04.22 09:34:03.243
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
 \o Loading vdsil.cxt 
@@ -123,26 +122,27 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 7458' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 15864' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
+\# Memory report: using         482 MB, process size 2,221 MB at UTC 2024.04.30 05:24:22.000
 \o Loading hdlPkg.cxt 
 \o 
 \o 
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = HVSWITCH
-\o 	Cell         = hvswitch_tb
+\o 	Library      = PULSE_GENERATOR
+\o 	Cell         = pulse_generator_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = Montecarlo_HVSWITCH:hvswitch_tb:1:2_state_MonteCarlo.0
-\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.0.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.0/1/Montecarlo
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.130
+\o 	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/1/PULSE_GENERATOR:pulse_generator_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -168,78 +168,56 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (10 181) on testbench [ Montecarlo ].
+\o *Info*    Run start for Point ID (15 2) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_EXT = "10p"
 \o Setting var DN1 = "0"
 \o Setting var DN2 = "0"
-\o Setting var IDC = "50m"
-\o Setting var START_DELAY = "20u"
+\o Setting var RES = "100"
 \o Setting var UP1 = "0"
 \o Setting var UP2 = "0"
-\o Setting var VDAC = "330m"
-\o Setting var VDAC2 = "1.65"
-\o Setting var VDD = "3.3"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD3_PULSE = "0"
 \o Setting var VDDHV = "40"
 \o Setting var VDDHV_PULSE = "0"
-\o Setting var VDD_PULSE = "0"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.0/181/Montecarlo/groupRunDataDir/netlist
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/2/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.0/181/Montecarlo/groupRunDataDir
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/2/PULSE_GENERATOR:pulse_generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (10 181)
+\o *Info*    Creating Netlist for Point ID (15 2)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [05:34:04.402352] periodic Lic check successful
-\# [05:34:04.402355] Feature usage summary:
-\o Initializing the control file using cp:
-\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.0/181/Montecarlo/groupRunDataDir/netlist/control
-\o Copying Spectre source file 'spectre.inp'
-\o Copying Spectre command file 'spectre.sim'
-\o Begin Incremental Netlisting Apr 22 05:34:04 2024
-\o Loading json.cxt 
-\o End netlisting Apr 22 05:34:04 2024
-\# Memory report: using         580 MB, process size 2,319 MB at UTC 2024.04.22 09:34:05.098
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   73
-\o 
-\o 	Elapsed time:          1.0s (73.00/s)
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Montecarlo ] for Point ID
-\o           (10 181).
-\o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/MonteCarlo.0/181/Montecarlo/groupRunDataDir/psf.
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 22 05:34:05 2024
-\o End netlisting Apr 22 05:34:05 2024
+\# [01:24:22.208281] Periodic Lic check successful
+\# [01:24:22.208282] Feature usage summary:
+\o Begin Incremental Netlisting Apr 30 01:24:22 2024
+\o End netlisting Apr 30 01:24:22 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: using         602 MB, process size 2,340 MB at UTC 2024.04.30 05:24:23.019
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (15 2).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/2/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -249,632 +227,395 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 181) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 182) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 183) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         15,279 MB at UTC 2024.04.22 09:34:11.200
-\# Memory report: Maximum memory size now 15,961 MB at UTC 2024.04.22 09:34:11.201
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.22 09:34:11.201
-\# Memory report: using         682 MB, process size 2,472 MB at UTC 2024.04.22 09:34:11.201
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 184) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 185) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 186) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 187) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 188) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 189) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 190) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 191) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 15,482 MB at UTC 2024.04.22 09:34:21.160
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 192) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 193) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         811 MB, process size 2,600 MB at UTC 2024.04.22 09:34:23.324
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 194) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 195) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 196) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 197) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 198) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 199) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 200) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 15,043 MB at UTC 2024.04.22 09:34:31.414
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 201) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 202) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 203) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         920 MB, process size 2,709 MB at UTC 2024.04.22 09:34:34.812
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 204) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 205) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 206) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 207) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 208) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         13,713 MB at UTC 2024.04.22 09:34:41.193
-\# Memory report: Maximum memory size now 14,703 MB at UTC 2024.04.22 09:34:41.193
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 209) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 210) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,026 MB, process size 2,815 MB at UTC 2024.04.22 09:34:44.582
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 211) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 212) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 213) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 214) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 215) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 216) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 14,341 MB at UTC 2024.04.22 09:34:51.185
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 217) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 218) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 219) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,129 MB, process size 2,918 MB at UTC 2024.04.22 09:34:55.187
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 220) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 221) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 222) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 223) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 224) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 13,943 MB at UTC 2024.04.22 09:35:01.328
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 225) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 226) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 227) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,247 MB, process size 3,036 MB at UTC 2024.04.22 09:35:05.230
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 228) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 229) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 230) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 231) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 232) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 233) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 234) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 235) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 236) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,353 MB, process size 3,142 MB at UTC 2024.04.22 09:35:17.190
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 237) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 238) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (10 239) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\# Available memory:         17,089 MB at UTC 2024.04.30 05:24:29.184
+\# Memory report: Maximum memory size now 17,712 MB at UTC 2024.04.30 05:24:29.184
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.30 05:24:29.184
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (10 240) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (15 2) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Monte Carlo Simulation completed successfully...
-\# Memory report: Maximum memory size now 14,291 MB at UTC 2024.04.22 09:35:31.184
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 7) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/7/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/7/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 7)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 30 01:24:30 2024
+\o End netlisting Apr 30 01:24:30 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (15 7).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/7/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 7) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 11) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/11/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/11/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 30 01:24:42 2024
+\o End netlisting Apr 30 01:24:42 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (15 11).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/11/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 11) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 17) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/17/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/17/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 30 01:24:53 2024
+\o End netlisting Apr 30 01:24:53 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (15 17).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/17/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 17,298 MB at UTC 2024.04.30 05:24:59.184
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: using         703 MB, process size 2,492 MB at UTC 2024.04.30 05:25:02.340
+\o 
+\o *Info*    Run complete for Point ID (15 17) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 21) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/21/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/21/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 30 01:25:02 2024
+\o End netlisting Apr 30 01:25:02 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (15 21).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/21/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 21) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 26) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/26/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/26/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 30 01:25:11 2024
+\o End netlisting Apr 30 01:25:12 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (15 26).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/26/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 26) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 31) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/31/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/31/PULSE_GENERATOR:pulse_generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 30 01:25:23 2024
+\o End netlisting Apr 30 01:25:23 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (15 31).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.130/31/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 31) on testbench [
+\o           PULSE_GENERATOR:pulse_generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \# Lic Summary:
-\# [05:40:30.212984] Cdslmd servers:3000@lic08.ug.kth.se
-\# [05:40:30.213121] Feature usage summary:
-\# Memory report: on exit          1,398 MB, process size 3,187 MB at UTC 2024.04.22 09:40:30.213
-\# Memory report: peak usage       1,398 MB, process size 3,187 MB
+\# [01:26:23.458659] Cdslmd servers:3000@lic08.ug.kth.se
+\# [01:26:23.458672] Feature usage summary:
+\# Memory report: on exit            754 MB, process size 2,543 MB at UTC 2024.04.30 05:26:23.983
+\# Memory report: peak usage         754 MB, process size 2,543 MB

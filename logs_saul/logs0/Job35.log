@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = HVSWITCH
-	Cell         = hvswitch_tb
+	Library      = CURRENT_SOURCE
+	Cell         = current_source_gm_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.296
-	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.296.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.296/1/HVSWITCH:hvswitch_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+	State Name   = Corner_Sim_none_Interactive.113
+	Results DB   = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim
+	Results Loc  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl
 	File Encoding = 0
 
 
@@ -28,60 +28,58 @@
 
 
 
-*Info*    Run start for Point ID (17 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+*Info*    Run start for Point ID (18 1) on testbench [ Corner_Sim ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var CAP_EXT = "0"
-Setting var DN1 = "0"
-Setting var DN2 = "0"
-Setting var IDC = "50m"
-Setting var START_DELAY = "200u"
-Setting var UP1 = "0"
-Setting var UP2 = "0"
-Setting var VDAC = "330m"
-Setting var VDAC2 = "1.65"
+Setting var ENABLE = "3.3"
+Setting var ENABLE_STEP = "-3.3"
+Setting var IBIAS = "1u"
+Setting var IBIAS_PULSE = "0"
 Setting var VDD = "3.3"
-Setting var VDDHV = "0"
-Setting var VDDHV_PULSE = "40"
+Setting var VDDH = "40"
+Setting var VDDH_STEP = "0"
+Setting var VDD_AC = "0"
+Setting var VDD_STEP = "0"
+Setting var VIN_AC = "1"
+Setting var VIN_DC = "0"
+Setting var VIN_STEP = "1650m"
+Setting var VSWITCH = "0"
+Setting var VSWITCH_STEP = "18"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.296/1/HVSWITCH:hvswitch_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.296/1/HVSWITCH:hvswitch_tb:1
+          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim
 
 
-*Info*    Creating Netlist for Point ID (17 1)
+*Info*    Creating Netlist for Point ID (18 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 17 01:09:53 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.279/1/HVSWITCH:hvswitch_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Apr 29 03:14:19 2024
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.96/1/Corner_Sim/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Apr 17 01:09:53 2024
+End netlisting Apr 29 03:14:19 2024
 
-Netlisting Statistics:
-	Number of components:   21
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-          for Point ID (17 1).
+*Info*    Running simulation on testbench [ Corner_Sim ] for Point ID
+          (18 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.296/1/HVSWITCH:hvswitch_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -95,9 +93,35 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'PSRR' failed for point:'1' test:'Corner_Sim'
+	Expression:'(db(getData("/V0" ?result "xf")) - db(getData("/V3" ?result "xf")))'
+	because of the following error(s)
+	*Error* difference: can't handle (nil - nil).
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (17 1) on testbench [
-          HVSWITCH:hvswitch_tb:1 ].
+ERROR (ADEXL-2709): Evaluation of output 'DC_GAIN' returned 'nil' for point:'1' test:'Corner_Sim'
+	Expression:'deriv(IS("/I0/OUT"))'.
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+ERROR (ADEXL-2709): Evaluation of output 'I/V /V0; xf dB20(I/V)' returned 'nil' for point:'1' test:'Corner_Sim'
+	Expression:'db(getData("/V0" ?result "xf"))'.
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.113/1/Corner_Sim. Use results() for a list of available results.
+ERROR (ADEXL-2709): Evaluation of output 'I/V /V3; xf dB20(I/V)' returned 'nil' for point:'1' test:'Corner_Sim'
+	Expression:'db(getData("/V3" ?result "xf"))'.
+Ensure that the definition of output is correct.
+
+
+*Info*    Run complete for Point ID (18 1) on testbench [ Corner_Sim
+          ].
 
 
 

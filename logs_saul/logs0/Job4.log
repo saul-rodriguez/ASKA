@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = POR
-	Cell         = por_tb
+	Library      = PULSE_GENERATOR
+	Cell         = pulse_generator_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = POR:por_tb:1_none_Interactive.115
-	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.115.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.115/1/POR:por_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
+	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.145
+	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.145.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.145/1/PULSE_GENERATOR:pulse_generator_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 	File Encoding = 0
 
 
@@ -28,25 +28,31 @@
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [ POR:por_tb:1 ].
+*Info*    Run start for Point ID (1 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "3"
-Setting var VDD_BOR = "-0.3"
-Setting var VDD_PULSE = "0"
-Setting var VDD_RT = "100u"
+Setting var DN1 = "0"
+Setting var DN2 = "0"
+Setting var RES = "100"
+Setting var UP1 = "0"
+Setting var UP2 = "0"
+Setting var VDD3 = "0"
+Setting var VDD3_PULSE = "3.3"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.115/1/POR:por_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.145/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.115/1/POR:por_tb:1
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.145/1/PULSE_GENERATOR:pulse_generator_tb:1
 
 
 *Info*    Creating Netlist for Point ID (1 1)
@@ -54,61 +60,62 @@ Setting temp(T) = 27
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting May 14 12:32:24 2024
-ERROR (OSSHNL-109): The cellview 'POR/por1/schematic' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
+Begin Incremental Netlisting May 16 02:44:43 2024
+WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
+directory. Netlist(s) from last session cannot be reused for incremental
+netlisting. Therefore, re-netlisting the design.
 
-End netlisting May 14 12:32:24 2024
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
+End netlisting May 16 02:44:44 2024
 
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
+Netlisting Statistics:
+	Number of components:  181
+
+	Elapsed time:          1.0s (181.00/s)
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (1 1).
+
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.145/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+        to view the simulation run log.
+reading simulation data...
+      ...successful.
+
+*Error*   Error ID  = 5011
+*Error*   Error Msg = Simulator failed to complete the simulation.
+
+          Error found by spectre at time = 603.654 us during
+          transient analysis `tran'.
+Error found by spectre at time =
+          603.654 us during transient analysis `tran'.
+ERROR
+          (SPECTRE-16192): No convergence achieved with the minimum
+          time step specified.  Last acceptable solution computed at
+          600.003 us.
 
 
 
 
 
+*Info*    Client has finished evaluating ... 
 
 
+*Info*    Run complete for Point ID (1 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
-
-*Info*    Run start for Point ID (1 1) on testbench [ POR:por_tb:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var VDD3 = "3"
-Setting var VDD_BOR = "-0.3"
-Setting var VDD_PULSE = "0"
-Setting var VDD_RT = "100u"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.115/1/POR:por_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.115/1/POR:por_tb:1
-
-
-*Info*    Creating Netlist for Point ID (1 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting May 14 12:32:24 2024
-ERROR (OSSHNL-109): The cellview 'POR/por1/schematic' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
-
-End netlisting May 14 12:32:24 2024
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
 
 
 

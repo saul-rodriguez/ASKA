@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = POR
-	Cell         = por_tb
+	Library      = PULSE_GENERATOR
+	Cell         = pulse_generator_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = POR:por_tb:1_none_Interactive.74
-	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.74.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.74/1/POR:por_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
+	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.217
+	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.217.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.217/1/PULSE_GENERATOR:pulse_generator_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 	File Encoding = 0
 
 
@@ -28,40 +28,71 @@
 
 
 
-*Info*    Run start for Point ID (74 1) on testbench [ POR:por_tb:1 ].
+*Info*    Run start for Point ID (73 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
+Setting var DN1 = "0"
+Setting var DN2 = "0"
+Setting var RES = "100"
+Setting var UP1 = "0"
+Setting var UP2 = "0"
 Setting var VDD3 = "3.3"
-Setting var VDD_BOR = "-0.3"
-Setting var VDD_PULSE = "0"
-Setting var VDD_RT = "100u"
+Setting var VDD3_PULSE = "0"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.74/1/POR:por_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.217/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.74/1/POR:por_tb:1
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.217/1/PULSE_GENERATOR:pulse_generator_tb:1
 
 
-*Info*    Creating Netlist for Point ID (74 1)
+*Info*    Creating Netlist for Point ID (73 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting May 14 09:23:37 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.0/1/POR:por_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting May 16 07:54:44 2024
+WARNING (OSSHNL-325): Place master 'CURRENT_SOURCE/current_source_gm_10/symbol' for instance 'I1' has been modified since the last
+extraction of its parent cellview 'PULSE_GENERATOR/pulse_generator/schematic'.
+Connectivity changes in the place master can cause issues in the generated
+netlist. To resolve such issues:
+-Reextract the parent cellview 'PULSE_GENERATOR/pulse_generator/schematic' and regenerate the netlist. To avoid
+multiple Check and Save operations, use the Check Hierarchy form or the
+schHiCheckHier SKILL function to do a hierarchical check and save on the top
+cell and then generate the netlist.
+-Ignore all connectivity checks for this place master by specifying it to the
+list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
+-Change the severity of modification errors by setting the environment variable
+simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
+and non-connectivity changes, thereby generating an incorrect netlist.
+To avoid reporting of non-connectivity changes after performing a hierarchical
+check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
+'t' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
+variable, set simSymbolModifiedAction to 'error' to receive reports of only
+connectivity issues during netlisting.
+The variable simSymbolModifiedAction controls the severity of this message,
+which can be 'ignore', 'warning', or 'error'.
+
+WARNING (OSSHNL-159): The primitive, 'CURRENT_SOURCE/current_source_gm_10/veriloga', has been updated since the last netlisting session
+in this current run directory. Therefore, re-netlisting all cell views where
+this primitive is instantiated.
+
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.144/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting May 14 09:23:37 2024
+End netlisting May 16 07:54:44 2024
 
 Netlisting Statistics:
-	Number of components:   16
+	Number of components:    2
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -69,10 +100,10 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-          ID (74 1).
+*Info*    Running simulation on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (73 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.74/1/POR:por_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.217/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -87,8 +118,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (74 1) on testbench [
-          POR:por_tb:1 ].
+*Info*    Run complete for Point ID (73 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 
 

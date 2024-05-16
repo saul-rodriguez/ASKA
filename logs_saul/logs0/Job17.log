@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = POR
-	Cell         = por_tb
+	Library      = PULSE_GENERATOR
+	Cell         = pulse_generator_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = POR:por_tb:1_none_Interactive.161
-	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.161.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
+	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.151
+	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151/1/PULSE_GENERATOR:pulse_generator_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
 	File Encoding = 0
 
 
@@ -28,48 +28,51 @@
 
 
 
-*Info*    Run start for Point ID (6 1) on testbench [ POR:por_tb:1 ].
+*Info*    Run start for Point ID (7 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "3.3"
-Setting var VDD_BOR = "-0.4"
-Setting var VDD_PULSE = "0"
-Setting var VDD_RT = "100u"
+Setting var DN1 = "0"
+Setting var DN2 = "0"
+Setting var RES = "100"
+Setting var UP1 = "0"
+Setting var UP2 = "0"
+Setting var VDD3 = "0"
+Setting var VDD3_PULSE = "3.3"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151/1/PULSE_GENERATOR:pulse_generator_tb:1
 
 
-*Info*    Creating Netlist for Point ID (6 1)
+*Info*    Creating Netlist for Point ID (7 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting May 15 04:23:51 2024
-End netlisting May 15 04:23:51 2024
+Begin Incremental Netlisting May 16 03:42:58 2024
+End netlisting May 16 03:42:58 2024
 
-Netlisting Statistics:
-	Number of components:    6
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-          ID (6 1).
+*Info*    Running simulation on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (7 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -78,14 +81,117 @@ simulate...
 To view the simulator output, right-click on the test name, result 
 name, or any value in the "Results" tab of the Outputs section and 
 choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
+INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+        to view the simulation run log.
+
+*Error*   Error ID  = 5011
+*Error*   Error Msg = Simulator failed to complete the simulation.
+
+          Error found by spectre during AHDL read-in.
+Error found by
+          spectre during AHDL read-in.
+ERROR (VACOMP-2143):
+          "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 64: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an expression.
+ERROR (VACOMP-2143): "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 66: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an expression.
+ERROR (VACOMP-2143): "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 69: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an expression.
+ERROR (VACOMP-2143): "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 71: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an
+           expression.
+
+
+
+
+
+
+
+
+
+
+*Info*    Run start for Point ID (7 1) on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var DN1 = "0"
+Setting var DN2 = "0"
+Setting var RES = "100"
+Setting var UP1 = "0"
+Setting var UP2 = "0"
+Setting var VDD3 = "0"
+Setting var VDD3_PULSE = "3.3"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
+Setting var temperature = "27"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151/1/PULSE_GENERATOR:pulse_generator_tb:1
+
+
+*Info*    Creating Netlist for Point ID (7 1)
+
+generate netlist...
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Begin Incremental Netlisting May 16 03:42:58 2024
+End netlisting May 16 03:42:58 2024
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
-*Info*    Client has finished evaluating ... 
+compose simulator input file...
+      ...successful.
 
+*Info*    Running simulation on testbench [
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (7 1).
 
-*Info*    Run complete for Point ID (6 1) on testbench [ POR:por_tb:1
-          ].
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.151/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+        to view the simulation run log.
+
+*Error*   Error ID  = 5011
+*Error*   Error Msg = Simulator failed to complete the simulation.
+
+          Error found by spectre during AHDL read-in.
+Error found by
+          spectre during AHDL read-in.
+ERROR (VACOMP-2143):
+          "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 64: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an expression.
+ERROR (VACOMP-2143): "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 66: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an expression.
+ERROR (VACOMP-2143): "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 69: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an expression.
+ERROR (VACOMP-2143): "/home/saul/projects/ASKA/HVSWITCH/hvswitch5/veriloga/veriloga.va", line 71: Encountered the `transition' analog operator embedde
+d in a conditionally-executed statement or in an expression. The software does not support this use. Do not use the `transition' analog operator in a 
+conditionally-executed statement or in an
+           expression.
 
 
 

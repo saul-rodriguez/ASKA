@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = PULSE_GENERATOR
-	Cell         = pulse_generator_tb
+	Library      = POR
+	Cell         = por_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.123
-	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.123.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.123/1/PULSE_GENERATOR:pulse_generator_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
+	State Name   = POR:por_tb:1_none_Interactive.161
+	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.161.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
 	File Encoding = 0
 
 
@@ -28,43 +28,37 @@
 
 
 
-*Info*    Run start for Point ID (8 1) on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ].
+*Info*    Run start for Point ID (6 1) on testbench [ POR:por_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var DN1 = "0"
-Setting var DN2 = "0"
-Setting var RES = "100"
-Setting var UP1 = "0"
-Setting var UP2 = "0"
 Setting var VDD3 = "3.3"
-Setting var VDD3_PULSE = "0"
-Setting var VDDHV = "40"
-Setting var VDDHV_PULSE = "0"
+Setting var VDD_BOR = "-0.4"
+Setting var VDD_PULSE = "0"
+Setting var VDD_RT = "100u"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.123/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.123/1/PULSE_GENERATOR:pulse_generator_tb:1
+          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1
 
 
-*Info*    Creating Netlist for Point ID (8 1)
+*Info*    Creating Netlist for Point ID (6 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 29 07:54:03 2024
-End netlisting Apr 29 07:54:03 2024
+Begin Incremental Netlisting May 15 04:23:51 2024
+End netlisting May 15 04:23:51 2024
 
 Netlisting Statistics:
-	Number of components:    3
+	Number of components:    6
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -72,10 +66,10 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (8 1).
+*Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
+          ID (6 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.123/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.161/1/POR:por_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -90,8 +84,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (8 1) on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ].
+*Info*    Run complete for Point ID (6 1) on testbench [ POR:por_tb:1
+          ].
 
 
 

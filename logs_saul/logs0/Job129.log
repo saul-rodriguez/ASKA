@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.04.17 06:47:41.073
-\# Local time: EDT (UTC-04:00) 2024.04.17 02:47:41.073
+\# Program start time:     UTC 2024.05.15 14:13:48.656
+\# Local time: EDT (UTC-04:00) 2024.05.15 10:13:48.656
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5839 -mpshost phoenix -davinciService DaVinciService_5839_1713327833 -log /home/saul/projects/ASKA/logs_saul/logs0/Job129.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5839 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 129
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso22443 -mpshost phoenix -davinciService DaVinciService_22443_1715759030 -log /home/saul/projects/ASKA/logs_saul/logs0/Job129.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_22443 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 129
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:6859 (1024x868)
+\# X display name (WxH):	:7127 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        618 MB
-\# Available memory:	     19,799 MB
+\# Initial sbrk value:	        643 MB
+\# Available memory:	     22,942 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,161 MB
-\# Max mem available:	     20,017 MB
+\# Maximum memory size:	     25,137 MB
+\# Max mem available:	     23,161 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		23977
+\# Process Id:		23604
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -74,13 +74,13 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5839, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso22443, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 23977 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 23604 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [02:47:41.512401] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.04.17 06:47:43.756
+\# [10:13:48.512393] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.05.15 14:13:50.678
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -122,7 +122,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 23977' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 23604' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -131,21 +131,21 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = HVSWITCH
-\o 	Cell         = hvswitch_tb
+\o 	Library      = POR
+\o 	Cell         = por_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = HVSWITCH:hvswitch_tb:1_none_Interactive.341
-\o 	Results DB   = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/1/HVSWITCH:hvswitch_tb:1
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data
+\o 	State Name   = Montecarlo_Corner:1_state_MonteCarlo.9
+\o 	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/MonteCarlo.9.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.9/61/Montecarlo
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/HVSWITCH/hvswitch_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
-\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.04.17 06:47:45.163
+\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.05.15 14:13:52.101
 \o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
 \o 
 \o *Info*    The auto suspension is disabled.
@@ -168,47 +168,38 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (62 5) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run start for Point ID (0 181) on testbench [ Montecarlo ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_EXT = "10p"
-\o Setting var DN1 = "0"
-\o Setting var DN2 = "0"
-\o Setting var IDC = "50m"
-\o Setting var START_DELAY = "200u"
-\o Setting var UP1 = "0"
-\o Setting var UP2 = "0"
-\o Setting var VDAC = "33m"
-\o Setting var VDAC2 = "1.65"
-\o Setting var VDD = "3.6"
-\o Setting var VDDHV = "0"
-\o Setting var VDDHV_PULSE = "40"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
+\o Setting var VDD3 = "0"
+\o Setting var VDD_BOR = "-0.25"
+\o Setting var VDD_PULSE = "3.3"
+\o Setting var VDD_RT = "100u"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/5/HVSWITCH:hvswitch_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.9/181/Montecarlo/groupRunDataDir/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/5/HVSWITCH:hvswitch_tb:1
+\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.9/181/Montecarlo/groupRunDataDir
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (62 5)
+\o *Info*    Creating Netlist for Point ID (0 181)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [02:47:45.235258] Periodic Lic check successful
-\# [02:47:45.235264] Feature usage summary:
-\o Begin Incremental Netlisting Apr 17 02:47:45 2024
-\o End netlisting Apr 17 02:47:45 2024
+\# [10:13:52.168024] Periodic Lic check successful
+\# [10:13:52.168025] Feature usage summary:
+\o Begin Incremental Netlisting May 15 10:13:52 2024
+\o End netlisting May 15 10:13:52 2024
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -216,778 +207,658 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 5).
+\o *Info*    Running simulation on testbench [ Montecarlo ] for Point ID
+\o           (0 181).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/5/HVSWITCH:hvswitch_tb:1/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.9/181/Montecarlo/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 15 10:13:52 2024
+\o End netlisting May 15 10:13:52 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
 \o       ...successful.
 \o simulate...
-\# Memory report: using         600 MB, process size 2,339 MB at UTC 2024.04.17 06:47:46.019
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
+\# Memory report: using         615 MB, process size 2,405 MB at UTC 2024.05.15 14:13:54.948
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 181) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 182) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 183) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 184) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         20,878 MB at UTC 2024.05.15 14:13:58.232
+\# Memory report: Maximum memory size now 21,594 MB at UTC 2024.05.15 14:13:58.232
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.05.15 14:13:58.232
+\# Memory report: using         717 MB, process size 2,506 MB at UTC 2024.05.15 14:13:58.232
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 185) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 186) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 187) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 188) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 189) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 190) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using         819 MB, process size 2,608 MB at UTC 2024.05.15 14:14:03.172
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 191) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 192) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 193) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 194) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 195) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 196) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 20,644 MB at UTC 2024.05.15 14:14:08.095
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 197) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 198) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using         939 MB, process size 2,729 MB at UTC 2024.05.15 14:14:10.219
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 199) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 200) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 201) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 202) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 203) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 204) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,044 MB, process size 2,833 MB at UTC 2024.05.15 14:14:15.249
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 205) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 206) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 207) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 208) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         18,868 MB at UTC 2024.05.15 14:14:18.201
+\# Memory report: Maximum memory size now 19,984 MB at UTC 2024.05.15 14:14:18.201
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 209) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 5) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 210) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 9) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/9/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/9/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 9)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:47:47 2024
-\o End netlisting Apr 17 02:47:48 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 9).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/9/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\# Memory report: using       1,150 MB, process size 2,939 MB at UTC 2024.05.15 14:14:20.474
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 9) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 211) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 13) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/13/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/13/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 13)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:47:49 2024
-\o End netlisting Apr 17 02:47:49 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 13).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/13/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Available memory:         17,969 MB at UTC 2024.04.17 06:47:51.250
-\# Memory report: Maximum memory size now 18,625 MB at UTC 2024.04.17 06:47:51.250
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.04.17 06:47:51.250
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 13) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 212) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 18) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3"
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/18/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/18/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 18)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:47:51 2024
-\o End netlisting Apr 17 02:47:51 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 18).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/18/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 18) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 213) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 25) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.6"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/25/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/25/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 25)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:47:53 2024
-\o End netlisting Apr 17 02:47:54 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 25).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/25/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 25) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 214) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 29) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/29/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/29/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 29)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:47:55 2024
-\o End netlisting Apr 17 02:47:55 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 29).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/29/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 29) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 215) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 33) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/33/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/33/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 33)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:47:57 2024
-\o End netlisting Apr 17 02:47:57 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 33).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/33/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\# Memory report: using         706 MB, process size 2,495 MB at UTC 2024.04.17 06:47:58.065
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 33) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 216) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 39) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/39/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/39/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 39)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:47:59 2024
-\o End netlisting Apr 17 02:48:00 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 39).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/39/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\# Memory report: using       1,263 MB, process size 3,052 MB at UTC 2024.05.15 14:14:24.334
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 39) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 217) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 43) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/43/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/43/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 43)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:48:01 2024
-\o End netlisting Apr 17 02:48:01 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 43).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/43/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 43) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 218) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 48) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.6"
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/48/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/48/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 48)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:48:03 2024
-\o End netlisting Apr 17 02:48:03 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 48).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/48/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 48) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 219) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 54) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/54/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/54/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 54)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:48:06 2024
-\o End netlisting Apr 17 02:48:06 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 54).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/54/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 54) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 220) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 60) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.6"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/60/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/60/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 60)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:48:07 2024
-\o End netlisting Apr 17 02:48:08 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 60).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/60/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 60) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 221) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 63) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/63/HVSWITCH:hvswitch_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/63/HVSWITCH:hvswitch_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 63)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 17 02:48:09 2024
-\o End netlisting Apr 17 02:48:09 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ HVSWITCH:hvswitch_tb:1 ]
-\o           for Point ID (62 63).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/HVSWITCH/hvswitch_tb/adexl/results/data/Interactive.341/63/HVSWITCH:hvswitch_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 18,085 MB at UTC 2024.04.17 06:48:11.306
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (62 63) on testbench [
-\o           HVSWITCH:hvswitch_tb:1 ].
+\o *Info*    Run complete for Point ID (0 222) on testbench [ Montecarlo
+\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\# Memory report: Maximum memory size now 18,955 MB at UTC 2024.05.15 14:14:28.156
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 223) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 224) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,391 MB, process size 3,180 MB at UTC 2024.05.15 14:14:29.444
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 225) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 226) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 227) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 228) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 229) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 230) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 231) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 232) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using       1,512 MB, process size 3,301 MB at UTC 2024.05.15 14:14:34.279
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 233) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 234) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 235) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 236) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 237) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 238) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         16,361 MB at UTC 2024.05.15 14:14:38.422
+\# Memory report: Maximum memory size now 17,977 MB at UTC 2024.05.15 14:14:38.422
+\# Memory report: using       1,616 MB, process size 3,405 MB at UTC 2024.05.15 14:14:38.422
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 239) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 240) on testbench [ Montecarlo
+\o           ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \# Lic Summary:
-\# [02:53:17.126930] Cdslmd servers:3000@lic08.ug.kth.se
-\# [02:53:17.126962] Feature usage summary:
-\# Memory report: on exit            797 MB, process size 2,586 MB at UTC 2024.04.17 06:53:17.651
-\# Memory report: peak usage         797 MB, process size 2,586 MB
+\# [10:17:03.054849] Cdslmd servers:3000@lic08.ug.kth.se
+\# [10:17:03.054858] Feature usage summary:
+\# Memory report: on exit          1,632 MB, process size 3,421 MB at UTC 2024.05.15 14:17:03.579
+\# Memory report: peak usage       1,632 MB, process size 3,421 MB

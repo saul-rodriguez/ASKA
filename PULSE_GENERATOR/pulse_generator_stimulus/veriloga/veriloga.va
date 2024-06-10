@@ -63,7 +63,8 @@ analog begin
 		dac[4] = 3.3*((value0 & (1 << 4))? 1:0);
 		dac[5] = 3.3*((value0 & (1 << 5))? 1:0);
 
-		en_cs = 3.3;
+		//en_cs = 3.3;
+		en_cs = 0.0;
 	end
 
 	@(timer(start_delay)) begin
@@ -81,7 +82,8 @@ analog begin
 		dac[4] = 3.3*((value1 & (1 << 4))? 1:0);
 		dac[5] = 3.3*((value1 & (1 << 5))? 1:0);
 
-		en_cs = 0;
+//		en_cs = 0;
+		en_cs = 3.3;
 	end
 
 	@(timer(start_delay+phase_duration)) begin
@@ -98,7 +100,8 @@ analog begin
 		dac[4] = 0;
 		dac[5] = 0;
 
-		en_cs = 3.3;
+		//en_cs = 3.3;
+		en_cs = 0.0;
 
 	end
 
@@ -116,7 +119,8 @@ analog begin
 		dac[4] = 3.3*((value1 & (1 << 4))? 1:0);
 		dac[5] = 3.3*((value1 & (1 << 5))? 1:0);
 
-		en_cs = 0;
+		//en_cs = 0;
+		en_cs = 3.3;
 	end
 
 	@(timer(start_delay+phase_duration+pause_duration+phase_duration)) begin
@@ -133,7 +137,8 @@ analog begin
 		dac[4] = 0;
 		dac[5] = 0;
 
-		en_cs = 3.3;
+	//	en_cs = 3.3;
+		en_cs = 0.0;
 	end
 
 	//Start again 1
@@ -151,7 +156,8 @@ analog begin
 		dac[4] = 3.3*((value2 & (1 << 4))? 1:0);
 		dac[5] = 3.3*((value2 & (1 << 5))? 1:0);
 
-		en_cs = 0;
+		//en_cs = 0;
+		en_cs = 3.3;
 	end
 
 	@(timer(time_aux + start_delay+phase_duration)) begin
@@ -168,7 +174,8 @@ analog begin
 		dac[4] = 0;
 		dac[5] = 0;
 
-		en_cs = 3.3;
+		//en_cs = 3.3;
+		en_cs = 0.0;
 		
 	end
 
@@ -186,7 +193,8 @@ analog begin
 		dac[4] = 3.3*((value2 & (1 << 4))? 1:0);
 		dac[5] = 3.3*((value2 & (1 << 5))? 1:0);
 
-		en_cs = 0;
+		//en_cs = 0;
+		en_cs = 3.3;
 	end
 
 	@(timer(time_aux + start_delay+phase_duration+pause_duration+phase_duration)) begin
@@ -203,7 +211,8 @@ analog begin
 		dac[4] = 0;
 		dac[5] = 0;
 
-		en_cs = 3.3;
+//		en_cs = 3.3;
+		en_cs = 0.0;
 	end
 
 	//Start again 2
@@ -221,7 +230,8 @@ analog begin
 		dac[4] = 3.3*((value3 & (1 << 4))? 1:0);
 		dac[5] = 3.3*((value3 & (1 << 5))? 1:0);
 
-		en_cs = 0;
+		//en_cs = 0;
+		en_cs = 3.3;
 	end
 
 	@(timer(time_aux2 + start_delay+phase_duration)) begin
@@ -238,7 +248,8 @@ analog begin
 		dac[4] = 0;
 		dac[5] = 0;
 
-		en_cs = 3.3;
+		//en_cs = 3.3;
+		en_cs = 0;
 	end
 
 	@(timer(time_aux2 + start_delay+phase_duration+pause_duration)) begin
@@ -255,7 +266,8 @@ analog begin
 		dac[4] = 3.3*((value3 & (1 << 4))? 1:0);
 		dac[5] = 3.3*((value3 & (1 << 5))? 1:0);
 
-		en_cs = 0;
+		//en_cs = 0;
+		en_cs = 3.3;
 	end
 
 	@(timer(time_aux2 + start_delay+phase_duration+pause_duration+phase_duration)) begin
@@ -272,7 +284,8 @@ analog begin
 		dac[4] = 0;
 		dac[5] = 0;
 
-		en_cs = 3.3;
+		//en_cs = 3.3;
+		en_cs = 0;
 	end
 
 

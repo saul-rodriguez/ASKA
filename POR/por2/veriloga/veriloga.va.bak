@@ -1,0 +1,31 @@
+// VerilogA for POR, por2, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module por2(BG_REF, BIAS, GNDA, POR_OUT_L, VDDA);
+inout BG_REF;
+electrical BG_REF;
+inout BIAS;
+electrical BIAS;
+inout GNDA;
+electrical GNDA;
+inout POR_OUT_L;
+electrical POR_OUT_L;
+inout VDDA;
+electrical VDDA;
+
+
+real vdd_level;
+real reset;
+
+analog begin
+
+vdd_level = V(VDDA);
+
+
+
+
+end
+
+endmodule

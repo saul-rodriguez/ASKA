@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.150
-	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.150.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.150/1/PULSE_GENERATOR:pulse_generator_tb:1
+	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.242
+	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.242.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.242/1/PULSE_GENERATOR:pulse_generator_tb:1
 	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
@@ -28,7 +28,7 @@
 
 
 
-*Info*    Run start for Point ID (6 1) on testbench [
+*Info*    Run start for Point ID (8 1) on testbench [
           PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 Resetting statistical vars
@@ -48,27 +48,27 @@ Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.150/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.242/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.150/1/PULSE_GENERATOR:pulse_generator_tb:1
+          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.242/1/PULSE_GENERATOR:pulse_generator_tb:1
 
 
-*Info*    Creating Netlist for Point ID (6 1)
+*Info*    Creating Netlist for Point ID (8 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting May 16 03:38:56 2024
-WARNING (OSSHNL-159): The primitive, 'HVSWITCH/hvswitch5/veriloga', has been updated since the last netlisting session
+Begin Incremental Netlisting Jun  6 16:11:24 2024
+WARNING (OSSHNL-159): The primitive, 'CURRENT_SOURCE/current_source_gm_10_en/veriloga', has been updated since the last netlisting session
 in this current run directory. Therefore, re-netlisting all cell views where
 this primitive is instantiated.
 
-End netlisting May 16 03:38:56 2024
+End netlisting Jun  6 16:11:24 2024
 
 Netlisting Statistics:
-	Number of components:   40
+	Number of components:    2
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -77,9 +77,9 @@ compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (6 1).
+          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (8 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.150/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.242/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -88,32 +88,13 @@ simulate...
 To view the simulator output, right-click on the test name, result 
 name, or any value in the "Results" tab of the Outputs section and 
 choose "Output Log" menu option.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
+INFO (ADE-3071): Simulation completed successfully.
 reading simulation data...
       ...successful.
-
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
-
-          Error found by spectre at time = 602.578 us during
-          transient analysis `tran'.
-Error found by spectre at time =
-          602.578 us during transient analysis `tran'.
-ERROR
-          (SPECTRE-16192): No convergence achieved with the minimum
-          time step specified.  Last acceptable solution computed at
-          600.002 us.
-
-
-
-
-
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (6 1) on testbench [
+*Info*    Run complete for Point ID (8 1) on testbench [
           PULSE_GENERATOR:pulse_generator_tb:1 ].
 
 

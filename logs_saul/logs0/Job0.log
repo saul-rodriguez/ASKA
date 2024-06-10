@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.05.16 06:42:54.155
-\# Local time: EDT (UTC-04:00) 2024.05.16 02:42:54.155
+\# Program start time:     UTC 2024.06.10 06:54:29.352
+\# Local time: EDT (UTC-04:00) 2024.06.10 02:54:29.352
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso17592 -mpshost phoenix -davinciService DaVinciService_17592_1715841771 -log /home/saul/projects/ASKA/logs_saul/logs0/Job0.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_17592 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 0
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso2687 -mpshost phoenix -davinciService DaVinciService_2687_1718002467 -log /home/saul/projects/ASKA/logs_saul/logs0/Job0.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_2687 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 0
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:8684 (1024x868)
+\# X display name (WxH):	:4275 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        635 MB
-\# Available memory:	     23,891 MB
+\# Initial sbrk value:	        643 MB
+\# Available memory:	     21,862 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,145 MB
-\# Max mem available:	     24,109 MB
+\# Maximum memory size:	     25,137 MB
+\# Max mem available:	     22,080 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		20574
+\# Process Id:		7481
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -68,19 +68,22 @@
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
 \o Loading adexl.cxt 
+\# Memory report: using         346 MB, process size 2,071 MB at UTC 2024.06.10 06:54:31.841
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading adexlDM.cxt 
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso17592, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso2687, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 20574 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 7481 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [02:42:54.512393] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.05.16 06:42:56.402
+\# [02:54:29.512433] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Available memory:         21,621 MB at UTC 2024.06.10 06:54:39.688
+\# Memory report: Maximum memory size now 21,991 MB at UTC 2024.06.10 06:54:39.688
+\# Thread usage report: 12 active threads, active load 1.40 at UTC 2024.06.10 06:54:39.688
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -111,7 +114,6 @@
 \o Loading msgHandler.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
-\# Memory report: using         472 MB, process size 2,204 MB at UTC 2024.05.16 06:42:57.259
 \o  --> Finished setting the required PDK definitions
 \o  --> Setting the recommended EDA tool defaults...
 \o  --> Finished setting the recommended EDA tool defaults
@@ -123,7 +125,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 20574' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 7481' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
 \o  - Menu "XKit Utilities" installed to CIW.
@@ -137,6 +139,11 @@
 \o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
 \o  loading default key binding 
 \o  -> END LOAD ".cdsinit" FILE
-\# Available memory:         23,631 MB at UTC 2024.05.16 06:43:04.766
-\# Memory report: Maximum memory size now 24,124 MB at UTC 2024.05.16 06:43:04.766
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.05.16 06:43:04.767
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.06.10 06:54:49.714
+\# Memory report: using         492 MB, process size 2,231 MB at UTC 2024.06.10 06:54:49.714
+\o Job 0 timed out after no activity in 300 seconds.
+\o Loading simui.cxt 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 

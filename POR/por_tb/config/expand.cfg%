@@ -1,4 +1,4 @@
-//Revision 1
+//Revision 5
 //NOTE
 // Default austriamicrosystems template for AMS Designer
 // Note:
@@ -15,6 +15,17 @@ liblist basic, analogLib;
 
 viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
 stoplist symbol, spectre;
+
+
+cell D_CELLS_3V.STE_3VX4 binding :cmos_sch;
+
+cell CONSTANT_GM.constant_gm binding :schematic;
+
+cell BANDGAP.bandgap_su binding :schematic;
+
+cell REF_BIAS.ref_bias binding :schematic;
+
+cell POR.por2 binding :schematic;
 
 
 endconfig

@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.05.15 12:33:57.245
-\# Local time: EDT (UTC-04:00) 2024.05.15 08:33:57.245
+\# Program start time:     UTC 2024.06.11 12:39:53.203
+\# Local time: EDT (UTC-04:00) 2024.06.11 08:39:53.203
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso22443 -mpshost phoenix -davinciService DaVinciService_22443_1715759030 -log /home/saul/projects/ASKA/logs_saul/logs0/Job88.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_22443 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 88
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso3429 -mpshost phoenix -davinciService DaVinciService_3429_1718093643 -log /home/saul/projects/ASKA/logs_saul/logs0/Job88.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_3429 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 88
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:4055 (1024x868)
+\# X display name (WxH):	:5648 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        646 MB
-\# Available memory:	     20,385 MB
+\# Initial sbrk value:	        620 MB
+\# Available memory:	     20,860 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,133 MB
-\# Max mem available:	     20,604 MB
+\# Maximum memory size:	     25,160 MB
+\# Max mem available:	     21,078 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		15959
+\# Process Id:		11673
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -74,13 +74,13 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso22443, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso3429, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 15959 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 11673 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [08:33:57.512465] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.05.15 12:33:59.530
+\# [08:39:53.512481] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.06.11 12:39:55.675
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -122,7 +122,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 15959' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 11673' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -131,23 +131,23 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = POR
-\o 	Cell         = por_tb
+\o 	Library      = ASKA_TOP
+\o 	Cell         = aska_core_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = POR:por_tb:1_none_Interactive.203
-\o 	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.203.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/1/POR:por_tb:1
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
+\o 	State Name   = oss_ASKA_TOP:aska_core_tb:1:1_state_Interactive.42
+\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/1/oss
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
-\w *WARNING* (SCH-2162): "POR por2 symbol" has been updated since "POR por_tb schematic" was last saved. Validate that the schematic is correct and run Check and Save to suppress this warning.
-\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
-\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.05.15 12:34:01.301
+\o WARNING (AMS-1058): The rule 'ConnRules_inhconn_full_fast_gnd' has been specified twice for the library 'xfab_connectLib' in the connectRules.il file. Therefore, the second occurrence of this rule has been ignored.
+\o 
+\# Memory report: using         490 MB, process size 2,229 MB at UTC 2024.06.11 12:39:57.261
 \o 
 \o *Info*    The auto suspension is disabled.
 \o 
@@ -169,88 +169,160 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (48 3) on testbench [ POR:por_tb:1 ].
+\o *Info*    Run start for Point ID (42 5) on testbench [ oss ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD_BOR = "-0.3"
-\o Setting var VDD_PULSE = "3.3"
-\o Setting var VDD_RT = "100u"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
+\o Setting var RES = "100"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD3_PULSE = "0"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/3/POR:por_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/5/oss/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/3/POR:por_tb:1
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/5/oss
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (48 3)
+\o *Info*    Creating Netlist for Point ID (42 5)
 \o 
 \o generate netlist...
-\o Loading hnlInit.cxt 
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
 \o Loading seCore.cxt 
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\# [08:39:58.171985] Periodic Lic check successful
+\# [08:39:58.172003] Feature usage summary:
+\o Begin Netlisting Jun 11 08:39:58 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/5/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o Loading digitalSim.cxt 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\# Memory report: using         683 MB, process size 2,422 MB at UTC 2024.06.11 12:39:59.190
+\o function ansCdlCompPrim redefined
+\o Loading hnlInit.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [08:34:01.478161] Periodic Lic check successful
-\# [08:34:01.478162] Feature usage summary:
-\o Begin Incremental Netlisting May 15 08:34:01 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:01 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/5/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o .......
+\# Available memory:         19,456 MB at UTC 2024.06.11 12:40:04.275
+\# Memory report: Maximum memory size now 20,140 MB at UTC 2024.06.11 12:40:04.275
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.06.11 12:40:04.275
+\o End netlisting Jun 11 08:40:04 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o Loading cdf.cxt 
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 3).
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (42 5).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/3/POR:por_tb:1/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/5/oss/psf.
+\o create cds_globals...
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: using         614 MB, process size 2,403 MB at UTC 2024.05.15 12:34:02.387
+\# Memory report: Maximum memory size now 19,381 MB at UTC 2024.06.11 12:40:24.711
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (48 3) on testbench [
-\o           POR:por_tb:1 ].
+\o *Info*    Run complete for Point ID (42 5) on testbench [ oss ].
 \o 
 \o 
 \o 
@@ -261,7 +333,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (48 9) on testbench [ POR:por_tb:1 ].
+\o *Info*    Run start for Point ID (42 9) on testbench [ oss ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -269,68 +341,131 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/9/POR:por_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/9/oss/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/9/POR:por_tb:1
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/9/oss
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (48 9)
+\o *Info*    Creating Netlist for Point ID (42 9)
 \o 
 \o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:03 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
+\o Begin Netlisting Jun 11 08:42:27 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/9/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o End netlisting May 15 08:34:03 2024
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/9/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o .....
+\o End netlisting Jun 11 08:42:33 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 9).
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (42 9).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/9/POR:por_tb:1/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/9/oss/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (48 9) on testbench [
-\o           POR:por_tb:1 ].
+\o *Info*    Run complete for Point ID (42 9) on testbench [ oss ].
 \o 
 \o 
 \o 
@@ -341,177 +476,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (48 12) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/12/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/12/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 12)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:04 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:04 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 12).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/12/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 12) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 17) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/17/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/17/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 17)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:06 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:06 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 17).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/17/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Available memory:         18,606 MB at UTC 2024.05.15 12:34:07.027
-\# Memory report: Maximum memory size now 19,270 MB at UTC 2024.05.15 12:34:07.027
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.05.15 12:34:07.027
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 17) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 21) on testbench [ POR:por_tb:1
-\o           ].
+\o *Info*    Run start for Point ID (42 15) on testbench [ oss ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -519,68 +484,133 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/21/POR:por_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/15/oss/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/21/POR:por_tb:1
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/15/oss
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (48 21)
+\o *Info*    Creating Netlist for Point ID (42 15)
 \o 
 \o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:07 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
+\o Begin Netlisting Jun 11 08:44:39 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/15/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o End netlisting May 15 08:34:07 2024
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/15/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o .....
+\# Memory report: using         824 MB, process size 2,618 MB at UTC 2024.06.11 12:44:45.511
+\o End netlisting Jun 11 08:44:45 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 21).
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (42
+\o           15).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/21/POR:por_tb:1/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/15/oss/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (48 21) on testbench [
-\o           POR:por_tb:1 ].
+\o *Info*    Run complete for Point ID (42 15) on testbench [ oss ].
 \o 
 \o 
 \o 
@@ -591,91 +621,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (48 26) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/26/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/26/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 26)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:09 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:09 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 26).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/26/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 26) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 32) on testbench [ POR:por_tb:1
-\o           ].
+\o *Info*    Run start for Point ID (42 19) on testbench [ oss ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -683,68 +629,132 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/32/POR:por_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/19/oss/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/32/POR:por_tb:1
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/19/oss
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (48 32)
+\o *Info*    Creating Netlist for Point ID (42 19)
 \o 
 \o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:10 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
+\o Begin Netlisting Jun 11 08:46:27 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/19/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o End netlisting May 15 08:34:10 2024
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/19/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o .......
+\o End netlisting Jun 11 08:46:33 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 32).
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (42
+\o           19).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/32/POR:por_tb:1/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/19/oss/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (48 32) on testbench [
-\o           POR:por_tb:1 ].
+\o *Info*    Run complete for Point ID (42 19) on testbench [ oss ].
 \o 
 \o 
 \o 
@@ -755,419 +765,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (48 37) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\# Memory report: using         727 MB, process size 2,516 MB at UTC 2024.05.15 12:34:12.075
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/37/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/37/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 37)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:12 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:12 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 37).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/37/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 37) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 41) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/41/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/41/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 41)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:13 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:13 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 41).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/41/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 41) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 47) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/47/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/47/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 47)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:15 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:15 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 47).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/47/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 18,775 MB at UTC 2024.05.15 12:34:16.765
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 47) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 54) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/54/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/54/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 54)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:17 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:17 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 54).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/54/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 54) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 60) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/60/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/60/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (48 60)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:19 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:34:19 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 60).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/60/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (48 60) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (48 65) on testbench [ POR:por_tb:1
-\o           ].
+\o *Info*    Run start for Point ID (42 24) on testbench [ oss ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -1177,1185 +775,290 @@
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/65/POR:por_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/24/oss/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/65/POR:por_tb:1
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/24/oss
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (48 65)
+\o *Info*    Creating Netlist for Point ID (42 24)
 \o 
 \o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:34:21 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
+\o Begin Netlisting Jun 11 08:48:40 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/24/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o End netlisting May 15 08:34:21 2024
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/24/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ..
+\o End netlisting Jun 11 08:48:52 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (48 65).
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (42
+\o           24).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.203/65/POR:por_tb:1/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/24/oss/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18,942 MB at UTC 2024.06.11 12:49:16.711
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (48 65) on testbench [
-\o           POR:por_tb:1 ].
+\o *Info*    Run complete for Point ID (42 24) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (42 29) on testbench [ oss ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/29/oss/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/29/oss
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (42 29)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Jun 11 08:50:42 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/29/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/29/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ......
+\o End netlisting Jun 11 08:51:00 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (42
+\o           29).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.42/29/oss/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (42 29) on testbench [ oss ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 19,415 MB at UTC 2024.06.11 12:53:09.711
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = POR
-\o 	Cell         = por_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = POR:por_tb:1_none_Interactive.204
-\o 	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.204.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/1/POR:por_tb:1
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 1) on testbench [ POR:por_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD_BOR = "-0.35"
-\o Setting var VDD_PULSE = "3.3"
-\o Setting var VDD_RT = "100u"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/1/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/1/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:37:53 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:37:53 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 1).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/1/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 1) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         853 MB, process size 2,642 MB at UTC 2024.05.15 12:37:55.045
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 10) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/10/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/10/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 10)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:37:55 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:37:55 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 10).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/10/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\# Memory report: Maximum memory size now 18,303 MB at UTC 2024.05.15 12:37:56.053
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 10) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 11) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/11/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/11/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 11)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:37:56 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:37:56 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 11).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/11/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 11) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 16) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/16/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/16/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 16)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:37:58 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:37:58 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 16).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/16/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 16) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 21) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/21/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/21/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 21)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:37:59 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:37:59 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 21).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/21/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 21) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 27) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/27/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/27/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 27)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:01 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:01 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 27).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/27/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 27) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 35) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/35/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/35/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 35)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:03 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:03 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 35).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/35/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 35) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 40) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/40/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/40/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 40)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:05 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:05 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 40).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/40/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 17,902 MB at UTC 2024.05.15 12:38:05.832
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 40) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         967 MB, process size 2,756 MB at UTC 2024.05.15 12:38:07.138
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 45) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/45/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/45/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 45)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:07 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:07 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 45).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/45/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 45) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 50) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/50/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/50/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 50)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:08 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:08 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 50).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/50/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 50) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 55) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/55/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/55/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 55)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:10 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:10 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 55).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/55/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 55) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 60) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/60/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/60/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 60)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:12 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:12 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 60).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/60/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 60) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (49 63) on testbench [ POR:por_tb:1
-\o           ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/63/POR:por_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/63/POR:por_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (49 63)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:38:13 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:38:13 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ POR:por_tb:1 ] for Point
-\o           ID (49 63).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.204/63/POR:por_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\# Available memory:         16,687 MB at UTC 2024.05.15 12:38:15.073
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (49 63) on testbench [
-\o           POR:por_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Job 88 timed out after no activity in 300 seconds.
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+\# Lic Summary:
+\# [08:58:07.204682] Cdslmd servers:3000@lic08.ug.kth.se
+\# [08:58:07.204714] Feature usage summary:
+\# Memory report: on exit            890 MB, process size 2,684 MB at UTC 2024.06.11 12:58:07.729
+\# Memory report: peak usage         898 MB, process size 2,692 MB

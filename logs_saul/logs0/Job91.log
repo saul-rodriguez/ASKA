@@ -1,130 +1,45 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = PULSE_GENERATOR
-	Cell         = pulse_generator_tb
-	View         = config
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.188
-	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.188.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.188/1/PULSE_GENERATOR:pulse_generator_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (44 1) on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var DN1 = "0"
-Setting var DN2 = "0"
-Setting var RES = "100"
-Setting var UP1 = "0"
-Setting var UP2 = "0"
-Setting var VDD3 = "0"
-Setting var VDD3_PULSE = "3.3"
-Setting var VDDHV = "0"
-Setting var VDDHV_PULSE = "40"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.188/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.188/1/PULSE_GENERATOR:pulse_generator_tb:1
-
-
-*Info*    Creating Netlist for Point ID (44 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting May 16 06:34:07 2024
-WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
-directory. Netlist(s) from last session cannot be reused for incremental
-netlisting. Therefore, re-netlisting the design.
-
-WARNING (OSSHNL-325): Place master 'CURRENT_SOURCE/current_source_gm_10/symbol' for instance 'I1' has been modified since the last
-extraction of its parent cellview 'PULSE_GENERATOR/pulse_generator/schematic'.
-Connectivity changes in the place master can cause issues in the generated
-netlist. To resolve such issues:
--Reextract the parent cellview 'PULSE_GENERATOR/pulse_generator/schematic' and regenerate the netlist. To avoid
-multiple Check and Save operations, use the Check Hierarchy form or the
-schHiCheckHier SKILL function to do a hierarchical check and save on the top
-cell and then generate the netlist.
--Ignore all connectivity checks for this place master by specifying it to the
-list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
--Change the severity of modification errors by setting the environment variable
-simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-and non-connectivity changes, thereby generating an incorrect netlist.
-To avoid reporting of non-connectivity changes after performing a hierarchical
-check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-'t' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-variable, set simSymbolModifiedAction to 'error' to receive reports of only
-connectivity issues during netlisting.
-The variable simSymbolModifiedAction controls the severity of this message,
-which can be 'ignore', 'warning', or 'error'.
-
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.144/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting May 16 06:34:07 2024
-
-Netlisting Statistics:
-	Number of components:  148
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (44 1).
-
-Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.188/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (44 1) on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+\# Program start time:     UTC 2024.06.11 14:52:19.572
+\# Local time: EDT (UTC-04:00) 2024.06.11 10:52:19.572
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
+\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso3429 -mpshost phoenix -davinciService DaVinciService_3429_1718093643 -log /home/saul/projects/ASKA/logs_saul/logs0/Job91.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_3429 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 91
+\# Host name (type):	phoenix (x86_64)
+\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:3929 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12004000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        643 MB
+\# Available memory:	     20,549 MB
+\# System memory:	     25,561 MB
+\# Maximum memory size:	     25,136 MB
+\# Max mem available:	     20,767 MB
+\# Initial memory used:	        218 MB
+\#        process size:	      1,821 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	phoenix:/home/saul/projects/ASKA
+\# Process Id:		14454
+\o 
+\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.

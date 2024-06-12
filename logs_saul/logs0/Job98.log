@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.05.15 12:53:06.333
-\# Local time: EDT (UTC-04:00) 2024.05.15 08:53:06.333
+\# Program start time:     UTC 2024.06.11 14:52:37.909
+\# Local time: EDT (UTC-04:00) 2024.06.11 10:52:37.909
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso22443 -mpshost phoenix -davinciService DaVinciService_22443_1715759030 -log /home/saul/projects/ASKA/logs_saul/logs0/Job98.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_22443 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 98
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso3429 -mpshost phoenix -davinciService DaVinciService_3429_1718093643 -log /home/saul/projects/ASKA/logs_saul/logs0/Job98.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_3429 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 98
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:1278 (1024x868)
+\# X display name (WxH):	:2580 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        616 MB
-\# Available memory:	     19,990 MB
+\# Initial sbrk value:	        642 MB
+\# Available memory:	     20,412 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,163 MB
-\# Max mem available:	     20,209 MB
+\# Maximum memory size:	     25,138 MB
+\# Max mem available:	     20,631 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		2926
+\# Process Id:		15371
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -67,6 +67,7 @@
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
+\# Memory report: using         331 MB, process size 2,056 MB at UTC 2024.06.11 14:52:39.079
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
@@ -74,13 +75,12 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso22443, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso3429, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 2926 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 15371 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [08:53:06.512433] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.05.15 12:53:08.499
+\# [10:52:37.512401] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -102,6 +102,7 @@
 \o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
 \o Use model setup from PDK...
 \o Loading spectrei.cxt 
+\# Memory report: using         440 MB, process size 2,172 MB at UTC 2024.06.11 14:52:40.296
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
 \o Loading vdsil.cxt 
@@ -122,7 +123,7 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 2926' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 15371' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -131,23 +132,22 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = POR
-\o 	Cell         = por_tb
+\o 	Library      = ASKA_TOP
+\o 	Cell         = aska_core_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = Montecarlo_Corner:1_state_MonteCarlo.0
-\o 	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/MonteCarlo.0.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.0/61/Montecarlo
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
+\o 	State Name   = oss_ASKA_TOP:aska_core_tb:1:1_state_Interactive.44
+\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/1/oss
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
-\w *WARNING* (SCH-2162): "POR por2 symbol" has been updated since "POR por_tb schematic" was last saved. Validate that the schematic is correct and run Check and Save to suppress this warning.
-\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
-\# Memory report: using         494 MB, process size 2,233 MB at UTC 2024.05.15 12:53:10.207
+\o WARNING (AMS-1058): The rule 'ConnRules_inhconn_full_fast_gnd' has been specified twice for the library 'xfab_connectLib' in the connectRules.il file. Therefore, the second occurrence of this rule has been ignored.
+\o 
 \o 
 \o *Info*    The auto suspension is disabled.
 \o 
@@ -169,1484 +169,1045 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (51 121) on testbench [ Montecarlo ].
+\o *Info*    Run start for Point ID (44 4) on testbench [ oss ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD_BOR = "-0.375"
-\o Setting var VDD_PULSE = "3.3"
-\o Setting var VDD_RT = "100u"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
+\o Setting var RES = "100"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD3_PULSE = "0"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.0/121/Montecarlo/groupRunDataDir/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/4/oss/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.0/121/Montecarlo/groupRunDataDir
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/4/oss
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (51 121)
+\o *Info*    Creating Netlist for Point ID (44 4)
 \o 
 \o generate netlist...
-\o Loading hnlInit.cxt 
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
 \o Loading seCore.cxt 
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\# [10:52:42.411848] Periodic Lic check successful
+\# [10:52:42.411849] Feature usage summary:
+\o Begin Netlisting Jun 11 10:52:42 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/4/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o Loading digitalSim.cxt 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\# Memory report: using         683 MB, process size 2,422 MB at UTC 2024.06.11 14:52:43.226
+\o function ansCdlCompPrim redefined
+\o Loading hnlInit.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [08:53:10.417715] Periodic Lic check successful
-\# [08:53:10.417720] Feature usage summary:
-\o Begin Incremental Netlisting May 15 08:53:10 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:53:10 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/4/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Loading json.cxt 
+\o Running netlist assembly..
+\o .........
+\# Available memory:         19,023 MB at UTC 2024.06.11 14:52:48.415
+\# Memory report: Maximum memory size now 19,708 MB at UTC 2024.06.11 14:52:48.415
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.06.11 14:52:48.415
+\o End netlisting Jun 11 10:52:48 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o Loading cdf.cxt 
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ Montecarlo ] for Point ID
-\o           (51 121).
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (44 4).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.0/121/Montecarlo/groupRunDataDir/psf.
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:53:10 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:53:10 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/4/oss/psf.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: using         615 MB, process size 2,404 MB at UTC 2024.05.15 12:53:11.799
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 121) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 122) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 123) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 124) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 125) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         17,904 MB at UTC 2024.05.15 12:53:16.090
-\# Memory report: Maximum memory size now 18,603 MB at UTC 2024.05.15 12:53:16.090
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.05.15 12:53:16.090
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 126) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         721 MB, process size 2,510 MB at UTC 2024.05.15 12:53:17.070
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 127) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 128) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 129) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 130) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 131) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 132) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 133) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 134) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         839 MB, process size 2,628 MB at UTC 2024.05.15 12:53:23.162
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 135) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 136) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 137) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 17,778 MB at UTC 2024.05.15 12:53:25.766
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 138) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 139) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         953 MB, process size 2,742 MB at UTC 2024.05.15 12:53:28.219
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 140) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 141) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 142) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 143) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 144) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 145) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 146) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 147) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 148) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         15,933 MB at UTC 2024.05.15 12:53:35.290
-\# Memory report: Maximum memory size now 17,006 MB at UTC 2024.05.15 12:53:35.290
-\# Memory report: using       1,074 MB, process size 2,863 MB at UTC 2024.05.15 12:53:35.290
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 149) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 150) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 151) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 152) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 153) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 154) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 155) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\# Memory report: Maximum memory size now 19,017 MB at UTC 2024.06.11 14:53:08.711
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (51 156) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (44 4) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: using       1,213 MB, process size 3,002 MB at UTC 2024.05.15 12:53:42.580
-\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (51 157) on testbench [
-\o           Montecarlo ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 158) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 159) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 160) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 16,338 MB at UTC 2024.05.15 12:53:45.186
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 161) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 162) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 163) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,320 MB, process size 3,109 MB at UTC 2024.05.15 12:53:47.119
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 164) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 165) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 166) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 167) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 168) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 169) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 170) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 171) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,441 MB, process size 3,230 MB at UTC 2024.05.15 12:53:52.287
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 172) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 173) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 174) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 175) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 176) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         13,941 MB at UTC 2024.05.15 12:53:55.512
-\# Memory report: Maximum memory size now 15,457 MB at UTC 2024.05.15 12:53:55.512
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 177) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 178) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 179) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,562 MB, process size 3,351 MB at UTC 2024.05.15 12:53:57.401
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (51 180) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = POR
-\o 	Cell         = por_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = Montecarlo_Corner:1_state_MonteCarlo.1
-\o 	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/MonteCarlo.1.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.1/1/Montecarlo
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (52 241) on testbench [ Montecarlo ].
+\o *Info*    Run start for Point ID (44 6) on testbench [ oss ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD3 = "0"
-\o Setting var VDD_BOR = "-0.4"
-\o Setting var VDD_PULSE = "3.3"
-\o Setting var VDD_RT = "100u"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.1/241/Montecarlo/groupRunDataDir/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/6/oss/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.1/241/Montecarlo/groupRunDataDir
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/6/oss
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (52 241)
+\o *Info*    Creating Netlist for Point ID (44 6)
 \o 
 \o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:56:54 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
+\o Begin Netlisting Jun 11 10:54:48 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/6/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o End netlisting May 15 08:56:54 2024
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/6/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o ........
+\o End netlisting Jun 11 10:54:53 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ Montecarlo ] for Point ID
-\o           (52 241).
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (44 6).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/MonteCarlo.1/241/Montecarlo/groupRunDataDir/psf.
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 15 08:56:54 2024
-\o WARNING (OSSHNL-325): Place master 'POR/por2/symbol' for instance 'I0' has been modified since the last
-\o extraction of its parent cellview 'POR/por_tb/schematic'.
-\o Connectivity changes in the place master can cause issues in the generated
-\o netlist. To resolve such issues:
-\o -Reextract the parent cellview 'POR/por_tb/schematic' and regenerate the netlist. To avoid
-\o multiple Check and Save operations, use the Check Hierarchy form or the
-\o schHiCheckHier SKILL function to do a hierarchical check and save on the top
-\o cell and then generate the netlist.
-\o -Ignore all connectivity checks for this place master by specifying it to the
-\o list of cellviews to be ignored using the hnlUserIgnoreCVModifyList variable.
-\o -Change the severity of modification errors by setting the environment variable
-\o simSymbolModifiedAction to 'ignore'. However, this may ignore both connectivity
-\o and non-connectivity changes, thereby generating an incorrect netlist.
-\o To avoid reporting of non-connectivity changes after performing a hierarchical
-\o check and save operation, set 'schematic' 'autoEquivalentConnectivityTime' to
-\o 't' in the .cdsenv file. After setting the autoEquivalentConnectivityTime
-\o variable, set simSymbolModifiedAction to 'error' to receive reports of only
-\o connectivity issues during netlisting.
-\o The variable simSymbolModifiedAction controls the severity of this message,
-\o which can be 'ignore', 'warning', or 'error'.
-\o 
-\o End netlisting May 15 08:56:54 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/6/oss/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 14,921 MB at UTC 2024.05.15 12:56:55.771
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 241) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 242) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 243) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 244) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 245) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 246) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,688 MB, process size 3,477 MB at UTC 2024.05.15 12:57:01.649
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 247) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 248) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 249) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 250) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 251) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         12,331 MB at UTC 2024.05.15 12:57:05.417
-\# Memory report: Maximum memory size now 14,081 MB at UTC 2024.05.15 12:57:05.417
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 252) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 253) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,797 MB, process size 3,586 MB at UTC 2024.05.15 12:57:07.370
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 254) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 255) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 256) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 257) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 258) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 259) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       1,914 MB, process size 3,703 MB at UTC 2024.05.15 12:57:12.395
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 260) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 261) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 262) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 263) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:         11,057 MB at UTC 2024.05.15 12:57:15.447
-\# Memory report: Maximum memory size now 13,041 MB at UTC 2024.05.15 12:57:15.447
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 264) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 265) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 266) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       2,023 MB, process size 3,812 MB at UTC 2024.05.15 12:57:18.298
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 267) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 268) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 269) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 270) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 271) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 272) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       2,124 MB, process size 3,913 MB at UTC 2024.05.15 12:57:23.635
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 273) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 274) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 12,446 MB at UTC 2024.05.15 12:57:25.344
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 275) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 276) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 277) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 278) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 279) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       2,231 MB, process size 4,020 MB at UTC 2024.05.15 12:57:29.200
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 280) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (52 281) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (44 6) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (44 11) on testbench [ oss ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/11/oss/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/11/oss
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (44 11)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Jun 11 10:56:29 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/11/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/11/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\# Memory report: using         824 MB, process size 2,618 MB at UTC 2024.06.11 14:56:34.102
+\o ......
+\o End netlisting Jun 11 10:57:04 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (44
+\o           11).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/11/oss/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (52 282) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (44 11) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (44 16) on testbench [ oss ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/16/oss/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/16/oss
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (44 16)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Jun 11 10:58:40 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/16/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/16/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\# Memory report: Maximum memory size now 18,641 MB at UTC 2024.06.11 14:59:10.576
+\o ........
+\o End netlisting Jun 11 10:59:11 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (44
+\o           16).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/16/oss/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (52 283) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (44 16) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (44 21) on testbench [ oss ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/21/oss/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/21/oss
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (44 21)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Jun 11 11:01:19 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/21/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/21/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o .........
+\o End netlisting Jun 11 11:01:27 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (44
+\o           21).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/21/oss/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18,273 MB at UTC 2024.06.11 15:02:30.710
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (52 284) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (44 21) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (44 26) on testbench [ oss ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/26/oss/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/26/oss
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (44 26)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Jun 11 11:03:08 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/26/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/26/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\o .........
+\o End netlisting Jun 11 11:03:19 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (44
+\o           26).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/26/oss/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (52 285) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (44 26) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (44 31) on testbench [ oss ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/31/oss/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/31/oss
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (44 31)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Jun 11 11:04:55 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/31/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en     schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/31/oss/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\# Available memory:         17,273 MB at UTC 2024.06.11 15:05:13.641
+\o .........
+\o End netlisting Jun 11 11:05:34 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ oss ] for Point ID (44
+\o           31).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.44/31/oss/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18,679 MB at UTC 2024.06.11 15:06:53.710
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (52 286) on testbench [
-\o           Montecarlo ].
+\o *Info*    Run complete for Point ID (44 31) on testbench [ oss ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: using       2,334 MB, process size 4,123 MB at UTC 2024.05.15 12:57:34.443
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 287) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 288) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 289) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 290) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 291) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 292) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       2,435 MB, process size 4,225 MB at UTC 2024.05.15 12:57:38.535
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 293) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 294) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 295) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 296) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 297) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 298) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 299) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (52 300) on testbench [
-\o           Montecarlo ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using       2,543 MB, process size 4,332 MB at UTC 2024.05.15 12:57:43.154
-\o *Info*    Monte Carlo Simulation completed successfully...
-\# Memory report: Maximum memory size now 13,013 MB at UTC 2024.05.15 12:57:45.769
-\# Available memory:         12,692 MB at UTC 2024.05.15 13:02:45.767
-\# Memory report: Maximum memory size now 15,236 MB at UTC 2024.05.15 13:02:45.767
+\o Job 98 timed out after no activity in 300 seconds.
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.

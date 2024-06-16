@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = oss_ASKA_TOP:aska_core_tb:1:1_state_Interactive.38
-	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38/1/oss
+	State Name   = ASKA_TOP:aska_core_tb:1_none_Interactive.107
+	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.107.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.107/1/ASKA_TOP:aska_core_tb:1
 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
@@ -28,7 +28,8 @@
 
 
 
-*Info*    Run start for Point ID (38 1) on testbench [ oss ].
+*Info*    Run start for Point ID (10 1) on testbench [
+          ASKA_TOP:aska_core_tb:1 ].
 
 Resetting statistical vars
 
@@ -43,14 +44,14 @@ Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38/1/oss/netlist
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.107/1/ASKA_TOP:aska_core_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38/1/oss
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.107/1/ASKA_TOP:aska_core_tb:1
 
 
-*Info*    Creating Netlist for Point ID (38 1)
+*Info*    Creating Netlist for Point ID (10 1)
 
 generate netlist...
 INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -59,11 +60,9 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
  analog primitives using the Spectre CDF simulation information.
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38/1/oss/netlist/digital/control
-Begin Netlisting Jun 11 08:18:31 2024
+Begin Netlisting Jun 13 05:14:22 2024
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38/1/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.107/1/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -80,7 +79,7 @@ INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z"
 pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
 either in CIW or the .simrc file.
  
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.0/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.79/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
 INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
@@ -139,27 +138,15 @@ function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38/1/oss/netlist/analog/control
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.107/1/ASKA_TOP:aska_core_tb:1/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.0/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.79/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
 Running netlist assembly..
 .........
-End netlisting Jun 11 08:18:37 2024
+End netlisting Jun 13 05:14:28 2024
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -169,9 +156,10 @@ create cds_globals...
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ oss ] for Point ID (38 1).
+*Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+          for Point ID (10 1).
 
-Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.38/1/oss/psf.
+Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.107/1/ASKA_TOP:aska_core_tb:1/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...
@@ -188,7 +176,8 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (38 1) on testbench [ oss ].
+*Info*    Run complete for Point ID (10 1) on testbench [
+          ASKA_TOP:aska_core_tb:1 ].
 
 
 

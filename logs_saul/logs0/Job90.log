@@ -1,71 +1,177 @@
-\# Program start time:     UTC 2024.06.11 14:52:19.570
-\# Local time: EDT (UTC-04:00) 2024.06.11 10:52:19.570
-\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
-\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
-\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso3429 -mpshost phoenix -davinciService DaVinciService_3429_1718093643 -log /home/saul/projects/ASKA/logs_saul/logs0/Job90.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_3429 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 90
-\# Host name (type):	phoenix (x86_64)
-\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
-\# Linux /etc/issue:	\S
-\# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:6302 (1024x868)
-\# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			The X.Org Foundation
-\# Depth of Visual (Root):	24 (24)
-\# Number of Planes Used:	24
-\# X version:		11.0 (vendor release 12004000)
-\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
-\# 			current id 0x0, current max 0x1ffffa (2097146)
-\# Max data seg size:	     unlimited
-\# Max process size:	     unlimited
-\# Initial sbrk value:	        622 MB
-\# Available memory:	     20,551 MB
-\# System memory:	     25,561 MB
-\# Maximum memory size:	     25,157 MB
-\# Max mem available:	     20,769 MB
-\# Initial memory used:	        218 MB
-\#        process size:	      1,821 MB
-\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
-\# Qt version:		5.9.1
-\# Window Manager:	other
-\# User Name:		saul
-\o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		14445
-\o 
-\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
-\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
-\o                          Reproduced with permission.
-\o 
-\o This Cadence Design Systems program and online documentation are
-\o proprietary/confidential information and may be disclosed/used only
-\o as authorized in a license agreement controlling such use and disclosure.
-\o 
-\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
-\o Use/reproduction/disclosure is subject to restriction
-\o set forth at FAR 1252.227-19 or its equivalent.
-\o Loading geView.cxt 
-\o Loading menuBuilder.cxt 
-\o Loading schView.cxt 
-\o Loading selectSv.cxt 
-\o Loading pvsui.cxt
-\o Loading wireEdit.cxt 
-\o Loading pte2.cxt 
-\o Loading xlUI.cxt 
-\o Loading auCore.cxt 
-\o Loading vhdl.cxt 
-\o Loading seismic.cxt 
-\o Loading ci.cxt 
-\o Loading ams.cxt 
-\o Loading oasis.cxt 
-\o Loading analog.cxt 
-\o Loading asimenv.cxt 
-\o Loading dal.cxt 
-\o Loading awv.cxt 
-\o Loading socket.cxt 
-\o Loading par.cxt 
-\o Loading alvs.cxt 
-\o Loading caa.cxt 
-\o Loading amps.cxt 
-\o Loading adexlCore.cxt 
-\o Loading adexl.cxt 
-\# Memory report: using         346 MB, process size 2,071 MB at UTC 2024.06.11 14:52:21.118
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = ASKA_TOP
+	Cell         = aska_core_tb
+	View         = config_fun_an_fun_dig
+	Simulator    = ams
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = ASKA_TOP:aska_core_tb:1_none_Interactive.113
+	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113/1/ASKA_TOP:aska_core_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
+	Project Dir  = /home/saul/projects/ASKA/Sim
+	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
+	File Encoding = 0
+
+
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (0 1) on testbench [
+          ASKA_TOP:aska_core_tb:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var RES = "100"
+Setting var VDD3 = "3.3"
+Setting var VDD3_PULSE = "0"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
+Setting var temperature = "27"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113/1/ASKA_TOP:aska_core_tb:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113/1/ASKA_TOP:aska_core_tb:1
+
+
+*Info*    Creating Netlist for Point ID (0 1)
+
+generate netlist...
+INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+ field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+ analog primitives using the Spectre CDF simulation information.
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Initializing the control file using cp:
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113/1/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+Begin Netlisting Jun 13 07:34:08 2024
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113/1/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+If you want to print only those cellviews that need to be re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.79/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
+
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+
+
+
+LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------                   ---------            ----             
+
+BANDGAP                     bandgap_su                  veriloga             *Stopping View*  
+CONSTANT_GM                 constant_gm                 veriloga             *Stopping View*  
+REF_BIAS                    ref_bias                    veriloga             *Stopping View*  
+CURRENT_SOURCE              current_source_gm_10_en     veriloga             *Stopping View*  
+DAC6B                       dac6b_amp_n2                veriloga             *Stopping View*  
+ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+POR                         por2                        veriloga             *Stopping View*  
+HVSWITCH                    hvswitch5                   veriloga             *Stopping View*  
+ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+analogLib                   vpulse                      spectre              *Stopping View*  
+analogLib                   vdc                         spectre              *Stopping View*  
+analogLib                   res                         spectre              *Stopping View*  
+analogLib                   ind                         spectre              *Stopping View*  
+analogLib                   cap                         spectre              *Stopping View*  
+ASKA_TOP                    aska_core_tb                schematic                             
+ASKA_TOP                    aska_core                   schematic                             
+ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+ASKA_DIG                    aska_dig                    functional                            
+PULSE_GENERATOR             pulse_generator             schematic                             
+BIAS                        bias                        schematic                             
+
+---------- End of netlist configuration information   ----------
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Initializing the control file using cp:
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113/1/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.79/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
+
+Running netlist assembly..
+.......
+End netlisting Jun 13 07:34:14 2024
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
+      ...successful.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+          for Point ID (0 1).
+
+Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.113/1/ASKA_TOP:aska_core_tb:1/psf.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+validating simulator hierarchy...
+      ...successful.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (0 1) on testbench [
+          ASKA_TOP:aska_core_tb:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

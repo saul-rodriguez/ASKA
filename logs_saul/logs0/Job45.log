@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = oss_ASKA_TOP:aska_core_tb:1:1_state_Interactive.21
-	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.21.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.21/1/oss
+	State Name   = oss_ASKA_TOP:aska_core_tb:1:1_state_Interactive.142
+	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.142.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.142/1/oss
 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
@@ -28,29 +28,30 @@
 
 
 
-*Info*    Run start for Point ID (21 1) on testbench [ oss ].
+*Info*    Run start for Point ID (22 1) on testbench [ oss ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var RES = "250"
-Setting var VDD3 = "3.3"
-Setting var VDD3_PULSE = "0"
-Setting var VDDHV = "40"
-Setting var VDDHV_PULSE = "0"
+Setting var POR_PULSE = "-0.5"
+Setting var RES = "100"
+Setting var VDD3 = "0"
+Setting var VDD3_PULSE = "3.3"
+Setting var VDDHV = "0"
+Setting var VDDHV_PULSE = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.21/1/oss/netlist
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.142/1/oss/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.21/1/oss
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.142/1/oss
 
 
-*Info*    Creating Netlist for Point ID (21 1)
+*Info*    Creating Netlist for Point ID (22 1)
 
 generate netlist...
 INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -59,9 +60,9 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
  analog primitives using the Spectre CDF simulation information.
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Netlisting Jun 11 07:35:59 2024
+Begin Netlisting Jun 14 02:48:50 2024
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.21/1/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.142/1/oss/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -78,7 +79,7 @@ INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z"
 pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
 either in CIW or the .simrc file.
  
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.0/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.120/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
 INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
@@ -137,15 +138,15 @@ function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.21/1/oss/netlist/analog/control
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.142/1/oss/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.0/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.120/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
 Running netlist assembly..
 ........
-End netlisting Jun 11 07:36:05 2024
+End netlisting Jun 14 02:48:56 2024
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -155,9 +156,9 @@ create cds_globals...
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ oss ] for Point ID (21 1).
+*Info*    Running simulation on testbench [ oss ] for Point ID (22 1).
 
-Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.21/1/oss/psf.
+Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.142/1/oss/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...
@@ -174,7 +175,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (21 1) on testbench [ oss ].
+*Info*    Run complete for Point ID (22 1) on testbench [ oss ].
 
 
 

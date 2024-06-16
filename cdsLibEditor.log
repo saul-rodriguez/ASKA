@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 08/30/2023 13:18 (sjfdcl1037) $
 \o Sub version:		sub-version  s342 
-\o Arguments:		-cdslib /home/saul/projects/ASKA/cds.lib -mpssession virtuoso4006 -mpshost phoenix -mpsversion 6.18 
+\o Arguments:		-cdslib /home/saul/projects/ASKA/cds.lib -mpssession virtuoso28224 -mpshost phoenix -mpsversion 6.18 
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
@@ -9,30 +9,19 @@
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(2128 86 500 400))
-\a nrListItemAction(cdsLibEditor->mainTable 75 0)
-\o Active cell: 75 0 ""
+\a nrResizeWindow(cdsLibEditor list(3241 134 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 78 0)
+\o Active cell: 78 0 ""
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(cdsLibEditor list(2128 86 500 495))
-\a nrListItemRename(cdsLibEditor->mainTable, 75 0 "ASKA_DIG")
-\a nrListItemAction(cdsLibEditor->mainTable 75 1)
-\o Active cell: 75 1 ""
-\a nrListItemRename(cdsLibEditor->mainTable, 75 1 "./")
-\a nrSetWindowVisibility(needCreateDialog "show")
-\a nrResizeWindow(needCreateDialog list(2154 203 428 180))
-\a nrSetCurrentWindow(needCreateDialog)
-\a nrResizeWindow(needCreateDialog list(2164 244 428 180))
-\a needCreateDialog->cancelButton->value = t
-\a nrListItemAction(cdsLibEditor->mainTable 76 0)
-\o Active cell: 76 0 ""
+\a nrResizeWindow(cdsLibEditor list(3241 134 500 505))
+\a nrListItemRename(cdsLibEditor->mainTable, 78 0 "IORING")
+\a nrListItemAction(cdsLibEditor->mainTable 78 1)
+\o Active cell: 78 1 ""
+\a nrResizeWindow(cdsLibEditor list(3240 134 501 505))
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(needCreateDialog list(2164 207 428 180))
-\a nrSetCurrentWindow(cdsLibEditor)
-\a nrResizeWindow(cdsLibEditor list(2128 86 568 571))
-\a nrListItemAction(cdsLibEditor->mainTable 75 1)
-\o Active cell: 75 1 "./"
-\a nrListItemRename(cdsLibEditor->mainTable, 75 1 "./ASKA_DIG")
-\a nrListItemAction(cdsLibEditor->mainTable 76 0)
-\o Active cell: 76 0 ""
+\a nrResizeWindow(cdsLibEditor list(3108 134 633 505))
+\a nrListItemRename(cdsLibEditor->mainTable, 78 1 "./IORING")
+\a nrListItemAction(cdsLibEditor->mainTable 79 0)
+\o Active cell: 79 0 ""
 \a cdsLibEditor->fileSaveButton->value = t
 \a exit(0)

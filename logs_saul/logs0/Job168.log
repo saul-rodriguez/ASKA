@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = PULSE_GENERATOR
-	Cell         = pulse_generator_tb
+	Library      = CURRENT_SOURCE
+	Cell         = current_source_gm_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = PULSE_GENERATOR:pulse_generator_tb:1_none_Interactive.78
-	Results DB   = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.78.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.78/1/PULSE_GENERATOR:pulse_generator_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data
+	State Name   = Corner_Sim_none_Interactive.296
+	Results DB   = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.296.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.296/1/Corner_Sim
+	Results Loc  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/PULSE_GENERATOR/pulse_generator_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl
 	File Encoding = 0
 
 
@@ -28,51 +28,70 @@
 
 
 
-*Info*    Run start for Point ID (78 1) on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ].
+*Info*    Run start for Point ID (59 1) on testbench [ Corner_Sim ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var DN1 = "0"
-Setting var DN2 = "0"
-Setting var RES = "1k"
-Setting var UP1 = "0"
-Setting var UP2 = "0"
-Setting var VDD3 = "3.3"
-Setting var VDD3_PULSE = "0"
-Setting var VDDHV = "40"
-Setting var VDDHV_PULSE = "0"
+Setting var ENABLE = "3.3"
+Setting var ENABLE_STEP = "0"
+Setting var IBIAS = "1u"
+Setting var IBIAS_PULSE = "0"
+Setting var PACTIVE = "3.3"
+Setting var PACTIVE_STEP = "0"
+Setting var VDD = "3.3"
+Setting var VDDH = "40"
+Setting var VDDH_STEP = "0"
+Setting var VDD_AC = "0"
+Setting var VDD_STEP = "0"
+Setting var VIN_AC = "1"
+Setting var VIN_DC = "1"
+Setting var VIN_STEP = "33m"
+Setting var VIN_STEP2 = "0"
+Setting var VSWITCH = "18"
+Setting var VSWITCH_STEP = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.78/1/PULSE_GENERATOR:pulse_generator_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.296/1/Corner_Sim/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.78/1/PULSE_GENERATOR:pulse_generator_tb:1
+          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.296/1/Corner_Sim
 
 
-*Info*    Creating Netlist for Point ID (78 1)
+*Info*    Creating Netlist for Point ID (59 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr 25 03:00:22 2024
-End netlisting Apr 25 03:00:22 2024
+function ansCdlCompPrim redefined
+Begin Incremental Netlisting Jun 18 02:27:05 2024
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the current netlisting session. It had a value
+'_unl' last time netlisting was done in current run directory. Netlists from last
+session cannot be used for incremental netlisting. Therefore re-netlisting the
+design.
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.237/1/Corner_Sim/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
+
+End netlisting Jun 18 02:27:05 2024
+
+Netlisting Statistics:
+	Number of components:   62
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ] for Point ID (78 1).
+*Info*    Running simulation on testbench [ Corner_Sim ] for Point ID
+          (59 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/PULSE_GENERATOR/pulse_generator_tb/adexl/results/data/Interactive.78/1/PULSE_GENERATOR:pulse_generator_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.296/1/Corner_Sim/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -86,9 +105,13 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+ERROR (ADEXL-2709): Evaluation of output 'DC_GAIN' returned 'nil' for point:'1' test:'Corner_Sim'
+	Expression:'deriv(IS("/I0/OUT"))'.
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (78 1) on testbench [
-          PULSE_GENERATOR:pulse_generator_tb:1 ].
+
+*Info*    Run complete for Point ID (59 1) on testbench [ Corner_Sim
+          ].
 
 
 

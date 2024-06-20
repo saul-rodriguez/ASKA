@@ -1,45 +1,121 @@
-\# Program start time:     UTC 2024.04.17 10:57:10.499
-\# Local time: EDT (UTC-04:00) 2024.04.17 06:57:10.499
-\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
-\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
-\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5839 -mpshost phoenix -davinciService DaVinciService_5839_1713327833 -log /home/saul/projects/ASKA/logs_saul/logs0/Job202.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_5839 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 202
-\# Host name (type):	phoenix (x86_64)
-\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
-\# Linux /etc/issue:	\S
-\# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:5849 (1024x868)
-\# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			The X.Org Foundation
-\# Depth of Visual (Root):	24 (24)
-\# Number of Planes Used:	24
-\# X version:		11.0 (vendor release 12004000)
-\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
-\# 			current id 0x0, current max 0x1ffffa (2097146)
-\# Max data seg size:	     unlimited
-\# Max process size:	     unlimited
-\# Initial sbrk value:	        630 MB
-\# Available memory:	     15,413 MB
-\# System memory:	     25,561 MB
-\# Maximum memory size:	     25,150 MB
-\# Max mem available:	     15,631 MB
-\# Initial memory used:	        218 MB
-\#        process size:	      1,821 MB
-\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
-\# Qt version:		5.9.1
-\# Window Manager:	other
-\# User Name:		saul
-\o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		22987
-\o 
-\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
-\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
-\o                          Reproduced with permission.
-\o 
-\o This Cadence Design Systems program and online documentation are
-\o proprietary/confidential information and may be disclosed/used only
-\o as authorized in a license agreement controlling such use and disclosure.
-\o 
-\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
-\o Use/reproduction/disclosure is subject to restriction
-\o set forth at FAR 1252.227-19 or its equivalent.
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = CURRENT_SOURCE
+	Cell         = current_source_gm_tb
+	View         = config
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = Corner_Sim_none_Interactive.314
+	Results DB   = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.314.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.314/1/Corner_Sim
+	Results Loc  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data
+	Project Dir  = /home/saul/projects/ASKA/Sim
+	Setup DB loc = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl
+	File Encoding = 0
+
+
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (77 1) on testbench [ Corner_Sim ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var ENABLE = "3.3"
+Setting var ENABLE_STEP = "0"
+Setting var IBIAS = "1u"
+Setting var IBIAS_PULSE = "0"
+Setting var PACTIVE = "3.3"
+Setting var PACTIVE_STEP = "0"
+Setting var VDD = "3.3"
+Setting var VDDH = "40"
+Setting var VDDH_STEP = "0"
+Setting var VDD_AC = "0"
+Setting var VDD_STEP = "0"
+Setting var VIN_AC = "1"
+Setting var VIN_DC = "1"
+Setting var VIN_STEP = "33m"
+Setting var VIN_STEP2 = "0"
+Setting var VSWITCH = "18"
+Setting var VSWITCH_STEP = "0"
+Setting var temperature = "27"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.314/1/Corner_Sim/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.314/1/Corner_Sim
+
+
+*Info*    Creating Netlist for Point ID (77 1)
+
+generate netlist...
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Begin Incremental Netlisting Jun 18 03:19:24 2024
+WARNING (OSSHNL-269): Variable 'simModelNamePrefix' is not defined in the current netlisting session. It had a value
+'_unl' last time netlisting was done in current run directory. Netlists from last
+session cannot be used for incremental netlisting. Therefore re-netlisting the
+design.
+
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.237/1/Corner_Sim/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
+
+End netlisting Jun 18 03:19:24 2024
+
+Netlisting Statistics:
+	Number of components:   62
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [ Corner_Sim ] for Point ID
+          (77 1).
+
+Delete psf data in /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.314/1/Corner_Sim/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+ERROR (ADEXL-2709): Evaluation of output 'DC_GAIN' returned 'nil' for point:'1' test:'Corner_Sim'
+	Expression:'deriv(IS("/I0/OUT"))'.
+Ensure that the definition of output is correct.
+
+
+*Info*    Run complete for Point ID (77 1) on testbench [ Corner_Sim
+          ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

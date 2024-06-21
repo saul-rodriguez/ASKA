@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = CURRENT_SOURCE
-	Cell         = current_source_gm_tb
+	Library      = POR
+	Cell         = por_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Corner_Sim_none_Interactive.226
-	Results DB   = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.226.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.226/1/Corner_Sim
-	Results Loc  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data
+	State Name   = Corner_none_Interactive.231
+	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.231.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.231/1/Corner
+	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
 	File Encoding = 0
 
 
@@ -28,138 +28,71 @@
 
 
 
-*Info*    Run start for Point ID (0 1) on testbench [ Corner_Sim ].
+*Info*    Run start for Point ID (3 1) on testbench [ Corner ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var ENABLE = "3.3"
-Setting var ENABLE_STEP = "-3.3"
-Setting var IBIAS = "1u"
-Setting var IBIAS_PULSE = "0"
-Setting var VDD = "3.3"
-Setting var VDDH = "40"
-Setting var VDDH_STEP = "0"
-Setting var VDD_AC = "0"
-Setting var VDD_STEP = "0"
-Setting var VIN_AC = "1"
-Setting var VIN_DC = "0"
-Setting var VIN_STEP = "33m"
-Setting var VIN_STEP2 = "0"
-Setting var VSWITCH = "0"
-Setting var VSWITCH_STEP = "18"
+Setting var VDD3 = "0"
+Setting var VDD_BOR = "-0.4"
+Setting var VDD_PULSE = "3.3"
+Setting var VDD_RT = "100u"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.226/1/Corner_Sim/netlist
+          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.231/1/Corner/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.226/1/Corner_Sim
+          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.231/1/Corner
 
 
-*Info*    Creating Netlist for Point ID (0 1)
+*Info*    Creating Netlist for Point ID (3 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.226/1/Corner_Sim/netlist/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting Jun 13 04:16:39 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.79/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Jun 21 17:51:23 2024
+WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
+directory. Netlist(s) from last session cannot be reused for incremental
+netlisting. Therefore, re-netlisting the design.
+
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.215/1/Corner/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-ERROR (OSSHNL-913): Netlisting failed because terminal 'EN' of instance 'I0' in cellview 'CURRENT_SOURCE/current_source_gm_tb/schematic'
-does not exist in switch master 'CURRENT_SOURCE/current_source_gm_10_en/veriloga'. To continue netlisting, either set
-the 'simCheckTermMismatchAction' to 'ignore', or set the
-'simCheckTermMismatchAction' to 'warning' and 'nlAction' to 'ignore' for the
-missing terminal.
+End netlisting Jun 21 17:51:23 2024
 
-ERROR (OSSHNL-913): Netlisting failed because terminal 'PACTIVE' of instance 'I0' in cellview 'CURRENT_SOURCE/current_source_gm_tb/schematic'
-does not exist in switch master 'CURRENT_SOURCE/current_source_gm_10_en/veriloga'. To continue netlisting, either set
-the 'simCheckTermMismatchAction' to 'ignore', or set the
-'simCheckTermMismatchAction' to 'warning' and 'nlAction' to 'ignore' for the
-missing terminal.
+Netlisting Statistics:
+	Number of components:  104
 
-End netlisting Jun 13 04:16:39 2024
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
 
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
+*Info*    Running simulation on testbench [ Corner ] for Point ID (3
+          1).
 
-
-
-
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [ Corner_Sim ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var ENABLE = "3.3"
-Setting var ENABLE_STEP = "-3.3"
-Setting var IBIAS = "1u"
-Setting var IBIAS_PULSE = "0"
-Setting var VDD = "3.3"
-Setting var VDDH = "40"
-Setting var VDDH_STEP = "0"
-Setting var VDD_AC = "0"
-Setting var VDD_STEP = "0"
-Setting var VIN_AC = "1"
-Setting var VIN_DC = "0"
-Setting var VIN_STEP = "33m"
-Setting var VIN_STEP2 = "0"
-Setting var VSWITCH = "0"
-Setting var VSWITCH_STEP = "18"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.226/1/Corner_Sim/netlist
+Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.231/1/Corner/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
 
 
-*Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.226/1/Corner_Sim
+*Info*    Run complete for Point ID (3 1) on testbench [ Corner ].
 
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Jun 13 04:16:39 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.79/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-ERROR (OSSHNL-913): Netlisting failed because terminal 'EN' of instance 'I0' in cellview 'CURRENT_SOURCE/current_source_gm_tb/schematic'
-does not exist in switch master 'CURRENT_SOURCE/current_source_gm_10_en/veriloga'. To continue netlisting, either set
-the 'simCheckTermMismatchAction' to 'ignore', or set the
-'simCheckTermMismatchAction' to 'warning' and 'nlAction' to 'ignore' for the
-missing terminal.
-
-ERROR (OSSHNL-913): Netlisting failed because terminal 'PACTIVE' of instance 'I0' in cellview 'CURRENT_SOURCE/current_source_gm_tb/schematic'
-does not exist in switch master 'CURRENT_SOURCE/current_source_gm_10_en/veriloga'. To continue netlisting, either set
-the 'simCheckTermMismatchAction' to 'ignore', or set the
-'simCheckTermMismatchAction' to 'warning' and 'nlAction' to 'ignore' for the
-missing terminal.
-
-End netlisting Jun 13 04:16:39 2024
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
 
 
 

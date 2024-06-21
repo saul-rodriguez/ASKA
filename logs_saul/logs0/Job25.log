@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = CURRENT_SOURCE
-	Cell         = current_source_gm_tb
+	Library      = POR
+	Cell         = por_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Corner_Sim_none_Interactive.249
-	Results DB   = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.249.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.249/1/Corner_Sim
-	Results Loc  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data
+	State Name   = Corner_none_Interactive.227
+	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.227.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.227/1/Corner
+	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
 	File Encoding = 0
 
 
@@ -28,38 +28,25 @@
 
 
 
-*Info*    Run start for Point ID (12 1) on testbench [ Corner_Sim ].
+*Info*    Run start for Point ID (12 1) on testbench [ Corner ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var ENABLE = "3.3"
-Setting var ENABLE_STEP = "0"
-Setting var IBIAS = "1u"
-Setting var IBIAS_PULSE = "0"
-Setting var PACTIVE = "3.3"
-Setting var PACTIVE_STEP = "0"
-Setting var VDD = "3.3"
-Setting var VDDH = "40"
-Setting var VDDH_STEP = "0"
-Setting var VDD_AC = "0"
-Setting var VDD_STEP = "0"
-Setting var VIN_AC = "1"
-Setting var VIN_DC = "1"
-Setting var VIN_STEP = "33m"
-Setting var VIN_STEP2 = "0"
-Setting var VSWITCH = "18"
-Setting var VSWITCH_STEP = "0"
+Setting var VDD3 = "0"
+Setting var VDD_BOR = "-0.4"
+Setting var VDD_PULSE = "3.3"
+Setting var VDD_RT = "100u"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.249/1/Corner_Sim/netlist
+          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.227/1/Corner/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.249/1/Corner_Sim
+          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.227/1/Corner
 
 
 *Info*    Creating Netlist for Point ID (12 1)
@@ -67,11 +54,11 @@ Setting temp(T) = 27
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Jun 18 00:27:20 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.237/1/Corner_Sim/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Jun 21 17:46:32 2024
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.215/1/Corner/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Jun 18 00:27:20 2024
+End netlisting Jun 21 17:46:32 2024
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -79,10 +66,10 @@ End netlisting Jun 18 00:27:20 2024
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ Corner_Sim ] for Point ID
-          (12 1).
+*Info*    Running simulation on testbench [ Corner ] for Point ID (12
+          1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.249/1/Corner_Sim/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.227/1/Corner/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -96,13 +83,8 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-ERROR (ADEXL-2709): Evaluation of output 'DC_GAIN' returned 'nil' for point:'1' test:'Corner_Sim'
-	Expression:'deriv(IS("/I0/OUT"))'.
-Ensure that the definition of output is correct.
 
-
-*Info*    Run complete for Point ID (12 1) on testbench [ Corner_Sim
-          ].
+*Info*    Run complete for Point ID (12 1) on testbench [ Corner ].
 
 
 

@@ -1,0 +1,14 @@
+** Layout Netlist, pvs precompare
+** 
+
+.subckt NE3I_6 D G S B NW SB 
+*.SWAP  (p D S)
+.ends
+
+
+.subckt ne3i_test GNDA INP OU1 VDDA 
+X1 1 INP OU1 1 VDDA GNDA NE3I_6 w=1e-05 l=2e-06 as=4.8e-12 ad=4.8e-12 ps=2.096e-05 pd=2.096e-05 m=1 
+X0/X0 OU1 INP 1 1 VDDA GNDA NE3I_6 w=1e-05 l=2e-06 as=4.8e-12 ad=4.8e-12 ps=2.096e-05 pd=2.096e-05 m=1 
+.ends
+
+

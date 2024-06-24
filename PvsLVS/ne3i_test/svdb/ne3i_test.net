@@ -1,0 +1,37 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : ne3i_test                                    *
+* Netlisted  : Sun Jun 23 12:00:45 2024                     *
+* PVS Version: 23.10-p043 Mon Oct 2 18:09:08 PDT 2023      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 NE3I_6() nemi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 1 D(p_ddnw) p_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 2 D(p_dipdnwmv) p_dipwmv pwitrm(POS) dnwtrm(NEG)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3I_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3I_6 D G S B NW SB
+.ends NE3I_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3i_6_CDNS_719158440241                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3i_6_CDNS_719158440241 1 2 3 4 5
+*.DEVICECLIMB
+** N=5 EP=5 FDC=1
+X0 2 3 1 1 4 5 NE3I_6 w=1e-05 l=2e-06 as=4.8e-12 ad=4.8e-12 ps=2.096e-05 pd=2.096e-05 $X=0 $Y=0 $dt=0
+.ends ne3i_6_CDNS_719158440241
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3i_test                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3i_test GNDA INP OU1 VDDA
+** N=5 EP=4 FDC=4
+X0 1 OU1 INP VDDA GNDA ne3i_6_CDNS_719158440241 $T=16735 13030 0 0 $X=12675 $Y=8580
+X1 1 INP OU1 1 VDDA GNDA NE3I_6 w=1e-05 l=2e-06 as=4.8e-12 ad=4.8e-12 ps=2.096e-05 pd=2.096e-05 $X=13495 $Y=13030 $dt=0
+D1 GNDA VDDA p_ddnw AREA=2.87063e-10 PJ=7.294e-05 perimeter=7.294e-05 $X=8165 $Y=7310 $dt=1
+D2 1 VDDA p_dipdnwmv AREA=6.5534e-11 PJ=4.214e-05 perimeter=4.214e-05 $X=12015 $Y=11160 $dt=2
+.ends ne3i_test

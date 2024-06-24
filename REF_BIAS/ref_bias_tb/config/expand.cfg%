@@ -1,4 +1,4 @@
-//Revision 5
+//Revision 7
 //NOTE
 // Default austriamicrosystems template for AMS Designer
 // Note:
@@ -13,11 +13,13 @@ const digital behavioral, functional, schematic, symbol;
 const analog veriloga, functional, schematic, symbol;
 liblist basic, analogLib;
 
-viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
+viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, cmos_sch, symbol;
 stoplist symbol, spectre;
 
 
 cell IO_CELLS_JIC3V.APR04DPC binding :cmos_sch;
+
+cell REF_BIAS.ref_bias binding :schematic;
 
 
 endconfig

@@ -1,0 +1,40 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ALL_TESTS
+* Top Cell Name: ne3i_test3
+* View Name:     schematic
+* Netlisted on:  Jun 23 12:47:34 2024
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: ALL_TESTS
+* Cell Name:    ne3i_test3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ne3i_test3 GNDA INN INP OU1 OU2 VDDA
+*.PININFO GNDA:B INN:B INP:B OU1:B OU2:B VDDA:B
+XM1 OU2 INN COM COM VDDA GNDA / ne3i_6 W=10u L=2u M=2.0 AD=4.8e-12 AS=4.8e-12 
++ NRD=0.027 NRS=0.027 PD=2.096e-05 PS=2.096e-05 par1=2.0
+XM0 OU1 INP COM COM VDDA GNDA / ne3i_6 W=10u L=2u M=2.0 AD=4.8e-12 AS=4.8e-12 
++ NRD=0.027 NRS=0.027 PD=2.096e-05 PS=2.096e-05 par1=2.0
+.ENDS
+
+
+.SUBCKT ne3i_6 D G S B NW SB 
+*.PININFO  D:B G:B S:B B:B NW:B SB:B
+.ENDS

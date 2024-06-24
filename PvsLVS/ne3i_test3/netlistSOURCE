@@ -1,0 +1,15 @@
+** Schematic Netlist, pvs precompare
+** 
+
+.subckt ne3i_6 D G S B NW SB 
+.ends
+
+
+.subckt ne3i_test3 GNDA INN INP OU1 OU2 VDDA 
+XM1 OU2 INN COM COM VDDA GNDA ne3i_6 W=1e-05 L=2e-06 m=1 AD=4.8e-12 AS=4.8e-12 PS=2.096e-05 PD=2.096e-05 
+XM1==2 OU2 INN COM COM VDDA GNDA ne3i_6 W=1e-05 L=2e-06 m=1 AD=4.8e-12 AS=4.8e-12 PS=2.096e-05 PD=2.096e-05 
+XM0 OU1 INP COM COM VDDA GNDA ne3i_6 W=1e-05 L=2e-06 m=1 AD=4.8e-12 AS=4.8e-12 PS=2.096e-05 PD=2.096e-05 
+XM0==2 OU1 INP COM COM VDDA GNDA ne3i_6 W=1e-05 L=2e-06 m=1 AD=4.8e-12 AS=4.8e-12 PS=2.096e-05 PD=2.096e-05 
+.ends
+
+

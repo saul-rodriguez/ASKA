@@ -3,7 +3,7 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   23.10-p043
-#####  NVN Run Start                 :   Tue Jun 25 10:28:22 2024
+#####  NVN Run Start                 :   Tue Jun 25 15:46:36 2024
 #####  ERC Summary File              :   bandgap_su.sum
 #####  Extraction Report File        :   bandgap_su_lvs.sum
 #####  Comparison Report File        :   bandgap_su_lvs.sum.cls
@@ -25,10 +25,10 @@
 #####  Extraction Peak Memory Usage  :   59.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
-#####  NVN Peak Memory Usage         :   262.29MB
+#####  NVN Peak Memory Usage         :   269.29MB
 #####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   262.29MB
+#####  LVS Total Peak Memory Usage   :   269.29MB
 #####  
 ##############################################################################################################
 

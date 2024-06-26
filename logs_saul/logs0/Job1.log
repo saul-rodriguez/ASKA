@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = REF_BIAS
-	Cell         = ref_bias_tb
+	Library      = BANDGAP
+	Cell         = bandgap_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Corner_sim_none_Interactive.129
-	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim
-	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
+	State Name   = BANDGAP:bandgap_tb:1_none_Interactive.68
+	Results DB   = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl/results/data/Interactive.68.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.68/1/BANDGAP:bandgap_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/BANDGAP/bandgap_tb/adexl
 	File Encoding = 0
 
 
@@ -30,25 +30,27 @@ Loading monte.cxt
 
 
 
-*Info*    Run start for Point ID (0 1) on testbench [ Corner_sim ].
+*Info*    Run start for Point ID (0 1) on testbench [
+          BANDGAP:bandgap_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "0"
-Setting var VDD3_PULSE = "3.3"
-Setting var VREF = "1.21"
-Setting var VREF_PULSE = "0"
+Setting var IBIAS = "1u"
+Setting var IBIAS_PULSE = "0"
+Setting var IPULSE = "0"
+Setting var VDD3 = "3.3"
+Setting var VDD_PULSE = "100m"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim/netlist
+          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.68/1/BANDGAP:bandgap_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim
+          /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.68/1/BANDGAP:bandgap_tb:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
@@ -59,12 +61,16 @@ Loading hnlInit.cxt
 Loading seCore.cxt 
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Jun 24 11:08:53 2024
+Initializing the control file using cp:
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.68/1/BANDGAP:bandgap_tb:1/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Jun 25 15:52:57 2024
 Loading json.cxt 
-End netlisting Jun 24 11:08:53 2024
+End netlisting Jun 25 15:52:57 2024
 
 Netlisting Statistics:
-	Number of components:   25
+	Number of components:   44
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -72,10 +78,10 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-          (0 1).
+*Info*    Running simulation on testbench [ BANDGAP:bandgap_tb:1 ]
+          for Point ID (0 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/BANDGAP/bandgap_tb/adexl/results/data/Interactive.68/1/BANDGAP:bandgap_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -90,32 +96,9 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'1' test:'Corner_sim'
-	Expression:'db(getData("/V1" ?result "xf"))'.
-Ensure that the definition of output is correct.
 
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'Zeros' returned 'nil' for point:'1' test:'Corner_sim'
-	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-Ensure that the definition of output is correct.
-
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'Poles' returned 'nil' for point:'1' test:'Corner_sim'
-	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-Ensure that the definition of output is correct.
-
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.129/1/Corner_sim. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'1' test:'Corner_sim'
-	Expression:'db(getData("/V0" ?result "xf"))'.
-Ensure that the definition of output is correct.
-
-
-*Info*    Run complete for Point ID (0 1) on testbench [ Corner_sim ].
+*Info*    Run complete for Point ID (0 1) on testbench [
+          BANDGAP:bandgap_tb:1 ].
 
 
 

@@ -19,6 +19,7 @@ lvs_report_opt -none;
 report_summary -erc "bandgap_su.sum" -replace;
 max_results -erc 1000;
 results_db -erc "/home/saul/projects/ASKA/PvsLVS/bandgap_su/bandgap_su_lvs.err" -ascii;
+mask_svdb_dir "/home/saul/projects/ASKA/PvsLVS/bandgap_su/svdb";
 keep_layers -none;
 schematic_format cdl;
 schematic_path "/home/saul/projects/ASKA/PvsLVS/bandgap_su/bandgap_su.cdl";

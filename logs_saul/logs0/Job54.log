@@ -1,189 +1,3305 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = ASKA_TOP
-	Cell         = aska_core_tb
-	View         = config_an_schem_dig_fun
-	Simulator    = ams
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ASKA_TOP:aska_core_tb:1_none_Interactive.147
-	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.147.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.147/1/ASKA_TOP:aska_core_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (27 1) on testbench [
-          ASKA_TOP:aska_core_tb:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var POR_PULSE = "-0.5"
-Setting var RES = "100"
-Setting var VDD3 = "0"
-Setting var VDD3_PULSE = "3.3"
-Setting var VDDHV = "0"
-Setting var VDDHV_PULSE = "40"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.147/1/ASKA_TOP:aska_core_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.147/1/ASKA_TOP:aska_core_tb:1
-
-
-*Info*    Creating Netlist for Point ID (27 1)
-
-generate netlist...
-INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
-INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
- field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
- analog primitives using the Spectre CDF simulation information.
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Netlisting Jun 14 03:25:45 2024
-INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.147/1/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
-simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-before invoking Verilog netlister.
- 
-INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-the .simrc file.
- 
-INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-If you want to print only those cellviews that need to be re-netlisted in the 
-list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-.simrc file.
- 
-INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-either in CIW or the .simrc file.
- 
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.120/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
-INFO (VLOGNET-117): Re-netlisting the entire design.
-
-INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-non-stopping cells.
- 
-WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
-design.
- 
-INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-
-
-
-LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
----------                   ---------                   ---------            ----             
-
-PRIMLIB                     ne3                         spectre              *Stopping View*  
-PRIMLIB                     pe3                         spectre              *Stopping View*  
-PRIMLIB                     qpvc3                       spectre              *Stopping View*  
-PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
-PRIMLIB                     cmm5t                       spectre              *Stopping View*  
-PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
-PRIMLIB                     mosvc3                      spectre              *Stopping View*  
-PRIMLIB                     nedia                       spectre              *Stopping View*  
-ASKA_DIG                    aska_npg                    functional           *Stopping View*  
-ASKA_DIG                    aska_spi                    functional           *Stopping View*  
-PRIMLIB                     ped                         spectre              *Stopping View*  
-PRIMLIB                     csf4a                       spectre              *Stopping View*  
-PRIMLIB                     dsba                        spectre              *Stopping View*  
-PRIMLIB                     dpp20                       spectre              *Stopping View*  
-ASKA_DIG                    DIG_stimulus                verilogams_por       *Stopping View*  
-analogLib                   vpulse                      spectre              *Stopping View*  
-analogLib                   vdc                         spectre              *Stopping View*  
-analogLib                   res                         spectre              *Stopping View*  
-analogLib                   ind                         spectre              *Stopping View*  
-analogLib                   cap                         spectre              *Stopping View*  
-ASKA_TOP                    aska_core_tb                schematic                             
-ASKA_TOP                    aska_core                   schematic                             
-ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
-HVSWITCH                    hvswitch5                   schematic                             
-POR                         por2                        schematic                             
-D_CELLS_3V                  STE_3VX4                    cmos_sch                              
-ASKA_DIG                    aska_dig                    functional                            
-PULSE_GENERATOR             pulse_generator             schematic                             
-DAC6B                       dac6b_amp_n2                schematic                             
-CURRENT_SOURCE              current_source_gm_10_en     schematic                             
-BIAS                        bias                        schematic                             
-REF_BIAS                    ref_bias                    schematic                             
-CONSTANT_GM                 constant_gm                 schematic                             
-BANDGAP                     bandgap_su                  schematic                             
-
----------- End of netlist configuration information   ----------
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.147/1/ASKA_TOP:aska_core_tb:1/netlist/analog/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.120/1/ASKA_TOP:aska_core_tb:1/netlist/digital/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-Running netlist assembly..
-.........
-End netlisting Jun 14 03:25:51 2024
-INFO (AMS-1241): AMS UNL netlisting has completed successfully.
-To view the modules, right-click the test name on the Tests and Analyses 
-assistant pane and choose Netlist->Display menu option.
-      ...successful.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
-          for Point ID (27 1).
-
-Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.147/1/ASKA_TOP:aska_core_tb:1/psf.
-create cds_globals...
-      ...successful.
-compose simulator input file...
-      ...successful.
-validating simulator hierarchy...
-      ...successful.
-running...
-To check for output from compilation, elaboration and simulation run, 
-right-click on the test name, result name, or any value in the "Results" 
-tab of the Outputs section and choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (27 1) on testbench [
-          ASKA_TOP:aska_core_tb:1 ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+\# Program start time:     UTC 2024.06.25 20:52:40.530
+\# Local time: EDT (UTC-04:00) 2024.06.25 16:52:40.530
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
+\o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso10203 -mpshost phoenix -davinciService DaVinciService_10203_1719345115 -log /home/saul/projects/ASKA/logs_saul/logs0/Job54.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_10203 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 54
+\# Host name (type):	phoenix (x86_64)
+\# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:2137 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12004000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        647 MB
+\# Available memory:	     21,052 MB
+\# System memory:	     25,561 MB
+\# Maximum memory size:	     25,132 MB
+\# Max mem available:	     21,270 MB
+\# Initial memory used:	        218 MB
+\#        process size:	      1,821 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	phoenix:/home/saul/projects/ASKA
+\# Process Id:		25161
+\o 
+\o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso10203, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 25161 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [16:52:40.512401] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.06.25 20:52:42.422
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/PDK/IC61/v9_0_4"
+\o Loading XfSktTools.cxt
+\o Loading XfMenu.cxt
+\o Loading XfTechXh018.cxt
+\o Loading XfPcellCore.cxt
+\o function ansiSpicePrintProperties_subcircuit redefined
+\o Loading XfSkillExt.cxt
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\# Memory report: using         472 MB, process size 2,204 MB at UTC 2024.06.25 20:52:43.339
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o  --> AssuraTools Setup not available
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 25161' to open it when Virtuoso freezes.
+\# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = DAC6B
+\o 	Cell         = dac6b_va_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = DAC6B:dac6b_tb:1_spectre_state1_Interactive.110
+\o 	Results DB   = /home/saul/projects/ASKA/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/8/DAC6B:dac6b_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/DAC6B/dac6b_va_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  loading default key binding 
+\o  -> END LOAD ".cdsinit" FILE
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 9) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var INIT_CODE = "50"
+\o Setting var VDD = "3.6"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VREF = "1.25"
+\o Setting var VREF_PULSE = "0"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 9)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [16:52:44.368049] Periodic Lic check successful
+\# [16:52:44.368050] Feature usage summary:
+\o Begin Incremental Netlisting Jun 25 16:52:44 2024
+\o End netlisting Jun 25 16:52:44 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 9).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: using         622 MB, process size 2,411 MB at UTC 2024.06.25 20:52:45.393
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'9' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'9' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'9' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 9) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 14) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:45 2024
+\o End netlisting Jun 25 16:52:45 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 14).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'14' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'14' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/14/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'14' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 14) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 19) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:46 2024
+\o End netlisting Jun 25 16:52:46 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 19).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'19' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'19' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/19/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'19' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 19) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 24) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:48 2024
+\o End netlisting Jun 25 16:52:48 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 24).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'24' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'24' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'24' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 24) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 29) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 29)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:49 2024
+\o End netlisting Jun 25 16:52:49 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 29).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Available memory:         19,581 MB at UTC 2024.06.25 20:52:50.265
+\# Memory report: Maximum memory size now 20,227 MB at UTC 2024.06.25 20:52:50.265
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.06.25 20:52:50.265
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'29' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'29' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/29/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'29' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 29) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 34) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 34)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:50 2024
+\o End netlisting Jun 25 16:52:50 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 34).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'34' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'34' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/34/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'34' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 34) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 39) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 39)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:52 2024
+\o End netlisting Jun 25 16:52:52 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 39).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'39' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'39' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/39/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'39' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 39) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 44) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 44)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:53 2024
+\o End netlisting Jun 25 16:52:53 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 44).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'44' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'44' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'44' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 44) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 49) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 49)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:54 2024
+\o End netlisting Jun 25 16:52:54 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 49).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'49' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'49' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/49/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'49' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 49) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 53) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 53)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:56 2024
+\o End netlisting Jun 25 16:52:56 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 53).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'53' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'53' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/53/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'53' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 53) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 58) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 58)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:57 2024
+\o End netlisting Jun 25 16:52:57 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 58).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'58' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'58' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/58/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'58' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 58) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 64) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 64)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:52:59 2024
+\o End netlisting Jun 25 16:52:59 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (20 64).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'64' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'64' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.110/64/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'64' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 64) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = DAC6B
+\o 	Cell         = dac6b_va_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = DAC6B:dac6b_tb:1_spectre_state1_Interactive.111
+\o 	Results DB   = /home/saul/projects/ASKA/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/1/DAC6B:dac6b_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/DAC6B/dac6b_va_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 4) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var INIT_CODE = "1"
+\o Setting var VDD = "3.6"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VREF = "1.25"
+\o Setting var VREF_PULSE = "0"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:36 2024
+\o End netlisting Jun 25 16:53:36 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 4).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'4' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'4' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/4/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'4' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 4) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 8) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:38 2024
+\o End netlisting Jun 25 16:53:38 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 8).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'8' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'8' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/8/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'8' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 8) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 11) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:39 2024
+\o End netlisting Jun 25 16:53:39 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 11).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'11' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'11' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/11/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'11' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 11) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 16) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:41 2024
+\o End netlisting Jun 25 16:53:41 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 16).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'16' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'16' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/16/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'16' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 16) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 22) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:42 2024
+\o End netlisting Jun 25 16:53:42 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 22).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'22' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'22' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/22/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'22' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 22) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 30) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:44 2024
+\o End netlisting Jun 25 16:53:44 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 30).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'30' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'30' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'30' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 30) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 35) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 35)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:45 2024
+\o End netlisting Jun 25 16:53:45 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 35).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'35' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'35' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/35/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'35' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 35) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 38) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 38)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:47 2024
+\o End netlisting Jun 25 16:53:47 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 38).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'38' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'38' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/38/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'38' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 38) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 44) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 44)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:48 2024
+\o End netlisting Jun 25 16:53:48 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 44).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1/psf.
+\# Memory report: using         722 MB, process size 2,511 MB at UTC 2024.06.25 20:53:49.027
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'44' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'44' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/44/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'44' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 44) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 50) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 50)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:50 2024
+\o End netlisting Jun 25 16:53:50 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 50).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'50' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'50' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/50/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'50' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 50) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 55) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 55)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:51 2024
+\o End netlisting Jun 25 16:53:52 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 55).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'55' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'55' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/55/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'55' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 55) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 57) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 57)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:53 2024
+\o End netlisting Jun 25 16:53:53 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 57).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'57' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'57' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/57/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'57' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 57) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 62) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 62)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:53:54 2024
+\o End netlisting Jun 25 16:53:54 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (21 62).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'62' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'62' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.111/62/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'62' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 62) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 19,759 MB at UTC 2024.06.25 20:54:08.998
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = DAC6B
+\o 	Cell         = dac6b_va_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = DAC6B:dac6b_tb:1_spectre_state1_Interactive.112
+\o 	Results DB   = /home/saul/projects/ASKA/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/1/DAC6B:dac6b_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/DAC6B/dac6b_va_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 5) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var INIT_CODE = "1"
+\o Setting var VDD = "0"
+\o Setting var VDD_PULSE = "3.3"
+\o Setting var VREF = "1.25"
+\o Setting var VREF_PULSE = "0"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:55:34 2024
+\o End netlisting Jun 25 16:55:35 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (22 5).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'5' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'5' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/5/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'5' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 5) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 9) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:55:36 2024
+\o End netlisting Jun 25 16:55:36 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (22 9).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'9' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'9' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/9/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'9' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 9) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 12) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:55:37 2024
+\o End netlisting Jun 25 16:55:37 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (22 12).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'12' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'12' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/12/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'12' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 12) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 20) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 20)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:55:39 2024
+\o End netlisting Jun 25 16:55:39 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (22 20).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'20' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'20' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/20/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'20' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 20) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 24) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:55:40 2024
+\o End netlisting Jun 25 16:55:40 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (22 24).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'24' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'24' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/24/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'24' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 24) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 30) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 25 16:55:42 2024
+\o End netlisting Jun 25 16:55:42 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ DAC6B:dac6b_tb:1 ] for
+\o           Point ID (22 30).
+\o 
+\o Delete psf data in /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'CMRR' failed for point:'30' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'(db(getData("/V1" ?result "xf")) - db(getData("/V0" ?result "xf")))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'30' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V1" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/DAC6B/dac6b_va_tb/adexl/results/data/Interactive.112/30/DAC6B:dac6b_tb:1. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'30' test:'DAC6B:dac6b_tb:1'
+\o 	Expression:'db(getData("/V0" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 30) on testbench [
+\o           DAC6B:dac6b_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [16:57:56.039843] Cdslmd servers:3000@lic08.ug.kth.se
+\# [16:57:56.039874] Feature usage summary:
+\# Memory report: on exit            766 MB, process size 2,555 MB at UTC 2024.06.25 20:57:56.040
+\# Memory report: peak usage         766 MB, process size 2,555 MB

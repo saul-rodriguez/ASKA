@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.06.23 19:58:33.191
-\# Local time: EDT (UTC-04:00) 2024.06.23 15:58:33.191
+\# Program start time:     UTC 2024.07.08 13:41:00.026
+\# Local time: EDT (UTC-04:00) 2024.07.08 09:41:00.026
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/11/2023 09:56 (cpgbld01) $
 \o Hierarchy:		/home/saul/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.34  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso18712 -mpshost phoenix -davinciService DaVinciService_18712_1719172252 -log /home/saul/projects/ASKA/logs_saul/logs0/Job8.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_18712 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 8
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso22328 -mpshost phoenix -davinciService DaVinciService_22328_1720445312 -log /home/saul/projects/ASKA/logs_saul/logs0/Job8.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.phoenix_22328 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 8
 \# Host name (type):	phoenix (x86_64)
 \# Operating system:	Linux 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:1043 (1024x868)
+\# X display name (WxH):	:5855 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        630 MB
-\# Available memory:	     21,212 MB
+\# Initial sbrk value:	        632 MB
+\# Available memory:	     20,539 MB
 \# System memory:	     25,561 MB
-\# Maximum memory size:	     25,150 MB
-\# Max mem available:	     21,430 MB
+\# Maximum memory size:	     25,147 MB
+\# Max mem available:	     20,758 MB
 \# Initial memory used:	        218 MB
 \#        process size:	      1,821 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 7.00/7.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
-\# Process Id:		25162
+\# Process Id:		3231
 \o 
 \o COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
@@ -68,19 +68,19 @@
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
 \o Loading adexl.cxt 
+\# Memory report: using         348 MB, process size 2,073 MB at UTC 2024.07.08 13:41:06.100
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading adexlDM.cxt 
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso18712, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso22328, host=phoenix). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 25162 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 3231 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [15:58:33.512457] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
-\# Memory report: using         370 MB, process size 2,102 MB at UTC 2024.06.23 19:58:35.509
+\# [09:41:00.512369] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -111,7 +111,6 @@
 \o Loading msgHandler.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
-\# Memory report: using         472 MB, process size 2,204 MB at UTC 2024.06.23 19:58:36.438
 \o  --> Finished setting the required PDK definitions
 \o  --> Setting the recommended EDA tool defaults...
 \o  --> Finished setting the recommended EDA tool defaults
@@ -123,8 +122,9 @@
 \p > 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 25162' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 3231' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\# Memory report: using         482 MB, process size 2,221 MB at UTC 2024.07.08 13:41:08.042
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
 \o 
@@ -132,21 +132,22 @@
 \o *Info*    Configuring the session ...
 \o 
 \o Loading simui.cxt 
-\o 	Library      = REF_BIAS
-\o 	Cell         = ref_bias_tb
-\o 	View         = config
-\o 	Simulator    = spectre
+\o 	Library      = ASKA_TOP
+\o 	Cell         = aska_core_tb
+\o 	View         = config_an_schem_dig_fun
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = Corner_sim_none_Interactive.125
-\o 	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/1/Corner_sim
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
+\o 	State Name   = ASKA_TOP:aska_core_tb:1_none_Interactive.187
+\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187/3/ASKA_TOP:aska_core_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
-\o WARNING (ADE-7017): The Spectre run mode needs to be 'batch' when EM/IR analysis is enabled. Automatically setting the run mode to 'batch'.
+\o WARNING (AMS-1058): The rule 'ConnRules_inhconn_full_fast_gnd' has been specified twice for the library 'xfab_connectLib' in the connectRules.il file. Therefore, the second occurrence of this rule has been ignored.
+\o 
 \o 
 \o *Info*    The auto suspension is disabled.
 \o 
@@ -168,609 +169,368 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (1 3) on testbench [ Corner_sim ].
+\o *Info*    Run start for Point ID (2 3) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var POR_PULSE = "0"
+\o Setting var RES = "100"
 \o Setting var VDD3 = "3.3"
 \o Setting var VDD3_PULSE = "0"
-\o Setting var VREF = "1.21"
-\o Setting var VREF_PULSE = "0"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
 \o Setting var temperature = "85"
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/3/Corner_sim/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187/3/ASKA_TOP:aska_core_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/3/Corner_sim
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187/3/ASKA_TOP:aska_core_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (1 3)
+\o *Info*    Creating Netlist for Point ID (2 3)
 \o 
 \o generate netlist...
-\o Loading hnlInit.cxt 
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
 \o Loading seCore.cxt 
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\# [15:58:37.385955] Periodic Lic check successful
-\# [15:58:37.385960] Feature usage summary:
-\o Begin Incremental Netlisting Jun 23 15:58:37 2024
-\o End netlisting Jun 23 15:58:37 2024
+\o Loading verilogI.cxt 
+\# [09:41:09.371865] Periodic Lic check successful
+\# [09:41:09.371866] Feature usage summary:
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187/3/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:41:09 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187/3/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o Loading digitalSim.cxt 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en_r   schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\# Memory report: using         684 MB, process size 2,422 MB at UTC 2024.07.08 13:41:10.123
+\o function ansCdlCompPrim redefined
+\o Loading hnlInit.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187/3/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Loading json.cxt 
+\o Running netlist assembly..
+\o .......
+\# Available memory:         19,258 MB at UTC 2024.07.08 13:41:15.357
+\# Memory report: Maximum memory size now 19,943 MB at UTC 2024.07.08 13:41:15.357
+\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.07.08 13:41:15.357
+\o End netlisting Jul  8 09:41:15 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o Loading cdf.cxt 
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (1 3).
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+\o           for Point ID (2 3).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/3/Corner_sim/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.187/3/ASKA_TOP:aska_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: using         624 MB, process size 2,413 MB at UTC 2024.06.23 19:58:38.191
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/3/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/3/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'3' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/3/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/3/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'3' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 3) on testbench [ Corner_sim ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 8) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/8/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/8/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 8)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:38 2024
-\o End netlisting Jun 23 15:58:38 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (1 8).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/8/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/8/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/8/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'8' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/8/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/8/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'8' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 8) on testbench [ Corner_sim ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 13) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/13/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/13/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 13)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:39 2024
-\o End netlisting Jun 23 15:58:39 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (1 13).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/13/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/13/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/13/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'13' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/13/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/13/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'13' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 13) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 18) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/18/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/18/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 18)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:40 2024
-\o End netlisting Jun 23 15:58:40 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (1 18).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/18/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/18/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/18/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'18' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/18/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/18/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'18' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 18) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 21) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 21)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:41 2024
-\o End netlisting Jun 23 15:58:41 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (1 21).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o *Info*    Current simulation for points ((1 21)).
+\# Memory report: Maximum memory size now 19,366 MB at UTC 2024.07.08 13:41:34.998
+\o *Info*    Current simulation for points ((2 3)).
 \o *Info*    (ADE-3072): Simulation stopped because you selected the
 \o           'Stop Simulation' command in ADE.
 \o 
 \o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
 \o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
 \o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V1; xf dB20(V/V)' returned 'nil' for point:'21' test:'Corner_sim'
-\o 	Expression:'db(getData("/V1" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'21' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'21' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.125/21/Corner_sim. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'V/V /V0; xf dB20(V/V)' returned 'nil' for point:'21' test:'Corner_sim'
-\o 	Expression:'db(getData("/V0" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 21) on testbench [ Corner_sim
-\o           ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Available memory:         19,583 MB at UTC 2024.06.23 19:58:43.883
-\# Memory report: Maximum memory size now 20,253 MB at UTC 2024.06.23 19:58:43.883
-\# Thread usage report: 13 active threads, active load 1.40 at UTC 2024.06.23 19:58:43.883
+\o 
+\# Memory report: Maximum memory size now 19,891 MB at UTC 2024.07.08 13:45:24.998
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \o 
 \o 
-\o *Info*    Configuring the session ...
 \o 
-\o 	Library      = REF_BIAS
-\o 	Cell         = ref_bias_tb
-\o 	View         = config
-\o 	Simulator    = spectre
+\o 	Library      = ASKA_TOP
+\o 	Cell         = aska_core_tb
+\o 	View         = config_an_schem_dig_fun
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = Corner_sim_none_Interactive.126
-\o 	Results DB   = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/1/Corner_sim
-\o 	Results Loc  = /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data
+\o 	State Name   = ASKA_TOP:aska_core_tb:1_none_Interactive.188
+\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/1/ASKA_TOP:aska_core_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
-\o 	Setup DB loc = /home/saul/projects/ASKA/REF_BIAS/ref_bias_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
 \o 
-\o *Info*    The auto suspension is disabled.
 \o 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (2 3) on testbench [ Corner_sim ].
 \o 
 \o Resetting statistical vars
 \o 
-\o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD3 = "3"
+\o Setting var POR_PULSE = "0"
+\o Setting var RES = "100"
+\o Setting var VDD3 = "3.3"
 \o Setting var VDD3_PULSE = "0"
-\o Setting var VREF = "1.21"
-\o Setting var VREF_PULSE = "0"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/3/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/3/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 3)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:56 2024
-\o End netlisting Jun 23 15:58:56 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 3).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/3/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/3/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/3/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'3' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/3/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/3/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'3' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 3) on testbench [ Corner_sim ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 8) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3.6"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
 \o Setting var temperature = "-40"
 \o Setting temp(T) = -40
 \o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/8/Corner_sim/netlist
 \o 
 \o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/8/Corner_sim
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (2 8)
 \o 
 \o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:57 2024
-\o End netlisting Jun 23 15:58:57 2024
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/4/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:46:17 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/4/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o DAC6B                       dac6b_amp_n2                veriloga             *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en_r   schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/4/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\o ...
+\o End netlisting Jul  8 09:46:23 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 8).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/8/Corner_sim/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/4/ASKA_TOP:aska_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 19,227 MB at UTC 2024.07.08 13:46:43.998
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/8/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/8/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'8' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
+\o *Info*    Run complete for Point ID (3 4) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/8/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/8/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'8' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (2 8) on testbench [ Corner_sim ].
 \o 
 \o 
 \o 
@@ -778,324 +538,8 @@
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 13) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/13/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/13/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 13)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:58 2024
-\o End netlisting Jun 23 15:58:58 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 13).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/13/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/13/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/13/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'13' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/13/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/13/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'13' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 13) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 18) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3"
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/18/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/18/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 18)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:58:59 2024
-\o End netlisting Jun 23 15:58:59 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 18).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/18/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/18/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/18/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'18' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/18/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/18/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'18' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 18) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 22) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/22/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/22/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 22)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:01 2024
-\o End netlisting Jun 23 15:59:01 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 22).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/22/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/22/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/22/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'22' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/22/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/22/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'22' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 22) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 28) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3.6"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/28/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/28/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 28)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:02 2024
-\o End netlisting Jun 23 15:59:02 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 28).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/28/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/28/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/28/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'28' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/28/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/28/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'28' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 28) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 33) on testbench [ Corner_sim ].
+\o *Info*    Run start for Point ID (3 7) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -1105,539 +549,980 @@
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/33/Corner_sim/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/7/ASKA_TOP:aska_core_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/33/Corner_sim
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/7/ASKA_TOP:aska_core_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (2 33)
+\o *Info*    Creating Netlist for Point ID (3 7)
 \o 
 \o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:03 2024
-\o End netlisting Jun 23 15:59:03 2024
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/7/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:47:17 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/7/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o DAC6B                       dac6b_amp_n2                veriloga             *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o CURRENT_SOURCE              current_source_gm_10_en_r   schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/7/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\o .........
+\o End netlisting Jul  8 09:47:23 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 33).
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+\o           for Point ID (3 7).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/33/Corner_sim/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.188/7/ASKA_TOP:aska_core_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o *Info*    Current simulation for points ((3 7)).
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/33/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/33/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'33' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/33/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/33/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'33' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 33) on testbench [ Corner_sim
-\o           ].
+\# Memory report: Maximum memory size now 19,690 MB at UTC 2024.07.08 13:49:33.428
 \o 
 \o 
 \o 
 \o 
 \o 
 \o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o 
+\o 	Library      = ASKA_TOP
+\o 	Cell         = aska_core_tb
+\o 	View         = config_an_schem_dig_fun
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ASKA_TOP:aska_core_tb:1_none_Interactive.189
+\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/1/ASKA_TOP:aska_core_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
+\o 	File Encoding = 0
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (2 37) on testbench [ Corner_sim ].
+\o 
+\o 
+\o 
+\o 
+\o 
 \o 
 \o Resetting statistical vars
 \o 
-\o *Info*    Setting parameter values ...
 \o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/37/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/37/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 37)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:04 2024
-\o End netlisting Jun 23 15:59:04 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 37).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/37/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: using         726 MB, process size 2,515 MB at UTC 2024.06.23 19:59:05.240
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/37/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/37/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'37' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/37/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/37/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'37' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 37) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 41) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/41/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/41/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 41)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:05 2024
-\o End netlisting Jun 23 15:59:05 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 41).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/41/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/41/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/41/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'41' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/41/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/41/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'41' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 41) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 47) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/47/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/47/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 47)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:06 2024
-\o End netlisting Jun 23 15:59:06 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 47).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/47/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/47/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/47/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'47' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/47/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/47/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'47' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 47) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 53) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3.6"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/53/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/53/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 53)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:08 2024
-\o End netlisting Jun 23 15:59:08 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 53).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/53/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/53/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/53/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'53' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/53/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/53/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'53' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 53) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 57) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/57/Corner_sim/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/57/Corner_sim
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 57)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:09 2024
-\o End netlisting Jun 23 15:59:09 2024
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 57).
-\o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/57/Corner_sim/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/57/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/57/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'57' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/57/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/57/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'57' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 57) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 62) on testbench [ Corner_sim ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD3 = "3"
+\o Setting var POR_PULSE = "0"
+\o Setting var RES = "100"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD3_PULSE = "0"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
 \o Setting var temperature = "-40"
 \o Setting temp(T) = -40
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/2/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:50:26 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/2/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o CURRENT_SOURCE              current_source_gm_10_en_r   veriloga             *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/2/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\o ........
+\o End netlisting Jul  8 09:50:32 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/2/ASKA_TOP:aska_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 19,016 MB at UTC 2024.07.08 13:50:41.998
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o 
+\o *Info*    Run complete for Point ID (4 2) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 8) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/62/Corner_sim/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/8/ASKA_TOP:aska_core_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/62/Corner_sim
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/8/ASKA_TOP:aska_core_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (2 62)
+\o *Info*    Creating Netlist for Point ID (4 8)
 \o 
 \o generate netlist...
+\# Memory report: using         797 MB, process size 2,591 MB at UTC 2024.07.08 13:51:20.141
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 23 15:59:10 2024
-\o End netlisting Jun 23 15:59:10 2024
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/8/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:51:20 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/8/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o CURRENT_SOURCE              current_source_gm_10_en_r   veriloga             *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/8/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\# Memory report: Maximum memory size now 19,507 MB at UTC 2024.07.08 13:51:21.107
+\o Running netlist assembly..
+\o ........
+\o End netlisting Jul  8 09:51:26 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ Corner_sim ] for Point ID
-\o           (2 62).
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+\o           for Point ID (4 8).
 \o 
-\o Delete psf data in /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/62/Corner_sim/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/8/ASKA_TOP:aska_core_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18,987 MB at UTC 2024.07.08 13:51:30.998
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/62/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/62/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\o 
+\o *Info*    Run complete for Point ID (4 8) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 12) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/12/ASKA_TOP:aska_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/12/ASKA_TOP:aska_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 12)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/12/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:52:01 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/12/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o CURRENT_SOURCE              current_source_gm_10_en_r   veriloga             *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/12/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\o .........
+\o End netlisting Jul  8 09:52:07 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+\o           for Point ID (4 12).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/12/ASKA_TOP:aska_core_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 12) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 16) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/16/ASKA_TOP:aska_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/16/ASKA_TOP:aska_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 16)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/16/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:52:43 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/16/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o CURRENT_SOURCE              current_source_gm_10_en_r   veriloga             *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/16/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\o ........
+\o End netlisting Jul  8 09:52:49 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+\o           for Point ID (4 16).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/16/ASKA_TOP:aska_core_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 16) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 18) on testbench [
+\o           ASKA_TOP:aska_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/18/ASKA_TOP:aska_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/18/ASKA_TOP:aska_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 18)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/18/ASKA_TOP:aska_core_tb:1/netlist/digital/control
+\o Begin Netlisting Jul  8 09:55:05 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/18/ASKA_TOP:aska_core_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o CURRENT_SOURCE              current_source_gm_10_en_r   veriloga             *Stopping View*  
+\o ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+\o ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o ASKA_DIG                    DIG_stimulus                verilogams           *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o ASKA_TOP                    aska_core_tb                schematic                             
+\o ASKA_TOP                    aska_core                   schematic                             
+\o ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+\o HVSWITCH                    hvswitch5                   schematic                             
+\o POR                         por2                        schematic                             
+\o D_CELLS_3V                  STE_3VX4                    cmos_sch                              
+\o ASKA_DIG                    aska_dig                    functional                            
+\o PULSE_GENERATOR             pulse_generator             schematic                             
+\o DAC6B                       dac6b_amp_n2                schematic                             
+\o BIAS                        bias                        schematic                             
+\o REF_BIAS                    ref_bias                    schematic                             
+\o CONSTANT_GM                 constant_gm                 schematic                             
+\o BANDGAP                     bandgap_su                  schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/18/ASKA_TOP:aska_core_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+\o            than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\o .........
+\# Available memory:         17,002 MB at UTC 2024.07.08 13:55:11.856
+\# Memory report: Maximum memory size now 17,802 MB at UTC 2024.07.08 13:55:11.856
+\o End netlisting Jul  8 09:55:11 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_core_tb:1 ]
+\o           for Point ID (4 18).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.189/18/ASKA_TOP:aska_core_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o MPS exit handler called.
+\e *Error* MPS exit handler called, indicating that the TCP/IP connection to the GUI has been lost.  Exiting
 \e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'62' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/62/Corner_sim. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/ASKA/Sim/REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.126/62/Corner_sim. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'62' test:'Corner_sim'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
+\o *Info*    Received signal SIGTERM.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (2 62) on testbench [ Corner_sim
-\o           ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 19,734 MB at UTC 2024.06.23 19:59:12.886
+\w *WARNING* aaDeleteEventCB: cb nil not on event "sim-env:set-modelPath"
+\w *WARNING* aaDeleteEventCB: cb lambda((_simID) _axlPreRunSetup(stdobj@0x357565c0)) not on event "sim-env:simulator-started"
+\w *WARNING* aaDeleteEventCB: cb _annRefreshPinnedWaveBalloons not on event "sim-env:post-simulation"
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.

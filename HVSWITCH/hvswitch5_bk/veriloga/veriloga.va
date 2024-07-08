@@ -1,0 +1,70 @@
+// VerilogA for HVSWITCH, hvswitch5, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module hvswitch5_bk(CUR_IN, DOWN, GNDD, GNDHV, OUT, UP, VDD3, VDDHV, VSUBHV);
+inout CUR_IN;
+electrical CUR_IN;
+inout DOWN;
+electrical DOWN;
+inout GNDD;
+electrical GNDD;
+inout GNDHV;
+electrical GNDHV;
+inout OUT;
+electrical OUT;
+inout UP;
+electrical UP;
+inout VDD3;
+electrical VDD3;
+inout VDDHV;
+electrical VDDHV;
+inout VSUBHV;
+electrical VSUBHV;
+
+parameter real vth = 1.5;
+parameter real ron = 10.0 from (0:inf) ;
+parameter real roff = 100.0M from (ron:inf);
+
+parameter real td = 0.0;
+parameter real tt = 10e-9;
+
+real RUP;
+real RDOWN;
+
+integer up_sel, down_sel;
+
+analog begin
+	RUP = (V(UP) > vth) ? ron: roff;
+	RDOWN = (V(DOWN) > vth) ? ron: roff;
+
+	@ (cross( V(UP) - vth, 1 )) begin
+		RUP = ron;	    
+	end
+
+	@ (cross( V(UP) - vth, -1 )) begin
+		RUP = roff;	    
+	end
+
+	@ (cross( V(DOWN) - vth, 1 )) begin
+		RDOWN = ron;
+	end
+
+	@ (cross( V(DOWN) - vth, -1 )) begin
+		RDOWN = roff;
+	end
+
+   I(VDDHV,OUT) <+ V(VDDHV,OUT) / transition (RUP, td, tt);
+   I(VDDHV,OUT) <+ V(VDDHV,OUT) / 10e6;
+
+   I(OUT,CUR_IN) <+ V(OUT,CUR_IN) / transition (RDOWN, td, tt);		 
+   I(OUT,CUR_IN) <+ V(OUT,CUR_IN) / 10e6;
+
+   I(CUR_IN, GNDHV) <+ V(CUR_IN, GNDHV) / 10e6;
+
+			 
+
+end
+
+endmodule

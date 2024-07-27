@@ -1,0 +1,47 @@
+*
+*
+*
+*                       LINUX           Wed Jul 17 07:03:26 2024
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 23.1.0-p075
+*  Build Date     : Tue Sep 26 09:11:43 PDT 2023
+*
+*  HSPICE LIBRARY
+*
+* GLOBAL_TEMPERATURE 27
+*  OPERATING_TEMPERATURE 27
+*  QRC_TECH_DIR /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+*
+.SUBCKT emir_test_1 gnda vdda
+*
+*
+*  caps2d version: 10
+*
+*
+*       CANONICAL RESISTOR AND CAP/DIODE CARDS
+*
+RRR11	gnda	vdda#1	rpp1k1 	L=2.5e-05	W=5e-06
+RRR0	gnda	vdda#3	rpp1k1 	L=2.5e-05	W=5e-06
+RRR1	gnda	vdda#5	rpp1k1 	L=2.5e-05	W=5e-06
+*
+*       PARASITIC RESISTOR AND CAP/DIODE CARDS
+*
+Rf2	vdda#5	vdda	68.676819	$MET1	$L=0.000285892	$W=3.2e-07
++ $X=145.669 $Y=10.785
+Rf7	vdda	vdda#1	5.531967	$MET1	$L=0.000285892	$W=3.98e-06
++ $X=145.6685 $Y=31.325
+Rf9	vdda	vdda#3	22.455324	$MET1	$L=0.000285955	$W=9.8e-07
++ $X=145.6375 $Y=20.485
+*
+.ENDS emir_test_1
+*

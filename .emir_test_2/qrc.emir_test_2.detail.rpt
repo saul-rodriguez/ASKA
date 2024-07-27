@@ -1,0 +1,541 @@
+INFO (LBRCXM-630): Starting extraction: Wed Jul 17 15:48:44 2024
+
+
+Forking: agdsPrep -V -rundir /home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb -designName emir_test_2 -agf /home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb/emir_test_2.agf -outdir /home/saul/projects/ASKA/emir_test_2 -sch -e /home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb/emir_test_2.gds.map:emir_test_2.alm,emir_test_2.ilf -pl emir_test_2.ports -mcell /home/saul/projects/ASKA/emir_test_2/emir_test_2.hcl -d emir_test_2.devtab -prefix /home/saul/projects/ASKA/emir_test_2/prefixfile -l /home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb/emir_test_2.lvsfile -i emir_test_2.ixf,emir_test_2.lph,emir_test_2.sph -n emir_test_2.nxf,emir_test_2.stl -s emir_test_2_pin_xy.spi:emir_test_2.xcn,hccidtmfile
+
+agdsPrep took  0.00 user, 0.01 sys, 0.00 elapsed, 8736.0 kbytes
+Forking:  capgen -techdir /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ -inc /home/saul/projects/ASKA/emir_test_2/emir_test_2.ilf -lvs /home/saul/projects/ASKA/emir_test_2/emir_test_2.xcn -p2lvs /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/qrcTechFile -sd -reseqn -sw3d -length_units meters -cap_unit 1 -p POLY1,gate,active -p POLY1,GateLayers:nhv_d+nhvd_d+nmc_d+nhv_b+nhvd_b+nmc_b+phv_d+pmc_d+nedi2_d+nedia2_d+ped12_d+ped22_d+nedi2_b+nedia2_b+ped12_b+ped22_b,active -M p_cap -genericMos nei_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nei_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos neli_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos neli_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nelnai_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nelnai_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nesvti_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nesvti_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pe_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pel_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pei_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pei_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos peli_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos peli_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pesvt_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pesvti_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pesvti_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemi_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos ndmi_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemlnai_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemi_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlni_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlnai_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemi_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos ndmi_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemlnai_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pem_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemln_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemi_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlni_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlnai_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -extract_mos_diffusion_res_by_device pe,pel,pesvt,peli,pei,pesvti,ne,nel,nelna,nesvt,nei,neli,nelnai,nesvti,nnm,nem,ndm,nemlna,pem,pemln,pemlna,nemi,ndmi,nemlna,pemi,pemlni,pemlnai,ndsmiP,ndsmiE,nma_d,nma_b,pma_d,pma_b,pe_5,pel_5,pei_5,pei_m_5,peli_5,peli_m_5,pesvt_5,pesvti_5,pesvti_m_5,pem_5,pemln_5,pemi_5,pemi_m_5,pemlni_5,pemlni_m_5,pemlnai_5,pemlnai_m_5,nei_6,nei_m_6,neli_6,neli_m_6,nelnai_6,nelnai_m_6,nesvti_6,nesvti_m_6,nemi_6,nemi_m_6,ndmi_6,ndmi_m_6,nemlnai_6,nemlnai_m_6 -dsub nwtrm,dnwtrm,hnw,pwitrm,pdf,hvnwtrm,ndftrm,bulk -genericMos pma_b,D,G,S:NRD=nrd,NRS=nrs -blocking phv_b:0.01,POLY1,active,sub -blocking phhv_b:0.01,POLY1,active,sub -blocking pmc_b:0.01,POLY1,active,sub -blocking pmmc_b:0.01,POLY1,active,sub -blocking pmma_b:0.01,POLY1,active,sub -blocking pedam_d:0.01,POLY1,active,sub -blocking pedam_b:0.01,POLY1,active,sub -blocking nedam_d:0.01,POLY1,active,sub -blocking nedam_b:0.01,POLY1,active,sub -blocking pedama_d:0.01,POLY1,active,sub -blocking pedama_b:0.01,POLY1,active,sub -blocking mosvc:0.01,POLY1,active,sub -blocking mosvci:0.01,POLY1,active,sub -blocking mosvci_m:0.01,POLY1,active,sub -blocking mosvcm:0.01,POLY1,active,sub -blocking mosvcim_m:0.01,POLY1,active,sub -blocking mosvcim:0.01,POLY1,active,sub -blocking cpod:0.01,POLY1,active,sub -blocking cpodhv:0.01,POLY1,active,sub -blocking nha3m:0.01,POLY1,active,sub -blocking cnnotpaE:0.01,POLY1,active,sub -blocking cnnotpaP:0.01,POLY1,active,sub -blocking d_csf2p,POLY1,MET1,MET2 -blocking cmim23f,MET2,MET3 -blocking cmimh23f,MET2,MET3 -blocking d_cswt3,POLY1,MET1,MET2,MET3 -blocking d_csf3p,POLY1,MET1,MET2,MET3 -blocking d_csf3,MET1,MET2,MET3 -blocking d_csf3a,MET1,MET2,MET3 -blocking d_cif3a,MET1,MET2,MET3 -blocking cmim34f,MET3,MET4 -blocking cmimh34f,MET3,MET4 -blocking cdmm,MET2,MET3,MET4 -blocking cdmmh,MET2,MET3,MET4 -blocking d_cswt4,POLY1,MET1,MET2,MET3,MET4 -blocking d_csf4,MET1,MET2,MET3,MET4 -blocking d_csf4a,MET1,MET2,MET3,MET4 -blocking d_cif4a,MET1,MET2,MET3,MET4 -blocking cmim,MET4,METTP -blocking cmimh,MET4,METTP -blocking ctmm,MET2,MET3,MET4,METTP -blocking ctmmh,MET2,MET3,MET4,METTP -blocking d_csft5,MET1,MET2,MET3,MET4,METTP -blocking d_csft5a,MET1,MET2,MET3,MET4,METTP -blocking d_cift5a,MET1,MET2,MET3,MET4,METTP -split_hv_mos ped12_d,ped1,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos ped12_b,ped1,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos ped22_d,ped2,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos ped22_b,ped2,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos nedi2_d,nedi,50,5,mtot:dnwtrm,ndiff:cont -split_hv_mos nedi2_b,nedi,50,5,mtot:dnwtrm,ndiff:cont -split_hv_mos nedia2_d,nedia,50,5,mtot:dnwtrm,ndiff:cont -split_hv_mos nedia2_b,nedia,50,5,mtot:dnwtrm,ndiff:cont /home/saul/projects/ASKA/emir_test_2
+
+INFO (LBMISC-215205): 
+*** Cadence Quantus Extraction Techgen -trans VERSION 23.1.0 Linux 64 bit - (Tue Sep 26 09:11:43 PDT 2023)  ***
+
+
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /home/saul/projects/ASKA/emir_test_2
+
+WARNING (CAPGEN-41613): layer 'ped12_d' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'ped12_b' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'ped22_d' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'ped22_b' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'nedi2_d' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'nedi2_b' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'nedia2_d' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'nedia2_b' not defined in LVS file
+
+INFO (CAPGEN-41737): Lvs connect layers capm capm23f capm2_b capm2_t capm34f capm3_b capm3_m capm3_t capmh capmh23f capmh2_b capmh2_t capmh34f capmh3_b capmh3_m capmh3_t capswm1 capswm2 capswm3 capswp1 davl_c2 df_vlbl dphopin3 m1_vlbl m2_vlbl m3_vlbl m4_vlbl ml_vlbl mt_vlbl npdct p1_vlbl are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by df_vlbl layers anodiff catdiff are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by m1trm layers m1aftrm m1atrm m1bftrm m1btrm are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by nwtrm layers dphod_c dphod_nw are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by p1trm layers dpol_n dpol_p are not mapped in layer_setup file
+
+INFO (CAPGEN-41809):  Lvs connect via bndct npdtap d_0dsc ntap dntap hntap ndftap catdfct catm1ct hnwtap pwitap pdftap anodfct ptap are not mapped in layer_setup file.
+
+rcxspice took  0.11 user, 0.03 sys, 0.00 elapsed, 18112.0 kbytes
+The supplied design data will be treated as a HIERARCHICAL design
+
+Successfully created RCX script '/home/saul/projects/ASKA/emir_test_2/rcx.sh'
+WARNING (LBRCXM-617): Unable to obtain 1 license(s) of QTS100 23.10
+
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS300 23.10
+
+INFO (LBRCXM-608): Executing command
+   /pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/assura_rcx -V  /home/saul/projects/ASKA/emir_test_2/rcx.sh
+
+
+     ***    assura_rcx VERSION 23.1.0 Linux 64 bit - (Tue Sep 26 09:11:43 PDT 2023)    ***
+
+
+	***************************************************
+	*			  			  *
+	* Copyright (c) 2024 Cadence Design Systems, Inc. *
+	*		All Rights Reserved		  *
+	*			  			  *
+	*	  THIS IS UNPUBLISHED PROPRIETARY	  *
+	*  INFORMATION OF Cadence Design Systems, Inc. 	  *
+	*	   THE COPYRIGHT NOTICE DOES NOT	  *
+	*	       EVIDENCE PUBLICATION		  *
+	*			  			  *
+	***************************************************
+INFO (ASSREXT-35013): 
+
+* caps2d version: 10
+ENDCAT
+meters
+ENDCAT
+agds2rcx -np 1 -V -H satfile -r /home/saul/projects/ASKA/emir_test_2/emir_test_2.xcn -split_float_exclude_layers -,bulk -crundir /home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb -unit meters -xgl -pl emir_test_2.ports -f emir_test_2.alm -lnn emir_test_2.lnn -pnet 5 -pinst 6 -pdev 7 emir_test_2.agf emir_test_2_pin_xy.spi 
+WARNING (AGDSEXT-30124): The <design>.props file is not available. The CCL option "input_db calibre/pvs/pegasus -device_properties_file <filename>" can be used to specify the .props file. 
+
+	***************************************************
+	*			  			  *
+	* Copyright (c) 2024 Cadence Design Systems, Inc. *
+	*		All Rights Reserved		  *
+	*			  			  *
+	*	  THIS IS UNPUBLISHED PROPRIETARY	  *
+	*  INFORMATION OF Cadence Design Systems, Inc. 	  *
+	*	   THE COPYRIGHT NOTICE DOES NOT	  *
+	*	       EVIDENCE PUBLICATION		  *
+	*			  			  *
+	***************************************************
+INFO (AGDSEXT-30016): 
+setting dbunit 1e-09 1 1e-09
+
+agds2rcx took 0.00 user, 0.00 sys, 0.00 elapsed, 11280.0 kbytes
+Input stage took  0.01 user, 0.01 sys, 0.00 elapsed, 3148.0 kbytes
+INFO (ASSREXT-35329): Resistance data preparation stage started at Wed Jul 17 15:48:44 2024
+
+INFO (ASSREXT-35026): stamp INPUT: iname[0]=np_rm1trm
+
+INFO (ASSREXT-35026): stamp INPUT: iname[1]=np_rcont_m1trm_p1trm
+
+INFO (ASSREXT-35026): stamp INPUT: iname[2]=rcont_m1trm_p1trm
+
+INFO (ASSREXT-35028): stamp OUTPUT: oname[0]=np_rcont_m1trm_p1trm
+
+INFO (ASSREXT-35304): 
+Number of tasks to begin with are 52 
+
+INFO (ASSREXT-35329): Resistance data preparation stage started at Wed Jul 17 15:48:44 2024
+
+geom -V cont m1trm p1trm - cont_m1trm_p1trm,111,i,2 
+INFO (ASSREXT-35316): ****** For command L204 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3740.0 kbytes
+ INFO (ASSREXT-35321): *** Command L204 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 51 
+
+INFO (ASSREXT-35299): *** L197 '/bin/mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 50
+
+INFO (ASSREXT-35299): *** L166 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 49
+
+INFO (ASSREXT-35299): *** L169 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 48
+
+INFO (ASSREXT-35299): *** L211 'beginFlattenInputs' executed directly
+
+INFO (ASSREXT-35307): tasks left are 47
+
+flattenResData rpp1k1_02 meters 
+INFO (ASSREXT-35316): ****** For command L215 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 9576.0 kbytes
+   flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 16900.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 2676.0 kbytes
+ INFO (ASSREXT-35321): *** Command L215 'flattenResData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 46 
+
+flattenLayers -m cont_m1trm_p1trm cont 
+INFO (ASSREXT-35316): ****** For command L216 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3796.0 kbytes
+ INFO (ASSREXT-35321): *** Command L216 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 45 
+
+flattenLayers -m p1trm 
+INFO (ASSREXT-35316): ****** For command L218 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3536.0 kbytes
+ INFO (ASSREXT-35321): *** Command L218 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 44 
+
+INFO (ASSREXT-35299): *** L212 '/bin/mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 43
+
+flatnet -V -li -h / h_NET NET 
+INFO (ASSREXT-35316): ****** For command L213 on processor #1:
+
+  flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 16808.0 kbytes
+ INFO (ASSREXT-35321): *** Command L213 'flatnet' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 42 
+
+INFO (ASSREXT-35299): *** L196 'cat' executed directly
+
+INFO (ASSREXT-35307): tasks left are 41
+
+netprint -V -N1 power_list:power_list_nums NET 
+INFO (ASSREXT-35316): ****** For command L214 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L214 'netprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 40 
+
+epick bulk_orig bulk 
+INFO (ASSREXT-35316): ****** For command L198 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L198 'epick' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 39 
+
+INFO (ASSREXT-35299): *** L205 '/bin/mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 38
+
+flattenLayers -m bulk 
+INFO (ASSREXT-35316): ****** For command L219 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3556.0 kbytes
+ INFO (ASSREXT-35321): *** Command L219 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 37 
+
+densitymap -V -TC -o MET1.den 23 m1trm 
+INFO (ASSREXT-35316): ****** For command L190 on processor #1:
+
+  densitymap took 0.00 user, 0.00 sys, 0.00 elapsed, 2756.0 kbytes
+ INFO (ASSREXT-35321): *** Command L190 'densitymap' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 36 
+
+flattenLayers -m m1trm 
+INFO (ASSREXT-35316): ****** For command L217 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3552.0 kbytes
+ INFO (ASSREXT-35321): *** Command L217 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 35 
+
+INFO (ASSREXT-35299): *** L220 'endFlattenInputs' executed directly
+
+INFO (ASSREXT-35307): tasks left are 34
+
+reconnect -float floatlvsnetsfile -rf rpp1k1_02 -probe text_m1trm:m1trm:text_m1trm_fvia 
+INFO (ASSREXT-35315): ****** For command L221:
+
+INFO (ASSREXT-35320): *** Command L221 'reconnect' finished
+
+INFO (ASSREXT-35323): tasks left are 33 
+
+createEmptyLayer qrcgate 
+INFO (ASSREXT-35316): ****** For command L224 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L224 'createEmptyLayer' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 32 
+
+iprint -count floatlvsnetsfile 
+INFO (ASSREXT-35316): ****** For command L223 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L223 'iprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 31 
+
+iprint -count floatlvsnetsfile 
+INFO (ASSREXT-35315): ****** For command L225:
+
+INFO (ASSREXT-35320): *** Command L225 'iprint' finished
+
+INFO (ASSREXT-35323): tasks left are 30 
+
+iprint -imerge power_list_nums floatlvsnetsfile power_list_nums2 
+INFO (ASSREXT-35316): ****** For command L226 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L226 'iprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 29 
+
+INFO (ASSREXT-35299): *** L227 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 28
+
+INFO (ASSREXT-35299): *** L228 'cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 27
+
+selectNetsByNumber power_list_nums p1trm p_rp1trm np_rp1trm 
+INFO (ASSREXT-35316): ****** For command L236 on processor #1:
+
+  epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2472.0 kbytes
+ INFO (ASSREXT-35321): *** Command L236 'selectNetsByNumber' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 26 
+
+selectNetsByNumber power_list_nums cont_m1trm_p1trm p_rcont_m1trm_p1trm np_rcont_m1trm_p1trm 
+INFO (ASSREXT-35316): ****** For command L237 on processor #1:
+
+  epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2468.0 kbytes
+ INFO (ASSREXT-35321): *** Command L237 'selectNetsByNumber' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 25 
+
+selectNetsByNumber power_list_nums m1trm p_rm1trm np_rm1trm 
+INFO (ASSREXT-35316): ****** For command L235 on processor #1:
+
+  epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2472.0 kbytes
+ INFO (ASSREXT-35321): *** Command L235 'selectNetsByNumber' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 24 
+
+createResistorTerminals rpp1k1_02 np_rp1trm rpp1k1_02_rvia 
+INFO (ASSREXT-35316): ****** For command L254 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2712.0 kbytes
+   geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3476.0 kbytes
+ INFO (ASSREXT-35321): *** Command L254 'createResistorTerminals' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 23 
+
+mergevia -V -tech /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ -cnt np_rcont_m1trm_p1trm rcont_m1trm_p1trm - np_rm1trm np_rp1trm 
+INFO (ASSREXT-35316): ****** For command L245 on processor #1:
+
+  sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 18888.0 kbytes
+   geom took  0.00 user, 0.00 sys, 0.00 elapsed, 19712.0 kbytes
+   mergevia took 0.00 user, 0.00 sys, 0.00 elapsed, 19772.0 kbytes
+ INFO (ASSREXT-35321): *** Command L245 'mergevia' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 22 
+
+selectNetsByNumber power_list_nums bulk p_rbulk np_rbulk 
+INFO (ASSREXT-35316): ****** For command L234 on processor #1:
+
+  epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2468.0 kbytes
+ INFO (ASSREXT-35321): *** Command L234 'selectNetsByNumber' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 21 
+
+INFO (ASSREXT-35299): *** L260 '/bin/mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 20
+
+createEmptyLayer np_rbulk 
+INFO (ASSREXT-35316): ****** For command L261 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L261 'createEmptyLayer' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 19 
+
+flatlabel -V -spins -tc -F -l flatlabel.info text_m1trm L1T0 
+INFO (ASSREXT-35316): ****** For command L274 on processor #1:
+
+  INFO (FLTLBL-89003): exec labsort -V L1T0
+   
+ INFO (ASSREXT-35321): *** Command L274 'flatlabel' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 18 
+
+INFO (ASSREXT-35299): *** L238 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 17
+
+INFO (ASSREXT-35299): *** L248 'cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 16
+
+connect -V -relocate NET np_rbulk:np_rbulk.conn rcont_m1trm_p1trm rpp1k1_02_rvia - - 
+INFO (ASSREXT-35316): ****** For command L262 on processor #1:
+
+  connect took  0.00 user, 0.01 sys, 0.00 elapsed, 272160.0 kbytes
+ INFO (ASSREXT-35321): *** Command L262 'connect' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 15 
+
+INFO (ASSREXT-35299): *** L277 '/bin/mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 14
+
+Resistance data preparation stage took  0.18 user, 0.13 sys, 1.00 elapsed, 4048.0 kbytes
+INFO (ASSREXT-35330): Resistance data preparation stage completed successfully at Wed Jul 17 15:48:45 2024
+
+INFO (ASSREXT-35331): rex started at Wed Jul 17 15:48:45 2024
+
+rex -V -m -pd -I# -l slab -tech /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ -no_cut -map p2elayermapfile -wee p2elayermapfile -N NET -e -P rpp1k1_02_rvia -rP res.mod np_rp1trm::POLY1_cut np_rm1trm::MET1_cut - rcont_m1trm_p1trm,1,2,T rpp1k1_02_rvia,1,z - L1T0,2,I 
+INFO (ASSREXT-35315): ****** For command L283:
+
+  INFO (REX-163462):  exec rex -g -V -m -pd -I# -l slab -tech /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ -no_cut -map p2elayermapfile -wee p2elayermapfile -N NET -e -P rpp1k1_02_rvia -rP res.mod np_rp1trm::POLY1_cut np_rm1trm::MET1_cut - rcont_m1trm_p1trm,1,2,T rpp1k1_02_rvia,1,z - L1T0,2,I
+   
+   rex took  0.00 user, 0.00 sys, 0.00 elapsed, 27396.0 kbytes
+   INFO (LBMISC-215513): Socket: connection with sd 19 closed
+   
+   INFO (REX-163511): Forked command: REX 1
+   
+     rex (np_rm1trm) took  0.00 user, 0.00 sys, 0.00 elapsed, 28236.0 kbytes
+   INFO (LBMISC-215513):    
+   INFO (REX-163511): Forked command: REX 2
+   
+     rex (np_rp1trm) took  0.00 user, 0.00 sys, 0.00 elapsed, 27964.0 kbytes
+   INFO (REX-163511): Forked command: REX 3
+   
+     rexmerge took  0.00 user, 0.00 sys, 0.00 elapsed, 2540.0 kbytes
+   rex took  0.36 user, 0.05 sys, 0.00 elapsed, 28212.0 kbytes
+ INFO (ASSREXT-35320): *** Command L283 'rex' finished
+
+R stage took  0.49 user, 0.06 sys, 0.00 elapsed, 4052.0 kbytes
+INFO (ASSREXT-35332): rex completed successfully at Wed Jul 17 15:48:45 2024
+
+INFO (ASSREXT-35337): Output stage started at Wed Jul 17 15:48:45 2024
+
+INFO (ASSREXT-35323): tasks left are 13 
+
+stamp -V -i2 np_rm1trm rcont_m1trm_p1trm np_rcont_m1trm_p1trm 
+INFO (ASSREXT-35316): ****** For command L294 on processor #1:
+
+  stamp took  0.05 user, 0.01 sys, 0.00 elapsed, 271840.0 kbytes
+ INFO (ASSREXT-35321): *** Command L294 'stamp' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 12 
+
+geom p_rp1trm,rpp1k1_02_rvia - rpp1k1_02_rvia,1,i,1 
+INFO (ASSREXT-35316): ****** For command L310 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L310 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 11 
+
+geom -V np_rcont_m1trm_p1trm,p_rcont_m1trm_p1trm - rcont_m1trm_p1trm,1,i,1 
+INFO (ASSREXT-35316): ****** For command L295 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3476.0 kbytes
+ INFO (ASSREXT-35321): *** Command L295 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 10 
+
+INFO (ASSREXT-35299): *** L288 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 9
+
+epick -c -f floatlvsnetsfile rpp1k1_02_rvia rpp1k1_02_rvia 
+INFO (ASSREXT-35316): ****** For command L311 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L311 'epick' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 8 
+
+INFO (ASSREXT-35299): *** L296 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 7
+
+INFO (ASSREXT-35299): *** L302 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 6
+
+geom np_rp1trm,p_rp1trm - p1trm,1,i,1 
+INFO (ASSREXT-35316): ****** For command L303 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L303 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 5 
+
+epick -c -f floatlvsnetsfile p1trm p1trm 
+INFO (ASSREXT-35316): ****** For command L304 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L304 'epick' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 4 
+
+reconnect -V -xdspf -I# -se2 rwires.res -n NET -r rpp1k1_02.res:rpp1k1_02.resr rpp1k1_02 rpp1k1_02_rvia 
+INFO (ASSREXT-35315): ****** For command L312:
+
+  reconnect took 0.09 user, 0.02 sys, 1.00 elapsed, 293760.0 kbytes
+ INFO (ASSREXT-35320): *** Command L312 'reconnect' finished
+
+INFO (ASSREXT-35323): tasks left are 3 
+
+netprint -max NET 
+INFO (ASSREXT-35316): ****** For command L314 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L314 'netprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 2 
+
+xreduce -V -mergecap -n NET -tech /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ -xdspf -d1 -e np_rm1trm,np_rp1trm,np_rbulk,rcont_m1trm_p1trm -decoupled -minR 1 -rP np_rp1trm.res,np_rm1trm.res,rwires.res,rcont_m1trm_p1trm.res slab L1T0 rpp1k1_02.resr 
+INFO (ASSREXT-35315): ****** For command L325:
+
+  INFO (XREDUCE-199107): Total number of resistors is 33
+   
+   INFO (XREDUCE-199108): d1 option renamed 0 nets
+   
+   INFO (XREDUCE-199108): d1 option renamed 0 nets
+   
+   INFO (XREDUCE-199109): minR option removed 27 resistors (82%)
+   
+   xreduce took 0.04 user, 0.02 sys, 0.00 elapsed, 21532.0 kbytes
+ INFO (ASSREXT-35320): *** Command L325 'xreduce' finished
+
+INFO (ASSREXT-35323): tasks left are 1 
+
+dspfgen -V -n -np -spins -hf caps2dversion -m -FN NET -o HSPICE -prefix prefixfile -lvs_db_dir /home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb -designName emir_test_2 -xrPmwl res.mod np_rp1trm.res np_rm1trm.res rcont_m1trm_p1trm.res -xrPmwl rwires.mod rwires.res -xra lvsres.mod,rpp1k1_02.net rpp1k1_02.resr -ls slab -li rport_lab -lp L1T0 /home/saul/projects/ASKA/emir_test_2.dspf 
+INFO (ASSREXT-35315): ****** For command L336:
+
+  INFO (EXTDSPF-221741): dspf2db warning: No reference for net "1"
+   
+   dspfgen data preparation took 0.00 user, 0.00 sys, 0.00 elapsed, 28844.0 kbytes
+   dspfgen instance writing took 0.00 user, 0.00 sys, 0.00 elapsed, 29196.0 kbytes
+   INFO (EXTDSPF-221045): 
+   
+   dspfgen cleanup took 0.00 user, 0.00 sys, 0.00 elapsed, 29336.0 kbytes
+   dspfgen took:  0.00 user, 0.00 sys, 0.00 elapsed, 29336.0 kbytes
+ INFO (ASSREXT-35320): *** Command L336 'dspfgen' finished
+
+Output stage took  0.25 user, 0.10 sys, 1.00 elapsed, 4072.0 kbytes
+INFO (ASSREXT-35338): Output stage completed successfully at Wed Jul 17 15:48:46 2024
+
+assura_rcx took:  0.00 user, 0.00 sys, 0.00 elapsed, 4072.0 kbytes
+INFO (LBRCXM-610): Extraction finished.
+
+INFO (LBRCXM-582): Checking in license of QTS300 23.10
+
+INFO (LBRCXM-985): Summary:
+ Number of CPUs requested:		1
+ Techfile(s):
+    /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/qrcTechFile; process name: XX018
+ License(s) used:	QTS300 (x1)
+ Design data:
+    global nets:                  0
+    LVS nets:                     3
+    signal nets:                  2
+    floating nets:                1
+    ground net name:              
+ Reduction statistics:
+    Dangling Rs removed:          0
+    Merged Parallel Rs:           0
+    Rs shorted by min_res option: 27
+    Merged Parallel Self Caps:    0
+    CCs filtered by minC option:  0
+    Shorted Incomplete Nets:      0
+ Output statistics:
+    R: 6
+    C: 0
+    L: 0
+
+
+INFO (LBRCXM-920): Host name and peak memory report
+ Host Name:                    phoenix
+ Peak memory used:             63 MB (sampled at 15s intervals)
+
+INFO (LBRCXM-982): Floating net statistics in the design:
+
+   Total floating nets =  1
+     Total signal nets =  2
+         Total LVS net = 3
+
+INFO (LBRCXM-702): Run ended: Wed Jul 17 15:48:46 2024
+
+
+INFO (LBRCXM-805): Quantus run took:  1s user, 0s sys, 2s elapsed
+
+
+INFO (LBRCXM-708): *****  Quantus terminated normally  *****
+
+

@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = POR
-	Cell         = por_tb
+	Library      = ALL_TESTS
+	Cell         = emir_test_2_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Corner_none_Interactive.223
-	Results DB   = /home/saul/projects/ASKA/POR/por_tb/adexl/results/data/Interactive.223.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.223/1/Corner
-	Results Loc  = /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data
+	State Name   = ALL_TESTS:emir_test_2_tb:1:1_ALL_TESTS:emir_test_2_tb:1:1_state_Interactive.7
+	Results DB   = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7/1/ALL_TESTS:emir_test_2_tb:1:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/POR/por_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl
 	File Encoding = 0
 
 
@@ -28,48 +28,43 @@
 
 
 
-*Info*    Run start for Point ID (8 1) on testbench [ Corner ].
+*Info*    Run start for Point ID (7 1) on testbench [
+          ALL_TESTS:emir_test_2_tb:1:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDD3 = "3.3"
-Setting var VDD_BOR = "-0.4"
-Setting var VDD_PULSE = "0"
-Setting var VDD_RT = "100u"
+Setting var VDC = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.223/1/Corner/netlist
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7/1/ALL_TESTS:emir_test_2_tb:1:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.223/1/Corner
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7/1/ALL_TESTS:emir_test_2_tb:1:1
 
 
-*Info*    Creating Netlist for Point ID (8 1)
+*Info*    Creating Netlist for Point ID (7 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Jun 21 17:39:08 2024
-End netlisting Jun 21 17:39:08 2024
+Begin Incremental Netlisting Jul 17 12:39:54 2024
+End netlisting Jul 17 12:39:54 2024
 
-Netlisting Statistics:
-	Number of components:   34
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ Corner ] for Point ID (8
-          1).
+*Info*    Running simulation on testbench [
+          ALL_TESTS:emir_test_2_tb:1:1 ] for Point ID (7 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/POR/por_tb/adexl/results/data/Interactive.223/1/Corner/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7/1/ALL_TESTS:emir_test_2_tb:1:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -78,13 +73,93 @@ simulate...
 To view the simulator output, right-click on the test name, result 
 name, or any value in the "Results" tab of the Outputs section and 
 choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
+INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+        to view the simulation run log.
+
+*Error*   Error ID  = 5011
+*Error*   Error Msg = Simulator failed to complete the simulation.
+
+          Error found by spectre.
+Error found by spectre.
+ERROR
+          (EMIR-1099): Node ' *  ' defined in the EMIR config can't
+          be found. The reason may be a missing instance name or a
+          wrong node name. Please check
+ the name in the top level
+          netlist and DSPF file, and adjust the name in the EMIR
+          config file accordingly.
+
+
+
+
+
+
+
+
+
+
+*Info*    Run start for Point ID (7 1) on testbench [
+          ALL_TESTS:emir_test_2_tb:1:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var VDC = "40"
+Setting var temperature = "27"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7/1/ALL_TESTS:emir_test_2_tb:1:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7/1/ALL_TESTS:emir_test_2_tb:1:1
+
+
+*Info*    Creating Netlist for Point ID (7 1)
+
+generate netlist...
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Begin Incremental Netlisting Jul 17 12:39:55 2024
+End netlisting Jul 17 12:39:55 2024
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
-*Info*    Client has finished evaluating ... 
+compose simulator input file...
+      ...successful.
 
+*Info*    Running simulation on testbench [
+          ALL_TESTS:emir_test_2_tb:1:1 ] for Point ID (7 1).
 
-*Info*    Run complete for Point ID (8 1) on testbench [ Corner ].
+Delete psf data in /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.7/1/ALL_TESTS:emir_test_2_tb:1:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+        to view the simulation run log.
+
+*Error*   Error ID  = 5011
+*Error*   Error Msg = Simulator failed to complete the simulation.
+
+          Error found by spectre.
+Error found by spectre.
+ERROR
+          (EMIR-1099): Node ' *  ' defined in the EMIR config can't
+          be found. The reason may be a missing instance name or a
+          wrong node name. Please check
+ the name in the top level
+          netlist and DSPF file, and adjust the name in the EMIR
+          config file accordingly.
 
 
 

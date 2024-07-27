@@ -1,20 +1,138 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 08/30/2023 13:17 (sjfdcl1037) $
 \o Sub version:		sub-version  s342 
-\o Arguments:		-mpssession virtuoso4338 -mpshost phoenix 
+\o Arguments:		-mpssession virtuoso15507 -mpshost phoenix 
 \o Working Directory:	phoenix:/home/saul/projects/ASKA
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o Log file is "/home/saul/projects/ASKA/libManager.log.1".
 \o Opening libManager window.
-\a nrResizeWindow(cdsLibManager list(931 68 803 648))
+\a nrResizeWindow(cdsLibManager list(1096 39 803 648))
 \a nrSetCurrentWindow(cdsLibManager)
 \o MPS virtuoso types registered: 68
 \o changeWorkingDir("/home/saul/projects/ASKA") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
+\a cdsLibManager->libListBox->value = "ASKA_DIG"
+\a cdsLibManager->libLineEdit->value = "ASKA_DIG"
+\a cdsLibManager->cellListBox->value = "aska_dig"
+\a cdsLibManager->cellLineEdit->value = "aska_dig"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 43 26 2 "schematic")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrResizeWindow(deleteForm list(1174 111 627 425))
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(deleteForm list(1174 74 627 425))
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 56 21 2 "schematic")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(1174 111 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(1353 278 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "schematic" from cell "aska_dig" in library "ASKA_DIG".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrResizeWindow(workingDialogForm list(1353 257 268 133))
+\o Deleted cellview 'ASKA_DIG/aska_dig/schematic'.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(deleteForm list(1174 74 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ASKA_DIG"
+\a cdsLibManager->libLineEdit->value = "ASKA_DIG"
+\a cdsLibManager->cellListBox->value = "aska_dig"
+\a cdsLibManager->cellLineEdit->value = "aska_dig"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ASKA_DIG"
+\a cdsLibManager->libLineEdit->value = "ASKA_DIG"
+\a cdsLibManager->cellListBox->value = "aska_dig"
+\a cdsLibManager->cellLineEdit->value = "aska_dig"
+\a nrResizeWindow(workingDialogForm list(1353 220 268 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs" t)
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" t)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "aska_npg"
+\a cdsLibManager->cellLineEdit->value = "aska_npg"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "aska_dig"
+\a cdsLibManager->cellLineEdit->value = "aska_dig"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "DIG_stimulus_tb"
+\a cdsLibManager->cellLineEdit->value = "DIG_stimulus_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ASKA_DIG"
+\a cdsLibManager->libLineEdit->value = "ASKA_DIG"
+\a cdsLibManager->cellListBox->value = "DIG_stimulus_tb"
+\a cdsLibManager->cellLineEdit->value = "DIG_stimulus_tb"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a nrListItemExpand(cdsLibManager->libListBox "XFABLibs/DigitalLibs" t)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
 \o libManager is exiting.
 \a exit(0)

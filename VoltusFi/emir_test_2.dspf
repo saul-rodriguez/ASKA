@@ -1,0 +1,55 @@
+*
+*|DSPF 1.5
+*
+*|DATE "Wed Jul 17 13:51:05 2024"
+*|VENDOR "Cadence Design Systems"
+*|PROGRAM "Cadence Quantus Extraction"
+*|VERSION "23.1.0-p075 Linux 64 bit - (Tue Sep 26 09:11:43 PDT 2023)"
+*|DESIGN "emir_test_2"
+*|DIVIDER /
+*|DELIMITER #
+*|DeviceFingerDelim "@"
+*|BUSBIT []
+*|GLOBAL_TEMPERATURE 27
+*|OPERATING_TEMPERATURE 25
+** QRC_TECH_DIR /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ 
+** HIERARCHICAL_SPLIT_PINS_DELIMITER '%'
+** caps2d version: 10
+*
+.SUBCKT  emir_test_2 gnda vdda
+*
+*Net Section
+*
+*|GROUND_NET 0
+*
+*LAYER_MAP
+*0 none
+*1 MET1
+*2 active
+*3 rwires
+*4 POLY1
+
+*|NET gnda 0
+*|P (gnda X 0 318.2400 21.0950) // $llx=318.2400 $lly=21.0950 $urx=318.2400 $ury=21.0950 $lvl=1
+*|I (XRR11#POS XRR11 POS X 0 314.1655 32.1150) // $llx=314.1655 $lly=32.1150 $urx=314.1655 $ury=32.1150 $lvl=4
+*|I (XRR0#POS XRR0 POS X 0 314.1655 20.8600) // $llx=314.1655 $lly=20.8600 $urx=314.1655 $ury=20.8600 $lvl=4
+*|I (XRR1#POS XRR1 POS X 0 314.1655 11.3650) // $llx=314.1655 $lly=11.3650 $urx=314.1655 $ury=11.3650 $lvl=4
+Rrw1 XRR11#POS gnda 0.001000 $rwires $W=1000000 $lvl=3
+Rrw2 XRR0#POS gnda 0.001000 $rwires $W=1000000 $lvl=3
+Rrw3 XRR1#POS gnda 0.001000 $rwires $W=1000000 $lvl=3
+*
+*|NET vdda 0
+*|P (vdda X 0 2.6600 20.3600) // $llx=2.6600 $lly=20.3600 $urx=2.6600 $ury=20.3600 $lvl=1
+*|I (XRR11#NEG XRR11 NEG X 0 289.1645 32.1150) // $llx=289.1645 $lly=32.1150 $urx=289.1645 $ury=32.1150 $lvl=1
+*|I (XRR0#NEG XRR0 NEG X 0 289.1645 20.8600) // $llx=289.1645 $lly=20.8600 $urx=289.1645 $ury=20.8600 $lvl=1
+*|I (XRR1#NEG XRR1 NEG X 0 289.1645 11.3650) // $llx=289.1645 $lly=11.3650 $urx=289.1645 $ury=11.3650 $lvl=1
+Rf4 XRR1#NEG vdda 68.209824 $MET1  $L=285.892487 $W=0.32 $lvl=1
+Rf5 vdda XRR11#NEG 5.494349 $MET1  $L=285.892242 $W=3.98 $lvl=1
+Rf6 vdda XRR0#NEG 22.302628 $MET1  $L=285.954987 $W=0.98 $lvl=1
+*
+*Instance Section
+*
+XRR11	XRR11#POS	XRR11#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR0	XRR0#POS	XRR0#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR1	XRR1#POS	XRR1#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+.ENDS

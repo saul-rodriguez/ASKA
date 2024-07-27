@@ -1,0 +1,135 @@
+*******************************************************
+*
+*  spfchecker  version 23.1.0 64bit 11/13/2023 20:39 (csvcm36c-1)
+*  sub-version  23.1.0.305.isr3 
+*  MMSIM Standard Parasitic Format Checker
+*  Copyright(C) 2006-2019, Cadence Design Systems, Inc.
+*
+*  User: saul   Host: phoenix   HostID: A0F02   PID: 10600 
+*
+*******************************************************
+
+Current Working Dir: /home/saul/projects/ASKA
+Command Line Input: /pkg/cadence/installs/SPECTRE231/tools/emir/bin/64bit/spfchecker /home/saul/projects/ASKA/emir_test_2.dspf -force
+
+SPFChecker started at: Wed Jul 17 14:08:41 2024
+
+Connecting to License Server ... Done.
+Successful checkout of Virtuoso_Multi_mode_Simulation license with total wait time of 0 sec.
+(line 19) .SUBCKT emir_test_2
+  0 : gnda
+  1 : vdda
+
+*** In NET "gnda" (line 32) ***:
+SPF-0027(line 42): rg1 gnda#1 XRR11#POS 0.815293 : missing x/y coordinates.
+SPF-0027(line 43): rg2 gnda#3 XRR0#POS 0.815293 : missing x/y coordinates.
+SPF-0027(line 44): rg3 gnda#5 XRR1#POS 0.815293 : missing x/y coordinates.
+SPF-0027(line 45): rf4 gnda#7 gnda 0.119235 : missing x/y coordinates.
+SPF-0027(line 46): rf5 gnda gnda#10 0.138386 : missing x/y coordinates.
+SPF-0027(line 47): rcb6 gnda#5 gnda#7 0.746775 : missing x/y coordinates.
+SPF-0027(line 48): rcb7 gnda#3 gnda 0.746775 : missing x/y coordinates.
+SPF-0027(line 49): rcb8 gnda#1 gnda#10 0.746775 : missing x/y coordinates.
+NET Inventory:
+	Element    : 	      Number 	  Min Value 	  Max Value
+	Resistor   : 	           8	    0.11923 	    0.81529
+	Capacitor  : 	           0
+	CCap       : 	           0
+	Subnode    : 	           8
+	  *|I      : 	           3
+	  *|P      : 	           1
+	  *|S      : 	           5
+---
+SPF-0024(line 32): In NET "gnda" 8 resistor(s) have no X/Y coordinates ($x=... $y=...).
+
+*** In NET "vdda" (line 51) ***:
+SPF-0027(line 70): rg9 XRR11#NEG vdda#2 0.815293 : missing x/y coordinates.
+SPF-0027(line 71): rg10 XRR0#NEG vdda#4 0.815293 : missing x/y coordinates.
+SPF-0027(line 72): rg11 XRR1#NEG vdda#6 0.815293 : missing x/y coordinates.
+SPF-0027(line 73): rf12 vdda#7 vdda#8 0.136167 : missing x/y coordinates.
+SPF-0027(line 74): rf13 vdda#8 vdda#9 68.209824 : missing x/y coordinates.
+SPF-0027(line 75): rf14 vdda#9 vdda#10 0.197644 : missing x/y coordinates.
+SPF-0027(line 76): rf15 vdda#8 vdda#11 0.446965 : missing x/y coordinates.
+SPF-0027(line 77): rf16 vdda#9 vdda 0.587617 : missing x/y coordinates.
+SPF-0027(line 78): rf17 vdda vdda#12 0.671011 : missing x/y coordinates.
+SPF-0027(line 79): rf18 vdda#12 vdda#13 5.494349 : missing x/y coordinates.
+SPF-0027(line 80): rf19 vdda#13 vdda#14 0.570782 : missing x/y coordinates.
+SPF-0027(line 81): rf20 vdda vdda#15 22.302628 : missing x/y coordinates.
+SPF-0027(line 82): rf21 vdda#15 vdda#16 0.575611 : missing x/y coordinates.
+SPF-0027(line 83): rf22 vdda#15 vdda#17 0.586036 : missing x/y coordinates.
+SPF-0027(line 84): rcb23 vdda#6 vdda#7 0.746775 : missing x/y coordinates.
+SPF-0027(line 85): rcb24 vdda#2 vdda#13 0.746775 : missing x/y coordinates.
+SPF-0027(line 86): rcb25 vdda#4 vdda#15 0.746775 : missing x/y coordinates.
+NET Inventory:
+	Element    : 	      Number 	  Min Value 	  Max Value
+	Resistor   : 	          17	    0.13617 	      68.21
+	Capacitor  : 	           0
+	CCap       : 	           0
+	Subnode    : 	          17
+	  *|I      : 	           3
+	  *|P      : 	           1
+	  *|S      : 	          14
+---
+SPF-0024(line 51): In NET "vdda" 17 resistor(s) have no X/Y coordinates ($x=... $y=...).
+
+Instance Section at line 88
+
+*** Summary ***:
+
+Element Inventory:
+	Element    : 	Total Number 	  Min Value 	  Max Value
+	Net        : 	           2 	  NoTaps:0  NoEffectiveRes:0
+	Nodes      : 	          29
+	  *|I      : 	           6
+	  *|P      : 	           2
+	  *|S      : 	          19
+	Instance   : 	           3
+	Resistor   : 	          25 	    0.11923 	      68.21
+	Capacitor  : 	           0 
+	CCap       : 	           0
+Resistance Distribution:
+	   Resistance :   Num of Res     Percentage     Accumulated
+	( -inf   1e-6]:            0         0.000%
+	( 1e-6   1e-4]:            0         0.000%          0.000%
+	( 1e-4  0.001):            0         0.000%          0.000%
+	[0.001  0.001]:            0         0.000%          0.000%
+	(0.001    0.1]:            0         0.000%          0.000%
+	(  0.1      1]:           22        88.000%         88.000%
+	(    1     10]:            1         4.000%         92.000%
+	(   10    100]:            2         8.000%        100.000%
+	(  100   1000]:            0         0.000%        100.000%
+	( 1000    1e4]:            0         0.000%        100.000%
+	(  1e4    1e6]:            0         0.000%        100.000%
+	(  1e6   +inf):            0         0.000%        100.000%
+Geometric Parameters:
+	Max XY   =     318.24                line 33        : *|p gnda  X=318.2400 Y=21.0950
+	Min WL   =       0.32                line 73        : rf12 vdda#7 vdda#8 L=3.03975 W=0.32
+	Max WL   =     285.95                line 81        : rf20 vdda vdda#15 L=285.954987 W=0.98
+	Min Area =      0.484                line 47        : rcb6 gnda#5 gnda#7 A=0.484
+	Max Area =      0.484                line 47        : rcb6 gnda#5 gnda#7 A=0.484
+Message Statistics:
+	SPF-0024   :	           2	       NETs with resistors without x/y coordinates
+	SPF-0027   :	          50	       Resistors without x/y coordinates
+Layer Names: 3
+	1      met1
+	2      poly1
+	3      cont
+Models: 1
+	0      rpp1k1
+*** Suggest Instance Terminal Aliases:
+	spf aliasterm = "rpp1k1  1=POS  2=NEG"
+
+The minimum bounding box for this dspf block is (2.66, 7.565, 323.69, 37.145)
+
+Output Files:
+	emir_test_2.dspf.chklog      : Detailed log
+	emir_test_2.dspf.spfinfo     : SPF element inventory
+	emir_test_2.dspf.emir_conf   : To be included in your emir config file
+	emir_test_2.dspf.stitch_opts : To be used for stitching (Spice syntax)
+	emir_test_2.dspf.pin_info    : NET PIN X Y Layer info
+
+Checking in license Virtuoso_Multi_mode_Simulation ... Done.
+
+*** End-time: Wed Jul 17 14:08:41 2024
+*** Time accumulated: elapsed: 130.0 ms (0h 0m 0s), CPU: 10.0 ms (0h 0m 0s), system: 0 s (0h 0m 0s), util: 7%
+*** Peak Memory Usage: 14.7742 M
+spfchecker completed successfully.

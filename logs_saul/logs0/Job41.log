@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = CURRENT_SOURCE
-	Cell         = current_source_gm_tb
+	Library      = ALL_TESTS
+	Cell         = emir_test_2_tb
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Corner_Sim_none_Interactive.257
-	Results DB   = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.257.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.257/1/Corner_Sim
-	Results Loc  = /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data
+	State Name   = ALL_TESTS:emir_test_2_tb:1_none_Interactive.17
+	Results DB   = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.17.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.17/1/ALL_TESTS:emir_test_2_tb:1
+	Results Loc  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/CURRENT_SOURCE/current_source_gm_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl
 	File Encoding = 0
 
 
@@ -28,53 +28,42 @@
 
 
 
-*Info*    Run start for Point ID (20 1) on testbench [ Corner_Sim ].
+*Info*    Run start for Point ID (9 1) on testbench [
+          ALL_TESTS:emir_test_2_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var ENABLE = "3.3"
-Setting var ENABLE_STEP = "0"
-Setting var IBIAS = "1u"
-Setting var IBIAS_PULSE = "0"
-Setting var PACTIVE = "3.3"
-Setting var PACTIVE_STEP = "0"
-Setting var VDD = "3.3"
-Setting var VDDH = "40"
-Setting var VDDH_STEP = "0"
-Setting var VDD_AC = "0"
-Setting var VDD_STEP = "0"
-Setting var VIN_AC = "1"
-Setting var VIN_DC = "1"
-Setting var VIN_STEP = "0.1"
-Setting var VIN_STEP2 = "0"
-Setting var VSWITCH = "18"
-Setting var VSWITCH_STEP = "0"
+Setting var VDC = "40"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.257/1/Corner_Sim/netlist
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.17/1/ALL_TESTS:emir_test_2_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.257/1/Corner_Sim
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.17/1/ALL_TESTS:emir_test_2_tb:1
 
 
-*Info*    Creating Netlist for Point ID (20 1)
+*Info*    Creating Netlist for Point ID (9 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Jun 18 00:33:34 2024
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.237/1/Corner_Sim/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Jul 17 13:15:14 2024
+WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
+directory. Netlist(s) from last session cannot be reused for incremental
+netlisting. Therefore, re-netlisting the design.
+
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:emir_test_2_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Jun 18 00:33:34 2024
+End netlisting Jul 17 13:15:14 2024
 
 Netlisting Statistics:
-	Number of components:   33
+	Number of components:    6
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -82,10 +71,10 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ Corner_Sim ] for Point ID
-          (20 1).
+*Info*    Running simulation on testbench [
+          ALL_TESTS:emir_test_2_tb:1 ] for Point ID (9 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/CURRENT_SOURCE/current_source_gm_tb/adexl/results/data/Interactive.257/1/Corner_Sim/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.17/1/ALL_TESTS:emir_test_2_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -99,13 +88,9 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-ERROR (ADEXL-2709): Evaluation of output 'DC_GAIN' returned 'nil' for point:'1' test:'Corner_Sim'
-	Expression:'deriv(IS("/I0/OUT"))'.
-Ensure that the definition of output is correct.
 
-
-*Info*    Run complete for Point ID (20 1) on testbench [ Corner_Sim
-          ].
+*Info*    Run complete for Point ID (9 1) on testbench [
+          ALL_TESTS:emir_test_2_tb:1 ].
 
 
 

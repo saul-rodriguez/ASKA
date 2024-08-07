@@ -1,5 +1,5 @@
 #!/pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/assura_rcx -V
-# This script was generated Wed Jul 17 12:48:28 2024 by:
+# This script was generated Wed Aug  7 04:49:19 2024 by:
 #
 # Program: /pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/RCXspice
 # Version: 23.1.0-p075
@@ -17,9 +17,9 @@
 #	-parasitic_res_length -parasitic_res_models comment \
 #	-parasitic_cap_models yes -output_net_name_space schematic \
 #	-output_hierarchy_delimiter / -output \
-#	/home/saul/projects/ASKA/VoltusFi/emir_test_2.dspf -net_name_space \
-#	layout -minR 1 -max_merged_via_size auto -max_fracture_length \
-#	infinite -lvs_source hcci -ignore_gate_diffusion_fringing_cap \
+#	/home/saul/projects/ASKA/emir_test_3.dspf -net_name_space layout \
+#	-minR 0.1 -max_merged_via_size auto -max_fracture_length infinite \
+#	-lvs_source hcci -ignore_gate_diffusion_fringing_cap \
 #	-hierarchy_delimiter / -hcci_run_name emir_test_2 -hcci_run_dir \
 #	/home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb -hcci_net_prop 5 \
 #	-hcci_inst_prop 6 -hcci_dev_prop 7 -fracture_length_units MICRONS \
@@ -95,11 +95,11 @@ set -v
 ##MERGE_PARALLEL_VIA=N
 ##MINC=
 ##MINC_BY_PERCENTAGE=
-##MINR=1
+##MINR=0.1
 ##NET_NAME_SPACE=layout
 ##NETS_FILE=/dev/null
 ##NP=1
-##OUTPUT=/home/saul/projects/ASKA/VoltusFi/emir_test_2.dspf
+##OUTPUT=/home/saul/projects/ASKA/emir_test_3.dspf
 ##OUTPUT_NET_NAME_SPACE=schematic
 ##PARASITIC_BLOCKING_DEVICE_CELLS_TYPE=gray
 ##PARASITIC_CAP_MODELS=yes
@@ -188,6 +188,10 @@ agds2rcx -V -H satfile -r \
 # Calculate erosion tables for specified process layers
 #==========================================================#
 
+densitymap -V -TC -o METTP.den 45 mttrm
+densitymap -V -TC -o MET4.den 28 m4trm
+densitymap -V -TC -o MET3.den 28 m3trm
+densitymap -V -TC -o MET2.den 28 m2trm
 densitymap -V -TC -o MET1.den 23 m1trm
 
 #==========================================================#
@@ -202,6 +206,14 @@ epick bulk_orig bulk
 # Ensure vias do not extend beyond routing
 #==========================================================#
 
+geom -V vtpCON m4trm - vtpCON,11,i,2
+geom -V vtpCON mttrm - vtpCON,11,i,2
+geom -V via3CON m3trm - via3CON,11,i,2
+geom -V via3CON m4trm - via3CON,11,i,2
+geom -V via2CON m2trm - via2CON,11,i,2
+geom -V via2CON m3trm - via2CON,11,i,2
+geom -V via1 m1trm - via1,11,i,2
+geom -V via1 m2trm - via1,11,i,2
 geom -V cont m1trm p1trm - cont_m1trm_p1trm,111,i,2
 /bin/mv -f bulk_orig bulk
 
@@ -214,7 +226,11 @@ beginFlattenInputs
 flatnet -V -li -h '/' h_NET NET
 netprint -V -N1 power_list:power_list_nums NET
 flattenResData rpp1k1_02 meters
-flattenLayers -m cont_m1trm_p1trm cont
+flattenLayers -m vtpCON via3CON via2CON via1 cont_m1trm_p1trm cont
+flattenLayers -m mttrm
+flattenLayers -m m4trm
+flattenLayers -m m3trm
+flattenLayers -m m2trm
 flattenLayers -m m1trm
 flattenLayers -m p1trm
 flattenLayers -m bulk
@@ -234,8 +250,16 @@ cp power_list_nums2 power_list_nums
 
 selectNetsByNumber power_list_nums bulk p_rbulk np_rbulk
 selectNetsByNumber power_list_nums m1trm p_rm1trm np_rm1trm
+selectNetsByNumber power_list_nums m2trm p_rm2trm np_rm2trm
+selectNetsByNumber power_list_nums m3trm p_rm3trm np_rm3trm
+selectNetsByNumber power_list_nums m4trm p_rm4trm np_rm4trm
+selectNetsByNumber power_list_nums mttrm p_rmttrm np_rmttrm
 selectNetsByNumber power_list_nums p1trm p_rp1trm np_rp1trm
 selectNetsByNumber power_list_nums cont_m1trm_p1trm p_rcont_m1trm_p1trm np_rcont_m1trm_p1trm
+selectNetsByNumber power_list_nums via1 p_rvia1 np_rvia1
+selectNetsByNumber power_list_nums via2CON p_rvia2CON np_rvia2CON
+selectNetsByNumber power_list_nums via3CON p_rvia3CON np_rvia3CON
+selectNetsByNumber power_list_nums vtpCON p_rvtpCON np_rvtpCON
 mv power_list_nums_orig power_list_nums
 
 #==========================================================#
@@ -247,6 +271,22 @@ mergevia -V -tech \
 	/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ \
 	-cnt np_rcont_m1trm_p1trm rcont_m1trm_p1trm - np_rm1trm np_rp1trm
 cp rcont_m1trm_p1trm rcont_m1trm_p1trm_orig
+mergevia -V -tech \
+	/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ \
+	-cnt np_rvia1 rvia1 - np_rm2trm np_rm1trm
+cp rvia1 rvia1_orig
+mergevia -V -tech \
+	/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ \
+	-cnt np_rvia2CON rvia2CON - np_rm3trm np_rm2trm
+cp rvia2CON rvia2CON_orig
+mergevia -V -tech \
+	/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ \
+	-cnt np_rvia3CON rvia3CON - np_rm4trm np_rm3trm
+cp rvia3CON rvia3CON_orig
+mergevia -V -tech \
+	/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ \
+	-cnt np_rvtpCON rvtpCON - np_rmttrm np_rm4trm
+cp rvtpCON rvtpCON_orig
 
 #==========================================================#
 # Create resistive interconnect RES terminals
@@ -260,8 +300,8 @@ createResistorTerminals rpp1k1_02 np_rp1trm rpp1k1_02_rvia
 
 /bin/mv -f np_rbulk np_rbulk.conn_orig
 createEmptyLayer np_rbulk
-connect -V -relocate NET np_rbulk:np_rbulk.conn rcont_m1trm_p1trm \
-	rpp1k1_02_rvia - -
+connect -V -relocate NET np_rbulk:np_rbulk.conn rcont_m1trm_p1trm rvia1 \
+	rvia2CON rvia3CON rvtpCON rpp1k1_02_rvia - -
 
 #==========================================================#
 # Assign net numbers to resistor vias
@@ -275,6 +315,10 @@ connect -V -relocate NET np_rbulk:np_rbulk.conn rcont_m1trm_p1trm \
 flatlabel -V -spins -tc -F -l flatlabel.info text_m1trm L1T0
 # 1 np_rp1trm
 # 2 np_rm1trm
+# 3 np_rm2trm
+# 4 np_rm3trm
+# 5 np_rm4trm
+# 6 np_rmttrm
 /bin/mv -f np_rbulk.conn_orig np_rbulk
 
 #==========================================================#
@@ -284,8 +328,11 @@ flatlabel -V -spins -tc -F -l flatlabel.info text_m1trm L1T0
 rex -V -m -pd -I'#' -l slab -tech \
 	/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ \
 	-no_cut -map p2elayermapfile -wee p2elayermapfile -N NET -e -P \
-	rpp1k1_02_rvia -rP res.mod np_rp1trm::POLY1_cut np_rm1trm::MET1_cut - \
-	rcont_m1trm_p1trm,1,2,T rpp1k1_02_rvia,1,z - L1T0,2,I
+	rpp1k1_02_rvia -rP res.mod np_rp1trm::POLY1_cut np_rm1trm::MET1_cut \
+	np_rm2trm::MET2_cut np_rm3trm::MET3_cut np_rm4trm::MET4_cut \
+	np_rmttrm::METTP_cut - rcont_m1trm_p1trm,1,2,T rvia1,2,3,T \
+	rvia2CON,3,4,T rvia3CON,4,5,T rvtpCON,5,6,T rpp1k1_02_rvia,1,z - \
+	L1T0,2,I
 /bin/cp -f np_rbulk np_rbulk.conn
 
 #==========================================================#
@@ -294,6 +341,14 @@ rex -V -m -pd -I'#' -l slab -tech \
 
 stamp -V -i2 np_rm1trm rcont_m1trm_p1trm np_rcont_m1trm_p1trm
 geom -V np_rcont_m1trm_p1trm,p_rcont_m1trm_p1trm - rcont_m1trm_p1trm,1,i,1
+stamp -V -i2 np_rm2trm rvia1 np_rvia1
+geom -V np_rvia1,p_rvia1 - rvia1,1,i,1
+stamp -V -i2 np_rm3trm rvia2CON np_rvia2CON
+geom -V np_rvia2CON,p_rvia2CON - rvia2CON,1,i,1
+stamp -V -i2 np_rm4trm rvia3CON np_rvia3CON
+geom -V np_rvia3CON,p_rvia3CON - rvia3CON,1,i,1
+stamp -V -i2 np_rmttrm rvtpCON np_rvtpCON
+geom -V np_rvtpCON,p_rvtpCON - rvtpCON,1,i,1
 /bin/rm -f np_rbulk.conn
 
 #==========================================================#
@@ -325,10 +380,11 @@ netprint -max NET > original_maxnetfile
 
 xreduce -V -mergecap -n NET -tech \
 	/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ \
-	-xdspf -d1 -e np_rm1trm,np_rp1trm,np_rbulk,rcont_m1trm_p1trm \
-	-decoupled -minR 1 -rP \
-	np_rp1trm.res,np_rm1trm.res,rwires.res,rcont_m1trm_p1trm.res slab \
-	L1T0 rpp1k1_02.resr
+	-xdspf -d1 -e \
+	np_rmttrm,np_rm4trm,np_rm3trm,np_rm2trm,np_rm1trm,np_rp1trm,np_rbulk,rcont_m1trm_p1trm,rvia1,rvia2CON,rvia3CON,rvtpCON \
+	-decoupled -minR 0.1 -rP \
+	np_rp1trm.res,np_rm1trm.res,np_rm2trm.res,np_rm3trm.res,np_rm4trm.res,np_rmttrm.res,rwires.res,rcont_m1trm_p1trm.res,rvia1.res,rvia2CON.res,rvia3CON.res,rvtpCON.res \
+	slab L1T0 rpp1k1_02.resr
 
 #==========================================================#
 # Generate X-DSPF netlist
@@ -337,8 +393,9 @@ xreduce -V -mergecap -n NET -tech \
 dspfgen -V -n -np -spins -hf caps2dversion -m -FN NET -o  HSPICE -prefix \
 	prefixfile -lvs_db_dir \
 	/home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb -designName \
-	emir_test_2 -xrPmwl res.mod np_rp1trm.res np_rm1trm.res \
-	rcont_m1trm_p1trm.res -xrPmwl rwires.mod rwires.res -xra \
-	lvsres.mod,rpp1k1_02.net rpp1k1_02.resr -ls slab -li rport_lab -lp \
-	L1T0 /home/saul/projects/ASKA/VoltusFi/emir_test_2.dspf
+	emir_test_2 -xrPmwl res.mod np_rp1trm.res np_rm1trm.res np_rm2trm.res \
+	np_rm3trm.res np_rm4trm.res np_rmttrm.res rcont_m1trm_p1trm.res \
+	rvia1.res rvia2CON.res rvia3CON.res rvtpCON.res -xrPmwl rwires.mod \
+	rwires.res -xra lvsres.mod,rpp1k1_02.net rpp1k1_02.resr -ls slab -li \
+	rport_lab -lp L1T0 /home/saul/projects/ASKA/emir_test_3.dspf
 

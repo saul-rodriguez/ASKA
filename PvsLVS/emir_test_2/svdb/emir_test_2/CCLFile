@@ -15,7 +15,7 @@ extraction_setup \
 	 -split_via_by_unit_area false
 filter_res \
 	 -merge_parallel_res false \
-	 -min_res 1
+	 -min_res 0.1
 hierarchical_extract \
 	 -split_feedthrough_pins true
 input_db -type pvs \
@@ -45,7 +45,7 @@ output_db -type dspf \
 	 -subtype "EXTENDED"
 output_setup \
 	 -directory_name "/home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb" \
-	 -file_name "/home/saul/projects/ASKA/VoltusFi/emir_test_2.dspf" \
+	 -file_name "/home/saul/projects/ASKA/emir_test_3.dspf" \
 	 -net_name_space "SCHEMATIC" \
 	 -temporary_directory_name "emir_test_2"
 process_technology \

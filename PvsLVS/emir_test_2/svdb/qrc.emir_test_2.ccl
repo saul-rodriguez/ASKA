@@ -15,7 +15,7 @@ extraction_setup \
 	 -net_name_space "LAYOUT"
 filter_res \
 	 -merge_parallel_res false \
-	 -min_res 1
+	 -min_res 0.1
 input_db -type pvs \
 	 -run_name "emir_test_2" \
 	 -directory_name "/home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb" \
@@ -25,7 +25,6 @@ mos_diffusion_parameter_extraction \
 	 -res "fast"
 output_db -type dspf \
 	 -em_extract true \
-	 -subtype extended \
 	 -device_finger_delimiter "@" \
 	 -busbit_delimiter "\[\]" \
 	 -disable_instances false \
@@ -37,7 +36,7 @@ output_db -type dspf \
 	 -sub_node_char "#"
 output_setup \
 	 -directory_name "/home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb" \
-	 -file_name "/home/saul/projects/ASKA/VoltusFi/emir_test_2.dspf" \
+	 -file_name "/home/saul/projects/ASKA/emir_test_3.dspf" \
 	 -net_name_space "SCHEMATIC" \
 	 -temporary_directory_name "emir_test_2"
 process_technology \

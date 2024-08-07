@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ALL_TESTS:emir_test_2_tb:1:1_ALL_TESTS:emir_test_2_tb:1:1_state_Interactive.8
-	Results DB   = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.8.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_2_tb:1:1
+	State Name   = TOP_EMIR_TOP:1_state_Interactive.35
+	Results DB   = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.35.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.35/1/TOP_EMIR
 	Results Loc  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl
@@ -28,50 +28,42 @@
 
 
 
-*Info*    Run start for Point ID (0 1) on testbench [
-          ALL_TESTS:emir_test_2_tb:1:1 ].
+*Info*    Run start for Point ID (9 1) on testbench [ TOP_EMIR ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDC = "40"
+Setting var VDC = "20"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_2_tb:1:1/netlist
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.35/1/TOP_EMIR/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_2_tb:1:1
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.35/1/TOP_EMIR
 
 
-*Info*    Creating Netlist for Point ID (0 1)
+*Info*    Creating Netlist for Point ID (9 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Jul 17 12:50:16 2024
-WARNING (OSSHNL-335): Design configuration has changed since last netlisting session in this run
-directory. Netlist(s) from last session cannot be reused for incremental
-netlisting. Therefore, re-netlisting the design.
+Begin Incremental Netlisting Aug  7 05:02:21 2024
+End netlisting Aug  7 05:02:21 2024
 
-End netlisting Jul 17 12:50:16 2024
-
-Netlisting Statistics:
-	Number of components:    6
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [
-          ALL_TESTS:emir_test_2_tb:1:1 ] for Point ID (0 1).
+*Info*    Running simulation on testbench [ TOP_EMIR ] for Point ID
+          (9 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_2_tb:1:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.35/1/TOP_EMIR/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -100,9 +92,28 @@ ERROR (WIA-1006): Unable to plot expression <IT("/I0/R1/MINUS")>
            parametric wave. See the Visualization & Analysis Tool documentation for information
            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
            the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R4/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R5/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R6/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R7/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
 
-*Info*    Run complete for Point ID (0 1) on testbench [
-          ALL_TESTS:emir_test_2_tb:1:1 ].
+*Info*    Run complete for Point ID (9 1) on testbench [ TOP_EMIR ].
 
 
 

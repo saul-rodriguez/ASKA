@@ -3,7 +3,7 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   23.10-p043
-#####  NVN Run Start                 :   Wed Jul 17 13:44:25 2024
+#####  NVN Run Start                 :   Wed Aug  7 04:01:27 2024
 #####  ERC Summary File              :   emir_test_2.sum
 #####  Extraction Report File        :   emir_test_2_lvs.sum
 #####  Comparison Report File        :   emir_test_2_lvs.sum.cls
@@ -24,11 +24,11 @@
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   53.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
-#####  NVN Peak Memory Usage         :   259.68MB
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   261.31MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
-#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   259.68MB
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   261.31MB
 #####  
 ##############################################################################################################
 
@@ -477,9 +477,9 @@ Effective LVS Rule Values
 Cell           |   lay   :   sch   |   lay   :   sch   |   lay   :  sch
 ---------------+---------+---------+---------+---------+---------+--------
 R [2 pins]     |         :         |         :         |         :        
- R(RPP1K1)     |       3 :       3 |       3 :       3 |       3 :       3
+ R(RPP1K1)     |       7 :       7 |       7 :       7 |       7 :       7
 ---------------+---------+---------+---------+---------+---------+--------
-Total          |       3 :       3 |       3 :       3 |       3 :       3
+Total          |       7 :       7 |       7 :       7 |       7 :       7
 ===============+=========+=========+=========+=========+=========+========
 Pins           |         :         |         :         |       2 :       2
 Nets           |         :         |         :         |       0 :       0

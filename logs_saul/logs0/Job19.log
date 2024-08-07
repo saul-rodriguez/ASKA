@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = ALL_TESTS
-	Cell         = emir_test_1_tb
-	View         = schematic
+	Cell         = emir_test_2_tb
+	View         = config
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ALL_TESTS:emir_test_1_tb:1_none_Interactive.8
-	Results DB   = /home/saul/projects/ASKA/ALL_TESTS/emir_test_1_tb/adexl/results/data/Interactive.8.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_1_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_1_tb:1
-	Results Loc  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_1_tb/adexl/results/data
+	State Name   = TOP_EMIR_TOP:1_state_Interactive.34
+	Results DB   = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.34.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.34/1/TOP_EMIR
+	Results Loc  = /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
-	Setup DB loc = /home/saul/projects/ASKA/ALL_TESTS/emir_test_1_tb/adexl
+	Setup DB loc = /home/saul/projects/ASKA/ALL_TESTS/emir_test_2_tb/adexl
 	File Encoding = 0
 
 
@@ -28,32 +28,31 @@
 
 
 
-*Info*    Run start for Point ID (2 1) on testbench [
-          ALL_TESTS:emir_test_1_tb:1 ].
+*Info*    Run start for Point ID (8 1) on testbench [ TOP_EMIR ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VDC = "10"
+Setting var VDC = "50"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_1_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_1_tb:1/netlist
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.34/1/TOP_EMIR/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_1_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_1_tb:1
+          /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.34/1/TOP_EMIR
 
 
-*Info*    Creating Netlist for Point ID (2 1)
+*Info*    Creating Netlist for Point ID (8 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Jul 17 06:35:42 2024
-End netlisting Jul 17 06:35:42 2024
+Begin Incremental Netlisting Aug  7 04:51:22 2024
+End netlisting Aug  7 04:51:22 2024
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -61,10 +60,10 @@ End netlisting Jul 17 06:35:42 2024
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [
-          ALL_TESTS:emir_test_1_tb:1 ] for Point ID (2 1).
+*Info*    Running simulation on testbench [ TOP_EMIR ] for Point ID
+          (8 1).
 
-Delete psf data in /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_1_tb/adexl/results/data/Interactive.8/1/ALL_TESTS:emir_test_1_tb:1/psf.
+Delete psf data in /home/saul/projects/ASKA/Sim/ALL_TESTS/emir_test_2_tb/adexl/results/data/Interactive.34/1/TOP_EMIR/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -78,9 +77,43 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R11/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R0/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R1/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R4/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R5/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R6/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
+ERROR (WIA-1006): Unable to plot expression <IT("/I0/R7/MINUS")>
+           because it does not evaluate to an object that can be plotted, like a waveform or
+           parametric wave. See the Visualization & Analysis Tool documentation for information
+           about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+           the expressions that evaluate to those objects can be plotted.
 
-*Info*    Run complete for Point ID (2 1) on testbench [
-          ALL_TESTS:emir_test_1_tb:1 ].
+*Info*    Run complete for Point ID (8 1) on testbench [ TOP_EMIR ].
 
 
 

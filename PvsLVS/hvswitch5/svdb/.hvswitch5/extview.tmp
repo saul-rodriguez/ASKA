@@ -1,0 +1,719 @@
+*
+*
+*
+*                       LINUX           Wed Aug  7 15:40:23 2024
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 23.1.0-p075
+*  Build Date     : Tue Sep 26 09:11:43 PDT 2023
+*
+*  HSPICE LIBRARY
+*
+* GLOBAL_TEMPERATURE 27
+*  OPERATING_TEMPERATURE 27
+*  QRC_TECH_DIR /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ 
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+*
+*       SUBCIRCUIT DEFINITIONS
+*
+.SUBCKT ped D G S SB
+.ENDS
+*
+.SUBCKT nedia D G S SB
+.ENDS
+*
+
+*
+.SUBCKT hvswitch5 CUR_IN DOWN GNDD GNDHV OUT UP VDD3 VDDHV VSUBHV
+*
+*
+*  caps2d version: 10
+*
+*       SUBCIRCUIT CALLS
+*
+XMM1 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@1 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@2 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@3 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@4 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@5 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@6 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@7 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@8 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@9 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@10 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM1@11 OUT GATEP VDDHV VSUBHV ped
++ w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10
++ pdio=2.57015e-05 extlay=1
+XMM4 D4 UPN GNDHV VSUBHV nedia
++ w=2e-05 l=1.25e-06 adio=7.56916e-10 pdio=0.00010535 extlay=1
+XMM2 GATEN DOWNN GNDHV VSUBHV nedia
++ w=2e-05 l=1.25e-06 adio=7.56916e-10 pdio=0.00010535 extlay=1
+XMM0 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@1 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@2 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@3 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@4 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@5 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@6 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@7 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@8 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@9 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@10 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+XMM0@11 OUT GATEN CUR_IN VSUBHV nedia
++ w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1
+*
+*       TRANSISTOR CARDS
+*
+*
+MMM8	UPN	net5	GNDD	VSUBHV	ne3	L=3.5e-07	W=2.2e-07
++ AD=1.984e-13	AS=1.984e-13	PD=1.88e-06	PS=1.88e-06
++ NRD=0.804735	NRS=0.804735
+MMM5	net5	UP	GNDD	VSUBHV	ne3	L=3.5e-07	W=2.2e-07
++ AD=1.984e-13	AS=1.984e-13	PD=1.88e-06	PS=1.88e-06
++ NRD=0.804735	NRS=0.804735
+MMM3	DOWNN	DOWN	GNDD	VSUBHV	ne3	L=3.5e-07	W=2.2e-07
++ AD=1.984e-13	AS=1.984e-13	PD=1.88e-06	PS=1.88e-06
++ NRD=0.804735	NRS=0.804735
+MMM7	UPN	net5	VDD3	VDD3	pe3	L=3e-07	W=4.4e-07
++ AD=2.112e-13	AS=2.112e-13	PD=1.84e-06	PS=1.84e-06
++ NRD=0.39754	NRS=0.39754
+MMM6	net5	UP	VDD3	VDD3	pe3	L=3e-07	W=4.4e-07
++ AD=2.112e-13	AS=2.112e-13	PD=1.84e-06	PS=1.84e-06
++ NRD=0.39754	NRS=0.39754
+MMM11	DOWNN	DOWN	VDD3	VDD3	pe3	L=3e-07	W=4.4e-07
++ AD=2.112e-13	AS=2.112e-13	PD=1.84e-06	PS=1.84e-06
++ NRD=0.39754	NRS=0.39754
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+RRR2	D4	GATEP	rpp1k1_3 	L=0.0002537	W=2e-06
++ $SUB=VSUBHV 
+RRR0	GATEN	VDDHV	rpp1k1_3 	L=0.0002537	W=2e-06
++ $SUB=VSUBHV 
+RRR1	GATEP	VDDHV	rpp1k1_3 	L=0.0002029	W=2e-06
++ $SUB=VSUBHV 
+RRR3	GNDHV	GATEN	rpp1k1_3 	L=0.0002029	W=2e-06
++ $SUB=VSUBHV 
+RRR7	OUT	VDDHV	rpp1k1_3 	L=0.00204358	W=2e-06
++ $SUB=VSUBHV 
+*
+*       CAP/DIODE CARDS
+*
+*
+CCC2	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@1	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@2	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@3	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@4	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@5	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@6	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@7	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@8	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@9	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@10	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@11	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@12	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@13	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@14	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@15	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@16	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@17	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@18	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@19	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@20	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@21	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@22	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@23	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@24	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@25	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@26	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@27	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@28	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@29	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@30	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@31	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@32	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@33	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@34	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@35	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@36	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@37	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@38	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@39	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@40	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@41	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@42	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@43	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@44	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@45	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@46	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@47	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@48	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@49	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@50	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@51	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@52	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@53	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@54	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@55	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@56	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@57	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@58	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@59	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@60	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@61	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@62	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@63	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@64	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@65	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@66	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@67	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@68	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC2@69	GNDHV	GATEN	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@1	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@2	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@3	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@4	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@5	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@6	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@7	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@8	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@9	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@10	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@11	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@12	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@13	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@14	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@15	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@16	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@17	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@18	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@19	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@20	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@21	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@22	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@23	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@24	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@25	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@26	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@27	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@28	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@29	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@30	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@31	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@32	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@33	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@34	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@35	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@36	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@37	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@38	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@39	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@40	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@41	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@42	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@43	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@44	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@45	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@46	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@47	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@48	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@49	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@50	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@51	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@52	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@53	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@54	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@55	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@56	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@57	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@58	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@59	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@60	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@61	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@62	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@63	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@64	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@65	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@66	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@67	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@68	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@69	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@70	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@71	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@72	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@73	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@74	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@75	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@76	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@77	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@78	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@79	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@80	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@81	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@82	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@83	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@84	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@85	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@86	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@87	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@88	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@89	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@90	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@91	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@92	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@93	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@94	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@95	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@96	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@97	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@98	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@99	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC0@100	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@101	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@102	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@103	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@104	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@105	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@106	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@107	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@108	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@109	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@110	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@111	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@112	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@113	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@114	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@115	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@116	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@117	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@118	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@119	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@120	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@121	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@122	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@123	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@124	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@125	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@126	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@127	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@128	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@129	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@130	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@131	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@132	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@133	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@134	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@135	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@136	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@137	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@138	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@139	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@140	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@141	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@142	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@143	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@144	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@145	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@146	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@147	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@148	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC0@149	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@1	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@2	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@3	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@4	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@5	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@6	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@7	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@8	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@9	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@10	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@11	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@12	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@13	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@14	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@15	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@16	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@17	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@18	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@19	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@20	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@21	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@22	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@23	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@24	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@25	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@26	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@27	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@28	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@29	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@30	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@31	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@32	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@33	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@34	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@35	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@36	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@37	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@38	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@39	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@40	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@41	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@42	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@43	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@44	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@45	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@46	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@47	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@48	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@49	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@50	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@51	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@52	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@53	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@54	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@55	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@56	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@57	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@58	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@59	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@60	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@61	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@62	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@63	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@64	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@65	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@66	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@67	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@68	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@69	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@70	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@71	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@72	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@73	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@74	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@75	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@76	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@77	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@78	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@79	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@80	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@81	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@82	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@83	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@84	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@85	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@86	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@87	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@88	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@89	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@90	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@91	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@92	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@93	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@94	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@95	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@96	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@97	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@98	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@99	VDDHV	OUT	csf4a 	0 	area=6.3936e-11 perimeter=3.372e-05  
+CCC4@100	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@101	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@102	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@103	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@104	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@105	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@106	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@107	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@108	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@109	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@110	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@111	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@112	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@113	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@114	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@115	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@116	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@117	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@118	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@119	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@120	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@121	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@122	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@123	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@124	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@125	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@126	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@127	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@128	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@129	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@130	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@131	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@132	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@133	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@134	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@135	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@136	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@137	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@138	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@139	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@140	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@141	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@142	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@143	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@144	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@145	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@146	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@147	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@148	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+CCC4@149	VDDHV	OUT	csf4a 	0 
++ area=6.3936e-11 perimeter=3.372e-05  
+DX3/D0_unmatched	VSUBHV	VDD3	p_dnw	3.39001e-11	3.421e-05 
++  perimeter=3.421e-05  model=dnw
+DX4/X386/D0_unmatched	VSUBHV	VDDHV	p_ddnw	1.12107e-09	0.00016136 
++  perimeter=0.00016136  model=ddnw
+DX4/X385/D0_unmatched	VSUBHV	VDDHV	p_ddnw	1.12107e-09	0.00016136 
++  perimeter=0.00016136  model=ddnw
+DX3/X156/D0_unmatched	VSUBHV	GATEN	p_dwhn	6.69221e-10	0.00022132 
++  perimeter=0.00022132  model=dwhn
+DDD1@1	OUT	VDDHV	dpp20	2.5e-10	0.00011 
++  perimeter=0.00011 
+DDD1	OUT	VDDHV	dpp20	2.5e-10	0.00011 
++  perimeter=0.00011 
+DDD0	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@1	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@2	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@3	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@4	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@5	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@6	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@7	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@8	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@9	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@10	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@11	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@12	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@13	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@14	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@15	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@16	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@17	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@18	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DDD0@19	GNDHV	GATEN	dsba	1.41e-11	3.188e-05 
++  perimeter=3.188e-05  	$SUB=VSUBHV
+DX3/D1_unmatched	VSUBHV	VDD3	p_dnw3	2.49e-11	0.000e+00 
++  perimeter=0  model=dnw3
+*
+*
+*       CAPACITOR CARDS
+*
+*
+C371	CUR_IN	OUT	5.25873e-13	$X=334.303 $Y=95.2785
+C372	CUR_IN	GATEN	1.35006e-13	$X=303.133 $Y=89.7245
+C373	GATEN	GNDHV	2.12313e-13	$X=101.2215 $Y=51.2185
+C374	OUT	VDDHV	6.21129e-13	$X=428.625 $Y=33.0775
+C375	OUT	GATEN	6.83874e-14	$X=122.524 $Y=51.3255
+C376	OUT	GATEP	1.01345e-13	$X=331.843 $Y=164.94
+C377	GATEP	VDDHV	9.34744e-14	$X=331.8595 $Y=164.9275
+C378	CUR_IN	VSUBHV	4.54681e-14	$X=327.727 $Y=98.1875
+C379	DOWN	VSUBHV	1.63812e-15	$X=49.2825 $Y=84.873
+C380	GNDD	VSUBHV	4.4954e-15	$X=51.5475 $Y=82.362
+C381	GNDHV	VSUBHV	2.08157e-13	$X=118.3015 $Y=74.295
+C382	OUT	VSUBHV	5.10008e-13	$X=228.4925 $Y=136.133
+C383	UP	VSUBHV	2.19567e-15	$X=52.328 $Y=84.578
+C384	VDD3	VSUBHV	7.52781e-15	$X=52.1375 $Y=87.88
+C385	VDDHV	VSUBHV	6.90963e-13	$X=233.403 $Y=135.0015
+C386	GATEN	VSUBHV	1.7429e-13	$X=132.609 $Y=74.9895
+C387	DOWNN	VSUBHV	1.62351e-14	$X=55.8365 $Y=102.3315
+C388	UPN	VSUBHV	1.89213e-14	$X=77.5815 $Y=101.816
+C389	D4	VSUBHV	1.46604e-14	$X=98.6435 $Y=128.9385
+C390	GATEP	VSUBHV	5.8274e-14	$X=331.009 $Y=164.9515
+C391	net5	VSUBHV	2.17844e-15	$X=54.9615 $Y=84.876
+C392	X3/X156/4	VSUBHV	2.4955e-17	$X=226.294 $Y=94.3495
+C393	X3/X156/5	VSUBHV	3.81998e-17	$X=222.334 $Y=94.3495
+C394	X3/X156/6	VSUBHV	3.81998e-17	$X=218.374 $Y=94.3495
+C395	X3/X156/7	VSUBHV	3.81998e-17	$X=214.414 $Y=94.3495
+C396	X3/X156/8	VSUBHV	3.81998e-17	$X=210.454 $Y=94.3495
+C397	X3/X156/9	VSUBHV	3.81998e-17	$X=206.494 $Y=94.3495
+C398	X3/X156/10	VSUBHV	3.81998e-17	$X=202.5345 $Y=94.3495
+C399	X3/X156/11	VSUBHV	3.81998e-17	$X=198.5745 $Y=94.3495
+C400	X3/X156/12	VSUBHV	3.81998e-17	$X=194.6145 $Y=94.3495
+C401	X3/X156/13	VSUBHV	3.81998e-17	$X=190.6545 $Y=94.3495
+C402	X3/X156/14	VSUBHV	3.81998e-17	$X=186.6945 $Y=94.3495
+C403	X3/X156/15	VSUBHV	3.81998e-17	$X=182.7345 $Y=94.3495
+C404	X3/X156/16	VSUBHV	3.81998e-17	$X=178.7745 $Y=94.3495
+C405	X3/X156/17	VSUBHV	3.81998e-17	$X=174.8145 $Y=94.3495
+C406	X3/X156/18	VSUBHV	3.81998e-17	$X=170.8545 $Y=94.3495
+C407	X3/X156/19	VSUBHV	3.81998e-17	$X=166.8945 $Y=94.3495
+C408	X3/X156/20	VSUBHV	3.81998e-17	$X=162.9345 $Y=94.3495
+C409	X3/X156/21	VSUBHV	3.81998e-17	$X=158.9745 $Y=94.3495
+C410	X3/X156/22	VSUBHV	3.81998e-17	$X=155.0145 $Y=94.3495
+C411	X3/X156/23	VSUBHV	3.81998e-17	$X=151.0545 $Y=94.3495
+*
+*
+.ENDS hvswitch5
+*

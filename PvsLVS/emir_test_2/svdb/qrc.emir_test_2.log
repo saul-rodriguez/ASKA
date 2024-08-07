@@ -9,7 +9,7 @@ Inc.
 
 
 INFO (EXTQRCXLOG-128) : Quantus command line:
- Started at: 2024-Jul-17 12:48:28 (2024-Jul-17 16:48:28 GMT)
+ Started at: 2024-Aug-07 04:49:19 (2024-Aug-07 08:49:19 GMT)
  Executable:
 /pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/qrc
  Options:     -log_file
@@ -34,7 +34,7 @@ extraction_setup \
 	 -split_via_by_unit_area false
 filter_res \
 	 -merge_parallel_res false \
-	 -min_res 1
+	 -min_res 0.1
 hierarchical_extract \
 	 -split_feedthrough_pins true
 input_db -type pvs \
@@ -64,7 +64,7 @@ output_db -type dspf \
 	 -subtype "EXTENDED"
 output_setup \
 	 -directory_name "/home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb" \
-	 -file_name "/home/saul/projects/ASKA/VoltusFi/emir_test_2.dspf" \
+	 -file_name "/home/saul/projects/ASKA/emir_test_3.dspf" \
 	 -net_name_space "SCHEMATIC" \
 	 -temporary_directory_name "emir_test_2"
 process_technology \
@@ -83,10 +83,10 @@ It is now set to be the same as that of the input_db -hierarchy_delimiter
 option. If input_db -hierarchy_delimiter is not set, then output_db
 -hierarchy_delimiter is set to the default value ("/" character).
 -------------------------------------------------------------------------------------
-Wed Jul 17 12:48:28 2024: BEGIN INPUT stage
+Wed Aug  7 04:49:19 2024: BEGIN INPUT stage
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-Wed Jul 17 12:48:28 2024: DONE INPUT stage
+Wed Aug  7 04:49:19 2024: DONE INPUT stage
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 INPUT stage summary:
@@ -116,7 +116,7 @@ INPUT stage summary:
  Design data:
     global nets:                  0
 
- Peak memory:	63 MB
+ Peak memory:	68 MB
 
  Messages:
     INFO (CAPGEN-41199): 
@@ -160,10 +160,10 @@ INPUT stage summary:
     setting dbunit 1e-09 1 1e-09
     
 -------------------------------------------------------------------------------------
-Wed Jul 17 12:48:28 2024: BEGIN EXTRACTION stage
+Wed Aug  7 04:49:19 2024: BEGIN EXTRACTION stage
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-Wed Jul 17 12:48:29 2024: DONE EXTRACTION stage
+Wed Aug  7 04:49:21 2024: DONE EXTRACTION stage
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 EXTRACTION stage summary:
@@ -174,13 +174,13 @@ EXTRACTION stage summary:
     floating nets:                1
     ground net name:              
 
- Peak memory:	63 MB
+ Peak memory:	68 MB
 
 -------------------------------------------------------------------------------------
-Wed Jul 17 12:48:29 2024: BEGIN OUTPUT stage
+Wed Aug  7 04:49:21 2024: BEGIN OUTPUT stage
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-Wed Jul 17 12:48:29 2024: DONE OUTPUT stage
+Wed Aug  7 04:49:22 2024: DONE OUTPUT stage
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 OUTPUT stage summary:
@@ -188,27 +188,27 @@ OUTPUT stage summary:
  Reduction statistics:
     Dangling Rs removed:          0
     Merged Parallel Rs:           0
-    Rs shorted by min_res option: 27
+    Rs shorted by min_res option: 53
     Merged Parallel Self Caps:    0
     CCs filtered by minC option:  0
     Shorted Incomplete Nets:      0
  Output statistics:
-    R: 6
+    R: 113
     C: 0
     L: 0
 
- Peak memory:	63 MB
+ Peak memory:	68 MB
 
 -------------------------------------------------------------------------------------
 
 INFO (LBRCXM-920): Host name and peak memory report
  Host Name:                    phoenix
- Peak memory used:             63 MB (sampled at 15s intervals)
+ Peak memory used:             68 MB (sampled at 15s intervals)
 
-INFO (LBRCXM-702): Run ended: Wed Jul 17 12:48:30 2024
+INFO (LBRCXM-702): Run ended: Wed Aug  7 04:49:22 2024
 
 
-INFO (LBRCXM-805): Quantus run took:  1s user, 0s sys, 2s elapsed
+INFO (LBRCXM-805): Quantus run took:  2s user, 0s sys, 3s elapsed
 
 
 INFO (LBRCXM-708): *****  Quantus terminated normally  *****

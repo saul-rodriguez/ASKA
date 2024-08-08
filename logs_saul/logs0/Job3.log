@@ -11,9 +11,9 @@
 	View         = config_an_schem_dig_fun
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = only_ELE_ASKA_TOP:aska_core_tb:1:1_state_Interactive.244
-	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244/1/only_ELE
+	State Name   = only_ELE_ASKA_TOP:aska_core_tb:1:1_state_Interactive.315
+	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315/1/only_ELE
 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_core_tb/adexl
@@ -36,7 +36,7 @@ Resetting statistical vars
 
 Setting var ADDR0 = "0"
 Setting var ADDR1 = "0"
-Setting var CEX = "10p"
+Setting var CEX = "1p"
 Setting var POR_PULSE = "0"
 Setting var RES = "100"
 Setting var VDD3 = "3.3"
@@ -47,11 +47,11 @@ Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244/1/only_ELE/netlist
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315/1/only_ELE/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244/1/only_ELE
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315/1/only_ELE
 
 
 *Info*    Creating Netlist for Point ID (1 1)
@@ -64,10 +64,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244/1/only_ELE/netlist/digital/control
-Begin Netlisting Aug  7 13:51:59 2024
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315/1/only_ELE/netlist/digital/control
+Begin Netlisting Aug  8 05:18:49 2024
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244/1/only_ELE/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315/1/only_ELE/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -128,7 +128,7 @@ analogLib                   cap                         spectre              *St
 ASKA_TOP                    aska_core_tb                schematic                             
 ASKA_TOP                    aska_core                   schematic                             
 ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
-HVSWITCH                    hvswitch5                   analog_extracted_c                    
+HVSWITCH                    hvswitch8                   analog_extracted_C                    
 POR                         por2                        schematic                             
 D_CELLS_3V                  STE_3VX4                    cmos_sch                              
 ASKA_DIG                    aska_dig                    functional                            
@@ -145,7 +145,7 @@ function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244/1/only_ELE/netlist/analog/control
+    cp /home/saul/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315/1/only_ELE/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
 WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
@@ -162,7 +162,7 @@ WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and
                 Edit CDF window.
 Running netlist assembly..
 .........
-End netlisting Aug  7 13:52:05 2024
+End netlisting Aug  8 05:18:55 2024
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -175,7 +175,7 @@ compose simulator input file...
 *Info*    Running simulation on testbench [ only_ELE ] for Point ID
           (1 1).
 
-Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.244/1/only_ELE/psf.
+Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_core_tb/adexl/results/data/Interactive.315/1/only_ELE/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...

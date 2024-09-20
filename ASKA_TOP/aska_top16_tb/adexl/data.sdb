@@ -1150,7 +1150,7 @@
 					</model>
 				</models>
 			</corner>
-			<corner enabled="0">PROCESS_TEMP
+			<corner enabled="1">PROCESS_TEMP
 				<vars>
 					<var>temperature
 						<value>-40 85</value>
@@ -1505,6 +1505,55 @@
 					</option>
 				</origoptions>
 			</test>
+			<test enabled="1">Long_Sim
+				<tool>ADE</tool>
+				<outputs>
+					<output>((VT("/A") - VT("/ELE&lt;0&gt;")) / 100)
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<tooloptions>
+					<option>cell
+						<value>aska_top16_tb</value>
+					</option>
+					<option>lib
+						<value>ASKA_TOP</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>state
+						<value>Long_Sim_active</value>
+					</option>
+					<option>view
+						<value>config_verilog_an_fun_dig</value>
+					</option>
+				</tooloptions>
+				<prerunscript>0</prerunscript>
+				<origoptions>
+					<option>cell
+						<value>aska_top16_tb</value>
+					</option>
+					<option>lib
+						<value>ASKA_TOP</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>state
+						<value>Short_Sim:1_state</value>
+					</option>
+					<option>view
+						<value>config_verilog_an_fun_dig</value>
+					</option>
+				</origoptions>
+			</test>
 		</tests>
 		<vars>
 			<var>ADDR0
@@ -1512,6 +1561,7 @@
 				<dependentTests>
 					<dependentTest enabled="1">Short_Sim</dependentTest>
 					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
 				</dependentTests>
 			</var>
 			<var>ADDR1
@@ -1519,13 +1569,15 @@
 				<dependentTests>
 					<dependentTest enabled="1">Short_Sim</dependentTest>
 					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
 				</dependentTests>
 			</var>
 			<var>POR_PULSE
-				<value>-0.4</value>
+				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">Short_Sim</dependentTest>
 					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
 				</dependentTests>
 			</var>
 			<var>RES
@@ -1533,34 +1585,39 @@
 				<dependentTests>
 					<dependentTest enabled="1">Short_Sim</dependentTest>
 					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VDD3
-				<value>0</value>
-				<dependentTests>
-					<dependentTest enabled="1">Short_Sim</dependentTest>
-					<dependentTest enabled="1">POR_Sim</dependentTest>
-				</dependentTests>
-			</var>
-			<var>VDD3_PULSE
 				<value>3.3</value>
 				<dependentTests>
 					<dependentTest enabled="1">Short_Sim</dependentTest>
 					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
 				</dependentTests>
 			</var>
-			<var>VDDHV
+			<var>VDD3_PULSE
 				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">Short_Sim</dependentTest>
 					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
 				</dependentTests>
 			</var>
-			<var>VDDHV_PULSE
+			<var>VDDHV
 				<value>40</value>
 				<dependentTests>
 					<dependentTest enabled="1">Short_Sim</dependentTest>
 					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDDHV_PULSE
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">Short_Sim</dependentTest>
+					<dependentTest enabled="1">POR_Sim</dependentTest>
+					<dependentTest enabled="1">Long_Sim</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -1592,13 +1649,14 @@
 			</plottingoption>
 		</plottingoptions>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
-		<allcornersenabled>1</allcornersenabled>
+		<allcornersenabled>0</allcornersenabled>
 		<disabledtests>
-			<test>Short_Sim</test>
+			<test>POR_Sim</test>
+			<test>Long_Sim</test>
 		</disabledtests>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.34
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.45
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -3026,13 +3084,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.34</value>
+								<value>Short_Sim_none_Interactive.45</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -3076,10 +3134,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.34</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.45</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_gate_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -3121,7 +3179,7 @@
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -3135,28 +3193,28 @@
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -3193,30 +3251,30 @@
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>1</allcornersenabled>
 				<disabledtests>
-					<test>Short_Sim</test>
+					<test>POR_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 15:53:14 2024</timestamp>
-			<uuid>{03b5a368-2119-4745-85c9-daac833a49ca}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.34.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.34.rdb</simresults>
+			<timestamp>Sep 20 10:17:22 2024</timestamp>
+			<uuid>{40a3543d-97ab-46bc-b383-f5b1231d65a4}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.45.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.45.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_155314500</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.34</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.34</simdir>
+			<localpsfdir>/tmp/s2424_saul_101722946</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.45</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.45</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.34.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.34.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.45.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.45.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.35
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.46
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -4644,13 +4702,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.35</value>
+								<value>Short_Sim_none_Interactive.46</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -4694,10 +4752,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.35</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.46</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_gate_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -4739,7 +4797,7 @@
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -4753,28 +4811,28 @@
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -4811,30 +4869,30 @@
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>1</allcornersenabled>
 				<disabledtests>
-					<test>Short_Sim</test>
+					<test>POR_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 15:57:09 2024</timestamp>
-			<uuid>{54db1b1e-2ca0-47ee-9ac8-86295527cb97}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.35.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.35.rdb</simresults>
+			<timestamp>Sep 20 10:18:55 2024</timestamp>
+			<uuid>{68fb97ae-78e7-45d2-afc2-98f7b258a4bd}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.46.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.46.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_155710047</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.35</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.35</simdir>
+			<localpsfdir>/tmp/s2424_saul_101855622</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.46</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.46</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.35.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.35.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.46.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.46.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.36
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.47
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -6268,7 +6326,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.36</value>
+								<value>Short_Sim_none_Interactive.47</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -6312,10 +6370,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.36</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.47</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_gate_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -6357,7 +6415,7 @@
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -6371,28 +6429,28 @@
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -6429,30 +6487,30 @@
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>1</allcornersenabled>
 				<disabledtests>
-					<test>Short_Sim</test>
+					<test>POR_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 16:02:09 2024</timestamp>
-			<uuid>{9637bb10-f0ad-4501-8ef5-fb92ebec039d}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.36.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.36.rdb</simresults>
+			<timestamp>Sep 20 10:21:11 2024</timestamp>
+			<uuid>{35818d53-4209-495e-9f54-243bea78c04a}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.47.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.47.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_160209636</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.36</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.36</simdir>
+			<localpsfdir>/tmp/s2424_saul_102111471</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.47</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.47</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.36.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.36.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.47.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.47.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.37
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.48
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -7603,7 +7661,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">PROCESS_TEMP
+					<corner enabled="1">PROCESS_TEMP
 						<vars>
 							<var>temperature
 								<value>-40 85</value>
@@ -7880,13 +7938,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.37</value>
+								<value>Short_Sim_none_Interactive.48</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -7930,10 +7988,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.37</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.48</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_gate_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -7975,7 +8033,7 @@
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -7989,28 +8047,28 @@
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -8047,30 +8105,30 @@
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>1</allcornersenabled>
 				<disabledtests>
-					<test>Short_Sim</test>
+					<test>POR_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 16:04:05 2024</timestamp>
-			<uuid>{2808e740-01a9-4afe-9d56-5440aefaaf38}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.37.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.37.rdb</simresults>
+			<timestamp>Sep 20 11:22:54 2024</timestamp>
+			<uuid>{9e1bab78-21b9-4b43-bbd6-e2389f17ab60}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.48.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.48.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_160405251</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.37</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.37</simdir>
+			<localpsfdir>/tmp/s2424_saul_112254468</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.48</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.48</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.37.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.37.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.48.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.48.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.38
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.49
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -9221,7 +9279,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">PROCESS_TEMP
+					<corner enabled="1">PROCESS_TEMP
 						<vars>
 							<var>temperature
 								<value>-40 85</value>
@@ -9498,13 +9556,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.38</value>
+								<value>Short_Sim_none_Interactive.49</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -9548,10 +9606,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.38</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.49</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_gate_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -9593,7 +9651,7 @@
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -9607,28 +9665,28 @@
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
@@ -9663,32 +9721,32 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>1</allcornersenabled>
+				<allcornersenabled>0</allcornersenabled>
 				<disabledtests>
-					<test>Short_Sim</test>
+					<test>POR_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 16:06:11 2024</timestamp>
-			<uuid>{cd337c7f-1c20-4dce-a68b-140e8653466b}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.38.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.38.rdb</simresults>
+			<timestamp>Sep 20 11:23:07 2024</timestamp>
+			<uuid>{86dd2789-e527-4669-8e8e-8e2e47766c06}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.49.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.49.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_160612015</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.38</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.38</simdir>
+			<localpsfdir>/tmp/s2424_saul_112307367</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.49</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.49</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.38.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.38.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.49.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.49.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.39
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.50
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -10839,7 +10897,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">PROCESS_TEMP
+					<corner enabled="1">PROCESS_TEMP
 						<vars>
 							<var>temperature
 								<value>-40 85</value>
@@ -11116,13 +11174,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.39</value>
+								<value>Short_Sim_none_Interactive.50</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -11166,10 +11224,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.39</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.50</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_gate_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -11194,6 +11252,55 @@
 							</option>
 						</origoptions>
 					</test>
+					<test enabled="1">Long_Sim
+						<tool>ADE</tool>
+						<outputs>
+							<output>((VT("/A") - VT("/ELE&lt;0&gt;")) / 100)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Long_Sim_Short_Sim:1_state_Interactive.50</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Short_Sim:1_state</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>ADDR0
@@ -11201,6 +11308,7 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>ADDR1
@@ -11208,13 +11316,15 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RES
@@ -11222,34 +11332,39 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -11281,32 +11396,33 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>1</allcornersenabled>
+				<allcornersenabled>0</allcornersenabled>
 				<disabledtests>
+					<test>POR_Sim</test>
 					<test>Short_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 17:40:09 2024</timestamp>
-			<uuid>{ea41754d-df3e-4081-aa57-e8642d18b6ce}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.39.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.39.rdb</simresults>
+			<timestamp>Sep 20 11:29:13 2024</timestamp>
+			<uuid>{1bcef9b0-de69-4f03-ac31-cfc22060e89b}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.50.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.50.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_174009617</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.39</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.39</simdir>
+			<localpsfdir>/tmp/s2424_saul_112913404</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.50</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.50</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.39.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.39.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.50.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.50.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.40
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.51
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -12457,7 +12573,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">PROCESS_TEMP
+					<corner enabled="1">PROCESS_TEMP
 						<vars>
 							<var>temperature
 								<value>-40 85</value>
@@ -12734,13 +12850,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.40</value>
+								<value>Short_Sim_none_Interactive.51</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -12784,10 +12900,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.40</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.51</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_schem_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -12812,6 +12928,55 @@
 							</option>
 						</origoptions>
 					</test>
+					<test enabled="1">Long_Sim
+						<tool>ADE</tool>
+						<outputs>
+							<output>((VT("/A") - VT("/ELE&lt;0&gt;")) / 100)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Long_Sim_Short_Sim:1_state_Interactive.51</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Short_Sim:1_state</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>ADDR0
@@ -12819,6 +12984,7 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>ADDR1
@@ -12826,13 +12992,15 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RES
@@ -12840,34 +13008,39 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -12899,32 +13072,33 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>1</allcornersenabled>
+				<allcornersenabled>0</allcornersenabled>
 				<disabledtests>
+					<test>POR_Sim</test>
 					<test>Short_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 17:53:26 2024</timestamp>
-			<uuid>{1baacae9-c323-4ce1-9fc3-0ba88bc949b3}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.40.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.40.rdb</simresults>
+			<timestamp>Sep 20 11:29:44 2024</timestamp>
+			<uuid>{794451c1-e810-48f1-9661-d85f46819868}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.51.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.51.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_175326429</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.40</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.40</simdir>
+			<localpsfdir>/tmp/s2424_saul_112944623</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.51</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.51</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.40.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.40.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.51.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.51.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.41
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.52
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -14075,7 +14249,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">PROCESS_TEMP
+					<corner enabled="1">PROCESS_TEMP
 						<vars>
 							<var>temperature
 								<value>-40 85</value>
@@ -14352,13 +14526,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.41</value>
+								<value>Short_Sim_none_Interactive.52</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -14402,10 +14576,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.41</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.52</value>
 							</option>
 							<option>view
-								<value>config_verilog_an_schem_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -14430,6 +14604,55 @@
 							</option>
 						</origoptions>
 					</test>
+					<test enabled="1">Long_Sim
+						<tool>ADE</tool>
+						<outputs>
+							<output>((VT("/A") - VT("/ELE&lt;0&gt;")) / 100)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Long_Sim_Short_Sim:1_state_Interactive.52</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Short_Sim:1_state</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>ADDR0
@@ -14437,6 +14660,7 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>ADDR1
@@ -14444,13 +14668,15 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RES
@@ -14458,34 +14684,39 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -14517,32 +14748,33 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>1</allcornersenabled>
+				<allcornersenabled>0</allcornersenabled>
 				<disabledtests>
+					<test>POR_Sim</test>
 					<test>Short_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 19:16:14 2024</timestamp>
-			<uuid>{3fb4a06c-9e44-42ea-9cac-a5d2aaa50904}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.41.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.41.rdb</simresults>
+			<timestamp>Sep 20 11:34:35 2024</timestamp>
+			<uuid>{579d8fe0-8bc0-486f-98d5-130edb7718de}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.52.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_191616741</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.41</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.41</simdir>
+			<localpsfdir>/tmp/s2424_saul_113435462</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.41.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.41.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.52.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.42
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.53
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -15693,7 +15925,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">PROCESS_TEMP
+					<corner enabled="1">PROCESS_TEMP
 						<vars>
 							<var>temperature
 								<value>-40 85</value>
@@ -15970,13 +16202,13 @@
 								<value>ams</value>
 							</option>
 							<option>view
-								<value>config_analog_extracted</value>
+								<value>config_verilog_an_fun_dig</value>
 							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.42</value>
+								<value>Short_Sim_none_Interactive.53</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -16020,10 +16252,10 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.42</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.53</value>
 							</option>
 							<option>view
-								<value>config_schem_an_schem_dig</value>
+								<value>config_analog_extracted</value>
 							</option>
 						</tooloptions>
 						<prerunscript>0</prerunscript>
@@ -16048,6 +16280,55 @@
 							</option>
 						</origoptions>
 					</test>
+					<test enabled="1">Long_Sim
+						<tool>ADE</tool>
+						<outputs>
+							<output>((VT("/A") - VT("/ELE&lt;0&gt;")) / 100)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Long_Sim_Short_Sim:1_state_Interactive.53</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Short_Sim:1_state</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>ADDR0
@@ -16055,6 +16336,7 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>ADDR1
@@ -16062,13 +16344,15 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RES
@@ -16076,34 +16360,39 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -16135,32 +16424,33 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>1</allcornersenabled>
+				<allcornersenabled>0</allcornersenabled>
 				<disabledtests>
-					<test>Short_Sim</test>
+					<test>POR_Sim</test>
+					<test>Long_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 19:17:53 2024</timestamp>
-			<uuid>{24e49097-a962-4813-b2e4-53cff85df6d5}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.42.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.42.rdb</simresults>
+			<timestamp>Sep 20 21:48:23 2024</timestamp>
+			<uuid>{2068a823-941d-44a4-af99-d19bc375b505}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.53.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.53.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_191800086</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.42</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.42</simdir>
+			<localpsfdir>/tmp/s2424_saul_214823962</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.53</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.53</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.42.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.42.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.53.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.53.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.43
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.54
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -17311,7 +17601,7 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="0">PROCESS_TEMP
+					<corner enabled="1">PROCESS_TEMP
 						<vars>
 							<var>temperature
 								<value>-40 85</value>
@@ -17594,7 +17884,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Short_Sim_none_Interactive.43</value>
+								<value>Short_Sim_none_Interactive.54</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -17638,7 +17928,7 @@
 								<value>ams</value>
 							</option>
 							<option>state
-								<value>POR_Sim_Short_Sim:1_state_Interactive.43</value>
+								<value>POR_Sim_Short_Sim:1_state_Interactive.54</value>
 							</option>
 							<option>view
 								<value>config_analog_extracted</value>
@@ -17666,6 +17956,55 @@
 							</option>
 						</origoptions>
 					</test>
+					<test enabled="1">Long_Sim
+						<tool>ADE</tool>
+						<outputs>
+							<output>((VT("/A") - VT("/ELE&lt;0&gt;")) / 100)
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Long_Sim_Short_Sim:1_state_Interactive.54</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>aska_top16_tb</value>
+							</option>
+							<option>lib
+								<value>ASKA_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>state
+								<value>Short_Sim:1_state</value>
+							</option>
+							<option>view
+								<value>config_verilog_an_fun_dig</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>ADDR0
@@ -17673,6 +18012,7 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>ADDR1
@@ -17680,13 +18020,15 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>POR_PULSE
-						<value>-0.4</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RES
@@ -17694,34 +18036,39 @@
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VDD3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">Short_Sim</dependentTest>
-							<dependentTest enabled="1">POR_Sim</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD3_PULSE
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV
+					<var>VDD3_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VDDHV_PULSE
+					<var>VDDHV
 						<value>40</value>
 						<dependentTests>
 							<dependentTest enabled="1">Short_Sim</dependentTest>
 							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDDHV_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">Short_Sim</dependentTest>
+							<dependentTest enabled="1">POR_Sim</dependentTest>
+							<dependentTest enabled="1">Long_Sim</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -17753,28 +18100,29 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>1</allcornersenabled>
+				<allcornersenabled>0</allcornersenabled>
 				<disabledtests>
-					<test>Short_Sim</test>
+					<test>POR_Sim</test>
+					<test>Long_Sim</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sep 19 21:27:27 2024</timestamp>
-			<uuid>{a9369409-b8ff-4db2-8dcc-8caa37f1d1e2}</uuid>
-			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.43.rdb</simresults>
+			<timestamp>Sep 20 21:52:36 2024</timestamp>
+			<uuid>{fffc13f8-5c26-4344-b2d9-3e6129744ab7}</uuid>
+			<resultsname>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.54.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.54.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_212727282</localpsfdir>
-			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43</simdir>
+			<localpsfdir>/tmp/s2424_saul_215236478</localpsfdir>
+			<psfdir>/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.54</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.54</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.43.log</runlogfile>
+			<runlog>/home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.54.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.54.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

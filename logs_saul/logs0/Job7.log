@@ -1,45 +1,231 @@
-\# Program start time:     UTC 2024.09.19 06:10:57.183
-\# Local time: CEST (UTC+02:00) 2024.09.19 08:10:57.183
-\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 01/30/2024 20:11 (cpgbld02) $
-\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
-\o Sub version:		sub-version  IC6.1.8-64b.500.35  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5172 -mpshost s2424 -davinciService DaVinciService_5172_1726726179 -log /home/saul/projects/ASKA/logs_saul/logs0/Job7.log -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.s2424_5172 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 7
-\# Host name (type):	s2424 (x86_64)
-\# Operating system:	Linux 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022
-\# Linux /etc/issue:	\S
-\# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:4111 (1024x868)
-\# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			The X.Org Foundation
-\# Depth of Visual (Root):	24 (24)
-\# Number of Planes Used:	24
-\# X version:		11.0 (vendor release 12004000)
-\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
-\# 			current id 0x0, current max 0x1ffffa (2097146)
-\# Max data seg size:	     unlimited
-\# Max process size:	     unlimited
-\# Initial sbrk value:	        630 MB
-\# Available memory:	     78,967 MB
-\# System memory:	     96,361 MB
-\# Maximum memory size:	     96,021 MB
-\# Max mem available:	     79,258 MB
-\# Initial memory used:	        291 MB
-\#        process size:	      1,888 MB
-\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
-\# Qt version:		5.9.1
-\# Window Manager:	other
-\# User Name:		saul
-\o Working Directory:	s2424:/home/saul/projects/ASKA
-\# Process Id:		7374
-\o 
-\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
-\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
-\o                          Reproduced with permission.
-\o 
-\o This Cadence Design Systems program and online documentation are
-\o proprietary/confidential information and may be disclosed/used only
-\o as authorized in a license agreement controlling such use and disclosure.
-\o 
-\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
-\o Use/reproduction/disclosure is subject to restriction
-\o set forth at FAR 1252.227-19 or its equivalent.
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = ASKA_TOP
+	Cell         = aska_top16_tb
+	View         = config_verilog_an_fun_dig
+	Simulator    = ams
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = Long_Sim_Short_Sim:1_state_Interactive.52
+	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52/1/Long_Sim
+	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data
+	Project Dir  = /home/saul/projects/ASKA/Sim
+	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl
+	File Encoding = 0
+
+
+
+*Info*    The auto suspension is disabled.
+
+
+
+
+
+
+*Info*    Run start for Point ID (4 1) on testbench [ Long_Sim ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var ADDR0 = "0"
+Setting var ADDR1 = "0"
+Setting var POR_PULSE = "0"
+Setting var RES = "100"
+Setting var VDD3 = "3.3"
+Setting var VDD3_PULSE = "0"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
+Setting var temperature = "27"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52/1/Long_Sim/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52/1/Long_Sim
+
+
+*Info*    Creating Netlist for Point ID (4 1)
+
+generate netlist...
+INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+ field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+ analog primitives using the Spectre CDF simulation information.
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Begin Netlisting Sep 20 11:34:40 2024
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52/1/Long_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+If you want to print only those cellviews that need to be re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+non-stopping cells.
+ 
+WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+
+
+
+LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------                   ---------            ----             
+
+analogLib                   vpulse                      spectre              *Stopping View*  
+analogLib                   cap                         spectre              *Stopping View*  
+analogLib                   vdc                         spectre              *Stopping View*  
+analogLib                   ind                         spectre              *Stopping View*  
+ASKA_POR                    por2                        veriloga             *Stopping View*  
+PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+PRIMLIB                     pe3                         spectre              *Stopping View*  
+PRIMLIB                     ne3                         spectre              *Stopping View*  
+PRIMLIB                     nedia                       spectre              *Stopping View*  
+PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+ASKA_DAC6B                  dac6b_amp_n2                veriloga             *Stopping View*  
+ASKA_CONSTANT_GM            constant_gm                 veriloga             *Stopping View*  
+ASKA_REF_BIAS               ref_bias                    veriloga             *Stopping View*  
+ASKA_BANDGAP                bandgap_su                  veriloga             *Stopping View*  
+ASKA_DIG                    aska_npg                    functional           *Stopping View*  
+ASKA_DIG                    aska_spi                    functional           *Stopping View*  
+PRIMLIB                     ped                         spectre              *Stopping View*  
+PRIMLIB                     csf4a                       spectre              *Stopping View*  
+PRIMLIB                     dsba                        spectre              *Stopping View*  
+PRIMLIB                     dpp20                       spectre              *Stopping View*  
+IO_CELLS_JIC3V              PSUBPADPC                   verilogams           *Stopping View*  
+VLG_PRIMITIVES              check_gnd                   verilogams           *Stopping View*  
+VLG_PRIMITIVES              check_buf                   functional           *Stopping View*  
+VLG_PRIMITIVES              check_vdd                   verilogams           *Stopping View*  
+IO_CELLS_JIC3V              VDDPADPC                    verilogams           *Stopping View*  
+IO_CELLS_JIC3V              VDDORPADPC                  verilogams           *Stopping View*  
+IO_CELLS_JIC3V              GNDPADPC                    verilogams           *Stopping View*  
+IO_CELLS_JIC3V              GNDORPADPC                  verilogams           *Stopping View*  
+IO_CELLS_JIC3V              PWRCUTDCPC                  verilogams           *Stopping View*  
+PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+PRIMLIB                     dphnw                       spectre              *Stopping View*  
+PRIMLIB                     ddnw                        spectre              *Stopping View*  
+PRIMLIB                     pmb                         spectre              *Stopping View*  
+PRIMLIB                     dp3                         spectre              *Stopping View*  
+PRIMLIB                     rnp1                        spectre              *Stopping View*  
+PRIMLIB                     pe3i                        spectre              *Stopping View*  
+PRIMLIB                     rdp3                        spectre              *Stopping View*  
+PRIMLIB                     dhpw                        spectre              *Stopping View*  
+PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+PRIMLIB                     dpdnw                       spectre              *Stopping View*  
+PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+IO_CELLS_JIC3V              APR00DPC                    verilogams           *Stopping View*  
+VLG_PRIMITIVES              resistor_ams                verilogams           *Stopping View*  
+PRIMLIB                     s_res                       spectre              *Stopping View*  
+analogLib                   res                         spectre              *Stopping View*  
+ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+ASKA_TOP                    aska_top16_tb               schematic                             
+ASKA_16ELE_TOP_FINAL        aska_top_16ele              schematic                             
+ASKA_16ELE_TOP_FINAL        ioring_16ele                schematic                             
+IO_CELLS_JIC3V              APR04DPC                    verilogams                            
+ASKA_IORING                 HVIO4X                      schematic                             
+HV_CELLS                    HVD4SJD1R5PKFs              schematic                             
+HV_CELLS                    ioh_c5pk                    schematic                             
+HV_CELLS                    ioh_pmbsabhv_750            schematic                             
+HV_CELLS                    ioh_pmbsab_15_10            schematic                             
+HV_CELLS                    ioh_pe3isabhv_1050gcr       schematic                             
+HV_CELLS                    ioh_pe3isab_15_04           schematic                             
+HV_CELLS                    ioh_iscrd2_4x100            schematic                             
+HV_CELLS                    HVDD4DJ5PKFs                schematic                             
+HV_CELLS                    ioh_d5pk                    schematic                             
+HV_CELLS                    ioh_dhpw_2x100_stack3       schematic                             
+HV_CELLS                    ioh_dhpw_2x100              schematic                             
+HV_CELLS                    HVDD4D2PK                   schematic                             
+HV_CELLS                    ioh_d2pk                    schematic                             
+HV_CELLS                    ioh_pe3isabhv_2800gcr       schematic                             
+HV_CELLS                    ioh_pe3isab_40_04           schematic                             
+HV_CELLS                    ioh_pmbsabhv_2000           schematic                             
+HV_CELLS                    ioh_pmbsab_40_10            schematic                             
+IO_CELLS_JIC3V              ICPC                        verilogams                            
+ASKA_16ELE_TOP_FINAL        aska_core_16ele             schematic                             
+ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+ASKA_HVSWITCH               hvswitch8                   schematic                             
+ASKA_DIG2                   aska_dig                    functional                            
+ASKA_BIAS                   bias                        schematic                             
+ASKA_PULSE_GENERATOR        pulse_generator             schematic                             
+ASKA_CURRENT_SOURCE         current_source_gm_10_en_r   schematic                             
+
+---------- End of netlist configuration information   ----------
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+function ansCdlCompPrim redefined
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52/1/Long_Sim/netlist/analog/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+WARNING (OSSHNL-159): The primitive, 'ASKA_DIG2/DIG_stimulus/verilogams', has been updated since the last netlisting session
+in this current run directory. Therefore, re-netlisting all cell views where
+this primitive is instantiated.
+
+Running netlist assembly..
+.........
+End netlisting Sep 20 11:34:52 2024
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
+      ...successful.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [ Long_Sim ] for Point ID
+          (4 1).
+
+Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.52/1/Long_Sim/psf.
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
+validating simulator hierarchy...
+      ...successful.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (4 1) on testbench [ Long_Sim ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables1".
+To save future changes, copy variables to cellView before exiting.

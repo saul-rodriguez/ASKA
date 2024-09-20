@@ -1,0 +1,70 @@
+// VerilogA for CURRENT_SOURCE, current_source_gm_10_en, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module current_source_gm_10_en_r_bk2(BIAS, EN, FB, GNDA, GNDHV, IN, OUT, PACTIVE, VDD3A, VDDHV, VSUBHV);
+inout BIAS;
+electrical BIAS;
+inout EN;
+electrical EN;
+inout FB;
+electrical FB;
+inout GNDA;
+electrical GNDA;
+inout GNDHV;
+electrical GNDHV;
+inout IN;
+electrical IN;
+inout OUT;
+electrical OUT;
+inout PACTIVE;
+electrical PACTIVE;
+inout VDD3A;
+electrical VDD3A;
+inout VDDHV;
+electrical VDDHV;
+inout VSUBHV;
+electrical VSUBHV;
+parameter real tt = 1e-07 ;
+
+
+//parameter real tt = 1e-07 ;
+
+`define PI 3.14159265
+
+`define GBW 1e6  // Gain-Bandwidth product (Hz)
+`define Ao 200 //Open loop gain
+`define wu (2 * `PI * `GBW)  // unity gain frequency (rad/s)
+`define p1 (`wu/`Ao) 		  // first pole position
+
+//parameter real tt = 100e-9 from [0:inf);
+
+//parameter real gain = 10000;
+
+real vin, iout, ifb;
+integer enable;
+integer pulse_active;
+
+analog begin
+
+	enable = (V(EN) > 1.5)? 1: 0;
+	pulse_active = (V(PACTIVE) > 1.5)? 1: 0 ;
+
+	vin = V(IN);
+	ifb = I(FB);
+
+	if (enable && pulse_active) 
+		iout = -ifb;
+	else
+		iout = 0;
+
+	I(OUT) <+ transition(iout,0, tt, tt);
+
+	V(FB) <+ V(IN);
+	V(BIAS,GNDA) <+ I(BIAS,GNDA)*10000; //Fix a voltage at BIAS 
+	
+end
+
+
+endmodule

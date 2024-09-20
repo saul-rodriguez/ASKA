@@ -1,0 +1,166 @@
+// VerilogA for HVSWITCH, hbridge_stimulus, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module hbridge_stimulus(UP1,DOWN1,UP2,DOWN2,VREF,DUMMY);
+inout UP1,DOWN1,UP2,DOWN2,VREF,DUMMY;
+electrical UP1,DOWN1,UP2,DOWN2,VREF,DUMMY;
+
+parameter real td = 0.0;
+//parameter real tt = 100e-12;
+parameter real tt = 5e-9;
+
+parameter real start_delay = 100e-6;
+parameter real pause_duration = 50e-6;
+parameter real phase_duration = 100e-6;
+
+parameter real init_up1 = 0;
+parameter real init_up2 = 0;
+parameter real init_dn1 = 0;
+parameter real init_dn2 = 0;
+
+parameter real vref = 0;
+parameter real vref2 = 1.65;
+
+real u1,u2,d1,d2;
+real time_aux;
+real time_aux2;
+real vdac;
+real dummy;
+
+analog begin
+
+	@(initial_step) begin
+		u1 = init_up1;
+		u2 = init_up2;
+		d1 = init_dn1;
+		d2 = init_dn2;
+		time_aux = start_delay+phase_duration+pause_duration+phase_duration;
+		time_aux2 = 2*time_aux + phase_duration;
+		vdac = vref;
+		//vdac = 0;
+		dummy = 0;
+	end
+
+	@(timer(start_delay)) begin
+		u1 = 3.3;
+		u2 = 0;
+		d1 = 0;
+		d2 = 3.3;
+		vdac = vref;
+		dummy = 0;
+	end
+
+	@(timer(start_delay+phase_duration)) begin
+		u1 = 0;
+		u2 = 0;
+		d1 = 0;
+		d2 = 0;
+		vdac = 0;
+		dummy = 3.3;
+	end
+
+	@(timer(start_delay+phase_duration+pause_duration)) begin
+		u1 = 0;
+		u2 = 3.3;
+		d1 = 3.3;
+		d2 = 0;
+		vdac = vref;
+		dummy = 0;
+	end
+
+	@(timer(start_delay+phase_duration+pause_duration+phase_duration)) begin
+		u1 = 0;
+		u2 = 0;
+		d1 = 0;
+		d2 = 0;
+		vdac = 0;
+		dummy = 3.3;
+	end
+
+	//Start again 1
+	@(timer(time_aux + start_delay)) begin
+		u1 = 3.3;
+		u2 = 0;
+		d1 = 0;
+		d2 = 3.3;
+		vdac = vref;
+		dummy = 0;
+	end
+
+	@(timer(time_aux + start_delay+phase_duration)) begin
+		u1 = 0;
+		u2 = 0;
+		d1 = 0;
+		d2 = 0;
+		vdac = 0;
+		dummy = 3.3;
+	end
+
+	@(timer(time_aux + start_delay+phase_duration+pause_duration)) begin
+		u1 = 0;
+		u2 = 3.3;
+		d1 = 3.3;
+		d2 = 0;
+		vdac = vref;
+		dummy = 0;
+	end
+
+	@(timer(time_aux + start_delay+phase_duration+pause_duration+phase_duration)) begin
+		u1 = 0;
+		u2 = 0;
+		d1 = 0;
+		d2 = 0;
+		vdac = 0;
+		dummy = 3.3;
+	end
+
+	//Start again 2
+	@(timer(time_aux2 + start_delay)) begin
+		u1 = 3.3;
+		u2 = 0;
+		d1 = 0;
+		d2 = 3.3;
+		vdac = vref2;
+		dummy = 0;
+	end
+
+	@(timer(time_aux2 + start_delay+phase_duration)) begin
+		u1 = 0;
+		u2 = 0;
+		d1 = 0;
+		d2 = 0;
+		vdac = 0;
+		dummy = 3.3;
+	end
+
+	@(timer(time_aux2 + start_delay+phase_duration+pause_duration)) begin
+		u1 = 0;
+		u2 = 3.3;
+		d1 = 3.3;
+		d2 = 0;
+		vdac = vref2;
+		dummy = 0;
+	end
+
+	@(timer(time_aux2 + start_delay+phase_duration+pause_duration+phase_duration)) begin
+		u1 = 0;
+		u2 = 0;
+		d1 = 0;
+		d2 = 0;
+		vdac = 0;
+		dummy = 3.3;
+	end
+
+
+	V(UP1)<+ transition(u1, td, tt);
+	V(UP2)<+ transition(u2, td, tt);
+	V(DOWN1)<+ transition(d1, td, tt);
+	V(DOWN2)<+ transition(d2, td, tt);
+	V(VREF)<+ transition(vdac, td, tt);
+	V(DUMMY)<+ transition(dummy, td, tt);
+
+end
+
+endmodule

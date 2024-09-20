@@ -1,0 +1,35 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : iso3                                         *
+* Netlisted  : Wed Jun 19 12:02:35 2024                     *
+* PVS Version: 23.10-p043 Mon Oct 2 18:09:08 PDT 2023      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 NE3I_6() nemi_6 ndiff(D) p1trm(G) ndiff(S) pwitrm(B) dnwtrm(NW) bulk(SB)
+*.DEVTMPLT 1 D(p_ddnw) p_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 2 D(p_dipdnwmv) p_dipwmv pwitrm(POS) dnwtrm(NEG)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: NE3I_6                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt NE3I_6 D G S B NW SB
+.ends NE3I_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3i_6_CDNS_718812950710                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3i_6_CDNS_718812950710 1 2 3 4 5
+** N=5 EP=5 FDC=3
+X0 3 4 5 3 2 1 NE3I_6 w=2e-06 l=3.5e-07 as=9.6e-13 ad=9.6e-13 ps=4.96e-06 pd=4.96e-06 $X=0 $Y=0 $dt=0
+D1 1 2 p_ddnw AREA=1.4064e-10 PJ=4.756e-05 perimeter=4.756e-05 $X=-6110 $Y=-4940 $dt=1
+D2 3 2 p_dipdnwmv AREA=1.68237e-11 PJ=1.676e-05 perimeter=1.676e-05 $X=-2260 $Y=-1090 $dt=2
+.ends ne3i_6_CDNS_718812950710
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: iso3                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt iso3 IN1 OUT1 PSUB VDD VSS
+** N=5 EP=5 FDC=3
+X0 PSUB VDD VSS IN1 OUT1 ne3i_6_CDNS_718812950710 $T=29980 14925 0 0 $X=19210 $Y=5325
+.ends iso3

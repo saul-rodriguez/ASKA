@@ -1,0 +1,568 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : hvswitch8                                    *
+* Netlisted  : Mon Aug 26 08:53:08 2024                     *
+* PVS Version: 23.11-s036 Wed Jan 17 18:11:41 PST 2024      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 LDDN(nedia) nedia2_d dnwtrm(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 1 LDDP(ped) ped12_d pwitrm(D) p1trm(G) pdiff(S) bulk(B)
+*.DEVTMPLT 2 MN(ne3) nem ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 3 MP(pe3) pem pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 4 D(p_dnw) p_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 5 D(p_ddnw) p_ddnw bulk(POS) dnwtrm(NEG)
+*.DEVTMPLT 6 D(p_dwhn) p_dwhn bulk(POS) hnw(NEG)
+*.DEVTMPLT 7 D(dpp20) dpp20 pwitrm(POS) dnwtrm(NEG)
+*.DEVTMPLT 8 D(dsba) d_dsba d_dsdf(POS) hnw(NEG) bulk(SUB)
+*.DEVTMPLT 9 D(p_dnw3) p_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 10 R(rpp1k1_3) rpp1k1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+*.DEVTMPLT 11 C(csf4a) d_csf4a m1atrm(POS) m1btrm(NEG)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LDDP                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LDDP D G S B
+.ends LDDP
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: LDDN                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt LDDN D G S B
+.ends LDDN
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_CDNS_724655180280                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_CDNS_724655180280 1 2 3 4
+** N=4 EP=4 FDC=12
+X0 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=-680 $Y=-4850 $dt=0
+X1 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=11220 $Y=-4850 $dt=0
+X2 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=23120 $Y=-4850 $dt=0
+X3 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=35020 $Y=-4850 $dt=0
+X4 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=46920 $Y=-4850 $dt=0
+X5 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=58820 $Y=-4850 $dt=0
+X6 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=70720 $Y=-4850 $dt=0
+X7 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=82620 $Y=-4850 $dt=0
+X8 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=94520 $Y=-4850 $dt=0
+X9 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=106420 $Y=-4850 $dt=0
+X10 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=118320 $Y=-4850 $dt=0
+X11 2 3 4 1 LDDN w=5e-05 l=1.25e-06 adio=6.71697e-10 pdio=3.30958e-05 extlay=1 $[nedia] $X=130220 $Y=-4850 $dt=0
+.ends nedia_CDNS_724655180280
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__H1                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__H1 1 2 3 4
+** N=4 EP=4 FDC=12
+X104 1 3 2 4 nedia_CDNS_724655180280 $T=238930 110910 0 0 $X=222710 $Y=91520
+.ends MASCO__H1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__P2                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__P2 2 3 4 5
+** N=6 EP=4 FDC=370
+C0 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=41445 $dt=11
+C1 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=47485 $dt=11
+C2 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=53525 $dt=11
+C3 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=59565 $dt=11
+C4 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=65605 $dt=11
+C5 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=71645 $dt=11
+C6 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=77685 $dt=11
+C7 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=83725 $dt=11
+C8 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=89765 $dt=11
+C9 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=11155 $Y=95805 $dt=11
+C10 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=12135 $Y=10115 $dt=11
+C11 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=12135 $Y=21815 $dt=11
+C12 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=18175 $Y=10115 $dt=11
+C13 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=18175 $Y=21815 $dt=11
+C14 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=41445 $dt=11
+C15 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=47485 $dt=11
+C16 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=53525 $dt=11
+C17 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=59565 $dt=11
+C18 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=65605 $dt=11
+C19 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=71645 $dt=11
+C20 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=77685 $dt=11
+C21 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=83725 $dt=11
+C22 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=89765 $dt=11
+C23 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=22855 $Y=95805 $dt=11
+C24 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=24215 $Y=10115 $dt=11
+C25 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=24215 $Y=21815 $dt=11
+C26 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=30255 $Y=10115 $dt=11
+C27 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=30255 $Y=21815 $dt=11
+C28 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=41445 $dt=11
+C29 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=47485 $dt=11
+C30 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=53525 $dt=11
+C31 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=59565 $dt=11
+C32 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=65605 $dt=11
+C33 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=71645 $dt=11
+C34 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=77685 $dt=11
+C35 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=83725 $dt=11
+C36 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=89765 $dt=11
+C37 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=34555 $Y=95805 $dt=11
+C38 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=36295 $Y=10115 $dt=11
+C39 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=36295 $Y=21815 $dt=11
+C40 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=42335 $Y=10115 $dt=11
+C41 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=42335 $Y=21815 $dt=11
+C42 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=41445 $dt=11
+C43 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=47485 $dt=11
+C44 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=53525 $dt=11
+C45 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=59565 $dt=11
+C46 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=65605 $dt=11
+C47 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=71645 $dt=11
+C48 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=77685 $dt=11
+C49 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=83725 $dt=11
+C50 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=89765 $dt=11
+C51 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=46255 $Y=95805 $dt=11
+C52 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=48375 $Y=10115 $dt=11
+C53 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=48375 $Y=21815 $dt=11
+C54 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=54415 $Y=10115 $dt=11
+C55 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=54415 $Y=21815 $dt=11
+C56 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=41445 $dt=11
+C57 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=47485 $dt=11
+C58 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=53525 $dt=11
+C59 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=59565 $dt=11
+C60 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=65605 $dt=11
+C61 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=71645 $dt=11
+C62 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=77685 $dt=11
+C63 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=83725 $dt=11
+C64 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=89765 $dt=11
+C65 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=57955 $Y=95805 $dt=11
+C66 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=60455 $Y=10115 $dt=11
+C67 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=60455 $Y=21815 $dt=11
+C68 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=66495 $Y=10115 $dt=11
+C69 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=66495 $Y=21815 $dt=11
+C70 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=41445 $dt=11
+C71 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=47485 $dt=11
+C72 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=53525 $dt=11
+C73 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=59565 $dt=11
+C74 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=65605 $dt=11
+C75 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=71645 $dt=11
+C76 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=77685 $dt=11
+C77 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=83725 $dt=11
+C78 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=89765 $dt=11
+C79 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=69655 $Y=95805 $dt=11
+C80 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=72535 $Y=10115 $dt=11
+C81 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=72535 $Y=21815 $dt=11
+C82 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=78575 $Y=10115 $dt=11
+C83 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=78575 $Y=21815 $dt=11
+C84 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=41445 $dt=11
+C85 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=47485 $dt=11
+C86 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=53525 $dt=11
+C87 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=59565 $dt=11
+C88 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=65605 $dt=11
+C89 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=71645 $dt=11
+C90 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=77685 $dt=11
+C91 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=83725 $dt=11
+C92 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=89765 $dt=11
+C93 2 5 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=81355 $Y=95805 $dt=11
+C94 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=84615 $Y=10115 $dt=11
+C95 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=84615 $Y=21815 $dt=11
+C96 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=90655 $Y=10115 $dt=11
+C97 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=90655 $Y=21815 $dt=11
+C98 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=96695 $Y=10115 $dt=11
+C99 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=96695 $Y=21815 $dt=11
+C100 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=96990 $Y=37085 $dt=11
+C101 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=96990 $Y=48785 $dt=11
+C102 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=96990 $Y=60485 $dt=11
+C103 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=102735 $Y=10115 $dt=11
+C104 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=102735 $Y=21815 $dt=11
+C105 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=103030 $Y=37085 $dt=11
+C106 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=103030 $Y=48785 $dt=11
+C107 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=103030 $Y=60485 $dt=11
+C108 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=108775 $Y=10115 $dt=11
+C109 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=108775 $Y=21815 $dt=11
+C110 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=109070 $Y=37085 $dt=11
+C111 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=109070 $Y=48785 $dt=11
+C112 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=109070 $Y=60485 $dt=11
+C113 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=114815 $Y=10115 $dt=11
+C114 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=114815 $Y=21815 $dt=11
+C115 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=115110 $Y=37085 $dt=11
+C116 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=115110 $Y=48785 $dt=11
+C117 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=115110 $Y=60485 $dt=11
+C118 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=118085 $Y=79030 $dt=11
+C119 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=118085 $Y=90730 $dt=11
+C120 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=120855 $Y=10115 $dt=11
+C121 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=120855 $Y=21815 $dt=11
+C122 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=121150 $Y=37085 $dt=11
+C123 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=121150 $Y=48785 $dt=11
+C124 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=121150 $Y=60485 $dt=11
+C125 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=124125 $Y=79030 $dt=11
+C126 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=124125 $Y=90730 $dt=11
+C127 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=126895 $Y=10115 $dt=11
+C128 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=126895 $Y=21815 $dt=11
+C129 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=127190 $Y=37085 $dt=11
+C130 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=127190 $Y=48785 $dt=11
+C131 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=127190 $Y=60485 $dt=11
+C132 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=130165 $Y=79030 $dt=11
+C133 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=130165 $Y=90730 $dt=11
+C134 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=132935 $Y=10115 $dt=11
+C135 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=132935 $Y=21815 $dt=11
+C136 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=133230 $Y=37085 $dt=11
+C137 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=133230 $Y=48785 $dt=11
+C138 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=133230 $Y=60485 $dt=11
+C139 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=136205 $Y=79030 $dt=11
+C140 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=136205 $Y=90730 $dt=11
+C141 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=138975 $Y=10115 $dt=11
+C142 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=138975 $Y=21815 $dt=11
+C143 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=139270 $Y=37085 $dt=11
+C144 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=139270 $Y=48785 $dt=11
+C145 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=139270 $Y=60485 $dt=11
+C146 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=142245 $Y=79030 $dt=11
+C147 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=142245 $Y=90730 $dt=11
+C148 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=145015 $Y=10115 $dt=11
+C149 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=145015 $Y=21815 $dt=11
+C150 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=145310 $Y=37085 $dt=11
+C151 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=145310 $Y=48785 $dt=11
+C152 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=145310 $Y=60485 $dt=11
+C153 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=148285 $Y=79030 $dt=11
+C154 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=148285 $Y=90730 $dt=11
+C155 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=151055 $Y=10115 $dt=11
+C156 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=151055 $Y=21815 $dt=11
+C157 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=151350 $Y=37085 $dt=11
+C158 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=151350 $Y=48785 $dt=11
+C159 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=151350 $Y=60485 $dt=11
+C160 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=154325 $Y=79030 $dt=11
+C161 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=154325 $Y=90730 $dt=11
+C162 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=157095 $Y=10115 $dt=11
+C163 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=157095 $Y=21815 $dt=11
+C164 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=157390 $Y=37085 $dt=11
+C165 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=157390 $Y=48785 $dt=11
+C166 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=157390 $Y=60485 $dt=11
+C167 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=160365 $Y=79030 $dt=11
+C168 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=160365 $Y=90730 $dt=11
+C169 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=163135 $Y=10115 $dt=11
+C170 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=163135 $Y=21815 $dt=11
+C171 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=163430 $Y=37085 $dt=11
+C172 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=163430 $Y=48785 $dt=11
+C173 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=163430 $Y=60485 $dt=11
+C174 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=166405 $Y=79030 $dt=11
+C175 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=166405 $Y=90730 $dt=11
+C176 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=169175 $Y=10115 $dt=11
+C177 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=169175 $Y=21815 $dt=11
+C178 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=169470 $Y=37085 $dt=11
+C179 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=169470 $Y=48785 $dt=11
+C180 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=169470 $Y=60485 $dt=11
+C181 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=172445 $Y=79030 $dt=11
+C182 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=172445 $Y=90730 $dt=11
+C183 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=175215 $Y=10115 $dt=11
+C184 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=175215 $Y=21815 $dt=11
+C185 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=175510 $Y=37085 $dt=11
+C186 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=175510 $Y=48785 $dt=11
+C187 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=175510 $Y=60485 $dt=11
+C188 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=178485 $Y=79030 $dt=11
+C189 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=178485 $Y=90730 $dt=11
+C190 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=181255 $Y=10115 $dt=11
+C191 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=181255 $Y=21815 $dt=11
+C192 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=181550 $Y=37085 $dt=11
+C193 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=181550 $Y=48785 $dt=11
+C194 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=181550 $Y=60485 $dt=11
+C195 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=187295 $Y=10115 $dt=11
+C196 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=187295 $Y=21815 $dt=11
+C197 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=187590 $Y=37085 $dt=11
+C198 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=187590 $Y=48785 $dt=11
+C199 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=187590 $Y=60485 $dt=11
+C200 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=193335 $Y=10115 $dt=11
+C201 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=193335 $Y=21815 $dt=11
+C202 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=193630 $Y=37085 $dt=11
+C203 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=193630 $Y=48785 $dt=11
+C204 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=193630 $Y=60485 $dt=11
+C205 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=199375 $Y=10115 $dt=11
+C206 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=199375 $Y=21815 $dt=11
+C207 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=199670 $Y=37085 $dt=11
+C208 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=199670 $Y=48785 $dt=11
+C209 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=199670 $Y=60485 $dt=11
+C210 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=205415 $Y=10115 $dt=11
+C211 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=205415 $Y=21815 $dt=11
+C212 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=205710 $Y=37085 $dt=11
+C213 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=205710 $Y=48785 $dt=11
+C214 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=205710 $Y=60485 $dt=11
+C215 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=211455 $Y=10115 $dt=11
+C216 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=211455 $Y=21815 $dt=11
+C217 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=211750 $Y=37085 $dt=11
+C218 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=211750 $Y=48785 $dt=11
+C219 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=211750 $Y=60485 $dt=11
+C220 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=217495 $Y=10115 $dt=11
+C221 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=217495 $Y=21815 $dt=11
+C222 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=217790 $Y=37085 $dt=11
+C223 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=217790 $Y=48785 $dt=11
+C224 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=217790 $Y=60485 $dt=11
+C225 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=223535 $Y=10115 $dt=11
+C226 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=223535 $Y=21815 $dt=11
+C227 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=223830 $Y=37085 $dt=11
+C228 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=223830 $Y=48785 $dt=11
+C229 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=223830 $Y=60485 $dt=11
+C230 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=229575 $Y=10115 $dt=11
+C231 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=229575 $Y=21815 $dt=11
+C232 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=229870 $Y=37085 $dt=11
+C233 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=229870 $Y=48785 $dt=11
+C234 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=229870 $Y=60485 $dt=11
+C235 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=235615 $Y=10115 $dt=11
+C236 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=235615 $Y=21815 $dt=11
+C237 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=235910 $Y=37085 $dt=11
+C238 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=235910 $Y=48785 $dt=11
+C239 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=235910 $Y=60485 $dt=11
+C240 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=241655 $Y=10115 $dt=11
+C241 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=241655 $Y=21815 $dt=11
+C242 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=241950 $Y=37085 $dt=11
+C243 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=241950 $Y=48785 $dt=11
+C244 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=241950 $Y=60485 $dt=11
+C245 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=247695 $Y=10115 $dt=11
+C246 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=247695 $Y=21815 $dt=11
+C247 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=247990 $Y=37085 $dt=11
+C248 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=247990 $Y=48785 $dt=11
+C249 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=247990 $Y=60485 $dt=11
+C250 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=253735 $Y=10115 $dt=11
+C251 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=253735 $Y=21815 $dt=11
+C252 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=254030 $Y=37085 $dt=11
+C253 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=254030 $Y=48785 $dt=11
+C254 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=254030 $Y=60485 $dt=11
+C255 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=259775 $Y=10115 $dt=11
+C256 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=259775 $Y=21815 $dt=11
+C257 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=260070 $Y=37085 $dt=11
+C258 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=260070 $Y=48785 $dt=11
+C259 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=260070 $Y=60485 $dt=11
+C260 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=265815 $Y=10115 $dt=11
+C261 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=265815 $Y=21815 $dt=11
+C262 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=266110 $Y=37085 $dt=11
+C263 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=266110 $Y=48785 $dt=11
+C264 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=266110 $Y=60485 $dt=11
+C265 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=271855 $Y=10115 $dt=11
+C266 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=271855 $Y=21815 $dt=11
+C267 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=272150 $Y=37085 $dt=11
+C268 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=272150 $Y=48785 $dt=11
+C269 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=272150 $Y=60485 $dt=11
+C270 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=277895 $Y=10115 $dt=11
+C271 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=277895 $Y=21815 $dt=11
+C272 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=278190 $Y=37085 $dt=11
+C273 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=278190 $Y=48785 $dt=11
+C274 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=278190 $Y=60485 $dt=11
+C275 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=283935 $Y=10115 $dt=11
+C276 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=283935 $Y=21815 $dt=11
+C277 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=284230 $Y=37085 $dt=11
+C278 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=284230 $Y=48785 $dt=11
+C279 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=284230 $Y=60485 $dt=11
+C280 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=289975 $Y=10115 $dt=11
+C281 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=289975 $Y=21815 $dt=11
+C282 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=290270 $Y=37085 $dt=11
+C283 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=290270 $Y=48785 $dt=11
+C284 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=290270 $Y=60485 $dt=11
+C285 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=296015 $Y=10115 $dt=11
+C286 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=296015 $Y=21815 $dt=11
+C287 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=296310 $Y=37085 $dt=11
+C288 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=296310 $Y=48785 $dt=11
+C289 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=296310 $Y=60485 $dt=11
+C290 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=302055 $Y=10115 $dt=11
+C291 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=302055 $Y=21815 $dt=11
+C292 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=302350 $Y=37085 $dt=11
+C293 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=302350 $Y=48785 $dt=11
+C294 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=302350 $Y=60485 $dt=11
+C295 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=308095 $Y=10115 $dt=11
+C296 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=308095 $Y=21815 $dt=11
+C297 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=308390 $Y=37085 $dt=11
+C298 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=308390 $Y=48785 $dt=11
+C299 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=308390 $Y=60485 $dt=11
+C300 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=314135 $Y=10115 $dt=11
+C301 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=314135 $Y=21815 $dt=11
+C302 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=314430 $Y=37085 $dt=11
+C303 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=314430 $Y=48785 $dt=11
+C304 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=314430 $Y=60485 $dt=11
+C305 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=320175 $Y=10115 $dt=11
+C306 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=320175 $Y=21815 $dt=11
+C307 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=320470 $Y=37085 $dt=11
+C308 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=320470 $Y=48785 $dt=11
+C309 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=320470 $Y=60485 $dt=11
+C310 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=326215 $Y=10115 $dt=11
+C311 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=326215 $Y=21815 $dt=11
+C312 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=326510 $Y=37085 $dt=11
+C313 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=326510 $Y=48785 $dt=11
+C314 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=326510 $Y=60485 $dt=11
+C315 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=332255 $Y=10115 $dt=11
+C316 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=332255 $Y=21815 $dt=11
+C317 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=332550 $Y=37085 $dt=11
+C318 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=332550 $Y=48785 $dt=11
+C319 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=332550 $Y=60485 $dt=11
+C320 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=338295 $Y=10115 $dt=11
+C321 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=338295 $Y=21815 $dt=11
+C322 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=338590 $Y=37085 $dt=11
+C323 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=338590 $Y=48785 $dt=11
+C324 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=338590 $Y=60485 $dt=11
+C325 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=344335 $Y=10115 $dt=11
+C326 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=344335 $Y=21815 $dt=11
+C327 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=344630 $Y=37085 $dt=11
+C328 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=344630 $Y=48785 $dt=11
+C329 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=344630 $Y=60485 $dt=11
+C330 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=350375 $Y=10115 $dt=11
+C331 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=350375 $Y=21815 $dt=11
+C332 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=350670 $Y=37085 $dt=11
+C333 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=350670 $Y=48785 $dt=11
+C334 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=350670 $Y=60485 $dt=11
+C335 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=356415 $Y=10115 $dt=11
+C336 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=356415 $Y=21815 $dt=11
+C337 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=356710 $Y=37085 $dt=11
+C338 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=356710 $Y=48785 $dt=11
+C339 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=356710 $Y=60485 $dt=11
+C340 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=362455 $Y=10115 $dt=11
+C341 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=362455 $Y=21815 $dt=11
+C342 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=362750 $Y=37085 $dt=11
+C343 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=362750 $Y=48785 $dt=11
+C344 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=362750 $Y=60485 $dt=11
+C345 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=368495 $Y=10115 $dt=11
+C346 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=368495 $Y=21815 $dt=11
+C347 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=368790 $Y=37085 $dt=11
+C348 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=368790 $Y=48785 $dt=11
+C349 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=368790 $Y=60485 $dt=11
+C350 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=374535 $Y=10115 $dt=11
+C351 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=374535 $Y=21815 $dt=11
+C352 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=374830 $Y=37085 $dt=11
+C353 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=374830 $Y=48785 $dt=11
+C354 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=374830 $Y=60485 $dt=11
+C355 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=380575 $Y=10115 $dt=11
+C356 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=380575 $Y=21815 $dt=11
+C357 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=380870 $Y=37085 $dt=11
+C358 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=380870 $Y=48785 $dt=11
+C359 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=380870 $Y=60485 $dt=11
+C360 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=386615 $Y=10115 $dt=11
+C361 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=386615 $Y=21815 $dt=11
+C362 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=386910 $Y=37085 $dt=11
+C363 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=386910 $Y=48785 $dt=11
+C364 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=386910 $Y=60485 $dt=11
+C365 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=392655 $Y=10115 $dt=11
+C366 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=392655 $Y=21815 $dt=11
+C367 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=392950 $Y=37085 $dt=11
+C368 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=392950 $Y=48785 $dt=11
+C369 3 4 area=6.3936e-11 perimeter=3.372e-05 $[csf4a] $X=392950 $Y=60485 $dt=11
+.ends MASCO__P2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ped_CDNS_724655180281                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ped_CDNS_724655180281 1 2 3 4
+** N=4 EP=4 FDC=12
+X0 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=-2270 $Y=0 $dt=1
+X1 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=6530 $Y=0 $dt=1
+X2 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=15330 $Y=0 $dt=1
+X3 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=24130 $Y=0 $dt=1
+X4 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=32930 $Y=0 $dt=1
+X5 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=41730 $Y=0 $dt=1
+X6 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=50530 $Y=0 $dt=1
+X7 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=59330 $Y=0 $dt=1
+X8 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=68130 $Y=0 $dt=1
+X9 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=76930 $Y=0 $dt=1
+X10 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=85730 $Y=0 $dt=1
+X11 2 4 3 1 LDDP w=5e-05 l=9.4e-07 ad=2.19714e-10 pd=8.94366e-05 adio=4.2498e-10 pdio=2.57015e-05 extlay=1 $[ped] $X=94530 $Y=0 $dt=1
+.ends ped_CDNS_724655180281
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nedia_CDNS_724655180282                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nedia_CDNS_724655180282 1 2 3 4
+** N=4 EP=4 FDC=1
+X0 2 4 3 1 LDDN w=2e-05 l=1.25e-06 adio=7.56916e-10 pdio=0.00010535 extlay=1 $[nedia] $X=-680 $Y=-4850 $dt=0
+.ends nedia_CDNS_724655180282
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_724655180283                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_724655180283 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 3 2 1 4 ne3 L=3.5e-07 W=2.2e-07 AD=1.984e-13 AS=1.984e-13 PD=1.88e-06 PS=1.88e-06 $X=0 $Y=0 $dt=2
+.ends ne3_CDNS_724655180283
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_3_CDNS_724655180285                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_3_CDNS_724655180285 1 2 3
+** N=3 EP=3 FDC=1
+R0 2 1 L=0.0002029 W=2e-06 $[rpp1k1_3] $SUB=3 $X=-2220 $Y=0 $dt=10
+.ends rpp1k1_3_CDNS_724655180285
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: dsba_CDNS_724655180286                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt dsba_CDNS_724655180286 1 2 3
+** N=623 EP=3 FDC=21
+D0 1 2 p_dwhn AREA=6.69221e-10 PJ=0.00022132 perimeter=0.00022132 $X=-3330 $Y=-3970 $dt=6
+D1 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=1390 $Y=1050 $dt=8
+D2 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=5350 $Y=1050 $dt=8
+D3 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=9310 $Y=1050 $dt=8
+D4 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=13270 $Y=1050 $dt=8
+D5 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=17230 $Y=1050 $dt=8
+D6 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=21190 $Y=1050 $dt=8
+D7 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=25150 $Y=1050 $dt=8
+D8 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=29110 $Y=1050 $dt=8
+D9 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=33070 $Y=1050 $dt=8
+D10 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=37030 $Y=1050 $dt=8
+D11 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=40990 $Y=1050 $dt=8
+D12 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=44950 $Y=1050 $dt=8
+D13 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=48910 $Y=1050 $dt=8
+D14 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=52870 $Y=1050 $dt=8
+D15 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=56830 $Y=1050 $dt=8
+D16 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=60790 $Y=1050 $dt=8
+D17 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=64750 $Y=1050 $dt=8
+D18 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=68710 $Y=1050 $dt=8
+D19 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=72670 $Y=1050 $dt=8
+D20 3 2 dsba AREA=1.41e-11 PJ=3.188e-05 perimeter=3.188e-05 $SUB=1 $X=76630 $Y=1050 $dt=8
+.ends dsba_CDNS_724655180286
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: dpp20_CDNS_724655180287                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt dpp20_CDNS_724655180287 1 2 3
+** N=3 EP=3 FDC=2
+D0 1 2 p_ddnw AREA=1.12107e-09 PJ=0.00016136 perimeter=0.00016136 $X=-6420 $Y=-6420 $dt=5
+D1 3 2 dpp20 AREA=2.5e-10 PJ=0.00011 perimeter=0.00011 $X=0 $Y=0 $dt=7
+.ends dpp20_CDNS_724655180287
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_3_CDNS_724655180288                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_3_CDNS_724655180288 1 2 3
+** N=3 EP=3 FDC=1
+R0 2 1 L=0.0002537 W=2e-06 $[rpp1k1_3] $SUB=3 $X=-2220 $Y=0 $dt=10
+.ends rpp1k1_3_CDNS_724655180288
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pe3_CDNS_724655180289                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pe3_CDNS_724655180289 1 2 3
+*.DEVICECLIMB
+** N=4 EP=3 FDC=1
+M0 3 2 1 1 pe3 L=3e-07 W=4.4e-07 AD=2.112e-13 AS=2.112e-13 PD=1.84e-06 PS=1.84e-06 $X=0 $Y=0 $dt=3
+.ends pe3_CDNS_724655180289
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__P3                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__P3 1 2 3 4 5 6 7 8 9
+** N=15 EP=9 FDC=51
+X420 1 9 2 15 ped_CDNS_724655180281 $T=370960 203710 0 180 $X=259210 $Y=163760
+X421 1 3 4 11 nedia_CDNS_724655180282 $T=31955 142520 0 0 $X=15735 $Y=123130
+X422 1 14 4 13 nedia_CDNS_724655180282 $T=71980 142520 0 0 $X=55760 $Y=123130
+X423 8 6 11 1 ne3_CDNS_724655180283 $T=20540 111655 0 0 $X=19700 $Y=111235
+X424 8 7 12 1 ne3_CDNS_724655180283 $T=23885 111645 0 0 $X=23045 $Y=111225
+X425 8 12 13 1 ne3_CDNS_724655180283 $T=27205 111645 0 0 $X=26365 $Y=111225
+X426 3 4 1 rpp1k1_3_CDNS_724655180285 $T=22985 175685 0 0 $X=19825 $Y=175465
+X427 2 15 1 rpp1k1_3_CDNS_724655180285 $T=63010 196610 0 0 $X=59850 $Y=196390
+X428 1 3 4 dsba_CDNS_724655180286 $T=119535 121415 0 0 $X=111425 $Y=112665
+X429 1 2 9 dpp20_CDNS_724655180287 $T=163730 200845 0 90 $X=102650 $Y=189765
+X430 1 2 9 dpp20_CDNS_724655180287 $T=241095 201100 0 90 $X=180015 $Y=190020
+X431 2 3 1 rpp1k1_3_CDNS_724655180288 $T=16595 197030 0 0 $X=13435 $Y=196810
+X432 15 14 1 rpp1k1_3_CDNS_724655180288 $T=56660 175685 0 0 $X=53500 $Y=175465
+X433 5 6 11 pe3_CDNS_724655180289 $T=20540 115965 1 0 $X=19030 $Y=114495
+X434 5 7 12 pe3_CDNS_724655180289 $T=23860 115965 1 0 $X=22350 $Y=114495
+X435 5 12 13 pe3_CDNS_724655180289 $T=27180 115965 1 0 $X=25670 $Y=114495
+D0 1 5 p_dnw AREA=3.39001e-11 PJ=3.421e-05 perimeter=3.421e-05 $X=17815 $Y=113330 $dt=4
+D1 1 5 p_dnw3 AREA=2.49e-11 PJ=0 perimeter=0 $X=19030 $Y=114495 $dt=9
+.ends MASCO__P3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: hvswitch8                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt hvswitch8 CUR_IN DOWN GNDD GNDHV OUT UP VDD3 VDDHV VSUBHV
+** N=10 EP=9 FDC=433
+X0 VSUBHV 2 OUT CUR_IN MASCO__H1 $T=0 0 0 0 $X=222710 $Y=91520
+X1 GNDHV VDDHV OUT 2 MASCO__P2 $T=0 0 0 0 $X=5800 $Y=7480
+X2 VSUBHV VDDHV 2 GNDHV VDD3 DOWN UP GNDD OUT MASCO__P3 $T=0 0 0 0 $X=5800 $Y=102950
+.ends hvswitch8

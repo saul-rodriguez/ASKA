@@ -1,0 +1,59 @@
+#
+# OPTION COMMAND FILE created byCadence Quantus Extraction Version 23.1.0-p075 from CCL
+#
+extract \
+	 -selection "all" \
+	 -type "r_only"
+extraction_setup \
+	 -analysis "em" \
+	 -array_vias_spacing "auto" \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size \
+		"auto" \
+	 -net_name_space "LAYOUT" \
+	 -split_via_by_unit_area false
+filter_res \
+	 -merge_parallel_res false \
+	 -min_res 0.5
+hierarchical_extract \
+	 -split_feedthrough_pins true
+input_db -type pvs \
+	 -directory_name "/home/saul/projects/ASKA/PvsLVS/emir_test_2/svdb" \
+	 -hierarchy_delimiter "/" \
+	 -library_definitions_file "/home/saul/projects/ASKA/cds.lib" \
+	 -run_name "emir_test_2"
+log_file \
+	 -file_name "/home/saul/projects/ASKA/qrc.emir_test_2.log"
+mos_diffusion_parameter_extraction \
+	 -res "fast"
+output_db -type dspf \
+	 -add_bulk_terminal "false" \
+	 -add_explicit_vias true \
+	 -busbit_delimiter "\[\]" \
+	 -device_finger_delimiter "@" \
+	 -disable_instances false \
+	 -em_extract true \
+	 -hierarchy_delimiter "/" \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "true" \
+	 -include_parasitic_res_length true \
+	 -include_parasitic_res_model "comment" \
+	 -include_parasitic_res_width true \
+	 -include_res_model "false" \
+	 -sub_node_char "#" \
+	 -subtype "EXTENDED"
+output_setup \
+	 -directory_name "/home/saul/projects/ASKA" \
+	 -file_name "/home/saul/projects/ASKA/emir_test_2.dspf" \
+	 -net_name_space "SCHEMATIC" \
+	 -temporary_directory_name "emir_test_2"
+process_technology \
+	 -technology_corner \
+		"default" \
+	 -technology_library_file "/home/saul/projects/ASKA/pvtech.lib" \
+	 -technology_name "XH018_1143" \
+	 -temperature \
+		"25.0"
+
+

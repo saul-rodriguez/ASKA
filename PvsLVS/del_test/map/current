@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "del_test"
+  repList "auCdl schematic cmos_sch"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/saul/projects/ASKA/PvsLVS/del_test/"
+ )
+( model
+( "ALL_TESTS/del_test/schematic" "del_test" )
+( "D_CELLS_3V/IN_3VX2/cmos_sch" "IN_3VX2" )
+( "GATES_3V/invrv3/schematic" "invrv3" )
+( "D_CELLS_3V/IN_3VX4/cmos_sch" "IN_3VX4" )
+ )
+( "del_test" "ihnl/cds3/map" )
+( "invrv3" "ihnl/cds0/map" )
+( "IN_3VX2" "ihnl/cds1/map" )
+( "IN_3VX4" "ihnl/cds2/map" )
+ )

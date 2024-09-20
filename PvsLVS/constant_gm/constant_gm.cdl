@@ -1,0 +1,71 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ASKA_CONSTANT_GM
+* Top Cell Name: constant_gm
+* View Name:     schematic
+* Netlisted on:  Aug 26 08:11:58 2024
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: ASKA_CONSTANT_GM
+* Cell Name:    constant_gm
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT constant_gm GNDA OUT1 OUT2 OUT3 VDD3
+*.PININFO GNDA:B OUT1:B OUT2:B OUT3:B VDD3:B
+MM1 net1 net1 net13 GNDA NE3 W=10u L=2.5u M=2.0 AD=2.7e-12 AS=4.8e-12 
++ PD=1.054e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM0 net24 net1 net23 GNDA NE3 W=10u L=2.5u M=2.0 AD=2.7e-12 AS=4.8e-12 
++ PD=1.054e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM17 VDD3 VDD3 VDD3 VDD3 PE3 W=10u L=2.5u M=5.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM16 net47 net17 VDD3 VDD3 PE3 W=10u L=2.5u M=1.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM15 OUT3 net24 net47 VDD3 PE3 W=10u L=2.5u M=1.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM14 net2 net2 net24 net24 PE3 W=2u L=10u M=1.0 AD=9.6e-13 AS=9.6e-13 
++ PD=4.96e-06 PS=4.96e-06 NRD=0.135 NRS=0.135
+MM13 net40 net17 VDD3 VDD3 PE3 W=10u L=2.5u M=2.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM11 OUT2 net24 net40 VDD3 PE3 W=10u L=2.5u M=2.0 AD=2.7e-12 AS=4.8e-12 
++ PD=1.054e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM8 net1 net1 net2 net2 PE3 W=2u L=10u M=1.0 AD=9.6e-13 AS=9.6e-13 PD=4.96e-06 
++ PS=4.96e-06 NRD=0.135 NRS=0.135
+MM7 OUT1 net24 net30 VDD3 PE3 W=10u L=2.5u M=2.0 AD=2.7e-12 AS=4.8e-12 
++ PD=1.054e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM6 net30 net17 VDD3 VDD3 PE3 W=10u L=2.5u M=2.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM5 net1 net24 net18 VDD3 PE3 W=10u L=2.5u M=2.0 AD=2.7e-12 AS=4.8e-12 
++ PD=1.054e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM3 net24 net24 net17 VDD3 PE3 W=10u L=2.5u M=2.0 AD=2.7e-12 AS=4.8e-12 
++ PD=1.054e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM9 net18 net17 VDD3 VDD3 PE3 W=10u L=2.5u M=2.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM12 net17 net17 VDD3 VDD3 PE3 W=10u L=2.5u M=2.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+RR3 GNDA net25 69999.7 $SUB=VDD3 $[RPP1K1_3] $W=4u $L=287.8u M=1
+XM4 net13 net13 GNDA GNDA VDD3 GNDA / ne3i_6 W=10u L=2.5u M=2.0 AD=2.7e-12 
++ AS=4.8e-12 NRD=0.027 NRS=0.027 PD=1.054e-05 PS=2.096e-05 par1=2.0
+XM2 net23 net13 net25 net25 VDD3 GNDA / ne3i_6 W=10u L=2.5u M=8.0 AD=2.7e-12 
++ AS=3.225e-12 NRD=0.027 NRS=0.027 PD=1.054e-05 PS=1.3145e-05 par1=8.0
+.ENDS
+
+
+.SUBCKT ne3i_6 D G S B NW SB 
+*.PININFO  D:B G:B S:B B:B NW:B SB:B
+.ENDS

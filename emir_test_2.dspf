@@ -1,0 +1,83 @@
+*
+*|DSPF 1.5
+*
+*|DATE "Wed Jul 17 15:50:23 2024"
+*|VENDOR "Cadence Design Systems"
+*|PROGRAM "Cadence Quantus Extraction"
+*|VERSION "23.1.0-p075 Linux 64 bit - (Tue Sep 26 09:11:43 PDT 2023)"
+*|DESIGN "emir_test_2"
+*|DIVIDER /
+*|DELIMITER #
+*|DeviceFingerDelim "@"
+*|BUSBIT []
+*|GLOBAL_TEMPERATURE 27
+*|OPERATING_TEMPERATURE 25
+** QRC_TECH_DIR /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ 
+** HIERARCHICAL_SPLIT_PINS_DELIMITER '%'
+** caps2d version: 10
+*
+.SUBCKT  emir_test_2 gnda vdda
+*
+*Net Section
+*
+*|GROUND_NET 0
+*
+*LAYER_MAP
+*0 none
+*1 POLY1
+*2 MET1
+*3 active
+*4 CONT
+
+*|NET gnda 0
+*|P (gnda X 0 318.2400 21.0950) // $llx=318.2400 $lly=21.0950 $urx=318.2400 $ury=21.0950 $lvl=2
+*|I (XRR11#POS XRR11 POS X 0 314.1655 32.1150) // $llx=314.1655 $lly=32.1150 $urx=314.1655 $ury=32.1150 $lvl=1
+*|I (XRR0#POS XRR0 POS X 0 314.1655 20.8600) // $llx=314.1655 $lly=20.8600 $urx=314.1655 $ury=20.8600 $lvl=1
+*|I (XRR1#POS XRR1 POS X 0 314.1655 11.3650) // $llx=314.1655 $lly=11.3650 $urx=314.1655 $ury=11.3650 $lvl=1
+*|S (gnda#1 314.7150 32.1150) // $llx=314.7150 $lly=32.1150 $urx=314.7150 $ury=32.1150 $lvl=1
+*|S (gnda#3 314.7150 20.8600) // $llx=314.7150 $lly=20.8600 $urx=314.7150 $ury=20.8600 $lvl=1
+*|S (gnda#5 314.7150 11.3650) // $llx=314.7150 $lly=11.3650 $urx=314.7150 $ury=11.3650 $lvl=1
+Rg1 gnda#1 XRR11#POS 0.815293 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg2 gnda#3 XRR0#POS 0.815293 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg3 gnda#5 XRR1#POS 0.815293 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rcb4 gnda#5 gnda 0.746775 $CONT  $A=0.484 $N=10 $lvl=4
+Rcb5 gnda#3 gnda 0.746775 $CONT  $A=0.484 $N=10 $lvl=4
+Rcb6 gnda#1 gnda 0.746775 $CONT  $A=0.484 $N=10 $lvl=4
+*
+*|NET vdda 0
+*|P (vdda X 0 2.6600 20.3600) // $llx=2.6600 $lly=20.3600 $urx=2.6600 $ury=20.3600 $lvl=2
+*|I (XRR11#NEG XRR11 NEG X 0 289.1645 32.1150) // $llx=289.1645 $lly=32.1150 $urx=289.1645 $ury=32.1150 $lvl=1
+*|I (XRR0#NEG XRR0 NEG X 0 289.1645 20.8600) // $llx=289.1645 $lly=20.8600 $urx=289.1645 $ury=20.8600 $lvl=1
+*|I (XRR1#NEG XRR1 NEG X 0 289.1645 11.3650) // $llx=289.1645 $lly=11.3650 $urx=289.1645 $ury=11.3650 $lvl=1
+*|S (vdda#2 288.6150 32.1150) // $llx=288.6150 $lly=32.1150 $urx=288.6150 $ury=32.1150 $lvl=1
+*|S (vdda#4 288.6150 20.8600) // $llx=288.6150 $lly=20.8600 $urx=288.6150 $ury=20.8600 $lvl=1
+*|S (vdda#6 288.6150 11.3650) // $llx=288.6150 $lly=11.3650 $urx=288.6150 $ury=11.3650 $lvl=1
+*|S (vdda#7 288.6150 11.3650) // $llx=288.6150 $lly=11.3650 $urx=288.6150 $ury=11.3650 $lvl=2
+*|S (vdda#9 2.7225 10.7850) // $llx=2.7225 $lly=10.7850 $urx=2.7225 $ury=10.7850 $lvl=2
+*|S (vdda#12 2.7225 31.3250) // $llx=2.7225 $lly=31.3250 $urx=2.7225 $ury=31.3250 $lvl=2
+*|S (vdda#13 288.6150 32.1150) // $llx=288.6150 $lly=32.1150 $urx=288.6150 $ury=32.1150 $lvl=2
+*|S (vdda#14 288.6150 34.5745) // $llx=288.6150 $lly=34.5745 $urx=288.6150 $ury=34.5745 $lvl=2
+*|S (vdda#15 288.6150 20.8600) // $llx=288.6150 $lly=20.8600 $urx=288.6150 $ury=20.8600 $lvl=2
+*|S (vdda#16 288.6150 18.4000) // $llx=288.6150 $lly=18.4000 $urx=288.6150 $ury=18.4000 $lvl=2
+*|S (vdda#17 288.6150 23.3195) // $llx=288.6150 $lly=23.3195 $urx=288.6150 $ury=23.3195 $lvl=2
+Rg7 XRR11#NEG vdda#2 0.815293 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg8 XRR0#NEG vdda#4 0.815293 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg9 XRR1#NEG vdda#6 0.815293 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rf10 vdda#7 vdda#9 68.209824 $MET1  $L=285.892487 $W=0.32 $lvl=2
+Rf11 vdda#9 vdda 0.587617 $MET1  $L=9.57475 $W=1.245 $lvl=2
+Rf12 vdda vdda#12 0.671011 $MET1  $L=10.96525 $W=1.245 $lvl=2
+Rf13 vdda#12 vdda#13 5.494349 $MET1  $L=285.892242 $W=3.98 $lvl=2
+Rf14 vdda#13 vdda#14 0.570782 $MET1  $L=2.46 $W=0.32 $lvl=2
+Rf15 vdda vdda#15 22.302628 $MET1  $L=285.954987 $W=0.98 $lvl=2
+Rf16 vdda#15 vdda#16 0.575611 $MET1  $L=2.46 $W=0.32 $lvl=2
+Rf17 vdda#15 vdda#17 0.586036 $MET1  $L=2.46 $W=0.32 $lvl=2
+Rcb18 vdda#6 vdda#7 0.746775 $CONT  $A=0.484 $N=10 $lvl=4
+Rcb19 vdda#2 vdda#13 0.746775 $CONT  $A=0.484 $N=10 $lvl=4
+Rcb20 vdda#4 vdda#15 0.746775 $CONT  $A=0.484 $N=10 $lvl=4
+*
+*Instance Section
+*
+XRR11	XRR11#POS	XRR11#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR0	XRR0#POS	XRR0#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR1	XRR1#POS	XRR1#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+.ENDS

@@ -1,0 +1,36 @@
+//Revision 54
+//NOTE
+// Default austriamicrosystems template for AMS Designer
+// Note:
+//      Please remember to replace the Library, Cell, and View fields
+//      for the Top Cell with the actual names used by your design.
+//END_NOTE
+
+config pulse_generator_tb;
+design PULSE_GENERATOR.pulse_generator_tb:schematic;
+
+const digital behavioral, functional, schematic, symbol;
+const analog veriloga, functional, schematic, symbol;
+liblist basic, analogLib;
+
+viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
+stoplist symbol, spectre;
+
+
+cell CURRENT_SOURCE.current_source_gm_8 binding :schematic;
+cell CURRENT_SOURCE.current_source_gm_10 binding :veriloga;
+cell CURRENT_SOURCE.current_source_gm_10_en binding :schematic;
+
+cell HVSWITCH.hvswitch5 binding :veriloga;
+
+cell DAC6B.dac6b_amp_n binding :veriloga;
+cell DAC6B.dac6b_amp_n2 binding :veriloga;
+
+cell CONSTANT_GM.constant_gm binding :veriloga;
+
+cell BANDGAP.bandgap_su binding :veriloga;
+
+cell REF_BIAS.ref_bias binding :veriloga;
+
+
+endconfig

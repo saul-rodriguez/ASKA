@@ -1,0 +1,19 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 01/17/2024 18:09 (csvcm36c-7) $
+\o Sub version:		sub-version  s353 
+\o Arguments:		-cdslib /home/saul/projects/ASKA/cds.lib -mpssession virtuoso6878 -mpshost s2424 -mpsversion 6.18 
+\o Working Directory:	s2424:/home/saul/projects/ASKA
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(2060 140 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 90 0)
+\o Active cell: 90 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 90 0 "ASKA_16ELE_TOP_FINAL")
+\a nrListItemAction(cdsLibEditor->mainTable 90 1)
+\o Active cell: 90 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 90 1 "./ASKA_16ELE_TOP_FINAL")
+\a nrListItemAction(cdsLibEditor->mainTable 91 0)
+\o Active cell: 91 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
+\a exit(0)

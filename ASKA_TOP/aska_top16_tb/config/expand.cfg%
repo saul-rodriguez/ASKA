@@ -1,0 +1,38 @@
+//Revision 5
+//NOTE
+// Default austriamicrosystems template for AMS Designer
+// Note:
+//      Please remember to replace the Library, Cell, and View fields
+//      for the Top Cell with the actual names used by your design.
+//END_NOTE
+
+config aska_top16_tb;
+design ASKA_TOP.aska_top16_tb:schematic;
+
+const digital behavioral, functional, schematic, symbol;
+const analog veriloga, functional, schematic, symbol;
+liblist basic, analogLib, ASKA_DIG, VLG_PRIMITIVES, IO_CELLS_JIC3V;
+
+viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
+stoplist symbol, spectre;
+
+
+cell ASKA_BANDGAP.bandgap_su binding :veriloga;
+
+cell ASKA_CONSTANT_GM.constant_gm binding :veriloga;
+
+cell ASKA_CURRENT_SOURCE.current_source_gm_10_en_r binding :veriloga;
+
+cell ASKA_DAC6B.dac6b_amp_n2 binding :veriloga;
+
+cell ASKA_HVSWITCH.hvswitch8 binding :veriloga;
+
+cell ASKA_POR.por2 binding :veriloga;
+
+cell ASKA_REF_BIAS.ref_bias binding :veriloga;
+
+cell IO_CELLS_JIC3V.APR00DPC binding :verilogams;
+cell IO_CELLS_JIC3V.APR04DPC binding :verilogams;
+
+
+endconfig

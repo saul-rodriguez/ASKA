@@ -1,0 +1,38 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ALL_TESTS
+* Top Cell Name: iso3
+* View Name:     schematic
+* Netlisted on:  Jun 19 12:02:31 2024
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: ALL_TESTS
+* Cell Name:    iso3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT iso3 IN1 OUT1 PSUB VDD VSS
+*.PININFO IN1:B OUT1:B PSUB:B VDD:B VSS:B
+XM0 OUT1 IN1 VSS VSS VDD PSUB / ne3i_6 W=2u L=350.0n M=1.0 AD=9.6e-13 
++ AS=9.6e-13 NRD=0.135 NRS=0.135 PD=4.96e-06 PS=4.96e-06 par1=1.0
+.ENDS
+
+
+.SUBCKT ne3i_6 D G S B NW SB 
+*.PININFO  D:B G:B S:B B:B NW:B SB:B
+.ENDS

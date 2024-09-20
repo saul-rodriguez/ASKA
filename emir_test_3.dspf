@@ -1,0 +1,260 @@
+*
+*|DSPF 1.5
+*
+*|DATE "Wed Aug  7 04:49:43 2024"
+*|VENDOR "Cadence Design Systems"
+*|PROGRAM "Cadence Quantus Extraction"
+*|VERSION "23.1.0-p075 Linux 64 bit - (Tue Sep 26 09:11:43 PDT 2023)"
+*|DESIGN "emir_test_2"
+*|DIVIDER /
+*|DELIMITER #
+*|DeviceFingerDelim "@"
+*|BUSBIT []
+*|GLOBAL_TEMPERATURE 27
+*|OPERATING_TEMPERATURE 27
+** QRC_TECH_DIR /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ 
+** HIERARCHICAL_SPLIT_PINS_DELIMITER '%'
+** caps2d version: 10
+*
+.SUBCKT  emir_test_2 gnda vdda
+*
+*Net Section
+*
+*|GROUND_NET 0
+*
+*LAYER_MAP
+*0 none
+*1 POLY1
+*2 MET1
+*3 MET2
+*4 MET3
+*5 MET4
+*6 METTP
+*7 active
+*8 CONT
+*9 VIA1
+*10 VIA2
+*11 VIA3
+
+*|NET gnda 0
+*|P (gnda X 0 318.2400 21.0950) // $llx=318.2400 $lly=21.0950 $urx=318.2400 $ury=21.0950 $lvl=2
+*|I (XRR11#POS XRR11 POS X 0 315.8155 82.8250) // $llx=315.8155 $lly=82.8250 $urx=315.8155 $ury=82.8250 $lvl=1
+*|I (XRR0#POS XRR0 POS X 0 315.8155 75.4300) // $llx=315.8155 $lly=75.4300 $urx=315.8155 $ury=75.4300 $lvl=1
+*|I (XRR1#POS XRR1 POS X 0 315.8155 67.7650) // $llx=315.8155 $lly=67.7650 $urx=315.8155 $ury=67.7650 $lvl=1
+*|I (XRR4#POS XRR4 POS X 0 315.8155 59.6900) // $llx=315.8155 $lly=59.6900 $urx=315.8155 $ury=59.6900 $lvl=1
+*|I (XRR5#POS XRR5 POS X 0 314.1655 32.1150) // $llx=314.1655 $lly=32.1150 $urx=314.1655 $ury=32.1150 $lvl=1
+*|I (XRR6#POS XRR6 POS X 0 314.1655 20.8600) // $llx=314.1655 $lly=20.8600 $urx=314.1655 $ury=20.8600 $lvl=1
+*|I (XRR7#POS XRR7 POS X 0 314.1655 11.3650) // $llx=314.1655 $lly=11.3650 $urx=314.1655 $ury=11.3650 $lvl=1
+*|S (gnda#1 314.7150 32.1150) // $llx=314.7150 $lly=32.1150 $urx=314.7150 $ury=32.1150 $lvl=1
+*|S (gnda#3 314.7150 20.8600) // $llx=314.7150 $lly=20.8600 $urx=314.7150 $ury=20.8600 $lvl=1
+*|S (gnda#5 314.7150 11.3650) // $llx=314.7150 $lly=11.3650 $urx=314.7150 $ury=11.3650 $lvl=1
+*|S (gnda#7 316.3650 82.8250) // $llx=316.3650 $lly=82.8250 $urx=316.3650 $ury=82.8250 $lvl=1
+*|S (gnda#9 316.3650 75.4300) // $llx=316.3650 $lly=75.4300 $urx=316.3650 $ury=75.4300 $lvl=1
+*|S (gnda#11 316.3650 67.7650) // $llx=316.3650 $lly=67.7650 $urx=316.3650 $ury=67.7650 $lvl=1
+*|S (gnda#13 316.3650 59.6900) // $llx=316.3650 $lly=59.6900 $urx=316.3650 $ury=59.6900 $lvl=1
+*|S (gnda#15 317.6000 85.5300) // $llx=317.6000 $lly=85.5300 $urx=317.6000 $ury=85.5300 $lvl=2
+*|S (gnda#19 316.3650 59.6900) // $llx=316.3650 $lly=59.6900 $urx=316.3650 $ury=59.6900 $lvl=2
+*|S (gnda#20 314.7150 32.1150) // $llx=314.7150 $lly=32.1150 $urx=314.7150 $ury=32.1150 $lvl=2
+*|S (gnda#22 314.7150 11.3650) // $llx=314.7150 $lly=11.3650 $urx=314.7150 $ury=11.3650 $lvl=2
+Rg1 gnda#1 XRR5#POS 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg2 gnda#3 XRR6#POS 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg3 gnda#5 XRR7#POS 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg4 gnda#7 XRR11#POS 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg5 gnda#9 XRR0#POS 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg6 gnda#11 XRR1#POS 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg7 gnda#13 XRR4#POS 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rf8 gnda#15 gnda#19 0.102098 $MET1  $L=8.075 $W=6.09 $lvl=2
+Rf9 gnda#19 gnda#20 0.348649 $MET1  $L=27.575001 $W=6.09 $lvl=2
+Rf10 gnda#20 gnda 0.139333 $MET1  $L=11.02 $W=6.09 $lvl=2
+Rf11 gnda gnda#22 0.120052 $MET1  $L=9.495 $W=6.09 $lvl=2
+Rcb12 gnda#7 gnda#15 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb13 gnda#9 gnda#15 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb14 gnda#11 gnda#15 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb15 gnda#13 gnda#19 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb16 gnda#1 gnda#20 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb17 gnda#3 gnda 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb18 gnda#5 gnda#22 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+*
+*|NET vdda 0
+*|P (vdda X 0 2.6600 20.3600) // $llx=2.6600 $lly=20.3600 $urx=2.6600 $ury=20.3600 $lvl=2
+*|I (XRR11#NEG XRR11 NEG X 0 290.8145 82.8250) // $llx=290.8145 $lly=82.8250 $urx=290.8145 $ury=82.8250 $lvl=1
+*|I (XRR0#NEG XRR0 NEG X 0 290.8145 75.4300) // $llx=290.8145 $lly=75.4300 $urx=290.8145 $ury=75.4300 $lvl=1
+*|I (XRR1#NEG XRR1 NEG X 0 290.8145 67.7650) // $llx=290.8145 $lly=67.7650 $urx=290.8145 $ury=67.7650 $lvl=1
+*|I (XRR4#NEG XRR4 NEG X 0 290.8145 59.6900) // $llx=290.8145 $lly=59.6900 $urx=290.8145 $ury=59.6900 $lvl=1
+*|I (XRR5#NEG XRR5 NEG X 0 289.1645 32.1150) // $llx=289.1645 $lly=32.1150 $urx=289.1645 $ury=32.1150 $lvl=1
+*|I (XRR6#NEG XRR6 NEG X 0 289.1645 20.8600) // $llx=289.1645 $lly=20.8600 $urx=289.1645 $ury=20.8600 $lvl=1
+*|I (XRR7#NEG XRR7 NEG X 0 289.1645 11.3650) // $llx=289.1645 $lly=11.3650 $urx=289.1645 $ury=11.3650 $lvl=1
+*|S (vdda#2 288.6150 32.1150) // $llx=288.6150 $lly=32.1150 $urx=288.6150 $ury=32.1150 $lvl=1
+*|S (vdda#4 288.6150 20.8600) // $llx=288.6150 $lly=20.8600 $urx=288.6150 $ury=20.8600 $lvl=1
+*|S (vdda#6 288.6150 11.3650) // $llx=288.6150 $lly=11.3650 $urx=288.6150 $ury=11.3650 $lvl=1
+*|S (vdda#8 290.2650 82.8250) // $llx=290.2650 $lly=82.8250 $urx=290.2650 $ury=82.8250 $lvl=1
+*|S (vdda#10 290.2650 75.4300) // $llx=290.2650 $lly=75.4300 $urx=290.2650 $ury=75.4300 $lvl=1
+*|S (vdda#12 290.2650 67.7650) // $llx=290.2650 $lly=67.7650 $urx=290.2650 $ury=67.7650 $lvl=1
+*|S (vdda#14 290.2650 59.6900) // $llx=290.2650 $lly=59.6900 $urx=290.2650 $ury=59.6900 $lvl=1
+*|S (vdda#15 288.6150 11.3650) // $llx=288.6150 $lly=11.3650 $urx=288.6150 $ury=11.3650 $lvl=2
+*|S (vdda#16 288.6150 10.7850) // $llx=288.6150 $lly=10.7850 $urx=288.6150 $ury=10.7850 $lvl=2
+*|S (vdda#17 2.7225 10.7850) // $llx=2.7225 $lly=10.7850 $urx=2.7225 $ury=10.7850 $lvl=2
+*|S (vdda#18 2.7225 7.5650) // $llx=2.7225 $lly=7.5650 $urx=2.7225 $ury=7.5650 $lvl=2
+*|S (vdda#19 288.6150 8.9050) // $llx=288.6150 $lly=8.9050 $urx=288.6150 $ury=8.9050 $lvl=2
+*|S (vdda#20 2.7225 31.3250) // $llx=2.7225 $lly=31.3250 $urx=2.7225 $ury=31.3250 $lvl=2
+*|S (vdda#21 2.8250 59.1650) // $llx=2.8250 $lly=59.1650 $urx=2.8250 $ury=59.1650 $lvl=2
+*|S (vdda#22 2.8250 69.5650) // $llx=2.8250 $lly=69.5650 $urx=2.8250 $ury=69.5650 $lvl=2
+*|S (vdda#23 2.8250 79.9650) // $llx=2.8250 $lly=79.9650 $urx=2.8250 $ury=79.9650 $lvl=2
+*|S (vdda#24 2.8250 87.2450) // $llx=2.8250 $lly=87.2450 $urx=2.8250 $ury=87.2450 $lvl=2
+*|S (vdda#25 2.7225 90.3295) // $llx=2.7225 $lly=90.3295 $urx=2.7225 $ury=90.3295 $lvl=2
+*|S (vdda#26 288.6150 20.8600) // $llx=288.6150 $lly=20.8600 $urx=288.6150 $ury=20.8600 $lvl=2
+*|S (vdda#27 288.6150 18.4000) // $llx=288.6150 $lly=18.4000 $urx=288.6150 $ury=18.4000 $lvl=2
+*|S (vdda#28 288.6150 32.1150) // $llx=288.6150 $lly=32.1150 $urx=288.6150 $ury=32.1150 $lvl=2
+*|S (vdda#29 288.6150 34.5745) // $llx=288.6150 $lly=34.5745 $urx=288.6150 $ury=34.5745 $lvl=2
+*|S (vdda#30 288.6150 23.3195) // $llx=288.6150 $lly=23.3195 $urx=288.6150 $ury=23.3195 $lvl=2
+*|S (vdda#31 289.7300 62.1500) // $llx=289.7300 $lly=62.1500 $urx=289.7300 $ury=62.1500 $lvl=2
+*|S (vdda#32 290.2650 59.6900) // $llx=290.2650 $lly=59.6900 $urx=290.2650 $ury=59.6900 $lvl=2
+*|S (vdda#34 289.7300 57.2300) // $llx=289.7300 $lly=57.2300 $urx=289.7300 $ury=57.2300 $lvl=2
+*|S (vdda#35 289.5600 53.9700) // $llx=289.5600 $lly=53.9700 $urx=289.5600 $ury=53.9700 $lvl=2
+*|S (vdda#36 289.7300 65.3050) // $llx=289.7300 $lly=65.3050 $urx=289.7300 $ury=65.3050 $lvl=2
+*|S (vdda#37 290.2650 67.7650) // $llx=290.2650 $lly=67.7650 $urx=290.2650 $ury=67.7650 $lvl=2
+*|S (vdda#40 289.7300 72.9700) // $llx=289.7300 $lly=72.9700 $urx=289.7300 $ury=72.9700 $lvl=2
+*|S (vdda#41 290.2650 75.4300) // $llx=290.2650 $lly=75.4300 $urx=290.2650 $ury=75.4300 $lvl=2
+*|S (vdda#42 289.7300 77.8900) // $llx=289.7300 $lly=77.8900 $urx=289.7300 $ury=77.8900 $lvl=2
+*|S (vdda#43 289.5600 79.9650) // $llx=289.5600 $lly=79.9650 $urx=289.5600 $ury=79.9650 $lvl=2
+*|S (vdda#45 290.2650 82.8250) // $llx=290.2650 $lly=82.8250 $urx=290.2650 $ury=82.8250 $lvl=2
+*|S (vdda#46 289.7300 85.2850) // $llx=289.7300 $lly=85.2850 $urx=289.7300 $ury=85.2850 $lvl=2
+*|S (vdda#47 289.5600 87.2450) // $llx=289.5600 $lly=87.2450 $urx=289.5600 $ury=87.2450 $lvl=2
+*|S (vdda#48 2.8250 53.9700) // $llx=2.8250 $lly=53.9700 $urx=2.8250 $ury=53.9700 $lvl=3
+*|S (vdda#49 2.8250 59.1650) // $llx=2.8250 $lly=59.1650 $urx=2.8250 $ury=59.1650 $lvl=3
+*|S (vdda#51 2.8250 69.5650) // $llx=2.8250 $lly=69.5650 $urx=2.8250 $ury=69.5650 $lvl=3
+*|S (vdda#53 2.8250 79.9650) // $llx=2.8250 $lly=79.9650 $urx=2.8250 $ury=79.9650 $lvl=3
+*|S (vdda#55 2.8250 87.2450) // $llx=2.8250 $lly=87.2450 $urx=2.8250 $ury=87.2450 $lvl=3
+*|S (vdda#57 2.8250 89.3200) // $llx=2.8250 $lly=89.3200 $urx=2.8250 $ury=89.3200 $lvl=3
+*|S (vdda#58 289.5600 53.9700) // $llx=289.5600 $lly=53.9700 $urx=289.5600 $ury=53.9700 $lvl=3
+*|S (vdda#59 289.5600 59.1650) // $llx=289.5600 $lly=59.1650 $urx=289.5600 $ury=59.1650 $lvl=3
+*|S (vdda#61 289.5600 69.5650) // $llx=289.5600 $lly=69.5650 $urx=289.5600 $ury=69.5650 $lvl=3
+*|S (vdda#63 289.5600 79.9650) // $llx=289.5600 $lly=79.9650 $urx=289.5600 $ury=79.9650 $lvl=3
+*|S (vdda#65 289.5600 87.2450) // $llx=289.5600 $lly=87.2450 $urx=289.5600 $ury=87.2450 $lvl=3
+*|S (vdda#67 289.5600 89.3200) // $llx=289.5600 $lly=89.3200 $urx=289.5600 $ury=89.3200 $lvl=3
+*|S (vdda#68 2.8250 53.9700) // $llx=2.8250 $lly=53.9700 $urx=2.8250 $ury=53.9700 $lvl=4
+*|S (vdda#69 2.8250 59.1650) // $llx=2.8250 $lly=59.1650 $urx=2.8250 $ury=59.1650 $lvl=4
+*|S (vdda#71 2.8250 69.5650) // $llx=2.8250 $lly=69.5650 $urx=2.8250 $ury=69.5650 $lvl=4
+*|S (vdda#73 2.8250 79.9650) // $llx=2.8250 $lly=79.9650 $urx=2.8250 $ury=79.9650 $lvl=4
+*|S (vdda#75 2.8250 87.2450) // $llx=2.8250 $lly=87.2450 $urx=2.8250 $ury=87.2450 $lvl=4
+*|S (vdda#77 2.8250 89.3200) // $llx=2.8250 $lly=89.3200 $urx=2.8250 $ury=89.3200 $lvl=4
+*|S (vdda#78 289.5600 53.9700) // $llx=289.5600 $lly=53.9700 $urx=289.5600 $ury=53.9700 $lvl=4
+*|S (vdda#79 289.5600 59.1650) // $llx=289.5600 $lly=59.1650 $urx=289.5600 $ury=59.1650 $lvl=4
+*|S (vdda#81 289.5600 69.5650) // $llx=289.5600 $lly=69.5650 $urx=289.5600 $ury=69.5650 $lvl=4
+*|S (vdda#83 289.5600 79.9650) // $llx=289.5600 $lly=79.9650 $urx=289.5600 $ury=79.9650 $lvl=4
+*|S (vdda#85 289.5600 87.2450) // $llx=289.5600 $lly=87.2450 $urx=289.5600 $ury=87.2450 $lvl=4
+*|S (vdda#87 289.5600 89.3200) // $llx=289.5600 $lly=89.3200 $urx=289.5600 $ury=89.3200 $lvl=4
+*|S (vdda#88 2.8250 59.1650) // $llx=2.8250 $lly=59.1650 $urx=2.8250 $ury=59.1650 $lvl=5
+*|S (vdda#89 2.8250 60.9950) // $llx=2.8250 $lly=60.9950 $urx=2.8250 $ury=60.9950 $lvl=5
+*|S (vdda#92 2.8250 79.9650) // $llx=2.8250 $lly=79.9650 $urx=2.8250 $ury=79.9650 $lvl=5
+*|S (vdda#94 2.8250 87.2450) // $llx=2.8250 $lly=87.2450 $urx=2.8250 $ury=87.2450 $lvl=5
+*|S (vdda#95 289.5600 59.1650) // $llx=289.5600 $lly=59.1650 $urx=289.5600 $ury=59.1650 $lvl=5
+*|S (vdda#96 289.5600 60.9950) // $llx=289.5600 $lly=60.9950 $urx=289.5600 $ury=60.9950 $lvl=5
+*|S (vdda#99 289.5600 79.9650) // $llx=289.5600 $lly=79.9650 $urx=289.5600 $ury=79.9650 $lvl=5
+*|S (vdda#101 289.5600 87.2450) // $llx=289.5600 $lly=87.2450 $urx=289.5600 $ury=87.2450 $lvl=5
+Rg19 XRR5#NEG vdda#2 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg20 XRR6#NEG vdda#4 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg21 XRR7#NEG vdda#6 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg22 XRR11#NEG vdda#8 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg23 XRR0#NEG vdda#10 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg24 XRR1#NEG vdda#12 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rg25 XRR4#NEG vdda#14 0.820080 $POLY1  $L=0.76 $W=5.03 $lvl=1
+Rf26 vdda#15 vdda#16 0.137100 $MET1  $L=3.03975 $W=0.32 $lvl=2
+Rf27 vdda#16 vdda#17 68.676819 $MET1  $L=285.892487 $W=0.32 $lvl=2
+Rf28 vdda#17 vdda#18 0.198998 $MET1  $L=3.22025 $W=1.245 $lvl=2
+Rf29 vdda#16 vdda#19 0.450025 $MET1  $L=1.88025 $W=0.32 $lvl=2
+Rf30 vdda#17 vdda 0.591641 $MET1  $L=9.57475 $W=1.245 $lvl=2
+Rf31 vdda vdda#20 0.675605 $MET1  $L=10.96525 $W=1.245 $lvl=2
+Rf32 vdda#20 vdda#21 1.719860 $MET1  $L=27.83975 $W=1.245 $lvl=2
+Rf33 vdda#21 vdda#22 0.643213 $MET1  $L=10.4 $W=1.245 $lvl=2
+Rf34 vdda#22 vdda#23 0.643213 $MET1  $L=10.4 $W=1.245 $lvl=2
+Rf35 vdda#23 vdda#24 0.450249 $MET1  $L=7.28 $W=1.245 $lvl=2
+Rf36 vdda#24 vdda#25 0.190768 $MET1  $L=3.085 $W=1.245 $lvl=2
+Rf37 vdda vdda#26 22.455324 $MET1  $L=285.954987 $W=0.98 $lvl=2
+Rf38 vdda#26 vdda#27 0.579552 $MET1  $L=2.46 $W=0.32 $lvl=2
+Rf39 vdda#20 vdda#28 5.531967 $MET1  $L=285.892242 $W=3.98 $lvl=2
+Rf40 vdda#28 vdda#29 0.574690 $MET1  $L=2.46 $W=0.32 $lvl=2
+Rf41 vdda#26 vdda#30 0.590048 $MET1  $L=2.46 $W=0.32 $lvl=2
+Rf42 vdda#31 vdda#32 0.136273 $MET1  $L=2.46 $W=1.39 $lvl=2
+Rf43 vdda#32 vdda#34 0.107191 $MET1  $L=1.935 $W=1.39 $lvl=2
+Rf44 vdda#34 vdda#35 0.239067 $MET1  $L=3.26 $W=1.05 $lvl=2
+Rf45 vdda#31 vdda#36 0.231367 $MET1  $L=3.155 $W=1.05 $lvl=2
+Rf46 vdda#36 vdda#37 0.136273 $MET1  $L=2.46 $W=1.39 $lvl=2
+Rf47 vdda#37 vdda#40 0.201300 $MET1  $L=2.745 $W=1.05 $lvl=2
+Rf48 vdda#40 vdda#41 0.136273 $MET1  $L=2.46 $W=1.39 $lvl=2
+Rf49 vdda#41 vdda#42 0.136273 $MET1  $L=2.46 $W=1.39 $lvl=2
+Rf50 vdda#42 vdda#43 0.152167 $MET1  $L=2.075 $W=1.05 $lvl=2
+Rf51 vdda#43 vdda#45 0.136273 $MET1  $L=2.46 $W=1.39 $lvl=2
+Rf52 vdda#45 vdda#46 0.136273 $MET1  $L=2.46 $W=1.39 $lvl=2
+Rf53 vdda#46 vdda#47 0.143733 $MET1  $L=4.035 $W=1.05 $lvl=2
+Re54 vdda#48 vdda#49 0.373233 $MET2  $L=5.195 $W=1.03 $lvl=3
+Re55 vdda#49 vdda#51 0.747184 $MET2  $L=10.4 $W=1000000 $lvl=3
+Re56 vdda#51 vdda#53 0.747184 $MET2  $L=10.4 $W=1000000 $lvl=3
+Re57 vdda#53 vdda#55 0.523029 $MET2  $L=7.28 $W=1000000 $lvl=3
+Re58 vdda#55 vdda#57 0.149078 $MET2  $L=2.075 $W=1.03 $lvl=3
+Re59 vdda#58 vdda#59 0.373233 $MET2  $L=5.195 $W=1.03 $lvl=3
+Re60 vdda#59 vdda#61 0.747184 $MET2  $L=10.4 $W=1000000 $lvl=3
+Re61 vdda#61 vdda#63 0.747184 $MET2  $L=10.4 $W=1000000 $lvl=3
+Re62 vdda#63 vdda#65 0.523029 $MET2  $L=7.28 $W=1000000 $lvl=3
+Re63 vdda#65 vdda#67 0.149078 $MET2  $L=2.075 $W=1.03 $lvl=3
+Rd64 vdda#68 vdda#69 0.373233 $MET3  $L=5.195 $W=1.03 $lvl=4
+Rd65 vdda#69 vdda#71 0.747184 $MET3  $L=10.4 $W=1000000 $lvl=4
+Rd66 vdda#71 vdda#73 0.747184 $MET3  $L=10.4 $W=1000000 $lvl=4
+Rd67 vdda#73 vdda#75 0.523029 $MET3  $L=7.28 $W=1000000 $lvl=4
+Rd68 vdda#75 vdda#77 0.149078 $MET3  $L=2.075 $W=1.03 $lvl=4
+Rd69 vdda#78 vdda#79 0.373233 $MET3  $L=5.195 $W=1.03 $lvl=4
+Rd70 vdda#79 vdda#81 0.747184 $MET3  $L=10.4 $W=1000000 $lvl=4
+Rd71 vdda#81 vdda#83 0.747184 $MET3  $L=10.4 $W=1000000 $lvl=4
+Rd72 vdda#83 vdda#85 0.523029 $MET3  $L=7.28 $W=1000000 $lvl=4
+Rd73 vdda#85 vdda#87 0.149078 $MET3  $L=2.075 $W=1.03 $lvl=4
+Rc74 vdda#88 vdda#89 0.311997 $MET4  $L=7.225 $W=1000000 $lvl=5
+Rc75 vdda#89 vdda#92 0.581164 $MET4  $L=4.77 $W=7.225 $lvl=5
+Rc76 vdda#92 vdda#89 0.172325 $MET4  $L=5.88 $W=2.565 $lvl=5
+Rc77 vdda#89 vdda#94 0.258869 $MET4  $L=3.675 $W=3.9 $lvl=5
+Rc78 vdda#95 vdda#96 0.311997 $MET4  $L=7.225 $W=1000000 $lvl=5
+Rc79 vdda#96 vdda#99 0.581164 $MET4  $L=4.77 $W=7.225 $lvl=5
+Rc80 vdda#99 vdda#96 0.172325 $MET4  $L=5.88 $W=2.565 $lvl=5
+Rc81 vdda#96 vdda#101 0.258869 $MET4  $L=3.675 $W=3.9 $lvl=5
+Rb82 vdda#89 vdda#96 0.250883 $METTP  $L=286.734985 $W=35.43 $lvl=6
+Rcb83 vdda#6 vdda#15 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb84 vdda#4 vdda#26 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb85 vdda#2 vdda#28 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb86 vdda#14 vdda#32 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb87 vdda#12 vdda#37 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb88 vdda#10 vdda#41 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rcb89 vdda#8 vdda#45 0.750000 $CONT  $A=0.484 $N=10 $lvl=8
+Rbb90 vdda#21 vdda#49 0.112500 $VIA1  $A=2.704 $N=40 $lvl=9
+Rbb91 vdda#22 vdda#51 0.112500 $VIA1  $A=2.704 $N=40 $lvl=9
+Rbb92 vdda#23 vdda#53 0.112500 $VIA1  $A=2.704 $N=40 $lvl=9
+Rbb93 vdda#24 vdda#55 0.281250 $VIA1  $A=1.0816 $N=16 $lvl=9
+Rbb94 vdda#32 vdda#59 0.112500 $VIA1  $A=2.704 $N=40 $lvl=9
+Rbb95 vdda#37 vdda#61 0.112500 $VIA1  $A=2.704 $N=40 $lvl=9
+Rbb96 vdda#43 vdda#63 0.112500 $VIA1  $A=2.704 $N=40 $lvl=9
+Rbb97 vdda#47 vdda#65 0.281250 $VIA1  $A=1.0816 $N=16 $lvl=9
+Ru98 vdda#49 vdda#69 0.112500 $VIA2  $A=2.704 $N=40 $lvl=10
+Ru99 vdda#51 vdda#71 0.112500 $VIA2  $A=2.704 $N=40 $lvl=10
+Ru100 vdda#53 vdda#73 0.112500 $VIA2  $A=2.704 $N=40 $lvl=10
+Ru101 vdda#55 vdda#75 0.281250 $VIA2  $A=1.0816 $N=16 $lvl=10
+Ru102 vdda#59 vdda#79 0.112500 $VIA2  $A=2.704 $N=40 $lvl=10
+Ru103 vdda#61 vdda#81 0.112500 $VIA2  $A=2.704 $N=40 $lvl=10
+Ru104 vdda#63 vdda#83 0.112500 $VIA2  $A=2.704 $N=40 $lvl=10
+Ru105 vdda#65 vdda#85 0.281250 $VIA2  $A=1.0816 $N=16 $lvl=10
+Rn106 vdda#69 vdda#88 0.112500 $VIA3  $A=2.704 $N=40 $lvl=11
+Rn107 vdda#71 vdda#89 0.112500 $VIA3  $A=2.704 $N=40 $lvl=11
+Rn108 vdda#73 vdda#92 0.112500 $VIA3  $A=2.704 $N=40 $lvl=11
+Rn109 vdda#75 vdda#94 0.281250 $VIA3  $A=1.0816 $N=16 $lvl=11
+Rn110 vdda#79 vdda#95 0.112500 $VIA3  $A=2.704 $N=40 $lvl=11
+Rn111 vdda#81 vdda#96 0.112500 $VIA3  $A=2.704 $N=40 $lvl=11
+Rn112 vdda#83 vdda#99 0.112500 $VIA3  $A=2.704 $N=40 $lvl=11
+Rn113 vdda#85 vdda#101 0.281250 $VIA3  $A=1.0816 $N=16 $lvl=11
+*
+*Instance Section
+*
+XRR11	XRR11#POS	XRR11#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR0	XRR0#POS	XRR0#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR1	XRR1#POS	XRR1#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR4	XRR4#POS	XRR4#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR5	XRR5#POS	XRR5#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR6	XRR6#POS	XRR6#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+XRR7	XRR7#POS	XRR7#NEG	rpp1k1 	L=2.5e-05	W=5e-06
+.ENDS

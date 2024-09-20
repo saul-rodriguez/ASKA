@@ -1,0 +1,184 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : por2                                         *
+* Netlisted  : Mon Aug 26 08:07:33 2024                     *
+* PVS Version: 23.11-s036 Wed Jan 17 18:11:41 PST 2024      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(ne3) nem ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 1 MP(pe3) pem pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 2 MOSVC3() mosvcm p1trm(G) nwtrm(NW) bulk(SB)
+*.DEVTMPLT 3 D(p_dnw) p_dnw bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 4 D(p_dnw3) p_dnwm bulk(POS) nwtrm(NEG)
+*.DEVTMPLT 5 R(rpp1k1_3) rpp1k1_s p1trm(POS) p1trm(NEG) bulk(SUB)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MOSVC3                                          *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MOSVC3 G NW SB
+.ends MOSVC3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: STE_3VX4                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt STE_3VX4 vdd3! gnd! A Q
+** N=7 EP=4 FDC=15
+M0 5 A 6 gnd! ne3 L=3.5e-07 W=7.6e-07 AD=2.15279e-13 AS=3.648e-13 PD=1.40142e-06 PS=2.48e-06 $X=620 $Y=660 $dt=0
+M1 gnd! A 5 gnd! ne3 L=3.5e-07 W=6.5e-07 AD=5.1e-13 AS=1.84121e-13 PD=3.09e-06 PS=1.19858e-06 $X=1510 $Y=660 $dt=0
+M2 vdd3! 6 5 gnd! ne3 L=3.5e-07 W=8.9e-07 AD=4.628e-13 AS=5.162e-13 PD=2.82e-06 PS=2.94e-06 $X=3790 $Y=660 $dt=0
+M3 Q 6 gnd! gnd! ne3 L=3.5e-07 W=6.6e-07 AD=1.782e-13 AS=5.8405e-13 PD=1.2e-06 PS=3.57e-06 $X=6040 $Y=865 $dt=0
+M4 gnd! 6 Q gnd! ne3 L=3.5e-07 W=6.6e-07 AD=3.2115e-13 AS=1.782e-13 PD=1.835e-06 PS=1.2e-06 $X=6930 $Y=865 $dt=0
+M5 Q 6 gnd! gnd! ne3 L=3.5e-07 W=6.6e-07 AD=1.782e-13 AS=3.2115e-13 PD=1.2e-06 PS=1.835e-06 $X=7900 $Y=865 $dt=0
+M6 gnd! 6 Q gnd! ne3 L=3.5e-07 W=6.6e-07 AD=6.249e-13 AS=1.782e-13 PD=3.55e-06 PS=1.2e-06 $X=8790 $Y=865 $dt=0
+M7 7 A 6 vdd3! pe3 L=3e-07 W=1.41e-06 AD=4.21161e-13 AS=7.1205e-13 PD=2.04348e-06 PS=3.83e-06 $X=645 $Y=2410 $dt=1
+M8 vdd3! A 7 vdd3! pe3 L=3e-07 W=1.35e-06 AD=9.5195e-13 AS=4.03239e-13 PD=4.66e-06 PS=1.95652e-06 $X=1535 $Y=2410 $dt=1
+M9 gnd! 6 7 vdd3! pe3 L=3.5e-07 W=1.41e-06 AD=6.768e-13 AS=8.178e-13 PD=3.78e-06 PS=3.98e-06 $X=3790 $Y=2410 $dt=1
+M10 Q 6 vdd3! vdd3! pe3 L=3e-07 W=1.41e-06 AD=4.1595e-13 AS=9.5945e-13 PD=2e-06 PS=4.66e-06 $X=6145 $Y=2410 $dt=1
+M11 vdd3! 6 Q vdd3! pe3 L=3e-07 W=1.41e-06 AD=4.1765e-13 AS=4.1595e-13 PD=2.01e-06 PS=2e-06 $X=7035 $Y=2410 $dt=1
+M12 Q 6 vdd3! vdd3! pe3 L=3e-07 W=1.41e-06 AD=4.1595e-13 AS=4.1765e-13 PD=2e-06 PS=2.01e-06 $X=7925 $Y=2410 $dt=1
+M13 vdd3! 6 Q vdd3! pe3 L=3e-07 W=1.41e-06 AD=9.8585e-13 AS=4.1595e-13 PD=4.69e-06 PS=2e-06 $X=8815 $Y=2410 $dt=1
+D14 gnd! vdd3! p_dnw3 AREA=3.43516e-11 PJ=2.816e-05 perimeter=2.816e-05 $X=-430 $Y=1980 $dt=4
+.ends STE_3VX4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_724652447320                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_724652447320 1 2 3
+** N=3 EP=3 FDC=2
+M0 3 2 1 1 ne3 L=3.5e-07 W=5e-06 AD=1.35e-12 AS=2.4e-12 PD=5.54e-06 PS=1.096e-05 $X=0 $Y=0 $dt=0
+M1 1 2 3 1 ne3 L=3.5e-07 W=5e-06 AD=2.4e-12 AS=1.35e-12 PD=1.096e-05 PS=5.54e-06 $X=890 $Y=0 $dt=0
+.ends ne3_CDNS_724652447320
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_724652447322                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_724652447322 1 2 3
+** N=3 EP=3 FDC=1
+M0 3 2 1 1 ne3 L=5e-06 W=5e-06 AD=2.4e-12 AS=2.4e-12 PD=1.096e-05 PS=1.096e-05 $X=0 $Y=0 $dt=0
+.ends ne3_CDNS_724652447322
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pe3_CDNS_724652447323                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pe3_CDNS_724652447323 1 2 3 4
+*.DEVICECLIMB
+** N=5 EP=4 FDC=1
+M0 3 2 1 4 pe3 L=5e-07 W=4e-06 AD=1.92e-12 AS=1.92e-12 PD=8.96e-06 PS=8.96e-06 $X=0 $Y=0 $dt=1
+.ends pe3_CDNS_724652447323
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_3_CDNS_724652447324                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_3_CDNS_724652447324 1 2
+** N=2 EP=2 FDC=1
+R0 2 1 L=0.00283888 W=4e-06 $[rpp1k1_3] $SUB=1 $X=-4220 $Y=0 $dt=5
+.ends rpp1k1_3_CDNS_724652447324
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: rpp1k1_3_CDNS_724652447327                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt rpp1k1_3_CDNS_724652447327 1 2 3
+** N=3 EP=3 FDC=1
+R0 2 1 L=0.00411438 W=4e-06 $[rpp1k1_3] $SUB=3 $X=-4220 $Y=0 $dt=5
+.ends rpp1k1_3_CDNS_724652447327
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pe3_CDNS_724652447326                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pe3_CDNS_724652447326 1 2 3
+*.DEVICECLIMB
+** N=4 EP=3 FDC=1
+M0 3 2 1 1 pe3 L=5e-06 W=1e-05 AD=4.8e-12 AS=4.8e-12 PD=2.096e-05 PS=2.096e-05 $X=0 $Y=0 $dt=1
+.ends pe3_CDNS_724652447326
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A1                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A1 1 2 3 4 5
+*.DEVICECLIMB
+** N=6 EP=5 FDC=2
+X0 1 2 3 pe3_CDNS_724652447326 $T=1510 1030 0 0 $X=0 $Y=0
+X1 1 4 5 pe3_CDNS_724652447326 $T=7750 1030 0 0 $X=6240 $Y=0
+.ends MASCO__A1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: ne3_CDNS_724652447321                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt ne3_CDNS_724652447321 1 2 3
+** N=3 EP=3 FDC=1
+M0 3 2 1 1 ne3 L=5e-06 W=1e-05 AD=4.8e-12 AS=4.8e-12 PD=2.096e-05 PS=2.096e-05 $X=0 $Y=0 $dt=0
+.ends ne3_CDNS_724652447321
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: MASCO__A2                                       *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt MASCO__A2 1 2 3 4
+** N=4 EP=4 FDC=2
+X0 1 2 2 ne3_CDNS_724652447321 $T=800 400 0 0 $X=0 $Y=0
+X1 1 4 3 ne3_CDNS_724652447321 $T=7040 400 0 0 $X=6240 $Y=0
+.ends MASCO__A2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: por2                                            *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt por2 BG_REF BIAS GNDA POR_OUT_L VDDA
+** N=11 EP=5 FDC=95
+X223 VDDA GNDA 6 POR_OUT_L STE_3VX4 $T=97905 155845 0 0 $X=97475 $Y=155205
+X224 GNDA 8 6 ne3_CDNS_724652447320 $T=93475 156435 0 0 $X=92675 $Y=155905
+X225 GNDA 7 8 ne3_CDNS_724652447322 $T=79640 140720 0 0 $X=78840 $Y=140320
+X226 GNDA 7 7 ne3_CDNS_724652447322 $T=85880 140720 0 0 $X=85080 $Y=140320
+X227 4 BG_REF 7 VDDA pe3_CDNS_724652447323 $T=81690 161500 0 0 $X=80180 $Y=160470
+X228 4 10 8 VDDA pe3_CDNS_724652447323 $T=83430 161500 0 0 $X=81920 $Y=160470
+X229 GNDA 10 rpp1k1_3_CDNS_724652447324 $T=301000 19305 1 90 $X=300780 $Y=14145
+X230 10 VDDA GNDA rpp1k1_3_CDNS_724652447327 $T=292340 141005 0 90 $X=121980 $Y=135845
+X231 VDDA VDDA VDDA 5 4 MASCO__A1 $T=25645 178655 0 0 $X=25645 $Y=178655
+X232 VDDA VDDA VDDA 5 5 MASCO__A1 $T=25645 196715 0 0 $X=25645 $Y=196715
+X233 VDDA VDDA VDDA 5 4 MASCO__A1 $T=25645 214775 0 0 $X=25645 $Y=214775
+X234 VDDA 5 5 5 4 MASCO__A1 $T=38125 178655 0 0 $X=38125 $Y=178655
+X235 VDDA 5 4 5 6 MASCO__A1 $T=38125 196715 0 0 $X=38125 $Y=196715
+X236 VDDA 5 5 5 4 MASCO__A1 $T=38125 214775 0 0 $X=38125 $Y=214775
+X237 VDDA 5 5 5 4 MASCO__A1 $T=50605 178655 0 0 $X=50605 $Y=178655
+X238 VDDA 5 4 5 5 MASCO__A1 $T=50605 196715 0 0 $X=50605 $Y=196715
+X239 VDDA 5 5 5 4 MASCO__A1 $T=50605 214775 0 0 $X=50605 $Y=214775
+X240 VDDA 5 5 5 4 MASCO__A1 $T=63085 178655 0 0 $X=63085 $Y=178655
+X241 VDDA 5 6 5 5 MASCO__A1 $T=63085 196715 0 0 $X=63085 $Y=196715
+X242 VDDA 5 5 5 4 MASCO__A1 $T=63085 214775 0 0 $X=63085 $Y=214775
+X243 VDDA 5 5 VDDA VDDA MASCO__A1 $T=75565 178655 0 0 $X=75565 $Y=178655
+X244 VDDA VDDA VDDA VDDA VDDA MASCO__A1 $T=75565 196715 0 0 $X=75565 $Y=196715
+X245 VDDA VDDA VDDA VDDA VDDA MASCO__A1 $T=75565 214775 0 0 $X=75565 $Y=214775
+X246 GNDA GNDA BIAS BIAS MASCO__A2 $T=18935 140345 0 0 $X=18935 $Y=140345
+X247 GNDA GNDA BIAS BIAS MASCO__A2 $T=18935 155315 0 0 $X=18935 $Y=155315
+X248 GNDA BIAS 5 BIAS MASCO__A2 $T=31415 140345 0 0 $X=31415 $Y=140345
+X249 GNDA BIAS BIAS BIAS MASCO__A2 $T=31415 155315 0 0 $X=31415 $Y=155315
+X250 GNDA BIAS BIAS BIAS MASCO__A2 $T=43895 140345 0 0 $X=43895 $Y=140345
+X251 GNDA BIAS BIAS BIAS MASCO__A2 $T=43895 155315 0 0 $X=43895 $Y=155315
+X252 GNDA BIAS GNDA GNDA MASCO__A2 $T=56375 140345 0 0 $X=56375 $Y=140345
+X253 GNDA GNDA GNDA GNDA MASCO__A2 $T=56375 155315 0 0 $X=56375 $Y=155315
+X254 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=15895 $Y=16925 $dt=2
+X255 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=15895 $Y=74765 $dt=2
+X256 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=68895 $Y=16925 $dt=2
+X257 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=68895 $Y=74765 $dt=2
+X258 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=121895 $Y=16925 $dt=2
+X259 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=121895 $Y=74765 $dt=2
+X260 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=174895 $Y=16925 $dt=2
+X261 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=174895 $Y=74765 $dt=2
+X262 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=227895 $Y=16925 $dt=2
+X263 6 GNDA GNDA MOSVC3 w=5e-05 l=5e-05 $X=227895 $Y=74765 $dt=2
+D10 GNDA VDDA p_dnw AREA=2.52272e-09 PJ=0.00028212 perimeter=0.00028212 $X=17665 $Y=173815 $dt=3
+D11 GNDA VDDA p_dnw AREA=8.09228e-11 PJ=4.5e-05 perimeter=4.5e-05 $X=79040 $Y=154130 $dt=3
+D12 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=15095 $Y=16495 $dt=4
+D13 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=15095 $Y=74335 $dt=4
+D14 GNDA VDDA p_dnw3 AREA=7.74011e-10 PJ=0 perimeter=0 $X=25645 $Y=178655 $dt=4
+D15 GNDA VDDA p_dnw3 AREA=7.74011e-10 PJ=0 perimeter=0 $X=25645 $Y=196715 $dt=4
+D16 GNDA VDDA p_dnw3 AREA=7.74011e-10 PJ=0 perimeter=0 $X=25645 $Y=214775 $dt=4
+D17 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=68095 $Y=16495 $dt=4
+D18 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=68095 $Y=74335 $dt=4
+D19 GNDA VDDA p_dnw3 AREA=3.18756e-11 PJ=0 perimeter=0 $X=80180 $Y=160470 $dt=4
+D20 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=121095 $Y=16495 $dt=4
+D21 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=121095 $Y=74335 $dt=4
+D22 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=174095 $Y=16495 $dt=4
+D23 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=174095 $Y=74335 $dt=4
+D24 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=227095 $Y=16495 $dt=4
+D25 GNDA GNDA p_dnw3 AREA=1.24376e-10 PJ=0.00020492 perimeter=0.00020492 $X=227095 $Y=74335 $dt=4
+.ends por2

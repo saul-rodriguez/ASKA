@@ -1,0 +1,146 @@
+*******************************************************
+*
+*  spfchecker  version 23.1.0 64bit 11/13/2023 20:39 (csvcm36c-1)
+*  sub-version  23.1.0.305.isr3 
+*  MMSIM Standard Parasitic Format Checker
+*  Copyright(C) 2006-2019, Cadence Design Systems, Inc.
+*
+*  User: saul   Host: phoenix   HostID: A0F02   PID: 21246 
+*
+*******************************************************
+
+Current Working Dir: /home/saul/projects/ASKA
+Command Line Input: /pkg/cadence/installs/SPECTRE231/tools/emir/bin/64bit/spfchecker /home/saul/projects/ASKA/Voltus/emir_test_2.dspf -force
+
+SPFChecker started at: Wed Aug  7 04:30:41 2024
+
+Connecting to License Server ... Done.
+Successful checkout of Virtuoso_Multi_mode_Simulation license with total wait time of 0 sec.
+(line 19) .SUBCKT emir_test_2
+  0 : gnda
+  1 : vdda
+
+*** In NET "gnda" (line 36) ***:
+SPF-0027(line 52): rg1 gnda#1 XRR5#POS 0.820080 : missing x/y coordinates.
+SPF-0027(line 53): rg2 gnda#3 XRR6#POS 0.820080 : missing x/y coordinates.
+SPF-0027(line 54): rg3 gnda#5 XRR7#POS 0.820080 : missing x/y coordinates.
+SPF-0027(line 55): rg4 gnda#7 XRR11#POS 0.820080 : missing x/y coordinates.
+SPF-0027(line 56): rg5 gnda#9 XRR0#POS 0.820080 : missing x/y coordinates.
+SPF-0027(line 57): rg6 gnda#11 XRR1#POS 0.820080 : missing x/y coordinates.
+SPF-0027(line 58): rg7 gnda#13 XRR4#POS 0.820080 : missing x/y coordinates.
+SPF-0027(line 59): rcb8 gnda#7 gnda 0.750000 : missing x/y coordinates.
+SPF-0027(line 60): rcb9 gnda#9 gnda 0.750000 : missing x/y coordinates.
+SPF-0027(line 61): rcb10 gnda#11 gnda 0.750000 : missing x/y coordinates.
+SPF-0027(line 62): rcb11 gnda#13 gnda 0.750000 : missing x/y coordinates.
+SPF-0027(line 63): rcb12 gnda#1 gnda 0.750000 : missing x/y coordinates.
+SPF-0027(line 64): rcb13 gnda#3 gnda 0.750000 : missing x/y coordinates.
+SPF-0027(line 65): rcb14 gnda#5 gnda 0.750000 : missing x/y coordinates.
+NET Inventory:
+	Element    : 	      Number 	  Min Value 	  Max Value
+	Resistor   : 	          14	       0.75 	    0.82008
+	Capacitor  : 	           0
+	CCap       : 	           0
+	Subnode    : 	          14
+	  *|I      : 	           7
+	  *|P      : 	           1
+	  *|S      : 	           7
+---
+SPF-0024(line 36): In NET "gnda" 14 resistor(s) have no X/Y coordinates ($x=... $y=...).
+
+*** In NET "vdda" (line 67) ***:
+SPF-0027(line 92): rg15 XRR5#NEG vdda#2 0.820080 : missing x/y coordinates.
+SPF-0027(line 93): rg16 XRR6#NEG vdda#4 0.820080 : missing x/y coordinates.
+SPF-0027(line 94): rg17 XRR7#NEG vdda#6 0.820080 : missing x/y coordinates.
+SPF-0027(line 95): rg18 XRR11#NEG vdda#8 0.820080 : missing x/y coordinates.
+SPF-0027(line 96): rg19 XRR0#NEG vdda#10 0.820080 : missing x/y coordinates.
+SPF-0027(line 97): rg20 XRR1#NEG vdda#12 0.820080 : missing x/y coordinates.
+SPF-0027(line 98): rg21 XRR4#NEG vdda#14 0.820080 : missing x/y coordinates.
+SPF-0027(line 99): rf22 vdda#15 vdda#17 68.676819 : missing x/y coordinates.
+SPF-0027(line 100): rf23 vdda#17 vdda 0.591641 : missing x/y coordinates.
+SPF-0027(line 101): rf24 vdda vdda#20 0.675605 : missing x/y coordinates.
+SPF-0027(line 102): rf25 vdda#20 vdda#21 1.719860 : missing x/y coordinates.
+SPF-0027(line 103): rf26 vdda vdda#26 22.455324 : missing x/y coordinates.
+SPF-0027(line 104): rf27 vdda#26 vdda#27 0.579552 : missing x/y coordinates.
+SPF-0027(line 105): rf28 vdda#20 vdda#28 5.531967 : missing x/y coordinates.
+SPF-0027(line 106): rf29 vdda#28 vdda#29 0.574690 : missing x/y coordinates.
+SPF-0027(line 107): rf30 vdda#26 vdda#30 0.590048 : missing x/y coordinates.
+SPF-0027(line 108): rcb31 vdda#6 vdda#15 0.750000 : missing x/y coordinates.
+SPF-0027(line 109): rcb32 vdda#4 vdda#26 0.750000 : missing x/y coordinates.
+SPF-0027(line 110): rcb33 vdda#2 vdda#28 0.750000 : missing x/y coordinates.
+SPF-0027(line 111): rcb34 vdda#14 vdda#21 0.750000 : missing x/y coordinates.
+SPF-0027(line 112): rcb35 vdda#12 vdda#21 0.750000 : missing x/y coordinates.
+SPF-0027(line 113): rcb36 vdda#10 vdda#21 0.750000 : missing x/y coordinates.
+NET Inventory:
+	Element    : 	      Number 	  Min Value 	  Max Value
+	Resistor   : 	          23	    0.57469 	     68.677
+	Capacitor  : 	           0
+	CCap       : 	           0
+	Subnode    : 	          23
+	  *|I      : 	           7
+	  *|P      : 	           1
+	  *|S      : 	          16
+---
+SPF-0024(line 67): In NET "vdda" 23 resistor(s) have no X/Y coordinates ($x=... $y=...).
+
+Instance Section at line 116
+
+*** Summary ***:
+
+Element Inventory:
+	Element    : 	Total Number 	  Min Value 	  Max Value
+	Net        : 	           2 	  NoTaps:0  NoEffectiveRes:0
+	Nodes      : 	          41
+	  *|I      : 	          14
+	  *|P      : 	           2
+	  *|S      : 	          23
+	Instance   : 	           7
+	Resistor   : 	          37 	    0.57469 	     68.677
+	Capacitor  : 	           0 
+	CCap       : 	           0
+Resistance Distribution:
+	   Resistance :   Num of Res     Percentage     Accumulated
+	( -inf   1e-6]:            0         0.000%
+	( 1e-6   1e-4]:            0         0.000%          0.000%
+	( 1e-4  0.001):            0         0.000%          0.000%
+	[0.001  0.001]:            0         0.000%          0.000%
+	(0.001    0.1]:            0         0.000%          0.000%
+	(  0.1      1]:           33        89.189%         89.189%
+	(    1     10]:            2         5.405%         94.595%
+	(   10    100]:            2         5.405%        100.000%
+	(  100   1000]:            0         0.000%        100.000%
+	( 1000    1e4]:            0         0.000%        100.000%
+	(  1e4    1e6]:            0         0.000%        100.000%
+	(  1e6   +inf):            0         0.000%        100.000%
+Geometric Parameters:
+	Max XY   =     318.24                line 37        : *|p gnda  X=318.2400 Y=21.0950
+	Min WL   =       0.32                line 99        : rf22 vdda#15 vdda#17 L=285.892487 W=0.32
+	Max WL   =     285.95                line 103       : rf26 vdda vdda#26 L=285.954987 W=0.98
+	Min Area =      0.484                line 59        : rcb8 gnda#7 gnda A=0.484
+	Max Area =      0.484                line 59        : rcb8 gnda#7 gnda A=0.484
+Message Statistics:
+	SPF-0024   :	           2	       NETs with resistors without x/y coordinates
+	SPF-0027   :	          74	       Resistors without x/y coordinates
+Layer Names: 3
+	1      met1
+	2      poly1
+	3      cont
+Models: 1
+	0      rpp1k1
+*** Suggest Instance Terminal Aliases:
+	spf aliasterm = "rpp1k1  1=POS  2=NEG"
+
+The minimum bounding box for this dspf block is (2.66, 10.785, 317.061, 87.855)
+
+Output Files:
+	emir_test_2.dspf.chklog      : Detailed log
+	emir_test_2.dspf.spfinfo     : SPF element inventory
+	emir_test_2.dspf.emir_conf   : To be included in your emir config file
+	emir_test_2.dspf.stitch_opts : To be used for stitching (Spice syntax)
+	emir_test_2.dspf.pin_info    : NET PIN X Y Layer info
+
+Checking in license Virtuoso_Multi_mode_Simulation ... Done.
+
+*** End-time: Wed Aug  7 04:30:41 2024
+*** Time accumulated: elapsed: 90.0 ms (0h 0m 0s), CPU: 10.0 ms (0h 0m 0s), system: 0 s (0h 0m 0s), util: 11%
+*** Peak Memory Usage: 14.7824 M
+spfchecker completed successfully.

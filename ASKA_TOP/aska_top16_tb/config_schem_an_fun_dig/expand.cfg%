@@ -1,0 +1,57 @@
+//Revision 13
+//NOTE
+// Default austriamicrosystems template for AMS Designer
+// Note:
+//      Please remember to replace the Library, Cell, and View fields
+//      for the Top Cell with the actual names used by your design.
+//END_NOTE
+
+config aska_top16_tb;
+design ASKA_TOP.aska_top16_tb:schematic;
+
+const digital behavioral, functional, schematic, symbol;
+const analog veriloga, functional, schematic, symbol;
+liblist basic, analogLib, ASKA_DIG, VLG_PRIMITIVES, IO_CELLS_JIC3V;
+
+viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
+stoplist symbol, spectre;
+
+
+cell ASKA_BANDGAP.bandgap_su binding :schematic;
+
+cell ASKA_CONSTANT_GM.constant_gm binding :schematic;
+
+cell ASKA_CURRENT_SOURCE.current_source_gm_10_en_r binding :schematic;
+
+cell ASKA_DAC6B.dac6b_amp_n2 binding :schematic;
+
+cell ASKA_HVSWITCH.hvswitch8 binding :schematic;
+
+cell ASKA_POR.por2 binding :schematic;
+
+cell ASKA_REF_BIAS.ref_bias binding :schematic;
+
+cell IO_CELLS_JIC3V.APR00DPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.APR04DPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_andio_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_anrdio_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_ne3i_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_ne3is_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_pe3i_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_resp_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.GNDORPADPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.GNDPADPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.ICPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.PSUBPADPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.PWRCUTDCPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.VDDORPADPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.VDDPADPC binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_bufc_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_esd1_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_ipdio_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_ndtr_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_opdio_pc binding :cmos_sch;
+cell IO_CELLS_JIC3V.jio_lviodio_pc binding :cmos_sch;
+
+
+endconfig

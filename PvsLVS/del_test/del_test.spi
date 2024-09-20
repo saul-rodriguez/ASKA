@@ -1,0 +1,49 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : del_test                                     *
+* Netlisted  : Fri Aug 23 11:27:24 2024                     *
+* PVS Version: 23.11-s036 Wed Jan 17 18:11:41 PST 2024      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(ne3) nem ndiff(D) p1trm(G) ndiff(S) bulk(B)
+*.DEVTMPLT 1 MP(pe3) pem pdiff(D) p1trm(G) pdiff(S) nwtrm(B)
+*.DEVTMPLT 2 D(p_dnw3) p_dnwm bulk(POS) nwtrm(NEG)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: IN_3VX2                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt IN_3VX2 vdd3! gnd! A Q
+** N=4 EP=4 FDC=5
+M0 Q A gnd! gnd! ne3 L=3.5e-07 W=4.8e-07 AD=1.296e-13 AS=4.408e-13 PD=1.02e-06 PS=3.52e-06 $X=500 $Y=1070 $dt=0
+M1 gnd! A Q gnd! ne3 L=3.5e-07 W=4.8e-07 AD=4.408e-13 AS=1.296e-13 PD=3.52e-06 PS=1.02e-06 $X=1390 $Y=1070 $dt=0
+M2 Q A vdd3! vdd3! pe3 L=3.00472e-07 W=1.45971e-06 AD=2.751e-13 AS=8.151e-13 PD=1.87971e-06 PS=4.50971e-06 $X=560 $Y=2410 $dt=1
+M3 vdd3! A Q vdd3! pe3 L=3.00472e-07 W=1.45971e-06 AD=8.01e-13 AS=2.751e-13 PD=4.48971e-06 PS=1.87971e-06 $X=1400 $Y=2410 $dt=1
+D4 gnd! vdd3! p_dnw3 AREA=9.734e-12 PJ=1.248e-05 perimeter=1.248e-05 $X=-430 $Y=1980 $dt=2
+.ends IN_3VX2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: IN_3VX4                                         *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt IN_3VX4 vdd3! gnd! Q A
+** N=4 EP=4 FDC=8
+M0 gnd! A Q gnd! ne3 L=3.5e-07 W=8e-07 AD=4.148e-13 AS=3.84e-13 PD=1.98e-06 PS=2.56e-06 $X=620 $Y=750 $dt=0
+M1 Q A gnd! gnd! ne3 L=3.5e-07 W=8e-07 AD=2.16e-13 AS=4.148e-13 PD=1.34e-06 PS=1.98e-06 $X=1710 $Y=750 $dt=0
+M2 gnd! A Q gnd! ne3 L=3.5e-07 W=8e-07 AD=9.852e-13 AS=2.16e-13 PD=4.14e-06 PS=1.34e-06 $X=2600 $Y=750 $dt=0
+M3 Q A vdd3! vdd3! pe3 L=3.00566e-07 W=1.47006e-06 AD=2.54913e-13 AS=5.79287e-13 PD=1.86506e-06 PS=3.69506e-06 $X=475 $Y=2410 $dt=1
+M4 vdd3! A Q vdd3! pe3 L=3.00566e-07 W=1.47006e-06 AD=2.83187e-13 AS=2.54913e-13 PD=1.86506e-06 PS=1.86506e-06 $X=1315 $Y=2410 $dt=1
+M5 Q A vdd3! vdd3! pe3 L=3.00566e-07 W=1.47006e-06 AD=2.54913e-13 AS=2.83187e-13 PD=1.86506e-06 PS=1.86506e-06 $X=1865 $Y=2410 $dt=1
+M6 vdd3! A Q vdd3! pe3 L=3.00566e-07 W=1.47006e-06 AD=1.48669e-12 AS=2.54913e-13 PD=5.27506e-06 PS=1.86506e-06 $X=2705 $Y=2410 $dt=1
+D7 gnd! vdd3! p_dnw3 AREA=1.50092e-11 PJ=1.584e-05 perimeter=1.584e-05 $X=-430 $Y=1980 $dt=2
+.ends IN_3VX4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: del_test                                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt del_test GNDD IN OUT OUT2 VDDD
+** N=7 EP=5 FDC=26
+X6 VDDD GNDD 4 OUT IN_3VX2 $T=2999540 25295 0 0 $X=2999110 $Y=24655
+X7 VDDD GNDD 1 OUT2 IN_3VX2 $T=2999540 66790 1 0 $X=2999110 $Y=61670
+X8 VDDD GNDD 4 IN IN_3VX4 $T=-4380 25295 0 0 $X=-4810 $Y=24655
+X9 VDDD GNDD 1 IN IN_3VX4 $T=-4380 66790 1 0 $X=-4810 $Y=61670
+.ends del_test

@@ -1,0 +1,50 @@
+// VerilogA for REF_BIAS, ref_bias, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module ref_bias(BIAS, GNDA, OUT1, OUT2, RES_BIAS, VDDA, VREF);
+inout BIAS;
+electrical BIAS;
+inout GNDA;
+electrical GNDA;
+inout OUT1;
+electrical OUT1;
+inout OUT2;
+electrical OUT2;
+inout RES_BIAS;
+electrical RES_BIAS;
+inout VDDA;
+electrical VDDA;
+inout VREF;
+electrical VREF;
+
+parameter real tt = 10e-9;
+
+real bias_in;
+real vref;
+real out1,out2,res_bias;
+
+analog begin
+	bias_in = I(BIAS);
+	vref = V(VREF);
+	
+	if (bias_in > 0.5e-6 && vref > 1.0 ) begin
+		res_bias = vref;
+		out1 = 1e-6;
+		out2 = 1e-6;
+	end else begin
+		res_bias = 0;
+		out1 = 0;
+		out2 = 0;
+	
+	end 
+
+
+	V(RES_BIAS) <+ res_bias;
+		
+	V(BIAS) <+ bias_in*1e6;
+
+end
+
+endmodule

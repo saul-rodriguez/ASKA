@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "pulse_generator"
+  repList "auCdl schematic cmos_sch"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/saul/projects/ASKA/PvsLVS/pulse_generator/"
+ )
+( model
+( "ASKA_PULSE_GENERATOR/pulse_generator/schematic" "pulse_generator" )
+( "ASKA_CURRENT_SOURCE/current_source_gm_10_en_r/schematic" "current_source_gm_10_en_r" )
+( "ASKA_DAC6B/dac6b_amp_n2/schematic" "dac6b_amp_n2" )
+ )
+( "dac6b_amp_n2" "ihnl/cds1/map" )
+( "current_source_gm_10_en_r" "ihnl/cds0/map" )
+( "pulse_generator" "ihnl/cds2/map" )
+ )

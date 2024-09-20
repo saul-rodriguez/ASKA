@@ -1,0 +1,35 @@
+// VerilogA for CURRENT_SOURCE, current_source_gm_5, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module current_source_gm_7(BIAS, FB, GNDA, GNDHV, IN, OUT, VDD3A, VDDHV, VSUBHV);
+inout BIAS;
+electrical BIAS;
+inout FB;
+electrical FB;
+inout GNDA;
+electrical GNDA;
+inout GNDHV;
+electrical GNDHV;
+inout IN;
+electrical IN;
+inout OUT;
+electrical OUT;
+inout VDD3A;
+electrical VDD3A;
+inout VDDHV;
+electrical VDDHV;
+inout VSUBHV;
+electrical VSUBHV;
+
+parameter real gain = 10000;
+
+analog begin
+
+	V(OUT,FB) <+ gain*V(IN,FB);
+	
+	V(BIAS,GNDA) <+ I(BIAS,GNDA)*10000; //Fix a voltage at BIAS 
+end
+
+endmodule

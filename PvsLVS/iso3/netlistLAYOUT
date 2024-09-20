@@ -1,0 +1,13 @@
+** Layout Netlist, pvs precompare
+** 
+
+.subckt NE3I_6 D G S B NW SB 
+*.SWAP  (p D S)
+.ends
+
+
+.subckt iso3 IN1 OUT1 PSUB VDD VSS 
+X0/X0 VSS IN1 OUT1 VSS VDD PSUB NE3I_6 w=2e-06 l=3.5e-07 as=9.6e-13 ad=9.6e-13 ps=4.96e-06 pd=4.96e-06 m=1 
+.ends
+
+

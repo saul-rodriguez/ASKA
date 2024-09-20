@@ -1,0 +1,53 @@
+#
+# OPTION COMMAND FILE created byCadence Quantus Extraction Version 23.1.0-p075 from CCL
+#
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "VSUBHV"
+extract \
+	 -selection "all" \
+	 -type "c_only_coupled"
+extraction_setup \
+	 -analysis "em" \
+	 -net_name_space "LAYOUT" \
+	 -split_via_by_unit_area false
+filter_coupling_cap \
+	 -coupling_cap_threshold_absolute 50 \
+	 -coupling_cap_threshold_relative 0.01
+input_db -type pvs \
+	 -design_cell_name "hvswitch5 layout HVSWITCH" \
+	 -directory_name "/home/saul/projects/ASKA/PvsLVS/hvswitch5/svdb" \
+	 -format "DFII" \
+	 -library_definitions_file "/home/saul/projects/ASKA/cds.lib" \
+	 -run_name "hvswitch5"
+log_file \
+	 -file_name "/home/saul/projects/ASKA/PvsLVS/hvswitch5/svdb/qrc.hvswitch5.log"
+mos_diffusion_parameter_extraction \
+	 -res "fast"
+output_db -type extracted_view \
+	 -add_explicit_vias true \
+	 -cap_component "p_cap auLvs PRIMLIB" \
+	 -cap_property_name "c" \
+	 -cdl_out_map_directory \
+		"/home/saul/projects/ASKA/PvsLVS/hvswitch5" \
+	 -device_finger_delimiter "@" \
+	 -em_extract true \
+	 -enable_cellview_check true \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_res_length true \
+	 -include_parasitic_res_model "comment" \
+	 -include_parasitic_res_width true \
+	 -include_res_model "false" \
+	 -transfer_net_expression true \
+	 -view_name "analog_extracted_c"
+output_setup \
+	 -directory_name "/home/saul/projects/ASKA/PvsLVS/hvswitch5/svdb" \
+	 -temporary_directory_name "hvswitch5"
+process_technology \
+	 -technology_corner \
+		"default" \
+	 -technology_library_file "/home/saul/projects/ASKA/pvtech.lib" \
+	 -technology_name "XH018_1143"
+
+

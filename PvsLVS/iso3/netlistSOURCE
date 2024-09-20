@@ -1,0 +1,12 @@
+** Schematic Netlist, pvs precompare
+** 
+
+.subckt ne3i_6 D G S B NW SB 
+.ends
+
+
+.subckt iso3 IN1 OUT1 PSUB VDD VSS 
+XM0 OUT1 IN1 VSS VSS VDD PSUB ne3i_6 W=2e-06 L=3.5e-07 m=1 AD=9.6e-13 AS=9.6e-13 PS=4.96e-06 PD=4.96e-06 
+.ends
+
+

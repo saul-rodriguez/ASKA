@@ -1,0 +1,55 @@
+# File Created by saul at Tue Sep 17 15:44:34 2024
+# assisted by CdsLibEditor
+# ------------------------------------------------------------------------------
+# XKIT library definition files
+#   xh018.lib:
+#     - contains X-FAB XH018 Cadence library definitions 
+# 	 and must not be changed, exept with tkit -m|--modules
+#     - tkit -m|--modules overwrites this file, any changes will be lost.
+#   cds.lib:
+#     - includes xh018.lib
+#     - can contain customer specific library definitions
+#     xkit -m|--modules does NOT change an existing cds.lib.
+# ------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+# XH018 Cadence library definitions
+
+# X-FAB library definitions
+INCLUDE ./xh018.lib
+
+# Library Manager Combine/Display Definitions
+INCLUDE ./xh018_combine.lib
+
+# ------------------------------------------------------------------------------
+# Add user specific libraries below this line 
+DEFINE CHARACTERIZATION ./CHARACTERIZATION
+DEFINE ALL_TESTS /home/saul/projects/ASKA/ALL_TESTS
+DEFINE CURRENT_SOURCE /home/saul/projects/ASKA/CURRENT_SOURCE
+DEFINE DAC6B /home/saul/projects/ASKA/DAC6B
+DEFINE HVSWITCH /home/saul/projects/ASKA/HVSWITCH
+DEFINE BANDGAP /home/saul/projects/ASKA/BANDGAP
+DEFINE CONSTANT_GM /home/saul/projects/ASKA/CONSTANT_GM
+#Removed by ddDeleteObj: DEFINE REF_BIAS /home/saul/projects/ASKA/REF_BIAS
+DEFINE REF_BIAS /home/saul/projects/ASKA/REF_BIAS
+DEFINE BIAS /home/saul/projects/ASKA/BIAS
+DEFINE PULSE_GENERATOR /home/saul/projects/ASKA/PULSE_GENERATOR
+DEFINE POR /home/saul/projects/ASKA/POR
+DEFINE ASKA_DIG ./ASKA_DIG
+DEFINE ASKA_TOP /home/saul/projects/ASKA/ASKA_TOP
+DEFINE ASKA_HBRIDGE_4X /home/saul/projects/ASKA/ASKA_HBRIDGE_4X
+DEFINE IORING ./IORING
+DEFINE ASKA_IORING /home/saul/projects/ASKA/ASKA_IORING
+DEFINE ASKA_BANDGAP /home/saul/projects/ASKA/ASKA_BANDGAP
+DEFINE ASKA_POR /home/saul/projects/ASKA/ASKA_POR
+DEFINE ASKA_CONSTANT_GM /home/saul/projects/ASKA/ASKA_CONSTANT_GM
+DEFINE ASKA_REF_BIAS /home/saul/projects/ASKA/ASKA_REF_BIAS
+DEFINE ASKA_BIAS /home/saul/projects/ASKA/ASKA_BIAS
+DEFINE ASKA_PULSE_GENERATOR /home/saul/projects/ASKA/ASKA_PULSE_GENERATOR
+DEFINE ASKA_DAC6B /home/saul/projects/ASKA/ASKA_DAC6B
+DEFINE ASKA_CURRENT_SOURCE /home/saul/projects/ASKA/ASKA_CURRENT_SOURCE
+DEFINE ASKA_HVSWITCH /home/saul/projects/ASKA/ASKA_HVSWITCH
+DEFINE ASKA_DIG2 ./ASKA_DIG2
+DEFINE ASKA_16ELE_TOP_FINAL ./ASKA_16ELE_TOP_FINAL
+DEFINE ASKA_16ELE_TOP_FINAL_BK /home/saul/projects/ASKA/ASKA_16ELE_TOP_FINAL_BK

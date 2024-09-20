@@ -1,0 +1,62 @@
+// VerilogA for DAC6B, dac6b_amp_n, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dac6b_amp_n(BIAS, D0, D1, D2, D3, D4, D5, EN_N, GNDA, VDDA, VOUT, VREF);
+inout BIAS;
+electrical BIAS;
+inout D0;
+electrical D0;
+inout D1;
+electrical D1;
+inout D2;
+electrical D2;
+inout D3;
+electrical D3;
+inout D4;
+electrical D4;
+inout D5;
+electrical D5;
+inout EN_N;
+electrical EN_N;
+inout GNDA;
+electrical GNDA;
+inout VDDA;
+electrical VDDA;
+inout VOUT;
+electrical VOUT;
+inout VREF;
+electrical VREF;
+
+//parameter real vref  = 1 from [0:inf);
+real vref;
+parameter real trise = 1e-9 from [0:inf);
+parameter real tfall = 1e-9 from [0:inf);
+parameter real tdel  = 0 from [0:inf);
+parameter real vtrans  = 1.5;
+
+real out_scaled; // output scaled as fraction of 64
+real en_l;
+
+analog begin
+
+	out_scaled = 0;
+	out_scaled = out_scaled + ((V(D5) > vtrans) ? 32 : 0);
+	out_scaled = out_scaled + ((V(D4) > vtrans) ? 16 : 0);
+	out_scaled = out_scaled + ((V(D3) > vtrans) ? 8 : 0);
+	out_scaled = out_scaled + ((V(D2) > vtrans) ? 4 : 0);
+	out_scaled = out_scaled + ((V(D1) > vtrans) ? 2 : 0);
+	out_scaled = out_scaled + ((V(D0) > vtrans) ? 1 : 0);
+
+	en_l = (V(EN_N) > vtrans) ? 0 : 1;
+	vref = V(VREF)*1.6896; // (Vbandgap/200k)/10*52.8k*65 = Vbandgap * 1.6896
+	V(VOUT) <+ transition( vref*out_scaled/64, tdel, trise, tfall );
+
+
+
+V(BIAS) <+ I(BIAS)*1e6;
+
+end
+
+endmodule

@@ -1,0 +1,40 @@
+//Revision 31
+//NOTE
+// Default austriamicrosystems template for AMS Designer
+// Note:
+//      Please remember to replace the Library, Cell, and View fields
+//      for the Top Cell with the actual names used by your design.
+//END_NOTE
+
+config aska_core_tb;
+design ASKA_TOP.aska_core_tb:schematic;
+
+const digital behavioral, functional, schematic, symbol;
+const analog veriloga, functional, schematic, symbol;
+liblist basic, analogLib, ASKA_DIG;
+
+viewlist behavioral, \module , schematic, spectre, symbol;
+stoplist symbol, spectre;
+
+
+cell D_CELLS_3V.STE_3VX4 binding :cmos_sch;
+
+cell ASKA_DIG.DIG_stimulus binding :verilogams;
+cell ASKA_DIG.aska_dig binding :schematic;
+
+cell DAC6B.dac6b_amp_n2 binding :schematic;
+
+cell BANDGAP.bandgap_su binding :schematic;
+
+cell CONSTANT_GM.constant_gm binding :schematic;
+
+cell POR.por2 binding :schematic;
+
+cell REF_BIAS.ref_bias binding :schematic;
+
+cell CURRENT_SOURCE.current_source_gm_10_en_r binding :schematic;
+
+cell HVSWITCH.hvswitch5 binding :schematic;
+
+
+endconfig

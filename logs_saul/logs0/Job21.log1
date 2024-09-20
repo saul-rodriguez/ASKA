@@ -1,0 +1,1044 @@
+\# Program start time:     UTC 2024.09.19 06:33:33.614
+\# Local time: CEST (UTC+02:00) 2024.09.19 08:33:33.614
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 01/30/2024 20:11 (cpgbld02) $
+\o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.35  (64-bit addresses)
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5172 -mpshost s2424 -davinciService DaVinciService_5172_1726726179 -log /home/saul/projects/ASKA/logs_saul/logs0/Job21.log1 -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.s2424_5172 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 21
+\# Host name (type):	s2424 (x86_64)
+\# Operating system:	Linux 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:2542 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12004000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        620 MB
+\# Available memory:	     78,091 MB
+\# System memory:	     96,361 MB
+\# Maximum memory size:	     96,032 MB
+\# Max mem available:	     78,381 MB
+\# Initial memory used:	        291 MB
+\#        process size:	      1,888 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424:/home/saul/projects/ASKA
+\# Process Id:		14697
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\# Memory report: using         395 MB, process size 1,999 MB at UTC 2024.09.19 06:33:35.071
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5172, host=s2424). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 14697 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [08:33:33.512417] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\o Loading .cdsinit for the XH018 X-Fab XKit.
+\o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
+\o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
+\o ** Info: PDK loadpath is "/pkg/xfab2/XKIT/xh018/cadence/v9_0/PDK/IC61/v9_0_4"
+\o Loading XfSktTools.cxt
+\o Loading XfMenu.cxt
+\o Loading XfTechXh018.cxt
+\o Loading XfPcellCore.cxt
+\o function ansiSpicePrintProperties_subcircuit redefined
+\o Loading XfSkillExt.cxt
+\o Initializing library.
+\o Finished Initializing Library .
+\o     Generic PcellKit: 'production' loaded.
+\o     Generic Pcell Skill Tools: 'production' loaded.
+\o Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+\o     LOAD THE ENVIRONMENT FILE
+\o  --> Setting the required PDK definitions...
+\o     GDSII LAYER MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmInOut.layertable"
+\o     GDSII OBJECT MAPPING FILE = "./.xkit/setup/xh018/cadence/PDK/TECH_XH018_1143/strmOutObjects.map"
+\o Use model setup from PDK...
+\o Loading spectrei.cxt 
+\# Memory report: using         512 MB, process size 2,239 MB at UTC 2024.09.19 06:33:37.304
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading vdsil.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o  --> Finished setting the required PDK definitions
+\o  --> Setting the recommended EDA tool defaults...
+\o  --> Finished setting the recommended EDA tool defaults
+\o     LOAD DEFAULT BINDKEYS
+\o Loading viva.cxt 
+\o  --> AssuraTools Setup not available
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 14697' to open it when Virtuoso freezes.
+\# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = ASKA_TOP
+\o 	Cell         = aska_top16_tb
+\o 	View         = config_analog_extracted
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ASKA_TOP:aska_top16_tb:1_none_Interactive.18
+\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/1/ASKA_TOP:aska_top16_tb:1
+\o 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/ASKA/Sim
+\o 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o WARNING (AMS-1058): The rule 'ConnRules_inhconn_full_fast_gnd' has been specified twice for the library 'xfab_connectLib' in the connectRules.il file. Therefore, the second occurrence of this rule has been ignored.
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o     LOAD GENERIC "X-KIT" SKILL CONTEXT "./.xkit/setup/x_all/cadence/xenv/skill/context6/xkit.cxt" 
+\o  - Menu "XKit Utilities" installed to CIW.
+\o     LOAD ".cdsinit_personal" FILE FROM THE WORKING DIRECTORY.
+\o     INFO: To customize this setup, please use the following environment variables:
+\o           CUSTOM_SCRIPT_PATH - should point to the master shell or perl script
+\o                              e.g.:
+\o                              setenv CUSTOM_SCRIPT_PATH /path/to/my/script/LoadMyScripts.csh
+\o           CUSTOM_SKILL_PATH - should point to your master skill load file
+\o                              e.g.:
+\o                              setenv CUSTOM_SKILL_PATH /path/to/my/skill/LoadMySkills.il
+\o  loading default key binding 
+\o  -> END LOAD ".cdsinit" FILE
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 8) on testbench [
+\o           ASKA_TOP:aska_top16_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var ADDR0 = "0"
+\o Setting var ADDR1 = "0"
+\o Setting var POR_PULSE = "0"
+\o Setting var RES = "100"
+\o Setting var VDD3 = "3.3"
+\o Setting var VDD3_PULSE = "0"
+\o Setting var VDDHV = "40"
+\o Setting var VDDHV_PULSE = "0"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/8/ASKA_TOP:aska_top16_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/8/ASKA_TOP:aska_top16_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 8)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o Loading seCore.cxt 
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/8/ASKA_TOP:aska_top16_tb:1/netlist/digital/control
+\o Begin Netlisting Sep 19 08:33:41 2024
+\# [08:33:41.484235] Periodic Lic check successful
+\# [08:33:41.484241] Feature usage summary:
+\o Loading verilogAMSNet.cxt 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/8/ASKA_TOP:aska_top16_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\# Memory report: using         988 MB, process size 2,721 MB at UTC 2024.09.19 06:33:42.299
+\# Available memory:         67,818 MB at UTC 2024.09.19 06:33:44.200
+\# Memory report: Maximum memory size now 68,994 MB at UTC 2024.09.19 06:33:44.200
+\# Thread usage report: 38 active threads, active load 1.40 at UTC 2024.09.19 06:33:44.200
+\# Memory report: using       1,176 MB, process size 2,909 MB at UTC 2024.09.19 06:33:44.200
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o Loading digitalSim.cxt 
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele/analog_extracted_Conly_50fF' cannot be generated because either split buses or bundle terminals are present in it.
+\o  Therefore, an implicit netlist for this instance has been generated. 
+\o 
+\o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+\o 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     pe3i                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3i                        spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     pmb                         spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dp3                       spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     dp3                         spectre              *Stopping View*  
+\o PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dphnw                       spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+\o PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
+\o PRIMLIB                     dn3                         spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
+\o PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+\o PRIMLIB                     ddnw                        spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw                       spectre              *Stopping View*  
+\o PRIMLIB                     rdn3                        spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     p_cap                       spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     s_res                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rnp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     rdp3                        spectre              *Stopping View*  
+\o PRIMLIB                     dhpw                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+\o ASKA_TOP                    aska_top16_tb               schematic                             
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele              analog_extracted_Conly_50fF                  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o Loading hnlInit.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/8/ASKA_TOP:aska_top16_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Loading json.cxt 
+\o Running netlist assembly..
+\# Available memory:         61,073 MB at UTC 2024.09.19 06:34:47.875
+\# Memory report: Maximum memory size now 62,325 MB at UTC 2024.09.19 06:34:47.875
+\o .........
+\o End netlisting Sep 19 08:34:55 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o Loading cdf.cxt 
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: using       1,277 MB, process size 3,010 MB at UTC 2024.09.19 06:34:56.308
+\o 
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_top16_tb:1
+\o           ] for Point ID (3 8).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/8/ASKA_TOP:aska_top16_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 65,491 MB at UTC 2024.09.19 06:34:57.435
+\o Loading paraplot.cxt 
+\# Memory report: Maximum memory size now 63,605 MB at UTC 2024.09.19 06:35:07.302
+\# Available memory:         51,190 MB at UTC 2024.09.19 06:35:17.302
+\# Memory report: Maximum memory size now 52,486 MB at UTC 2024.09.19 06:35:17.302
+\# Available memory:         43,611 MB at UTC 2024.09.19 06:35:27.302
+\# Memory report: Maximum memory size now 44,906 MB at UTC 2024.09.19 06:35:27.302
+\# Available memory:         38,912 MB at UTC 2024.09.19 06:35:37.303
+\# Memory report: Maximum memory size now 40,207 MB at UTC 2024.09.19 06:35:37.303
+\# Memory report: Maximum memory size now 39,349 MB at UTC 2024.09.19 06:37:07.301
+\# Memory report: Maximum memory size now 38,393 MB at UTC 2024.09.19 06:44:37.301
+\# Memory report: Maximum memory size now 37,480 MB at UTC 2024.09.19 07:04:17.301
+\# Memory report: Maximum memory size now 40,242 MB at UTC 2024.09.19 07:11:37.301
+\# Memory report: Maximum memory size now 41,033 MB at UTC 2024.09.19 07:13:07.301
+\# Memory report: Maximum memory size now 41,855 MB at UTC 2024.09.19 07:17:37.301
+\# Memory report: Maximum memory size now 40,624 MB at UTC 2024.09.19 07:20:57.301
+\# Memory report: Maximum memory size now 41,499 MB at UTC 2024.09.19 07:23:07.302
+\# Memory report: Maximum memory size now 42,661 MB at UTC 2024.09.19 07:25:57.302
+\# Memory report: Maximum memory size now 43,576 MB at UTC 2024.09.19 07:26:37.301
+\# Available memory:         42,554 MB at UTC 2024.09.19 07:26:47.301
+\# Memory report: Maximum memory size now 42,518 MB at UTC 2024.09.19 07:39:37.302
+\# Memory report: Maximum memory size now 41,417 MB at UTC 2024.09.19 07:41:07.302
+\# Memory report: Maximum memory size now 40,600 MB at UTC 2024.09.19 07:41:47.301
+\# Memory report: Maximum memory size now 41,758 MB at UTC 2024.09.19 07:44:47.301
+\# Memory report: Maximum memory size now 42,593 MB at UTC 2024.09.19 07:45:27.302
+\# Memory report: Maximum memory size now 44,271 MB at UTC 2024.09.19 07:46:17.302
+\# Memory report: Maximum memory size now 45,991 MB at UTC 2024.09.19 07:47:07.302
+\# Memory report: Maximum memory size now 47,691 MB at UTC 2024.09.19 07:54:37.301
+\# Available memory:         48,282 MB at UTC 2024.09.19 07:57:07.302
+\# Memory report: Maximum memory size now 49,577 MB at UTC 2024.09.19 07:57:07.302
+\# Memory report: Maximum memory size now 48,323 MB at UTC 2024.09.19 07:57:47.301
+\# Memory report: Maximum memory size now 47,312 MB at UTC 2024.09.19 07:59:07.302
+\# Memory report: Maximum memory size now 46,176 MB at UTC 2024.09.19 07:59:47.302
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 8) on testbench [
+\o           ASKA_TOP:aska_top16_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 17) on testbench [
+\o           ASKA_TOP:aska_top16_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/17/ASKA_TOP:aska_top16_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/17/ASKA_TOP:aska_top16_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 17)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/17/ASKA_TOP:aska_top16_tb:1/netlist/digital/control
+\o Begin Netlisting Sep 19 10:00:09 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/17/ASKA_TOP:aska_top16_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\# Memory report: Maximum memory size now 49,244 MB at UTC 2024.09.19 08:00:17.257
+\# Memory report: Maximum memory size now 47,936 MB at UTC 2024.09.19 08:00:47.397
+\# Memory report: Maximum memory size now 46,390 MB at UTC 2024.09.19 08:00:57.411
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele/analog_extracted_Conly_50fF' cannot be generated because either split buses or bundle terminals are present in it.
+\o  Therefore, an implicit netlist for this instance has been generated. 
+\o 
+\o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+\o 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     pe3i                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3i                        spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     pmb                         spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dp3                       spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     dp3                         spectre              *Stopping View*  
+\o PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dphnw                       spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+\o PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
+\o PRIMLIB                     dn3                         spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
+\o PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+\o PRIMLIB                     ddnw                        spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw                       spectre              *Stopping View*  
+\o PRIMLIB                     rdn3                        spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     p_cap                       spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     s_res                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rnp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     rdp3                        spectre              *Stopping View*  
+\o PRIMLIB                     dhpw                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+\o ASKA_TOP                    aska_top16_tb               schematic                             
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele              analog_extracted_Conly_50fF                  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/17/ASKA_TOP:aska_top16_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\# Memory report: using       1,380 MB, process size 3,169 MB at UTC 2024.09.19 08:01:22.294
+\# Memory report: Maximum memory size now 45,342 MB at UTC 2024.09.19 08:01:57.288
+\o WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\# Available memory:         42,813 MB at UTC 2024.09.19 08:02:07.411
+\# Memory report: Maximum memory size now 44,206 MB at UTC 2024.09.19 08:02:07.411
+\o .........
+\o End netlisting Sep 19 10:02:34 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_top16_tb:1
+\o           ] for Point ID (3 17).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/17/ASKA_TOP:aska_top16_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 42,753 MB at UTC 2024.09.19 08:03:20.301
+\# Memory report: Maximum memory size now 44,986 MB at UTC 2024.09.19 08:06:30.301
+\# Memory report: Maximum memory size now 43,853 MB at UTC 2024.09.19 08:11:30.302
+\# Memory report: Maximum memory size now 42,485 MB at UTC 2024.09.19 08:14:10.301
+\# Memory report: Maximum memory size now 41,540 MB at UTC 2024.09.19 08:16:20.302
+\# Available memory:         38,771 MB at UTC 2024.09.19 08:17:00.302
+\# Memory report: Maximum memory size now 40,176 MB at UTC 2024.09.19 08:17:00.302
+\# Memory report: Maximum memory size now 41,697 MB at UTC 2024.09.19 08:19:50.302
+\# Memory report: Maximum memory size now 42,587 MB at UTC 2024.09.19 08:21:40.301
+\# Memory report: Maximum memory size now 43,458 MB at UTC 2024.09.19 08:21:50.301
+\# Available memory:         43,851 MB at UTC 2024.09.19 08:22:20.302
+\# Memory report: Maximum memory size now 45,256 MB at UTC 2024.09.19 08:22:20.302
+\# Memory report: Maximum memory size now 44,276 MB at UTC 2024.09.19 08:32:40.301
+\# Memory report: Maximum memory size now 43,303 MB at UTC 2024.09.19 08:34:20.302
+\# Memory report: Maximum memory size now 41,648 MB at UTC 2024.09.19 08:36:10.302
+\# Available memory:         39,293 MB at UTC 2024.09.19 08:37:20.301
+\# Memory report: Maximum memory size now 40,698 MB at UTC 2024.09.19 08:37:20.301
+\# Memory report: Maximum memory size now 39,315 MB at UTC 2024.09.19 08:37:50.305
+\# Memory report: Maximum memory size now 40,126 MB at UTC 2024.09.19 08:40:50.302
+\# Memory report: Maximum memory size now 41,023 MB at UTC 2024.09.19 08:41:20.301
+\# Memory report: Maximum memory size now 43,680 MB at UTC 2024.09.19 08:41:50.302
+\# Available memory:         53,413 MB at UTC 2024.09.19 08:42:00.301
+\# Memory report: Maximum memory size now 54,818 MB at UTC 2024.09.19 08:42:00.301
+\# Memory report: Maximum memory size now 56,961 MB at UTC 2024.09.19 08:42:40.302
+\# Memory report: Maximum memory size now 59,441 MB at UTC 2024.09.19 08:43:00.302
+\# Memory report: Maximum memory size now 58,165 MB at UTC 2024.09.19 08:44:40.302
+\# Memory report: Maximum memory size now 59,496 MB at UTC 2024.09.19 08:45:20.301
+\# Available memory:         59,791 MB at UTC 2024.09.19 08:45:50.302
+\# Memory report: Maximum memory size now 61,196 MB at UTC 2024.09.19 08:45:50.302
+\# Memory report: Maximum memory size now 59,964 MB at UTC 2024.09.19 08:46:00.302
+\# Memory report: Maximum memory size now 58,761 MB at UTC 2024.09.19 08:46:20.302
+\# Memory report: Maximum memory size now 55,924 MB at UTC 2024.09.19 08:46:40.301
+\# Available memory:         54,079 MB at UTC 2024.09.19 08:46:50.302
+\# Memory report: Maximum memory size now 54,732 MB at UTC 2024.09.19 08:47:10.301
+\# Memory report: Maximum memory size now 53,380 MB at UTC 2024.09.19 08:47:40.302
+\# Memory report: Maximum memory size now 52,064 MB at UTC 2024.09.19 08:48:00.302
+\# Memory report: Maximum memory size now 51,036 MB at UTC 2024.09.19 08:48:20.301
+\# Memory report: Maximum memory size now 52,541 MB at UTC 2024.09.19 08:48:30.302
+\# Memory report: Maximum memory size now 51,458 MB at UTC 2024.09.19 08:48:50.302
+\# Available memory:         49,035 MB at UTC 2024.09.19 08:50:30.302
+\# Memory report: Maximum memory size now 50,440 MB at UTC 2024.09.19 08:50:30.302
+\# Memory report: Maximum memory size now 48,682 MB at UTC 2024.09.19 08:50:50.302
+\# Memory report: Maximum memory size now 47,311 MB at UTC 2024.09.19 08:52:10.302
+\# Memory report: Maximum memory size now 46,258 MB at UTC 2024.09.19 08:56:50.301
+\# Available memory:         44,559 MB at UTC 2024.09.19 08:57:10.302
+\# Memory report: Maximum memory size now 45,290 MB at UTC 2024.09.19 08:59:30.301
+\# Memory report: Maximum memory size now 44,237 MB at UTC 2024.09.19 09:07:10.301
+\# Memory report: Maximum memory size now 43,168 MB at UTC 2024.09.19 09:08:40.301
+\# Available memory:         39,320 MB at UTC 2024.09.19 09:09:20.301
+\# Memory report: Maximum memory size now 40,724 MB at UTC 2024.09.19 09:09:20.302
+\# Memory report: Maximum memory size now 39,783 MB at UTC 2024.09.19 09:09:30.301
+\# Memory report: Maximum memory size now 38,848 MB at UTC 2024.09.19 09:11:30.301
+\# Memory report: Maximum memory size now 40,370 MB at UTC 2024.09.19 09:12:30.302
+\# Memory report: Maximum memory size now 41,243 MB at UTC 2024.09.19 09:13:50.302
+\# Memory report: Maximum memory size now 42,621 MB at UTC 2024.09.19 09:14:00.301
+\# Available memory:         44,318 MB at UTC 2024.09.19 09:14:40.301
+\# Memory report: Maximum memory size now 45,722 MB at UTC 2024.09.19 09:14:40.301
+\# Memory report: Maximum memory size now 46,946 MB at UTC 2024.09.19 09:15:00.301
+\# Memory report: Maximum memory size now 46,007 MB at UTC 2024.09.19 09:23:00.301
+\# Memory report: Maximum memory size now 46,926 MB at UTC 2024.09.19 09:26:20.301
+\# Memory report: Maximum memory size now 45,803 MB at UTC 2024.09.19 09:32:10.301
+\# Memory report: Maximum memory size now 44,605 MB at UTC 2024.09.19 09:32:30.302
+\# Memory report: Maximum memory size now 43,434 MB at UTC 2024.09.19 09:34:00.303
+\# Memory report: Maximum memory size now 42,134 MB at UTC 2024.09.19 09:34:10.302
+\# Available memory:         39,730 MB at UTC 2024.09.19 09:34:20.301
+\# Memory report: Maximum memory size now 41,135 MB at UTC 2024.09.19 09:34:20.301
+\# Memory report: Maximum memory size now 40,191 MB at UTC 2024.09.19 09:34:40.302
+\# Memory report: Maximum memory size now 39,384 MB at UTC 2024.09.19 09:35:00.302
+\# Memory report: Maximum memory size now 41,239 MB at UTC 2024.09.19 09:35:20.302
+\# Memory report: Maximum memory size now 40,250 MB at UTC 2024.09.19 09:36:10.302
+\# Memory report: Maximum memory size now 41,680 MB at UTC 2024.09.19 09:36:50.301
+\# Memory report: Maximum memory size now 42,739 MB at UTC 2024.09.19 09:37:20.301
+\# Memory report: Maximum memory size now 43,591 MB at UTC 2024.09.19 09:37:40.301
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Available memory:         44,123 MB at UTC 2024.09.19 09:37:51.331
+\# Memory report: Maximum memory size now 45,528 MB at UTC 2024.09.19 09:37:51.339
+\o 
+\o *Info*    Run complete for Point ID (3 17) on testbench [
+\o           ASKA_TOP:aska_top16_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 31) on testbench [
+\o           ASKA_TOP:aska_top16_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/31/ASKA_TOP:aska_top16_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/31/ASKA_TOP:aska_top16_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 31)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/31/ASKA_TOP:aska_top16_tb:1/netlist/digital/control
+\o Begin Netlisting Sep 19 11:37:55 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/31/ASKA_TOP:aska_top16_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\# Memory report: Maximum memory size now 47,278 MB at UTC 2024.09.19 09:38:24.031
+\# Memory report: Maximum memory size now 48,416 MB at UTC 2024.09.19 09:38:54.156
+\# Available memory:         48,742 MB at UTC 2024.09.19 09:39:34.470
+\# Memory report: Maximum memory size now 50,148 MB at UTC 2024.09.19 09:39:34.470
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele/analog_extracted_Conly_50fF' cannot be generated because either split buses or bundle terminals are present in it.
+\o  Therefore, an implicit netlist for this instance has been generated. 
+\o 
+\o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+\o 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     pe3i                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3i                        spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     pmb                         spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dp3                       spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     dp3                         spectre              *Stopping View*  
+\o PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dphnw                       spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+\o PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
+\o PRIMLIB                     dn3                         spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
+\o PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+\o PRIMLIB                     ddnw                        spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw                       spectre              *Stopping View*  
+\o PRIMLIB                     rdn3                        spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     p_cap                       spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     s_res                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rnp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     rdp3                        spectre              *Stopping View*  
+\o PRIMLIB                     dhpw                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+\o ASKA_TOP                    aska_top16_tb               schematic                             
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele              analog_extracted_Conly_50fF                  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/31/ASKA_TOP:aska_top16_tb:1/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\# Memory report: Maximum memory size now 52,361 MB at UTC 2024.09.19 09:39:54.328
+\# Memory report: Maximum memory size now 53,465 MB at UTC 2024.09.19 09:40:04.329
+\o WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o Running netlist assembly..
+\# Memory report: Maximum memory size now 52,242 MB at UTC 2024.09.19 09:42:36.667
+\o .........
+\o End netlisting Sep 19 11:43:37 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_top16_tb:1
+\o           ] for Point ID (3 31).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/31/ASKA_TOP:aska_top16_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 53,920 MB at UTC 2024.09.19 09:43:46.302
+\# Memory report: Maximum memory size now 51,347 MB at UTC 2024.09.19 09:44:36.302
+\# Memory report: Maximum memory size now 49,526 MB at UTC 2024.09.19 09:44:56.302
+\# Memory report: Maximum memory size now 48,501 MB at UTC 2024.09.19 09:45:06.301
+\# Memory report: Maximum memory size now 47,216 MB at UTC 2024.09.19 09:45:56.302
+\# Memory report: Maximum memory size now 48,314 MB at UTC 2024.09.19 09:47:06.302
+\# Memory report: Maximum memory size now 46,861 MB at UTC 2024.09.19 09:49:46.301
+\# Available memory:         43,996 MB at UTC 2024.09.19 09:51:16.301
+\# Memory report: Maximum memory size now 45,439 MB at UTC 2024.09.19 09:51:16.302
+\# Memory report: Maximum memory size now 44,208 MB at UTC 2024.09.19 09:52:06.301
+\# Memory report: Maximum memory size now 45,505 MB at UTC 2024.09.19 09:53:16.301
+\# Memory report: Maximum memory size now 43,837 MB at UTC 2024.09.19 09:53:46.302
+\# Memory report: Maximum memory size now 42,125 MB at UTC 2024.09.19 09:54:06.302
+\# Available memory:         39,816 MB at UTC 2024.09.19 09:54:36.302
+\# Memory report: Maximum memory size now 41,260 MB at UTC 2024.09.19 09:54:36.302
+\# Memory report: Maximum memory size now 40,450 MB at UTC 2024.09.19 09:56:06.301
+\# Memory report: Maximum memory size now 41,401 MB at UTC 2024.09.19 09:56:36.302
+\# Memory report: Maximum memory size now 42,530 MB at UTC 2024.09.19 09:57:26.302
+\# Memory report: Maximum memory size now 43,434 MB at UTC 2024.09.19 09:59:06.303
+\# Memory report: Maximum memory size now 44,349 MB at UTC 2024.09.19 09:59:16.301
+\# Available memory:         45,058 MB at UTC 2024.09.19 09:59:26.301
+\# Memory report: Maximum memory size now 46,502 MB at UTC 2024.09.19 09:59:26.301
+\# Memory report: Maximum memory size now 47,485 MB at UTC 2024.09.19 09:59:46.302
+\# Memory report: Maximum memory size now 48,445 MB at UTC 2024.09.19 09:59:56.302
+\# Memory report: Maximum memory size now 47,272 MB at UTC 2024.09.19 10:16:26.302
+\# Memory report: Maximum memory size now 46,216 MB at UTC 2024.09.19 10:16:46.302
+\# Memory report: Maximum memory size now 47,338 MB at UTC 2024.09.19 10:17:36.301
+\# Memory report: Maximum memory size now 44,695 MB at UTC 2024.09.19 10:18:16.301
+\# Memory report: Maximum memory size now 43,368 MB at UTC 2024.09.19 10:18:26.301
+\# Available memory:         40,937 MB at UTC 2024.09.19 10:18:46.301
+\# Memory report: Maximum memory size now 42,381 MB at UTC 2024.09.19 10:18:46.302
+\# Memory report: Maximum memory size now 41,460 MB at UTC 2024.09.19 10:19:06.301
+\# Memory report: Maximum memory size now 40,613 MB at UTC 2024.09.19 10:20:46.301
+\# Memory report: Maximum memory size now 42,518 MB at UTC 2024.09.19 10:21:56.302
+\# Available memory:         45,148 MB at UTC 2024.09.19 10:23:36.302
+\# Memory report: Maximum memory size now 46,592 MB at UTC 2024.09.19 10:23:36.302
+\# Memory report: Maximum memory size now 47,538 MB at UTC 2024.09.19 10:23:46.302
+\# Memory report: Maximum memory size now 49,430 MB at UTC 2024.09.19 10:24:06.302
+\# Available memory:         49,885 MB at UTC 2024.09.19 10:24:16.302
+\# Memory report: Maximum memory size now 51,328 MB at UTC 2024.09.19 10:24:16.302
+\# Memory report: Maximum memory size now 52,338 MB at UTC 2024.09.19 10:24:26.301
+\# Memory report: Maximum memory size now 54,103 MB at UTC 2024.09.19 10:27:36.301
+\# Available memory:         56,292 MB at UTC 2024.09.19 10:28:06.302
+\# Memory report: Maximum memory size now 57,736 MB at UTC 2024.09.19 10:28:06.302
+\# Memory report: Maximum memory size now 59,275 MB at UTC 2024.09.19 10:29:16.301
+\# Memory report: Maximum memory size now 61,038 MB at UTC 2024.09.19 10:30:16.302
+\# Memory report: Maximum memory size now 57,861 MB at UTC 2024.09.19 10:33:36.301
+\# Memory report: Maximum memory size now 55,430 MB at UTC 2024.09.19 10:33:56.302
+\# Memory report: Maximum memory size now 54,223 MB at UTC 2024.09.19 10:34:46.302
+\# Memory report: Maximum memory size now 56,208 MB at UTC 2024.09.19 10:35:16.302
+\# Memory report: Maximum memory size now 58,770 MB at UTC 2024.09.19 10:38:06.302
+\# Memory report: Maximum memory size now 62,023 MB at UTC 2024.09.19 10:38:46.301
+\# Available memory:         61,542 MB at UTC 2024.09.19 10:38:56.301
+\# Memory report: Maximum memory size now 65,021 MB at UTC 2024.09.19 10:39:06.302
+\# Memory report: Maximum memory size now 62,769 MB at UTC 2024.09.19 10:39:26.301
+\# Memory report: Maximum memory size now 61,057 MB at UTC 2024.09.19 10:39:46.301
+\# Memory report: Maximum memory size now 57,861 MB at UTC 2024.09.19 10:39:56.302
+\# Available memory:         55,415 MB at UTC 2024.09.19 10:40:06.302
+\# Memory report: Maximum memory size now 56,285 MB at UTC 2024.09.19 10:40:26.301
+\# Memory report: Maximum memory size now 57,686 MB at UTC 2024.09.19 10:44:16.302
+\# Memory report: Maximum memory size now 59,064 MB at UTC 2024.09.19 10:44:36.301
+\# Memory report: Maximum memory size now 60,920 MB at UTC 2024.09.19 10:44:56.301
+\# Available memory:         61,546 MB at UTC 2024.09.19 10:45:06.301
+\# Memory report: Maximum memory size now 62,990 MB at UTC 2024.09.19 10:45:06.302
+\# Memory report: Maximum memory size now 59,323 MB at UTC 2024.09.19 10:45:26.301
+\# Available memory:         55,633 MB at UTC 2024.09.19 10:45:36.301
+\# Memory report: Maximum memory size now 57,077 MB at UTC 2024.09.19 10:45:36.301
+\# Memory report: Maximum memory size now 55,391 MB at UTC 2024.09.19 10:45:46.302
+\# Memory report: Maximum memory size now 54,105 MB at UTC 2024.09.19 10:46:16.301
+\# Memory report: Maximum memory size now 55,244 MB at UTC 2024.09.19 10:50:06.302
+\# Memory report: Maximum memory size now 57,192 MB at UTC 2024.09.19 10:50:26.302
+\# Memory report: Maximum memory size now 60,361 MB at UTC 2024.09.19 10:50:36.302
+\# Memory report: Maximum memory size now 58,256 MB at UTC 2024.09.19 10:51:46.302
+\# Memory report: Maximum memory size now 56,207 MB at UTC 2024.09.19 10:52:06.301
+\# Memory report: Maximum memory size now 53,962 MB at UTC 2024.09.19 10:52:26.302
+\# Memory report: Maximum memory size now 52,725 MB at UTC 2024.09.19 10:52:56.302
+\# Memory report: Maximum memory size now 54,015 MB at UTC 2024.09.19 10:56:26.301
+\# Memory report: Maximum memory size now 56,654 MB at UTC 2024.09.19 10:57:16.302
+\# Available memory:         61,028 MB at UTC 2024.09.19 10:57:36.302
+\# Memory report: Maximum memory size now 62,472 MB at UTC 2024.09.19 10:57:36.302
+\# Available memory:         71,380 MB at UTC 2024.09.19 10:57:46.302
+\# Memory report: Maximum memory size now 72,824 MB at UTC 2024.09.19 10:57:46.302
+\# Memory report: Maximum memory size now 70,788 MB at UTC 2024.09.19 10:59:26.302
+\# Memory report: Maximum memory size now 69,322 MB at UTC 2024.09.19 10:59:46.302
+\# Memory report: Maximum memory size now 67,863 MB at UTC 2024.09.19 11:00:16.301
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 31) on testbench [
+\o           ASKA_TOP:aska_top16_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 69,725 MB at UTC 2024.09.19 11:00:26.301
+\# Memory report: Maximum memory size now 71,565 MB at UTC 2024.09.19 11:01:16.301
+\# Memory report: Maximum memory size now 75,182 MB at UTC 2024.09.19 11:02:06.301
+\# Memory report: Maximum memory size now 73,570 MB at UTC 2024.09.19 11:02:16.301
+\# Memory report: Maximum memory size now 71,918 MB at UTC 2024.09.19 11:02:46.302
+\# Memory report: Maximum memory size now 73,352 MB at UTC 2024.09.19 11:03:06.302
+\# Memory report: Maximum memory size now 71,722 MB at UTC 2024.09.19 11:05:06.301
+\# Memory report: Maximum memory size now 74,363 MB at UTC 2024.09.19 11:06:36.302
+\# Memory report: Maximum memory size now 72,105 MB at UTC 2024.09.19 11:06:56.302
+\# Memory report: Maximum memory size now 70,347 MB at UTC 2024.09.19 11:07:26.301
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 

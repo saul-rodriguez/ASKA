@@ -1,0 +1,2105 @@
+INFO (LBRCXM-642): Constructing the RCX run script
+
+Forking: agdsPrep -V -rundir /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb -agf /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r.agf -outdir /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r -sch -df2 -e /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r.gds.map:current_source_gm_10_en_r.alm,current_source_gm_10_en_r.ilf -pl current_source_gm_10_en_r.ports -mcell /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.hcl -d current_source_gm_10_en_r.devtab -l /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r.lvsfile -i current_source_gm_10_en_r.ixf,current_source_gm_10_en_r.lph,current_source_gm_10_en_r.sph:current_source_gm_10_en_r.gdx -n current_source_gm_10_en_r.nxf,current_source_gm_10_en_r.stl:current_source_gm_10_en_r.gnx -s current_source_gm_10_en_r_pin_xy.spi:current_source_gm_10_en_r.xcn,hccidtmfile
+
+agdsPrep took  0.01 user, 0.00 sys, 0.00 elapsed, 9624.0 kbytes
+Forking:  capgen -techdir /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ -inc /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.ilf -lvs /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.xcn -lvsvia -p2lvs /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/qrcTechFile -sd -reseqn -sw3d -length_units meters -cap_unit 1 -p POLY1,gate,active -p POLY1,GateLayers:nhv_d+nhvd_d+nmc_d+nhv_b+nhvd_b+nmc_b+phv_d+pmc_d+nedi2_d+nedia2_d+ped12_d+ped22_d+nedi2_b+nedia2_b+ped12_b+ped22_b,active -M p_cap -genericMos nei_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nei_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos neli_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos neli_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nelnai_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nelnai_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nesvti_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nesvti_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pe_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pel_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pei_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pei_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos peli_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos peli_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pesvt_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pesvti_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pesvti_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemi_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos ndmi_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemlnai_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemi_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlni_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlnai_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemi_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos ndmi_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos nemlnai_m_6,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pem_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemln_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemi_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlni_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -genericMos pemlnai_m_5,D,G,S:AS=AS,AD=AD,PS=PS,PD=PD,NRD=nrd,NRS=nrs -extract_mos_diffusion_res_by_device pe,pel,pesvt,peli,pei,pesvti,ne,nel,nelna,nesvt,nei,neli,nelnai,nesvti,nnm,nem,ndm,nemlna,pem,pemln,pemlna,nemi,ndmi,nemlna,pemi,pemlni,pemlnai,ndsmiP,ndsmiE,nma_d,nma_b,pma_d,pma_b,pe_5,pel_5,pei_5,pei_m_5,peli_5,peli_m_5,pesvt_5,pesvti_5,pesvti_m_5,pem_5,pemln_5,pemi_5,pemi_m_5,pemlni_5,pemlni_m_5,pemlnai_5,pemlnai_m_5,nei_6,nei_m_6,neli_6,neli_m_6,nelnai_6,nelnai_m_6,nesvti_6,nesvti_m_6,nemi_6,nemi_m_6,ndmi_6,ndmi_m_6,nemlnai_6,nemlnai_m_6 -dsub nwtrm,dnwtrm,hnw,pwitrm,pdf,hvnwtrm,ndftrm,bulk -genericMos pma_b,D,G,S:NRD=nrd,NRS=nrs -blocking phv_b:0.01,POLY1,active,sub -blocking phhv_b:0.01,POLY1,active,sub -blocking pmc_b:0.01,POLY1,active,sub -blocking pmmc_b:0.01,POLY1,active,sub -blocking pmma_b:0.01,POLY1,active,sub -blocking pedam_d:0.01,POLY1,active,sub -blocking pedam_b:0.01,POLY1,active,sub -blocking nedam_d:0.01,POLY1,active,sub -blocking nedam_b:0.01,POLY1,active,sub -blocking pedama_d:0.01,POLY1,active,sub -blocking pedama_b:0.01,POLY1,active,sub -blocking mosvc:0.01,POLY1,active,sub -blocking mosvci:0.01,POLY1,active,sub -blocking mosvci_m:0.01,POLY1,active,sub -blocking mosvcm:0.01,POLY1,active,sub -blocking mosvcim_m:0.01,POLY1,active,sub -blocking mosvcim:0.01,POLY1,active,sub -blocking cpod:0.01,POLY1,active,sub -blocking cpodhv:0.01,POLY1,active,sub -blocking nha3m:0.01,POLY1,active,sub -blocking cnnotpaE:0.01,POLY1,active,sub -blocking cnnotpaP:0.01,POLY1,active,sub -blocking d_csf2p,POLY1,MET1,MET2 -blocking cmim23f,MET2,MET3 -blocking cmimh23f,MET2,MET3 -blocking d_cswt3,POLY1,MET1,MET2,MET3 -blocking d_csf3p,POLY1,MET1,MET2,MET3 -blocking d_csf3,MET1,MET2,MET3 -blocking d_csf3a,MET1,MET2,MET3 -blocking d_cif3a,MET1,MET2,MET3 -blocking cmim34f,MET3,MET4 -blocking cmimh34f,MET3,MET4 -blocking cdmm,MET2,MET3,MET4 -blocking cdmmh,MET2,MET3,MET4 -blocking d_cswt4,POLY1,MET1,MET2,MET3,MET4 -blocking d_csf4,MET1,MET2,MET3,MET4 -blocking d_csf4a,MET1,MET2,MET3,MET4 -blocking d_cif4a,MET1,MET2,MET3,MET4 -blocking cmim,MET4,METTP -blocking cmimh,MET4,METTP -blocking ctmm,MET2,MET3,MET4,METTP -blocking ctmmh,MET2,MET3,MET4,METTP -blocking d_csft5,MET1,MET2,MET3,MET4,METTP -blocking d_csft5a,MET1,MET2,MET3,MET4,METTP -blocking d_cift5a,MET1,MET2,MET3,MET4,METTP -split_hv_mos ped12_d,ped1,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos ped12_b,ped1,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos ped22_d,ped2,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos ped22_b,ped2,50,5,mtot:pwitrm,pdiff:cont -split_hv_mos nedi2_d,nedi,50,5,mtot:dnwtrm,ndiff:cont -split_hv_mos nedi2_b,nedi,50,5,mtot:dnwtrm,ndiff:cont -split_hv_mos nedia2_d,nedia,50,5,mtot:dnwtrm,ndiff:cont -split_hv_mos nedia2_b,nedia,50,5,mtot:dnwtrm,ndiff:cont /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r
+
+INFO (LBMISC-215205): 
+*** Cadence Quantus Extraction Techgen -trans VERSION 23.1.0 Linux 64 bit - (Tue Sep 26 09:11:43 PDT 2023)  ***
+
+
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r
+
+WARNING (CAPGEN-41613): layer 'ped12_d' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'ped12_b' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'ped22_d' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'ped22_b' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'nedi2_d' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'nedi2_b' not defined in LVS file
+
+WARNING (CAPGEN-41613): layer 'nedia2_b' not defined in LVS file
+
+INFO (CAPGEN-41737): Lvs connect layers capm capm23f capm2_b capm2_t capm34f capm3_b capm3_m capm3_t capmh capmh23f capmh2_b capmh2_t capmh34f capmh3_b capmh3_m capmh3_t capswm1 capswm2 capswm3 capswp1 davl_c2 df_vlbl dphopin3 m1_vlbl m2_vlbl m3_vlbl m4_vlbl ml_vlbl mt_vlbl npdct p1_vlbl are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by df_vlbl layers anodiff catdiff are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by m1trm layers m1aftrm m1atrm m1bftrm m1btrm are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by nwtrm layers dphod_c dphod_nw are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by p1trm layers dpol_n dpol_p are not mapped in layer_setup file
+
+INFO (CAPGEN-41809):  Lvs connect via bndct npdtap d_0dsc ntap dntap hntap ndftap catdfct catm1ct hnwtap pwitap pdftap anodfct ptap are not mapped in layer_setup file.
+
+rcxspice took  0.15 user, 0.04 sys, 0.00 elapsed, 29056.0 kbytes
+The supplied design data will be treated as a HIERARCHICAL design
+
+Successfully created RCX script '/home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/rcx.sh'
+INFO (LBRCXM-783): Creating runtime extview.rul file : 
+/pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/icellToQrc -ext cap -i /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/extview.trp -x /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.xcn
+
+INFO (ICEMAP-221908): Reading transfer property file: /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/extview.trp
+
+WARNING (ICEMAP-221909): Duplicate model: "dnhpw~#dnhpw" in "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/extview.trp". First occurrence is used, next occurrences are ignored.
+
+WARNING (ICEMAP-221909): Duplicate model: "dnhpw~#p_dnhpw" in "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/extview.trp". First occurrence is used, next occurrences are ignored.
+
+*INFO: Reading file "/home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.trp" 
+
+
+*INFO:In trp file: /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.trp, schematic transfer is requested through pmExclude:
+*INFO:Therefore, output_db -cdl_out_map_directory is mandatory
+
+INFO (LBRCXU-108): Starting
+
+ runUserCmd /pkg/cadence/installs/IC618/bin/qrcToDfII -extract cap -run_name current_source_gm_10_en_r -cdlout_run_dir /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r -check_cell_view TRUE -device_finger_delimiter @ -extracted_view analog_extracted_C -lvs_source agds -cap_models yes -capacitor p_cap auLvs PRIMLIB -res_models yes -cap_prop_name c -transfer_net_expression TRUE -t -extview_tmp /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.tmp -run_dir /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r -cdslib /home/saul/projects/ASKA/cds.lib -lib_name CURRENT_SOURCE -cell_name current_source_gm_10_en_r -view_name layout -extview_rul /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.rul -server /pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/../shapeServer
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.09s.
+device nedia X nedia2_d nedia ivpcell PRIMLIB D G S SB 
+** Info: PDK loadpath is "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/PDK/IC61/v9_0_4"
+Loading XfSktTools.cxt
+Loading XfMenu.cxt
+Loading XfTechXh018.cxt
+Loading XfPcellCore.cxt
+function ansiSpicePrintProperties_subcircuit redefined
+Loading XfSkillExt.cxt
+Initializing library.
+Finished Initializing Library .
+    Generic PcellKit: 'production' loaded.
+    Generic Pcell Skill Tools: 'production' loaded.
+Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+device ne3 M nem ne3 ivpcell PRIMLIB D G S B 
+device pe3 M pem pe3 ivpcell PRIMLIB D G S B 
+device MOSVC3 X mosvcm mosvc3 ivpcell PRIMLIB G NW SB 
+device s_res R s_res s_res ivpcell PRIMLIB PLUS MINUS 
+device p_dnw D p_dnw p_dnw ivpcell PRIMLIB PLUS MINUS 
+device p_dnw3 D p_dnwm p_dnw3 ivpcell PRIMLIB PLUS MINUS 
+device rpp1k1_3 R rpp1k1_s rpp1k1_3 ivpcell PRIMLIB PLUS MINUS BULK 
+device rpp1k1_3 R rpp1k1_n rpp1k1_3 ivpcell PRIMLIB PLUS MINUS BULK 
+device cmm5t C cmim cmm5t ivpcell PRIMLIB PLUS MINUS 
+
+All device symbols for the extracted view are present.
+
+INFO (LBRCXM-612): Done Executing :runUserCmd
+
+WARNING (LBRCXM-617): Unable to obtain 1 license(s) of QTS100 23.10
+
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS300 23.10
+
+INFO (LBRCXM-608): Executing command
+   /pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/assura_rcx -V  /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/rcx.sh
+
+
+     ***    assura_rcx VERSION 23.1.0 Linux 64 bit - (Tue Sep 26 09:11:43 PDT 2023)    ***
+
+
+	***************************************************
+	*			  			  *
+	* Copyright (c) 2024 Cadence Design Systems, Inc. *
+	*		All Rights Reserved		  *
+	*			  			  *
+	*	  THIS IS UNPUBLISHED PROPRIETARY	  *
+	*  INFORMATION OF Cadence Design Systems, Inc. 	  *
+	*	   THE COPYRIGHT NOTICE DOES NOT	  *
+	*	       EVIDENCE PUBLICATION		  *
+	*			  			  *
+	***************************************************
+INFO (ASSREXT-35013): 
+
+* caps2d version: 10
+ENDCAT
+meters
+ENDCAT
+agds2rcx -np 1 -V -H satfile -r /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.xcn -split_float_exclude_layers ndiff,pdiff,nwtrm,pwitrm,dnwtrm,bulk -crundir /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb -unit meters -df2 -xgl -pl current_source_gm_10_en_r.ports -f current_source_gm_10_en_r.alm -lnn current_source_gm_10_en_r.lnn -pnet 5 -pinst 6 -pdev 7 current_source_gm_10_en_r.agf current_source_gm_10_en_r_pin_xy.spi 
+WARNING (AGDSEXT-30124): The <design>.props file is not available. The CCL option "input_db calibre/pvs/pegasus -device_properties_file <filename>" can be used to specify the .props file. 
+
+	***************************************************
+	*			  			  *
+	* Copyright (c) 2024 Cadence Design Systems, Inc. *
+	*		All Rights Reserved		  *
+	*			  			  *
+	*	  THIS IS UNPUBLISHED PROPRIETARY	  *
+	*  INFORMATION OF Cadence Design Systems, Inc. 	  *
+	*	   THE COPYRIGHT NOTICE DOES NOT	  *
+	*	       EVIDENCE PUBLICATION		  *
+	*			  			  *
+	***************************************************
+INFO (AGDSEXT-30016): 
+setting dbunit 1e-09 1 1e-09
+
+WARNING (AGDSEXT-30078): no capacitor value
+
+agds2rcx took 0.11 user, 0.21 sys, 0.00 elapsed, 15220.0 kbytes
+Input stage took  0.12 user, 0.22 sys, 0.00 elapsed, 3160.0 kbytes
+INFO (ASSREXT-35329): Resistance data preparation stage started at Tue Aug 13 03:40:13 2024
+
+GNDA
+ENDCAT
+INFO (ASSREXT-35299): *** L259 'mv' executed directly
+
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc MET4,METTP -n 25 -i 0,25.001 -b \
+	METTP,MET4,MET3,MET2,MET1,POLY1,active,sub -j 3 -Maxw 45 -p \
+	METTPL,key 0,25 - METTPL.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp POLY1,GateLayers,active -n 2.5 -i \
+	0,2.501 -b active,sub -t MET1,MET2,MET3,MET4,METTP,METTPL -j 0.18 \
+	-Maxw 2.7 -p POLY1,key 0,2.5 - POLY1.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc POLY1 -n 2.3 -i 0,2.301 -b \
+	POLY1,active,sub -t MET2,MET3,MET4,METTP,METTPL -j 0.23 -Maxw 3.45 -p \
+	MET1,key 0,2.3 - MET1.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc POLY1,MET1 -n 2.8 -i 0,2.801 -b \
+	MET1,POLY1,active,sub -t MET3,MET4,METTP,METTPL -j 0.28 -Maxw 4.2 -p \
+	MET2,key 0,2.8 - MET2.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc MET1,MET2 -n 5.6 -i 0,5.601 -b \
+	MET2,MET1,POLY1,active,sub -t MET4,METTP,METTPL -j 0.28 -Maxw 4.2 -p \
+	MET3,key 0,5.6 - MET3.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc MET2,MET3 -n 5.6 -i 0,5.601 -b \
+	MET3,MET2,MET1,POLY1,active,sub -t METTP,METTPL -j 0.28 -Maxw 4.2 -p \
+	MET4,key 0,5.6 - MET4.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc MET3,MET4 -n 9.2 -i 0,9.201 -b \
+	MET4,MET3,MET2,MET1,POLY1,active,sub -t METTPL -j 0.44 -Maxw 6.6 -p \
+	METTP,key 0,9.2 - METTP.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b \
+	MET4,MET3,MET2,MET1,POLY1,active,sub -Maxw 45 -p \
+	METTP:METTP_cut,key,METTPL,key 0,25,0 - METTP_METTPL.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R METTPL -b \
+	MET3,MET2,MET1,POLY1,active,sub -k METTP:0.985 -Maxw 45 -p \
+	MET4:MET4_cut,key,METTPL,key 0,25,0 - MET4_METTPL.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b MET3,MET2,MET1,POLY1,active,sub -t \
+	METTPL -Maxw 6.6 -p MET4:MET4_cut,key,METTP:METTP_cut,key 0,9.2,0 - \
+	MET4_METTP.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R METTP -b \
+	MET2,MET1,POLY1,active,sub -t METTPL -k MET4:0.565 -Maxw 6.6 -p \
+	MET3,key,METTP:METTP_cut,key 0,9.2,0 - MET3_METTP.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b MET2,MET1,POLY1,active,sub -t \
+	METTP,METTPL -Maxw 4.2 -p MET3,key,MET4:MET4_cut,key 0,5.6,0 - \
+	MET3_MET4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R MET4 -b MET1,POLY1,active,sub \
+	-t METTP,METTPL -k MET3:0.565 -Maxw 4.2 -p MET2,key,MET4:MET4_cut,key \
+	0,5.6,0 - MET2_MET4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b MET1,POLY1,active,sub -t \
+	MET4,METTP,METTPL -Maxw 4.2 -p MET2,key,MET3,key 0,5.6,0 - \
+	MET2_MET3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R MET3 -b POLY1,active,sub -t \
+	MET4,METTP,METTPL -k MET2:0.565 -Maxw 4.2 -p MET1,key,MET3,key \
+	0,5.6,0 - MET1_MET3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b POLY1,active,sub -t \
+	MET3,MET4,METTP,METTPL -Maxw 4.2 -p MET1,key,MET2,key 0,2.8,0 - \
+	MET1_MET2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R MET2 -b active,sub -t \
+	MET3,MET4,METTP,METTPL -k MET1:0.565 -Maxw 4.2 -p \
+	POLY1:POLY1_cut,key,MET2,key 0,2.8,0 - POLY1_MET2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R MET1,POLY1 -b active,sub -t \
+	MET2,MET3,MET4,METTP,METTPL -Maxw 3.45 -p \
+	POLY1:POLY1_cut,key,MET1,key 0,2.5,0 - POLY1_MET1.sip
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b MET4,MET3,MET2,MET1,POLY1,active,sub -p \
+	METTP:METTP_cut,METTPL - METTP_METTPL.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b MET3,MET2,MET1,POLY1,active,sub -t \
+	METTPL -p MET4:MET4_cut,METTP:METTP_cut - MET4_METTP.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b MET2,MET1,POLY1,active,sub -t \
+	METTP,METTPL -p MET3,MET4:MET4_cut - MET3_MET4.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b MET1,POLY1,active,sub -t \
+	MET4,METTP,METTPL -p MET2,MET3 - MET2_MET3.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b POLY1,active,sub -t \
+	MET3,MET4,METTP,METTPL -p MET1,MET2 - MET1_MET2.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b active,sub -t \
+	MET2,MET3,MET4,METTP,METTPL -p POLY1:POLY1_cut,MET1 - POLY1_MET1.sw3d
+ENDCAT
+sub sub
+METTPL METTPL
+active active
+mttrm mttrm
+m4trm m4trm
+m3trm m3trm
+m2trm m2trm
+m1trm m1trm
+p1trm p1trm
+ndiff ndiff
+pdiff pdiff
+nwtrm nwtrm
+pwitrm pwitrm
+dnwtrm dnwtrm
+bulk bulk
+vtpCON vtpCON
+vtpcm vtpcm
+capm capm
+via3CON via3CON
+via2CON via2CON
+via1 via1
+cont cont_p1trm_ndiff cont_p1trm_pdiff cont_m1trm_ndiff cont_m1trm_pdiff cont_m1trm_p1trm
+npdtap npdtap
+npdct npdct
+ntap ntap
+dntap dntap
+pwitap pwitap
+ptap ptap
+nedia2_0d nedia2_0d
+mosvcm mosvcm
+ENDCAT
+INFO (ASSREXT-35026): stamp INPUT: iname[0]=g_pick_sub
+
+INFO (ASSREXT-35026): stamp INPUT: iname[1]=sub
+
+INFO (ASSREXT-35028): stamp OUTPUT: oname[0]=g_pick_sub
+
+INFO (ASSREXT-35304): 
+Number of tasks to begin with are 134 
+
+INFO (ASSREXT-35329): Resistance data preparation stage started at Tue Aug 13 03:40:13 2024
+
+geom -V vtpCON m4trm mttrm - vtpCON,111,i,1 
+INFO (ASSREXT-35316): ****** For command L214 on processor #1:
+
+  geom took  0.02 user, 0.00 sys, 0.00 elapsed, 6052.0 kbytes
+ INFO (ASSREXT-35321): *** Command L214 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 133 
+
+geom -V via3CON m3trm m4trm - via3CON,111,i,1 
+INFO (ASSREXT-35316): ****** For command L215 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5056.0 kbytes
+ INFO (ASSREXT-35321): *** Command L215 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 132 
+
+geom -V via2CON m2trm m3trm - via2CON,111,i,1 
+INFO (ASSREXT-35316): ****** For command L216 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6112.0 kbytes
+ INFO (ASSREXT-35321): *** Command L216 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 131 
+
+geom -V via1 m1trm m2trm - via1,111,i,1 
+INFO (ASSREXT-35316): ****** For command L217 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5060.0 kbytes
+ INFO (ASSREXT-35321): *** Command L217 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 130 
+
+geom -V cont p1trm m1trm - cont_m1trm_p1trm,111,i,1 
+INFO (ASSREXT-35316): ****** For command L218 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5584.0 kbytes
+ INFO (ASSREXT-35321): *** Command L218 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 129 
+
+geom -V cont m1trm pdiff - cont_m1trm_pdiff,111,i,1 
+INFO (ASSREXT-35316): ****** For command L219 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5844.0 kbytes
+ INFO (ASSREXT-35321): *** Command L219 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 128 
+
+geom -V cont m1trm ndiff - cont_m1trm_ndiff,111,i,1 
+INFO (ASSREXT-35316): ****** For command L220 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5852.0 kbytes
+ INFO (ASSREXT-35321): *** Command L220 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 127 
+
+geom -V cont p1trm pdiff - cont_p1trm_pdiff,111,i,1 
+INFO (ASSREXT-35316): ****** For command L221 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5060.0 kbytes
+ INFO (ASSREXT-35321): *** Command L221 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 126 
+
+geom -V cont p1trm ndiff - cont_p1trm_ndiff,111,i,1 
+INFO (ASSREXT-35316): ****** For command L222 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5056.0 kbytes
+ INFO (ASSREXT-35321): *** Command L222 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 125 
+
+sch2lay -a -r /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.gnx -rd /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.gdx sch_cap_ground lay_cap_ground 
+INFO (ASSREXT-35316): ****** For command L262 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L262 'sch2lay' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 124 
+
+INFO (ASSREXT-35299): *** L167 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 123
+
+INFO (ASSREXT-35299): *** L170 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 122
+
+INFO (ASSREXT-35299): *** L228 'beginFlattenInputs' executed directly
+
+INFO (ASSREXT-35307): tasks left are 121
+
+flattenCapData cmim meters 
+INFO (ASSREXT-35316): ****** For command L237 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 9796.0 kbytes
+   flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 16960.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 2908.0 kbytes
+ INFO (ASSREXT-35321): *** Command L237 'flattenCapData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 120 
+
+flattenDiodeData p_0dnw meters 
+INFO (ASSREXT-35316): ****** For command L238 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 9808.0 kbytes
+   flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 16968.0 kbytes
+   flattrans took 0.00 user, 0.01 sys, 0.00 elapsed, 2904.0 kbytes
+ INFO (ASSREXT-35321): *** Command L238 'flattenDiodeData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 119 
+
+flattenDiodeData p_0dnwm meters 
+INFO (ASSREXT-35316): ****** For command L239 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 9776.0 kbytes
+   flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 16976.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 2900.0 kbytes
+ INFO (ASSREXT-35321): *** Command L239 'flattenDiodeData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 118 
+
+flattenResData s_0res meters 
+INFO (ASSREXT-35316): ****** For command L234 on processor #1:
+
+  flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 9792.0 kbytes
+   flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 16972.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 2700.0 kbytes
+ INFO (ASSREXT-35321): *** Command L234 'flattenResData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 117 
+
+flattenResData rpp1k1_0s meters 
+INFO (ASSREXT-35316): ****** For command L235 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 7684.0 kbytes
+   flatnet took 0.00 user, 0.01 sys, 0.00 elapsed, 17256.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 1.00 elapsed, 2696.0 kbytes
+ INFO (ASSREXT-35321): *** Command L235 'flattenResData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 116 
+
+flattenResData rpp1k1_0n meters 
+INFO (ASSREXT-35316): ****** For command L236 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 9792.0 kbytes
+   flatnet took 0.00 user, 0.01 sys, 0.00 elapsed, 17076.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 2700.0 kbytes
+ INFO (ASSREXT-35321): *** Command L236 'flattenResData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 115 
+
+flattenLayers -m capm cont dntap mosvcm cont_p1trm_pdiff 
+INFO (ASSREXT-35316): ****** For command L243 on processor #1:
+
+  flattub took  0.01 user, 0.00 sys, 0.00 elapsed, 5484.0 kbytes
+ INFO (ASSREXT-35321): *** Command L243 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 114 
+
+flattenLayers -m vtpcm via1 ntap nedia2_0d cont_m1trm_ndiff 
+INFO (ASSREXT-35316): ****** For command L242 on processor #1:
+
+  flattub took  0.01 user, 0.00 sys, 0.00 elapsed, 6464.0 kbytes
+ INFO (ASSREXT-35321): *** Command L242 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 113 
+
+flattenLayers -m vtpCON via2CON npdct ptap cont_m1trm_pdiff 
+INFO (ASSREXT-35316): ****** For command L241 on processor #1:
+
+  flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 5260.0 kbytes
+ INFO (ASSREXT-35321): *** Command L241 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 112 
+
+flattenLayers -m via3CON npdtap pwitap cont_m1trm_p1trm cont_p1trm_ndiff 
+INFO (ASSREXT-35316): ****** For command L244 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 4152.0 kbytes
+ INFO (ASSREXT-35321): *** Command L244 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 111 
+
+flattenLayers -m nwtrm pwitrm dnwtrm bulk 
+INFO (ASSREXT-35316): ****** For command L252 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 4020.0 kbytes
+ INFO (ASSREXT-35321): *** Command L252 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 110 
+
+flattenLayers -m p1trm 
+INFO (ASSREXT-35316): ****** For command L250 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3780.0 kbytes
+ INFO (ASSREXT-35321): *** Command L250 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 109 
+
+flattenDeviceData BOX meters 
+INFO (ASSREXT-35316): ****** For command L240 on processor #1:
+
+  flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 5348.0 kbytes
+ INFO (ASSREXT-35321): *** Command L240 'flattenDeviceData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 108 
+
+INFO (ASSREXT-35299): *** L229 '/bin/mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 107
+
+flatnet -V -li -h / h_NET NET 
+INFO (ASSREXT-35316): ****** For command L230 on processor #1:
+
+  flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 19656.0 kbytes
+ INFO (ASSREXT-35321): *** Command L230 'flatnet' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 106 
+
+INFO (ASSREXT-35299): *** L263 'findCapGround' executed directly
+
+INFO (ASSREXT-35307): tasks left are 105
+
+INFO (ASSREXT-35299): *** L266 'echo' executed directly
+
+INFO (ASSREXT-35307): tasks left are 104
+
+netprint -n cgnetfile:gn_summary.log NET 
+INFO (ASSREXT-35316): ****** For command L267 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L267 'netprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 103 
+
+INFO (ASSREXT-35299): *** L208 'cat' executed directly
+
+INFO (ASSREXT-35307): tasks left are 102
+
+netprint -V -N1 power_list:power_list_nums NET 
+INFO (ASSREXT-35316): ****** For command L231 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L231 'netprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 101 
+
+densitymap -V -TC -o METTP.den 45 mttrm 
+INFO (ASSREXT-35316): ****** For command L194 on processor #1:
+
+  densitymap took 0.01 user, 0.00 sys, 0.00 elapsed, 2876.0 kbytes
+ INFO (ASSREXT-35321): *** Command L194 'densitymap' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 100 
+
+flattenLayers -m mttrm 
+INFO (ASSREXT-35316): ****** For command L245 on processor #1:
+
+  flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 4548.0 kbytes
+ INFO (ASSREXT-35321): *** Command L245 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 99 
+
+densitymap -V -TC -o MET4.den 28 m4trm 
+INFO (ASSREXT-35316): ****** For command L195 on processor #1:
+
+  densitymap took 0.01 user, 0.00 sys, 0.00 elapsed, 2880.0 kbytes
+ INFO (ASSREXT-35321): *** Command L195 'densitymap' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 98 
+
+flattenLayers -m m4trm 
+INFO (ASSREXT-35316): ****** For command L246 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 4544.0 kbytes
+ INFO (ASSREXT-35321): *** Command L246 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 97 
+
+densitymap -V -TC -o MET3.den 28 m3trm 
+INFO (ASSREXT-35316): ****** For command L196 on processor #1:
+
+  densitymap took 0.00 user, 0.00 sys, 0.00 elapsed, 2872.0 kbytes
+ INFO (ASSREXT-35321): *** Command L196 'densitymap' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 96 
+
+flattenLayers -m m3trm 
+INFO (ASSREXT-35316): ****** For command L247 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 3736.0 kbytes
+ INFO (ASSREXT-35321): *** Command L247 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 95 
+
+densitymap -V -TC -o MET2.den 28 m2trm 
+INFO (ASSREXT-35316): ****** For command L197 on processor #1:
+
+  densitymap took 0.00 user, 0.00 sys, 0.00 elapsed, 2880.0 kbytes
+ INFO (ASSREXT-35321): *** Command L197 'densitymap' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 94 
+
+flattenLayers -m m2trm 
+INFO (ASSREXT-35316): ****** For command L248 on processor #1:
+
+  flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 3968.0 kbytes
+ INFO (ASSREXT-35321): *** Command L248 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 93 
+
+densitymap -V -TC -o MET1.den 23 m1trm 
+INFO (ASSREXT-35316): ****** For command L198 on processor #1:
+
+  densitymap took 0.01 user, 0.00 sys, 0.00 elapsed, 2888.0 kbytes
+ INFO (ASSREXT-35321): *** Command L198 'densitymap' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 92 
+
+flattenLayers -m m1trm 
+INFO (ASSREXT-35316): ****** For command L249 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 4000.0 kbytes
+ INFO (ASSREXT-35321): *** Command L249 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 91 
+
+INFO (ASSREXT-35299): *** L199 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 90
+
+geom nem ndiff - nem,10,i,1 
+INFO (ASSREXT-35316): ****** For command L200 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L200 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 89 
+
+flattenTransistorData nem meters 
+INFO (ASSREXT-35316): ****** For command L232 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 9796.0 kbytes
+   flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 17408.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 2892.0 kbytes
+ INFO (ASSREXT-35321): *** Command L232 'flattenTransistorData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 88 
+
+INFO (ASSREXT-35299): *** L201 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 87
+
+geom pem pdiff - pem,10,i,1 
+INFO (ASSREXT-35316): ****** For command L202 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L202 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 86 
+
+flattenTransistorData pem meters 
+INFO (ASSREXT-35316): ****** For command L233 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 9792.0 kbytes
+   flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 17480.0 kbytes
+   flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 2696.0 kbytes
+ INFO (ASSREXT-35321): *** Command L233 'flattenTransistorData' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 85 
+
+flattenLayers -m ndiff pdiff 
+INFO (ASSREXT-35316): ****** For command L251 on processor #1:
+
+  flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 4008.0 kbytes
+ INFO (ASSREXT-35321): *** Command L251 'flattenLayers' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 84 
+
+INFO (ASSREXT-35299): *** L253 'endFlattenInputs' executed directly
+
+INFO (ASSREXT-35307): tasks left are 83
+
+reconnect -cgnd 4 -float floatlvsnetsfile -tf nem,pem -rf s_0res,rpp1k1_0s,rpp1k1_0n -cf cmim -df p_0dnw,p_0dnwm -gf BOX -probe text_m1trm:m1trm:text_m1trm_fvia,text_m2trm:m2trm:text_m2trm_fvia,text_m3trm:m3trm:text_m3trm_fvia,text_m4trm:m4trm:text_m4trm_fvia 
+INFO (ASSREXT-35315): ****** For command L268:
+
+INFO (ASSREXT-35320): *** Command L268 'reconnect' finished
+
+INFO (ASSREXT-35323): tasks left are 82 
+
+INFO (ASSREXT-35299): *** L278 'createLink' executed directly
+
+INFO (ASSREXT-35307): tasks left are 81
+
+INFO (ASSREXT-35299): *** L279 'createLink' executed directly
+
+INFO (ASSREXT-35307): tasks left are 80
+
+tident -V -noLW nem.trans -e 0x1 -r ndiff.sdres nem ndiff p1trm bulk - bulk - 1,ne3 0,xne3 - nem.transn 
+INFO (ASSREXT-35316): ****** For command L280 on processor #1:
+
+  
+   INFO (TIDENT-143051):       34 transistors of type 
+   
+   INFO (TIDENT-143052): 'ne3'
+   
+   
+   INFO (TIDENT-143055):       34 transistors all together
+   
+   
+     Output 56 Regions for INFO (INTER-122004): Interact
+   
+   
+ INFO (ASSREXT-35321): *** Command L280 'tident' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 79 
+
+tident -V -noLW pem.trans -e 0x1 -r pdiff.sdres pem pdiff p1trm nwtrm - nwtrm - 1,pe3 0,xpe3 - pem.transn 
+INFO (ASSREXT-35316): ****** For command L282 on processor #1:
+
+  
+   INFO (TIDENT-143051):      107 transistors of type 
+   
+   INFO (TIDENT-143052): 'pe3'
+   
+   
+   INFO (TIDENT-143055):      107 transistors all together
+   
+   
+     Output 180 Regions for INFO (INTER-122004): Interact
+   
+   
+ INFO (ASSREXT-35321): *** Command L282 'tident' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 78 
+
+geom nem,pem,nedia2_0d - qrcgate,1,i,1 
+INFO (ASSREXT-35316): ****** For command L272 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L272 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 77 
+
+changeTransFileNameAP nem.trans nem.transn 
+INFO (ASSREXT-35316): ****** For command L284 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L284 'changeTransFileNameAP' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 76 
+
+changeTransFileNameAP pem.trans pem.transn 
+INFO (ASSREXT-35316): ****** For command L285 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L285 'changeTransFileNameAP' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 75 
+
+iprint -count floatlvsnetsfile 
+INFO (ASSREXT-35316): ****** For command L271 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L271 'iprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 74 
+
+iprint -count floatlvsnetsfile 
+INFO (ASSREXT-35315): ****** For command L286:
+
+INFO (ASSREXT-35320): *** Command L286 'iprint' finished
+
+INFO (ASSREXT-35323): tasks left are 73 
+
+grow -V 0.001 nwtrm g_nwtrm 
+INFO (ASSREXT-35316): ****** For command L314 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2708.0 kbytes
+ INFO (ASSREXT-35321): *** Command L314 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 72 
+
+geom -V pwitrm g_nwtrm - pwitrm,10,i,1 
+INFO (ASSREXT-35316): ****** For command L315 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3476.0 kbytes
+ INFO (ASSREXT-35321): *** Command L315 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 71 
+
+grow -V 0.001 pwitrm g_pwitrm 
+INFO (ASSREXT-35316): ****** For command L316 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2968.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3140.0 kbytes
+ INFO (ASSREXT-35321): *** Command L316 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 70 
+
+geom -V dnwtrm g_pwitrm,g_nwtrm - dnwtrm,10,i,1 
+INFO (ASSREXT-35316): ****** For command L317 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3472.0 kbytes
+ INFO (ASSREXT-35321): *** Command L317 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 69 
+
+grow -V 0.001 dnwtrm g_dnwtrm 
+INFO (ASSREXT-35316): ****** For command L318 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2972.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3144.0 kbytes
+ INFO (ASSREXT-35321): *** Command L318 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 68 
+
+grow -V .001 ndiff mask 
+INFO (ASSREXT-35316): ****** For command L304 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2968.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3148.0 kbytes
+ INFO (ASSREXT-35321): *** Command L304 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 67 
+
+geom -V pdiff mask - pdiff,10,i,1 
+INFO (ASSREXT-35316): ****** For command L305 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3480.0 kbytes
+ INFO (ASSREXT-35321): *** Command L305 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 66 
+
+geom -V ndiff,pdiff - active,1,i,1 
+INFO (ASSREXT-35316): ****** For command L306 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3480.0 kbytes
+ INFO (ASSREXT-35321): *** Command L306 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 65 
+
+createEmptyLayer METTPL 
+INFO (ASSREXT-35316): ****** For command L307 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L307 'createEmptyLayer' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 64 
+
+INFO (ASSREXT-35299): *** L293 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 63
+
+INFO (ASSREXT-35299): *** L298 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 62
+
+INFO (ASSREXT-35299): *** L297 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 61
+
+INFO (ASSREXT-35299): *** L296 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 60
+
+INFO (ASSREXT-35299): *** L295 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 59
+
+INFO (ASSREXT-35299): *** L294 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 58
+
+grow -V 0.01 mosvcm g_mosvcm_1 
+INFO (ASSREXT-35316): ****** For command L345 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2712.0 kbytes
+ INFO (ASSREXT-35321): *** Command L345 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 57 
+
+grow -V -0.001 cmim g_dev_7 
+INFO (ASSREXT-35316): ****** For command L355 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2948.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3048.0 kbytes
+ INFO (ASSREXT-35321): *** Command L355 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 56 
+
+grow -V -0.001 cmim g_dev_8 
+INFO (ASSREXT-35316): ****** For command L358 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2948.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3048.0 kbytes
+ INFO (ASSREXT-35321): *** Command L358 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 55 
+
+grow -V -0.001 g_mosvcm_1 g_dev_1 
+INFO (ASSREXT-35316): ****** For command L346 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3476.0 kbytes
+   merge input file took 0.00 user, 0.00 sys, 0.00 elapsed, 2712.0 kbytes
+   grow took  0.00 user, 0.00 sys, 0.00 elapsed, 3012.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3088.0 kbytes
+ INFO (ASSREXT-35321): *** Command L346 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 54 
+
+grow -V -0.001 g_mosvcm_1 g_dev_2 
+INFO (ASSREXT-35316): ****** For command L349 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3476.0 kbytes
+   merge input file took 0.00 user, 0.00 sys, 0.00 elapsed, 2716.0 kbytes
+   grow took  0.00 user, 0.00 sys, 0.00 elapsed, 3016.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3092.0 kbytes
+ INFO (ASSREXT-35321): *** Command L349 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 53 
+
+grow -V -0.001 g_mosvcm_1 g_dev_3 
+INFO (ASSREXT-35316): ****** For command L352 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3480.0 kbytes
+   merge input file took 0.00 user, 0.00 sys, 0.00 elapsed, 2716.0 kbytes
+   grow took  0.00 user, 0.00 sys, 0.00 elapsed, 3016.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3092.0 kbytes
+ INFO (ASSREXT-35321): *** Command L352 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 52 
+
+geom cmim g_dev_7 MET4 - MET4_in,111,i,3 MET4_out,001,i,3 
+INFO (ASSREXT-35316): ****** For command L356 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L356 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 51 
+
+geom cmim g_dev_8 METTP - METTP_in,111,i,3 METTP_out,001,i,3 
+INFO (ASSREXT-35316): ****** For command L359 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L359 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 50 
+
+geom g_mosvcm_1 g_dev_2 active - active_in,111,i,3 active_out,001,i,3 
+INFO (ASSREXT-35316): ****** For command L350 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L350 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 49 
+
+geom g_mosvcm_1 g_dev_3 POLY1 - POLY1_in,111,i,3 POLY1_out,001,i,3 
+INFO (ASSREXT-35316): ****** For command L353 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L353 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 48 
+
+netprint -max NET 
+INFO (ASSREXT-35316): ****** For command L287 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L287 'netprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 47 
+
+netprint -max NET 
+INFO (ASSREXT-35316): ****** For command L333 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L333 'netprint' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 46 
+
+geom nem,pem,nedia2_0d - qrcgate,1,i,1 
+INFO (ASSREXT-35316): ****** For command L332 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L332 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 45 
+
+INFO (ASSREXT-35299): *** L334 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 44
+
+emerge -V nem pem nedia2_0d nedia2_0d GateLayers 
+INFO (ASSREXT-35316): ****** For command L462 on processor #1:
+
+  emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 2440.0 kbytes
+ INFO (ASSREXT-35321): *** Command L462 'emerge' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 43 
+
+INFO (ASSREXT-35299): *** L378 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 42
+
+INFO (ASSREXT-35299): *** L313 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 41
+
+geom -V bulk g_dnwtrm,g_pwitrm,g_nwtrm - bulk,10,i,1 
+INFO (ASSREXT-35316): ****** For command L319 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3480.0 kbytes
+ INFO (ASSREXT-35321): *** Command L319 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 40 
+
+geom -V nwtrm,pwitrm,dnwtrm,bulk - sub,1,i,1 
+INFO (ASSREXT-35316): ****** For command L320 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3480.0 kbytes
+ INFO (ASSREXT-35321): *** Command L320 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 39 
+
+xytoebbox -V -g 50.002 -e METTPL,METTP,MET4,MET3,MET2,MET1,POLY1,active,nwtrm,pwitrm,dnwtrm,bulk xg_sub 
+INFO (ASSREXT-35316): ****** For command L321 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L321 'xytoebbox' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 38 
+
+grow -V 0.001 sub g_sub 
+INFO (ASSREXT-35316): ****** For command L322 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2968.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3172.0 kbytes
+ INFO (ASSREXT-35321): *** Command L322 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 37 
+
+geom -V xg_sub g_sub - tmp_sub,10 
+INFO (ASSREXT-35316): ****** For command L323 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3480.0 kbytes
+ INFO (ASSREXT-35321): *** Command L323 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 36 
+
+epick -V -reo -D 4 tmp_sub pick_sub 
+INFO (ASSREXT-35316): ****** For command L324 on processor #1:
+
+  epick took  0.00 user, 0.00 sys, 0.00 elapsed, 2468.0 kbytes
+ INFO (ASSREXT-35321): *** Command L324 'epick' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 35 
+
+grow -V -m 0.002 pick_sub g_pick_sub 
+INFO (ASSREXT-35316): ****** For command L325 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2712.0 kbytes
+   geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3480.0 kbytes
+ INFO (ASSREXT-35321): *** Command L325 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 34 
+
+stamp -i sub g_pick_sub 
+INFO (ASSREXT-35316): ****** For command L326 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L326 'stamp' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 33 
+
+grow -V -m -0.002 g_pick_sub pick_sub 
+INFO (ASSREXT-35316): ****** For command L327 on processor #1:
+
+  grow took  0.00 user, 0.00 sys, 0.00 elapsed, 2952.0 kbytes
+   sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 3072.0 kbytes
+   geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3476.0 kbytes
+ INFO (ASSREXT-35321): *** Command L327 'grow' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 32 
+
+emerge -V pick_sub sub tmp1_sub 
+INFO (ASSREXT-35316): ****** For command L328 on processor #1:
+
+  emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 2436.0 kbytes
+ INFO (ASSREXT-35321): *** Command L328 'emerge' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 31 
+
+geom -V tmp1_sub - sub,1,i,1 
+INFO (ASSREXT-35316): ****** For command L329 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3472.0 kbytes
+ INFO (ASSREXT-35321): *** Command L329 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 30 
+
+geom -V sub active - sub,10,i,1 
+INFO (ASSREXT-35316): ****** For command L331 on processor #1:
+
+  geom took  0.00 user, 0.00 sys, 0.00 elapsed, 3476.0 kbytes
+ INFO (ASSREXT-35321): *** Command L331 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 29 
+
+geom g_mosvcm_1 g_dev_1 sub - sub_in,111,i,3 sub_out,001,i,3 
+INFO (ASSREXT-35316): ****** For command L347 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L347 'geom' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 28 
+
+relocate -V -a -I relocatemap -n NET sub_in active_in POLY1_in MET4_in METTP_in 
+INFO (ASSREXT-35316): ****** For command L361 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L361 'relocate' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 27 
+
+INFO (ASSREXT-35299): *** L384 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 26
+
+INFO (ASSREXT-35299): *** L330 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 25
+
+INFO (ASSREXT-35299): *** L341 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 24
+
+emerge active_in active_out active 
+INFO (ASSREXT-35316): ****** For command L363 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L363 'emerge' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 23 
+
+INFO (ASSREXT-35299): *** L368 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 22
+
+INFO (ASSREXT-35299): *** L340 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 21
+
+emerge POLY1_in POLY1_out POLY1 
+INFO (ASSREXT-35316): ****** For command L364 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L364 'emerge' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 20 
+
+INFO (ASSREXT-35299): *** L369 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 19
+
+INFO (ASSREXT-35299): *** L344 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 18
+
+emerge METTP_in METTP_out METTP 
+INFO (ASSREXT-35316): ****** For command L366 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L366 'emerge' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 17 
+
+INFO (ASSREXT-35299): *** L371 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 16
+
+INFO (ASSREXT-35299): *** L343 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 15
+
+emerge MET4_in MET4_out MET4 
+INFO (ASSREXT-35316): ****** For command L365 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L365 'emerge' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 14 
+
+INFO (ASSREXT-35299): *** L370 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 13
+
+INFO (ASSREXT-35299): *** L342 '/bin/cp' executed directly
+
+INFO (ASSREXT-35307): tasks left are 12
+
+emerge sub_in sub_out sub 
+INFO (ASSREXT-35316): ****** For command L362 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L362 'emerge' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 11 
+
+INFO (ASSREXT-35299): *** L367 '/bin/rm' executed directly
+
+INFO (ASSREXT-35307): tasks left are 10
+
+Capacitance data preparation stage took  1.15 user, 1.14 sys, 2.00 elapsed, 4616.0 kbytes
+INFO (ASSREXT-35334): Capacitance data preparation stage completed successfully at Tue Aug 13 03:40:15 2024
+
+INFO (ASSREXT-35335): pax16 started at Tue Aug 13 03:40:15 2024
+
+pax16 -V -lee_off -delete_unused_files rm_files_in_pax16 -gnd 4 -ignore_cf_table -scf sip.cmd -filterfile maxnetfile -M_perim_off -c /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/qrcTechFile -f sub:sub_cut active:active_cut POLY1:POLY1_cut MET1 MET2 MET3 MET4:MET4_cut METTP:METTP_cut METTPL GateLayers - /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/qrcTechFile - - NET - capfile 
+INFO (ASSREXT-35315): ****** For command L468:
+
+  pax16 took  0.29 user, 0.14 sys, 1.00 elapsed, 84084.0 kbytes
+ INFO (ASSREXT-35320): *** Command L468 'pax16' finished
+
+C stage took 0.30 user, 0.15 sys, 1.00 elapsed, 4616.0 kbytes
+INFO (ASSREXT-35336): pax16 completed successfully at Tue Aug 13 03:40:16 2024
+
+INFO (ASSREXT-35337): Output stage started at Tue Aug 13 03:40:16 2024
+
+INFO (ASSREXT-35323): tasks left are 9 
+
+relocate -V -r maxnetfile -n NET sub active POLY1 MET4 METTP 
+INFO (ASSREXT-35316): ****** For command L475 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L475 'relocate' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 8 
+
+flatlabel -V -tc -F -l flatlabel.info text_m1trm,text_m2trm,text_m3trm,text_m4trm L1T0,L2T0,L3T0,L4T0 
+INFO (ASSREXT-35316): ****** For command L489 on processor #1:
+
+  INFO (FLTLBL-89003): exec labsort -V L1T0
+   
+   INFO (FLTLBL-89003): exec labsort -V L2T0
+   
+   INFO (FLTLBL-89003): exec labsort -V L3T0
+   
+   INFO (FLTLBL-89003): exec labsort -V L4T0
+   
+ INFO (ASSREXT-35321): *** Command L489 'flatlabel' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 7 
+
+createCAPModelFile lvscap.mod1 cmm5t 1 cmim capm m4trm 
+INFO (ASSREXT-35316): ****** For command L481 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L481 'createCAPModelFile' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 6 
+
+createDIODEModelFile lvsdio.mod1 p_dnw 1 p_0dnw bulk nwtrm 
+INFO (ASSREXT-35316): ****** For command L482 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L482 'createDIODEModelFile' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 5 
+
+createDIODEModelFile lvsdio.mod2 p_dnw3 1 p_0dnwm bulk nwtrm 
+INFO (ASSREXT-35316): ****** For command L483 on processor #1:
+
+INFO (ASSREXT-35321): *** Command L483 'createDIODEModelFile' finished on processor #1
+
+INFO (ASSREXT-35323): tasks left are 4 
+
+xreduce -V -mergecap -n NET -tech /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ -d1 -e METTPL,METTP,MET4,MET3,MET2,MET1,POLY1,active,sub -sr -g 4,1.0 -minR 0.001 -minC 2e-14 -minCper 1 -cap capfile nem.transn pem.transn s_0res.res rpp1k1_0s.res rpp1k1_0n.res cmim.cpax p_0dnw.dpax p_0dnwm.dpax BOX L1T0 L2T0 L3T0 L4T0 
+INFO (ASSREXT-35315): ****** For command L495:
+
+  INFO (XREDUCE-199108): d1 option renamed 0 nets
+   
+   INFO (XREDUCE-199109): minR option removed 0 resistors (0%)
+   
+   INFO (XREDUCE-199054): Total number of capacitors in capfile is 111
+   
+   INFO (XREDUCE-199065): minC small capacitor decoupling set to 1%
+   
+   INFO (XREDUCE-199066): minC option decoupled 64 capacitors in capfile
+   
+   INFO (XREDUCE-199067): the number of capacitors decreased by 63 (57%)
+   
+   xreduce took 0.02 user, 0.01 sys, 0.00 elapsed, 16104.0 kbytes
+ INFO (ASSREXT-35320): *** Command L495 'xreduce' finished
+
+INFO (ASSREXT-35323): tasks left are 3 
+
+advgen -V -g0 -li -f -n -o HSPICE -dxref /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.gdx -nxref /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/current_source_gm_10_en_r.gnx -addprefix -sc caps2dversion -mx capfile METTPL,METTP,MET4,MET3,MET2,MET1,POLY1,active,sub -b BOX -bl BOXL BOXSUB -raM lvsres.mod,s_0res.net s_0res.res -raMu lvsres.mod,rpp1k1_0s.net rpp1k1_0s.res -raMu lvsres.mod,rpp1k1_0n.net rpp1k1_0n.res -ta lvsmos.mod,nem.net nem.transn -ta lvsmos.mod,pem.net pem.transn -pM lvscap.mod1,cmim.net cmim.cpax -dM lvsdio.mod1,p_0dnw.net p_0dnw.dpax -dM lvsdio.mod2,p_0dnwm.net p_0dnwm.dpax - NET - /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.tmp 
+INFO (ASSREXT-35315): ****** For command L506:
+
+  INFO (ADVGN-5347): spice2db warning: Duplicate dev "XC0" in cell "current_source_gm_10_en_r" renamed "XC0@1"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "XC0" in cell "current_source_gm_10_en_r" renamed "XC0@2"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "XC0" in cell "current_source_gm_10_en_r" renamed "XC0@3"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "MM26" in cell "current_source_gm_10_en_r" renamed "MM26@1"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "MM35" in cell "current_source_gm_10_en_r" renamed "MM35@1"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "MM29" in cell "current_source_gm_10_en_r" renamed "MM29@1"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "MM30" in cell "current_source_gm_10_en_r" renamed "MM30@1"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "MM29" in cell "current_source_gm_10_en_r" renamed "MM29@2"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "MM30" in cell "current_source_gm_10_en_r" renamed "MM30@2"
+   
+   INFO (ADVGN-5347): spice2db warning: Duplicate dev "MM30" in cell "current_source_gm_10_en_r" renamed "MM30@3"
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   WARNING (ADVGN-221986): possible error: no resistor value or parameter present in either spice file or .props file
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD5" in subckt current_source_gm_10_en_r renamed "DD5_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD6" in subckt current_source_gm_10_en_r renamed "DD6_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD7" in subckt current_source_gm_10_en_r renamed "DD7_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD8" in subckt current_source_gm_10_en_r renamed "DD8_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD9" in subckt current_source_gm_10_en_r renamed "DD9_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD10" in subckt current_source_gm_10_en_r renamed "DD10_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD11" in subckt current_source_gm_10_en_r renamed "DD11_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD12" in subckt current_source_gm_10_en_r renamed "DD12_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD13" in subckt current_source_gm_10_en_r renamed "DD13_unmatched"
+   
+   INFO (ADVGN-5763): spice2db warning: No reference for dev "DD14" in subckt current_source_gm_10_en_r renamed "DD14_unmatched"
+   
+   advgen took:  0.45 user, 0.34 sys, 1.00 elapsed, 20900.0 kbytes
+ INFO (ASSREXT-35320): *** Command L506 'advgen' finished
+
+INFO (ASSREXT-35323): tasks left are 2 
+
+INFO (ASSREXT-35299): *** L524 'mv' executed directly
+
+INFO (ASSREXT-35307): tasks left are 1
+
+INFO (ASSREXT-35299): *** L556 'cat' executed directly
+
+INFO (ASSREXT-35307): tasks left are 0
+
+Output stage took  0.50 user, 0.39 sys, 1.00 elapsed, 4628.0 kbytes
+INFO (ASSREXT-35338): Output stage completed successfully at Tue Aug 13 03:40:17 2024
+
+assura_rcx took:  0.00 user, 0.00 sys, 0.00 elapsed, 4640.0 kbytes
+INFO (LBRCXM-610): Extraction finished.
+
+INFO (LBRCXU-108): Starting
+
+ runUserCmd /pkg/cadence/installs/IC618/bin/qrcToDfII -extract cap -run_name current_source_gm_10_en_r -cdlout_run_dir /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r -check_cell_view TRUE -device_finger_delimiter @ -extracted_view analog_extracted_C -lvs_source agds -cap_models no -capacitor p_cap auLvs PRIMLIB -res_models no -cap_prop_name c -transfer_net_expression TRUE -extview_tmp /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.tmp -run_dir /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r -cdslib /home/saul/projects/ASKA/cds.lib -lib_name CURRENT_SOURCE -cell_name current_source_gm_10_en_r -view_name layout -extview_rul /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.rul -server /pkg/cadence/installs/QUANTUS231/tools/extraction/bin/64bit/../shapeServer
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.08s.
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "XC0" in cell "current_source_gm_10_en_r" renamed "XC0@1"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "XC0" in cell "current_source_gm_10_en_r" renamed "XC0@2"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "XC0" in cell "current_source_gm_10_en_r" renamed "XC0@3"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "MM26" in cell "current_source_gm_10_en_r" renamed "MM26@1"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "MM35" in cell "current_source_gm_10_en_r" renamed "MM35@1"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "MM29" in cell "current_source_gm_10_en_r" renamed "MM29@1"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "MM30" in cell "current_source_gm_10_en_r" renamed "MM30@1"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "MM29" in cell "current_source_gm_10_en_r" renamed "MM29@2"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "MM30" in cell "current_source_gm_10_en_r" renamed "MM30@2"
+
+INFO (LBCLV-5347): spice2db warning: Duplicate dev "MM30" in cell "current_source_gm_10_en_r" renamed "MM30@3"
+
+device nedia X nedia2_d nedia ivpcell PRIMLIB D G S SB 
+** Info: PDK loadpath is "/home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/PDK/IC61/v9_0_4"
+Loading XfSktTools.cxt
+Loading XfMenu.cxt
+Loading XfTechXh018.cxt
+Loading XfPcellCore.cxt
+function ansiSpicePrintProperties_subcircuit redefined
+Loading XfSkillExt.cxt
+Initializing library.
+Finished Initializing Library .
+    Generic PcellKit: 'production' loaded.
+    Generic Pcell Skill Tools: 'production' loaded.
+Loading Circuit Prospector Setup (XfCircuitProspSetup.il)
+device ne3 M nem ne3 ivpcell PRIMLIB D G S B 
+device pe3 M pem pe3 ivpcell PRIMLIB D G S B 
+device MOSVC3 X mosvcm mosvc3 ivpcell PRIMLIB G NW SB 
+device s_res R s_res s_res ivpcell PRIMLIB PLUS MINUS 
+device p_dnw D p_dnw p_dnw ivpcell PRIMLIB PLUS MINUS 
+device p_dnw3 D p_dnwm p_dnw3 ivpcell PRIMLIB PLUS MINUS 
+device rpp1k1_3 R rpp1k1_s rpp1k1_3 ivpcell PRIMLIB PLUS MINUS BULK 
+device rpp1k1_3 R rpp1k1_n rpp1k1_3 ivpcell PRIMLIB PLUS MINUS BULK 
+device cmm5t C cmim cmm5t ivpcell PRIMLIB PLUS MINUS 
+Loading CDLOUT map files for /home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r
+
+Creating extracted view for current_source_gm_10_en_r
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D5" in subckt current_source_gm_10_en_r renamed "D5_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D6" in subckt current_source_gm_10_en_r renamed "D6_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D9" in subckt current_source_gm_10_en_r renamed "D9_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D10" in subckt current_source_gm_10_en_r renamed "D10_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D11" in subckt current_source_gm_10_en_r renamed "D11_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D12" in subckt current_source_gm_10_en_r renamed "D12_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D7" in subckt current_source_gm_10_en_r renamed "D7_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D8" in subckt current_source_gm_10_en_r renamed "D8_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D13" in subckt current_source_gm_10_en_r renamed "D13_unmatched"
+
+INFO (LBCLV-5763): spice2db warning: No reference for dev "D14" in subckt current_source_gm_10_en_r renamed "D14_unmatched"
+
+Express Pcell license has been checked out for the Express Pcell feature.
+Save recognition layer ne
+Layer ne has 0 shapes.
+Save recognition layer pe
+Layer pe has 0 shapes.
+Save recognition layer nel
+Layer nel has 0 shapes.
+Save recognition layer nelna
+Layer nelna has 0 shapes.
+Save recognition layer nesvt
+Layer nesvt has 0 shapes.
+Save recognition layer pel
+Layer pel has 0 shapes.
+Save recognition layer pesvt
+Layer pesvt has 0 shapes.
+Save recognition layer nei
+Layer nei has 0 shapes.
+Save recognition layer pei
+Layer pei has 0 shapes.
+Save recognition layer neli
+Layer neli has 0 shapes.
+Save recognition layer peli
+Layer peli has 0 shapes.
+Save recognition layer nelnai
+Layer nelnai has 0 shapes.
+Save recognition layer nesvti
+Layer nesvti has 0 shapes.
+Save recognition layer pesvti
+Layer pesvti has 0 shapes.
+Save recognition layer nei_6
+Layer nei_6 has 0 shapes.
+Save recognition layer nei_m_6
+Layer nei_m_6 has 0 shapes.
+Save recognition layer neli_6
+Layer neli_6 has 0 shapes.
+Save recognition layer neli_m_6
+Layer neli_m_6 has 0 shapes.
+Save recognition layer nelnai_6
+Layer nelnai_6 has 0 shapes.
+Save recognition layer nelnai_m_6
+Layer nelnai_m_6 has 0 shapes.
+Save recognition layer nesvti_6
+Layer nesvti_6 has 0 shapes.
+Save recognition layer nesvti_m_6
+Layer nesvti_m_6 has 0 shapes.
+Save recognition layer pe_5
+Layer pe_5 has 0 shapes.
+Save recognition layer pel_5
+Layer pel_5 has 0 shapes.
+Save recognition layer pei_5
+Layer pei_5 has 0 shapes.
+Save recognition layer pei_m_5
+Layer pei_m_5 has 0 shapes.
+Save recognition layer peli_5
+Layer peli_5 has 0 shapes.
+Save recognition layer peli_m_5
+Layer peli_m_5 has 0 shapes.
+Save recognition layer pesvt_5
+Layer pesvt_5 has 0 shapes.
+Save recognition layer pesvti_5
+Layer pesvti_5 has 0 shapes.
+Save recognition layer pesvti_m_5
+Layer pesvti_m_5 has 0 shapes.
+Save recognition layer rnw
+Layer rnw has 0 shapes.
+Save recognition layer rnw_scr
+Layer rnw_scr has 0 shapes.
+Save recognition layer rdn
+Layer rdn has 0 shapes.
+Save recognition layer rdn_g
+Layer rdn_g has 0 shapes.
+Save recognition layer rdni
+Layer rdni has 0 shapes.
+Save recognition layer rdn_gi
+Layer rdn_gi has 0 shapes.
+Save recognition layer rdn_esdg
+Layer rdn_esdg has 0 shapes.
+Save recognition layer rdp
+Layer rdp has 0 shapes.
+Save recognition layer rdp_g
+Layer rdp_g has 0 shapes.
+Save recognition layer rdpi
+Layer rdpi has 0 shapes.
+Save recognition layer rdp_gi
+Layer rdp_gi has 0 shapes.
+Save recognition layer rdp_io_g
+Layer rdp_io_g has 0 shapes.
+Save recognition layer rdp_esdg
+Layer rdp_esdg has 0 shapes.
+Save recognition layer nnm
+Layer nnm has 0 shapes.
+Save recognition layer nem
+Layer nem has 34 shapes.
+Save recognition layer ndm
+Layer ndm has 0 shapes.
+Save recognition layer nemlna
+Layer nemlna has 0 shapes.
+Save recognition layer pem
+Layer pem has 107 shapes.
+Save recognition layer pemln
+Layer pemln has 0 shapes.
+Save recognition layer pemlna
+Layer pemlna has 0 shapes.
+Save recognition layer nemi
+Layer nemi has 0 shapes.
+Save recognition layer ndmi
+Layer ndmi has 0 shapes.
+Save recognition layer nemlna
+Layer nemlna has 0 shapes.
+Save recognition layer pemi
+Layer pemi has 0 shapes.
+Save recognition layer pemlni
+Layer pemlni has 0 shapes.
+Save recognition layer pemlnai
+Layer pemlnai has 0 shapes.
+Save recognition layer nemi_m_6
+Layer nemi_m_6 has 0 shapes.
+Save recognition layer ndmi_m_6
+Layer ndmi_m_6 has 0 shapes.
+Save recognition layer nemlnai_m_6
+Layer nemlnai_m_6 has 0 shapes.
+Save recognition layer pem_5
+Layer pem_5 has 0 shapes.
+Save recognition layer pemln_5
+Layer pemln_5 has 0 shapes.
+Save recognition layer pemlna_5
+Layer pemlna_5 has 0 shapes.
+Save recognition layer pemi_m_5
+Layer pemi_m_5 has 0 shapes.
+Save recognition layer pemlni_m_5
+Layer pemlni_m_5 has 0 shapes.
+Save recognition layer pemlnai_m_5
+Layer pemlnai_m_5 has 0 shapes.
+Save recognition layer nemi_6
+Layer nemi_6 has 0 shapes.
+Save recognition layer ndmi_6
+Layer ndmi_6 has 0 shapes.
+Save recognition layer nemlnai_6
+Layer nemlnai_6 has 0 shapes.
+Save recognition layer pemi_5
+Layer pemi_5 has 0 shapes.
+Save recognition layer pemlni_5
+Layer pemlni_5 has 0 shapes.
+Save recognition layer pemlnai_5
+Layer pemlnai_5 has 0 shapes.
+Save recognition layer ndsmiP
+Layer ndsmiP has 0 shapes.
+Save recognition layer ndsmiE
+Layer ndsmiE has 0 shapes.
+Save recognition layer nha3m
+Layer nha3m has 0 shapes.
+Save recognition layer nedam_d
+Layer nedam_d has 0 shapes.
+Save recognition layer nedam_b
+Layer nedam_b has 0 shapes.
+Save recognition layer pedam_d
+Layer pedam_d has 0 shapes.
+Save recognition layer pedam_b
+Layer pedam_b has 0 shapes.
+Save recognition layer pedama_d
+Layer pedama_d has 0 shapes.
+Save recognition layer pedama_b
+Layer pedama_b has 0 shapes.
+Save recognition layer nmma_d
+Layer nmma_d has 0 shapes.
+Save recognition layer nmmb_d
+Layer nmmb_d has 0 shapes.
+Save recognition layer nmmc_d
+Layer nmmc_d has 0 shapes.
+Save recognition layer nmmd_d
+Layer nmmd_d has 0 shapes.
+Save recognition layer pmma_d
+Layer pmma_d has 0 shapes.
+Save recognition layer pmmb_d
+Layer pmmb_d has 0 shapes.
+Save recognition layer pmmc_d
+Layer pmmc_d has 0 shapes.
+Save recognition layer nma_d
+Layer nma_d has 0 shapes.
+Save recognition layer nmc_d
+Layer nmc_d has 0 shapes.
+Save recognition layer nhhv_d
+Layer nhhv_d has 0 shapes.
+Save recognition layer nhv_d
+Layer nhv_d has 0 shapes.
+Save recognition layer nhhvd_d
+Layer nhhvd_d has 0 shapes.
+Save recognition layer nhvd_d
+Layer nhvd_d has 0 shapes.
+Save recognition layer pma_d
+Layer pma_d has 0 shapes.
+Save recognition layer pmb_d
+Layer pmb_d has 0 shapes.
+Save recognition layer pmc_d
+Layer pmc_d has 0 shapes.
+Save recognition layer phhv_d
+Layer phhv_d has 0 shapes.
+Save recognition layer phv_d
+Layer phv_d has 0 shapes.
+Save recognition layer nmma_b
+Layer nmma_b has 0 shapes.
+Save recognition layer nmmb_b
+Layer nmmb_b has 0 shapes.
+Save recognition layer nmmc_b
+Layer nmmc_b has 0 shapes.
+Save recognition layer nmmd_b
+Layer nmmd_b has 0 shapes.
+Save recognition layer pmma_b
+Layer pmma_b has 0 shapes.
+Save recognition layer pmmb_b
+Layer pmmb_b has 0 shapes.
+Save recognition layer pmmc_b
+Layer pmmc_b has 0 shapes.
+Save recognition layer nma_b
+Layer nma_b has 0 shapes.
+Save recognition layer nmc_b
+Layer nmc_b has 0 shapes.
+Save recognition layer nhhv_b
+Layer nhhv_b has 0 shapes.
+Save recognition layer nhv_b
+Layer nhv_b has 0 shapes.
+Save recognition layer nhhvd_b
+Layer nhhvd_b has 0 shapes.
+Save recognition layer nhvd_b
+Layer nhvd_b has 0 shapes.
+Save recognition layer pma_b
+Layer pma_b has 0 shapes.
+Save recognition layer pmb_b
+Layer pmb_b has 0 shapes.
+Save recognition layer pmc_b
+Layer pmc_b has 0 shapes.
+Save recognition layer phhv_b
+Layer phhv_b has 0 shapes.
+Save recognition layer phv_b
+Layer phv_b has 0 shapes.
+Save recognition layer nedi2_d
+Layer nedi2_d has 0 shapes.
+Save recognition layer nedia2_d
+Layer nedia2_d has 9 shapes.
+Save recognition layer ped12_d
+Layer ped12_d has 0 shapes.
+Save recognition layer ped22_d
+Layer ped22_d has 0 shapes.
+Save recognition layer nedi2_b
+Layer nedi2_b has 0 shapes.
+Save recognition layer nedia2_b
+Layer nedia2_b has 0 shapes.
+Save recognition layer ped12_b
+Layer ped12_b has 0 shapes.
+Save recognition layer ped22_b
+Layer ped22_b has 0 shapes.
+Save recognition layer mosvc
+Layer mosvc has 0 shapes.
+Save recognition layer mosvci
+Layer mosvci has 0 shapes.
+Save recognition layer mosvci_m
+Layer mosvci_m has 0 shapes.
+Save recognition layer mosvcim
+Layer mosvcim has 0 shapes.
+Save recognition layer mosvcm
+Layer mosvcm has 4 shapes.
+Save recognition layer mosvcim_m
+Layer mosvcim_m has 0 shapes.
+Save recognition layer qpva
+Layer qpva has 0 shapes.
+Save recognition layer qpvb
+Layer qpvb has 0 shapes.
+Save recognition layer qpvc
+Layer qpvc has 0 shapes.
+Save recognition layer qpvascr
+Layer qpvascr has 0 shapes.
+Save recognition layer qpvhscr
+Layer qpvhscr has 0 shapes.
+Save recognition layer qpvhbscr
+Layer qpvhbscr has 0 shapes.
+Save recognition layer qnva
+Layer qnva has 0 shapes.
+Save recognition layer qnvb
+Layer qnvb has 0 shapes.
+Save recognition layer qnvba
+Layer qnvba has 0 shapes.
+Save recognition layer qnvz
+Layer qnvz has 0 shapes.
+Save recognition layer qnvc
+Layer qnvc has 0 shapes.
+Save recognition layer qnvca
+Layer qnvca has 0 shapes.
+Save recognition layer qnvam
+Layer qnvam has 0 shapes.
+Save recognition layer qpvma
+Layer qpvma has 0 shapes.
+Save recognition layer qpvmb
+Layer qpvmb has 0 shapes.
+Save recognition layer qpvmc
+Layer qpvmc has 0 shapes.
+Save recognition layer rdnwmv
+Layer rdnwmv has 0 shapes.
+Save recognition layer rnwm
+Layer rnwm has 0 shapes.
+Save recognition layer rnwm_scr
+Layer rnwm_scr has 0 shapes.
+Save recognition layer rdnm
+Layer rdnm has 0 shapes.
+Save recognition layer rdnm_g
+Layer rdnm_g has 0 shapes.
+Save recognition layer rdnmi
+Layer rdnmi has 0 shapes.
+Save recognition layer rdnm_gi
+Layer rdnm_gi has 0 shapes.
+Save recognition layer rdpm
+Layer rdpm has 0 shapes.
+Save recognition layer rdpm_g
+Layer rdpm_g has 0 shapes.
+Save recognition layer rdpmi
+Layer rdpmi has 0 shapes.
+Save recognition layer rdpm_gi
+Layer rdpm_gi has 0 shapes.
+Save recognition layer rpp1k1_2
+Layer rpp1k1_2 has 0 shapes.
+Save recognition layer rpp1k1_s
+Layer rpp1k1_s has 12 shapes.
+Save recognition layer rpp1k1_p
+Layer rpp1k1_p has 0 shapes.
+Save recognition layer rpp1k1fp
+Layer rpp1k1fp has 0 shapes.
+Save recognition layer rpp1k1_n
+Layer rpp1k1_n has 1 shapes.
+Save recognition layer rpp1k1_d
+Layer rpp1k1_d has 0 shapes.
+Save recognition layer rpp1k1_h
+Layer rpp1k1_h has 0 shapes.
+Save recognition layer rpp1k1hn
+Layer rpp1k1hn has 0 shapes.
+Save recognition layer rpp1k1fn
+Layer rpp1k1fn has 0 shapes.
+Save recognition layer rnp1_2
+Layer rnp1_2 has 0 shapes.
+Save recognition layer rnp1_s
+Layer rnp1_s has 0 shapes.
+Save recognition layer rnp1_p
+Layer rnp1_p has 0 shapes.
+Save recognition layer rnp1fp
+Layer rnp1fp has 0 shapes.
+Save recognition layer rnp1_n
+Layer rnp1_n has 0 shapes.
+Save recognition layer rnp1_d
+Layer rnp1_d has 0 shapes.
+Save recognition layer rnp1_h
+Layer rnp1_h has 0 shapes.
+Save recognition layer rnp1hn
+Layer rnp1hn has 0 shapes.
+Save recognition layer rnp1fn
+Layer rnp1fn has 0 shapes.
+Save recognition layer rpp1_2
+Layer rpp1_2 has 0 shapes.
+Save recognition layer rpp1_s
+Layer rpp1_s has 0 shapes.
+Save recognition layer rpp1_p
+Layer rpp1_p has 0 shapes.
+Save recognition layer rpp1fp
+Layer rpp1fp has 0 shapes.
+Save recognition layer rpp1_n
+Layer rpp1_n has 0 shapes.
+Save recognition layer rpp1_d
+Layer rpp1_d has 0 shapes.
+Save recognition layer rpp1_h
+Layer rpp1_h has 0 shapes.
+Save recognition layer rpp1hn
+Layer rpp1hn has 0 shapes.
+Save recognition layer rpp1fn
+Layer rpp1fn has 0 shapes.
+Save recognition layer rpp1s_2
+Layer rpp1s_2 has 0 shapes.
+Save recognition layer rpp1s_s
+Layer rpp1s_s has 0 shapes.
+Save recognition layer rpp1s_p
+Layer rpp1s_p has 0 shapes.
+Save recognition layer rpp1sfp
+Layer rpp1sfp has 0 shapes.
+Save recognition layer rpp1s_n
+Layer rpp1s_n has 0 shapes.
+Save recognition layer rpp1s_d
+Layer rpp1s_d has 0 shapes.
+Save recognition layer rpp1s_h
+Layer rpp1s_h has 0 shapes.
+Save recognition layer rpp1shn
+Layer rpp1shn has 0 shapes.
+Save recognition layer rpp1sfn
+Layer rpp1sfn has 0 shapes.
+Save recognition layer rnp1h_2
+Layer rnp1h_2 has 0 shapes.
+Save recognition layer rnp1h_s
+Layer rnp1h_s has 0 shapes.
+Save recognition layer rnp1h_p
+Layer rnp1h_p has 0 shapes.
+Save recognition layer rnp1hfp
+Layer rnp1hfp has 0 shapes.
+Save recognition layer rnp1h_n
+Layer rnp1h_n has 0 shapes.
+Save recognition layer rnp1h_d
+Layer rnp1h_d has 0 shapes.
+Save recognition layer rnp1h_h
+Layer rnp1h_h has 0 shapes.
+Save recognition layer rnp1hhn
+Layer rnp1hhn has 0 shapes.
+Save recognition layer rnp1hfn
+Layer rnp1hfn has 0 shapes.
+Save recognition layer s_res
+Layer s_res has 1 shapes.
+Save recognition layer pfuse
+Layer pfuse has 0 shapes.
+Save recognition layer rp1s_otps
+Layer rp1s_otps has 0 shapes.
+Save recognition layer d_dn
+Layer d_dn has 0 shapes.
+Save recognition layer d_dni1
+Layer d_dni1 has 0 shapes.
+Save recognition layer d_dni2
+Layer d_dni2 has 0 shapes.
+Save recognition layer d_dp
+Layer d_dp has 0 shapes.
+Save recognition layer d_dpi1
+Layer d_dpi1 has 0 shapes.
+Save recognition layer d_dpi2
+Layer d_dpi2 has 0 shapes.
+Save recognition layer d_dnw
+Layer d_dnw has 0 shapes.
+Save recognition layer d_dhnw
+Layer d_dhnw has 0 shapes.
+Save recognition layer d_dhpw
+Layer d_dhpw has 0 shapes.
+Save recognition layer d_ddnw
+Layer d_ddnw has 0 shapes.
+Save recognition layer d_dipw
+Layer d_dipw has 0 shapes.
+Save recognition layer d_dndf
+Layer d_dndf has 0 shapes.
+Save recognition layer d_dpdwhn
+Layer d_dpdwhn has 0 shapes.
+Save recognition layer d_dwhn
+Layer d_dwhn has 0 shapes.
+Save recognition layer dpdd_scr
+Layer dpdd_scr has 0 shapes.
+Save recognition layer dnpddscr
+Layer dnpddscr has 0 shapes.
+Save recognition layer dpp20
+Layer dpp20 has 0 shapes.
+Save recognition layer dnp20
+Layer dnp20 has 0 shapes.
+Save recognition layer d_dnhpw
+Layer d_dnhpw has 0 shapes.
+Save recognition layer d_dnhpwi
+Layer d_dnhpwi has 0 shapes.
+Save recognition layer d_dphnw
+Layer d_dphnw has 0 shapes.
+Save recognition layer d_dphnw1
+Layer d_dphnw1 has 0 shapes.
+Save recognition layer d_dphnw2
+Layer d_dphnw2 has 0 shapes.
+Save recognition layer d_dpdnw
+Layer d_dpdnw has 0 shapes.
+Save recognition layer d_dpwhn
+Layer d_dpwhn has 0 shapes.
+Save recognition layer d_dsb
+Layer d_dsb has 0 shapes.
+Save recognition layer d_dsba
+Layer d_dsba has 0 shapes.
+Save recognition layer d_ddnwmv
+Layer d_ddnwmv has 0 shapes.
+Save recognition layer d_dipwmv
+Layer d_dipwmv has 0 shapes.
+Save recognition layer ddscidmv
+Layer ddscidmv has 0 shapes.
+Save recognition layer ddpdnwmv
+Layer ddpdnwmv has 0 shapes.
+Save recognition layer d_dnm
+Layer d_dnm has 0 shapes.
+Save recognition layer d_dnnm
+Layer d_dnnm has 0 shapes.
+Save recognition layer d_dnmi1
+Layer d_dnmi1 has 0 shapes.
+Save recognition layer d_dnmi2
+Layer d_dnmi2 has 0 shapes.
+Save recognition layer d_dnmsci
+Layer d_dnmsci has 0 shapes.
+Save recognition layer d_dpm
+Layer d_dpm has 0 shapes.
+Save recognition layer d_dpmi1
+Layer d_dpmi1 has 0 shapes.
+Save recognition layer d_dpmi2
+Layer d_dpmi2 has 0 shapes.
+Save recognition layer d_dnwm
+Layer d_dnwm has 0 shapes.
+Save recognition layer dphoa
+Layer dphoa has 0 shapes.
+Save recognition layer dphob
+Layer dphob has 0 shapes.
+Save recognition layer dapda
+Layer dapda has 0 shapes.
+Save recognition layer dapda0
+Layer dapda0 has 0 shapes.
+Save recognition layer dspada
+Layer dspada has 0 shapes.
+Save recognition layer dspada0
+Layer dspada0 has 0 shapes.
+Save recognition layer dpol
+Layer dpol has 0 shapes.
+Save recognition layer rm1
+Layer rm1 has 0 shapes.
+Save recognition layer rm2
+Layer rm2 has 0 shapes.
+Save recognition layer cpod
+Layer cpod has 0 shapes.
+Save recognition layer cpodhv
+Layer cpodhv has 0 shapes.
+Save recognition layer cnnotpaP
+Layer cnnotpaP has 0 shapes.
+Save recognition layer cnnotpaE
+Layer cnnotpaE has 0 shapes.
+Save recognition layer d_csf2p
+Layer d_csf2p has 0 shapes.
+Save recognition layer cmim
+Layer cmim has 7 shapes.
+Save recognition layer cmimh
+Layer cmimh has 0 shapes.
+Save recognition layer cdmm
+Layer cdmm has 0 shapes.
+Save recognition layer cdmmh
+Layer cdmmh has 0 shapes.
+Save recognition layer ctmm
+Layer ctmm has 0 shapes.
+Save recognition layer ctmmh
+Layer ctmmh has 0 shapes.
+Save recognition layer d_cswt3
+Layer d_cswt3 has 0 shapes.
+Save recognition layer d_csf3p
+Layer d_csf3p has 0 shapes.
+Save recognition layer d_csf3
+Layer d_csf3 has 0 shapes.
+Save recognition layer d_csf3a
+Layer d_csf3a has 0 shapes.
+Save recognition layer d_cif3a
+Layer d_cif3a has 0 shapes.
+Save recognition layer cmim23f
+Layer cmim23f has 0 shapes.
+Save recognition layer cmimh23f
+Layer cmimh23f has 0 shapes.
+Save recognition layer d_cswt4
+Layer d_cswt4 has 0 shapes.
+Save recognition layer d_csf4
+Layer d_csf4 has 0 shapes.
+Save recognition layer d_csf4a
+Layer d_csf4a has 0 shapes.
+Save recognition layer d_cif4a
+Layer d_cif4a has 0 shapes.
+Save recognition layer cmim34f
+Layer cmim34f has 0 shapes.
+Save recognition layer cmimh34f
+Layer cmimh34f has 0 shapes.
+Copying layer p1trm
+Layer p1trm has 169 shapes.
+Copying layer m1trm
+Layer m1trm has 355 shapes.
+Copying layer m2trm
+Layer m2trm has 118 shapes.
+Copying layer via1
+Layer via1 has 6359 shapes.
+Copying layer csf_p1
+Layer csf_p1 has 0 shapes.
+Copying layer csf_m1
+Layer csf_m1 has 0 shapes.
+Copying layer csf_m2
+Layer csf_m2 has 0 shapes.
+Save recognition layer rm3
+Layer rm3 has 0 shapes.
+Copying layer m3trm
+Layer m3trm has 47 shapes.
+Copying layer via2CON
+Layer via2CON has 8452 shapes.
+Copying layer v2cm
+Layer v2cm has 0 shapes.
+Copying layer v2cmh
+Layer v2cmh has 0 shapes.
+Copying layer csf_m3
+Layer csf_m3 has 0 shapes.
+Copying layer v2cm2
+Layer v2cm2 has 0 shapes.
+Copying layer v2cm2
+Layer v2cm2 has 0 shapes.
+Save recognition layer rm4
+Layer rm4 has 0 shapes.
+Copying layer m4trm
+Layer m4trm has 78 shapes.
+Copying layer via3CON
+Layer via3CON has 5465 shapes.
+Copying layer v3cm
+Layer v3cm has 0 shapes.
+Copying layer v3cmh
+Layer v3cmh has 0 shapes.
+Copying layer v3cm2
+Layer v3cm2 has 0 shapes.
+Copying layer v3cmh2
+Layer v3cmh2 has 0 shapes.
+Copying layer csf_m4
+Layer csf_m4 has 0 shapes.
+Copying layer v2cm3
+Layer v2cm3 has 0 shapes.
+Copying layer v2cmh3
+Layer v2cmh3 has 0 shapes.
+Copying layer v3cm3
+Layer v3cm3 has 0 shapes.
+Copying layer v3cmh3
+Layer v3cmh3 has 0 shapes.
+Copying layer vtpcm2
+Layer vtpcm2 has 0 shapes.
+Copying layer vtpcm2
+Layer vtpcm2 has 0 shapes.
+Save recognition layer rmtp
+Layer rmtp has 0 shapes.
+Copying layer mttrm
+Layer mttrm has 74 shapes.
+Copying layer vtpCON
+Layer vtpCON has 19684 shapes.
+Copying layer vtpcm
+Layer vtpcm has 1092 shapes.
+Copying layer vtpcmh
+Layer vtpcmh has 0 shapes.
+Copying layer csf_mt
+Layer csf_mt has 0 shapes.
+Save recognition layer rmtpl
+Layer rmtpl has 0 shapes.
+Copying layer mltrm
+Layer mltrm has 0 shapes.
+Copying layer viatpl
+Layer viatpl has 0 shapes.
+Copying layer ndiff
+Layer ndiff has 93 shapes.
+Copying layer pdiff
+Layer pdiff has 198 shapes.
+Copying layer cont
+Layer cont has 18511 shapes.
+Copying layer d_dsc
+Layer d_dsc has 0 shapes.
+Copying layer nwtrm
+Layer nwtrm has 13 shapes.
+Copying layer dnwtrm
+Layer dnwtrm has 20 shapes.
+Copying layer hvnwtrm
+Layer hvnwtrm has 0 shapes.
+Copying layer pwitrm
+Layer pwitrm has 9 shapes.
+Copying layer bulk
+Layer bulk has 3 shapes.
+Transfer property, if applicable, will be applied for CURRENT_SOURCE/current_source_gm_10_en_r/analog_extracted_C
+*INFO: Executing TRP Version 17.1.0.0
+*INFO: Reading file "/home/saul/projects/ASKA/PvsLVS/current_source_gm_10_en_r/svdb/current_source_gm_10_en_r/extview.trp" 
+
+
+Summary for CURRENT_SOURCE/current_source_gm_10_en_r/analog_extracted_C
+
+instance count totals:
+
+    lib              cell             view                    total
+    PRIMLIB          cmm5t            ivpcell                     7
+    PRIMLIB          mosvc3           ivpcell                     4
+    PRIMLIB          ne3              ivpcell                    34
+    PRIMLIB          nedia            ivpcell                     9
+    PRIMLIB          p_cap            auLvs                      48
+    PRIMLIB          p_dnw            ivpcell                     9
+    PRIMLIB          p_dnw3           ivpcell                    10
+    PRIMLIB          pe3              ivpcell                   107
+    PRIMLIB          rpp1k1_3         ivpcell                    13
+    PRIMLIB          s_res            ivpcell                     1
+
+Extracted view creation has completed.
+INFO (LBRCXM-612): Done Executing :runUserCmd
+
+INFO (LBRCXM-582): Checking in license of QTS300 23.10
+
+INFO (LBRCXM-985): Summary:
+ Number of CPUs requested:		1
+ Techfile(s):
+    /home/saul/pkg/xfab/XKIT/xh018/cadence/v9_0/QRC_pvs/v9_0_1/XH018_1143/QRC-Typ/qrcTechFile; process name: XX018
+ License(s) used:	QTS300 (x1)
+ Design data:
+    global nets:                  0
+    LVS nets:                     27
+    signal nets:                  27
+    floating nets:                0
+    ground net name:              GNDA
+ Reduction statistics:
+    Dangling Rs removed:          0
+    Merged Parallel Rs:           0
+    Rs shorted by min_res option: 0
+    Merged Parallel Self Caps:    0
+    CCs filtered by minC option:  64
+    Shorted Incomplete Nets:      0
+ Output statistics:
+    R: 0
+    C: 48
+    L: 0
+
+
+INFO (LBRCXM-920): Host name and peak memory report
+ Host Name:                    phoenix
+ Peak memory used:             64 MB (sampled at 15s intervals)
+
+INFO (LBRCXM-982): Floating net statistics in the design:
+
+   Total floating nets =  0
+     Total signal nets =  27
+         Total LVS net = 27
+
+INFO (LBRCXM-702): Run ended: Tue Aug 13 03:40:18 2024
+
+
+INFO (LBRCXM-805): Quantus run took:  2s user, 2s sys, 6s elapsed
+
+
+INFO (LBRCXM-708): *****  Quantus terminated normally  *****
+
+

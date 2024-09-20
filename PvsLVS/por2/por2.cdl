@@ -1,0 +1,91 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ASKA_POR
+* Top Cell Name: por2
+* View Name:     schematic
+* Netlisted on:  Aug 26 08:07:28 2024
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: D_CELLS_3V
+* Cell Name:    STE_3VX4
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT STE_3VX4 A Q inh_ground_gnd inh_power_vdd3
+*.PININFO A:I Q:O inh_ground_gnd:B inh_power_vdd3:B
+MM0 net39 A inh_ground_gnd inh_ground_gnd NE3 W=650.0n L=350.0n M=1.0 
++ AD=3.12e-13 AS=3.12e-13 PD=2.26e-06 PS=2.26e-06 NRD=0.415385 NRS=0.415385
+MM5 inh_power_vdd3 net31 net39 inh_ground_gnd NE3 W=890.0n L=350.0n M=1.0 
++ AD=4.272e-13 AS=4.272e-13 PD=2.74e-06 PS=2.74e-06 NRD=0.303371 NRS=0.303371
+MM1 net31 A net39 inh_ground_gnd NE3 W=760.0n L=350.0n M=1.0 AD=3.648e-13 
++ AS=3.648e-13 PD=2.48e-06 PS=2.48e-06 NRD=0.355263 NRS=0.355263
+MM7 Q net31 inh_ground_gnd inh_ground_gnd NE3 W=2.64u L=350.0n M=1.0 
++ AD=1.2672e-12 AS=1.2672e-12 PD=6.24e-06 PS=6.24e-06 NRD=0.102273 NRS=0.102273
+MM3 net14 A inh_power_vdd3 inh_power_vdd3 PE3 W=1.35u L=300n M=1.0 AD=6.48e-13 
++ AS=6.48e-13 PD=3.66e-06 PS=3.66e-06 NRD=0.2 NRS=0.2
+MM4 inh_ground_gnd net31 net14 inh_power_vdd3 PE3 W=1.41u L=350.0n M=1.0 
++ AD=6.768e-13 AS=6.768e-13 PD=3.78e-06 PS=3.78e-06 NRD=0.191489 NRS=0.191489
+MM2 net31 A net14 inh_power_vdd3 PE3 W=1.41u L=300n M=1.0 AD=6.768e-13 
++ AS=6.768e-13 PD=3.78e-06 PS=3.78e-06 NRD=0.191489 NRS=0.191489
+MM6 Q net31 inh_power_vdd3 inh_power_vdd3 PE3 W=5.64u L=300n M=1.0 
++ AD=2.7072e-12 AS=2.7072e-12 PD=1.224e-05 PS=1.224e-05 NRD=0.0478723 
++ NRS=0.0478723
+.ENDS
+
+************************************************************************
+* Library Name: ASKA_POR
+* Cell Name:    por2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT por2 BG_REF BIAS GNDA POR_OUT_L VDDA
+*.PININFO BG_REF:B BIAS:B GNDA:B POR_OUT_L:B VDDA:B
+XC0 DEL GNDA GNDA / mosvc3 W=50u L=50u M=10.0 par1=10.0
+MM21 VDDA VDDA VDDA VDDA PE3 W=10u L=5u M=8.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM15 A C net9 VDDA PE3 W=4u L=500n M=1.0 AD=1.92e-12 AS=1.92e-12 PD=8.96e-06 
++ PS=8.96e-06 NRD=0.0675 NRS=0.0675
+MM13 net10 BG_REF net9 VDDA PE3 W=4u L=500n M=1.0 AD=1.92e-12 AS=1.92e-12 
++ PD=8.96e-06 PS=8.96e-06 NRD=0.0675 NRS=0.0675
+MM12 net9 net1 VDDA VDDA PE3 W=10u L=5u M=10.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM1 DEL net1 VDDA VDDA PE3 W=10u L=5u M=2.0 AD=4.8e-12 AS=4.8e-12 PD=2.096e-05 
++ PS=2.096e-05 NRD=0.027 NRS=0.027
+MM14 net1 net1 VDDA VDDA PE3 W=10u L=5u M=10.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM17 net10 net10 GNDA GNDA NE3 W=5u L=5u M=1.0 AD=2.4e-12 AS=2.4e-12 
++ PD=1.096e-05 PS=1.096e-05 NRD=0.054 NRS=0.054
+MM20 GNDA GNDA GNDA GNDA NE3 W=10u L=5u M=5.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM16 A net10 GNDA GNDA NE3 W=5u L=5u M=1.0 AD=2.4e-12 AS=2.4e-12 PD=1.096e-05 
++ PS=1.096e-05 NRD=0.054 NRS=0.054
+MM18 net1 BIAS GNDA GNDA NE3 W=10u L=5u M=1.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM19 BIAS BIAS GNDA GNDA NE3 W=10u L=5u M=10.0 AD=4.8e-12 AS=4.8e-12 
++ PD=2.096e-05 PS=2.096e-05 NRD=0.027 NRS=0.027
+MM7 DEL A GNDA GNDA NE3 W=5u L=350.0n M=2.0 AD=1.35e-12 AS=2.4e-12 PD=5.54e-06 
++ PS=1.096e-05 NRD=0.054 NRS=0.054
+XI0 DEL POR_OUT_L GNDA VDDA / STE_3VX4
+RR2 C GNDA 690009 $SUB=GNDA $[RPP1K1_3] $W=4u $L=2.83888m M=1
+RR1 VDDA C 1e+06 $SUB=GNDA $[RPP1K1_3] $W=4u $L=4.11438m M=1
+.ENDS
+
+
+.SUBCKT mosvc3 G NW SB 
+*.PININFO  G:B NW:B SB:B
+.ENDS

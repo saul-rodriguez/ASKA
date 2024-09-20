@@ -1,0 +1,39 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ALL_TESTS
+* Top Cell Name: emir_test_2
+* View Name:     schematic
+* Netlisted on:  Aug  7 04:01:20 2024
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: ALL_TESTS
+* Cell Name:    emir_test_2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT emir_test_2 gnda vdda
+*.PININFO gnda:B vdda:B
+RR7 gnda vdda 1447.51 $[RPP1K1] $W=5u $L=25.0u M=1
+RR6 gnda vdda 1447.51 $[RPP1K1] $W=5u $L=25.0u M=1
+RR5 gnda vdda 1447.51 $[RPP1K1] $W=5u $L=25.0u M=1
+RR4 gnda vdda 1447.51 $[RPP1K1] $W=5u $L=25.0u M=1
+RR1 gnda vdda 1447.51 $[RPP1K1] $W=5u $L=25.0u M=1
+RR0 gnda vdda 1447.51 $[RPP1K1] $W=5u $L=25.0u M=1
+RR11 gnda vdda 1447.51 $[RPP1K1] $W=5u $L=25.0u M=1
+.ENDS
+

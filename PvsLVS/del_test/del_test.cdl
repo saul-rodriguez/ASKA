@@ -1,0 +1,76 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ALL_TESTS
+* Top Cell Name: del_test
+* View Name:     schematic
+* Netlisted on:  Aug 23 11:27:19 2024
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.LDD
+*.SCALE METER
+.PARAM
+
+
+
+************************************************************************
+* Library Name: GATES_3V
+* Cell Name:    invrv3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT invrv3 in out inh_ground_gnd inh_power_vdd3
+*.PININFO in:I out:O inh_ground_gnd:B inh_power_vdd3:B
+MMN1 out in inh_ground_gnd inh_ground_gnd NE3 W=GT_PDW L=GT_PDL M=1.0 
++ AD=4.8e-07*(GT_PDW) AS=4.8e-07*(GT_PDW) PD=2*(4.8e-07+(GT_PDW)) 
++ PS=2.0*(4.8e-07+(GT_PDW)) NRD=2.7e-07/(GT_PDW) NRS=2.7e-07/(GT_PDW)
+MMP1 out in inh_power_vdd3 inh_power_vdd3 PE3 W=GT_PUW L=GT_PUL M=1.0 
++ AD=4.8e-07*(GT_PUW) AS=4.8e-07*(GT_PUW) PD=2*(4.8e-07+(GT_PUW)) 
++ PS=2.0*(4.8e-07+(GT_PUW)) NRD=2.7e-07/(GT_PUW) NRS=2.7e-07/(GT_PUW)
+.ENDS
+
+************************************************************************
+* Library Name: D_CELLS_3V
+* Cell Name:    IN_3VX2
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT IN_3VX2 A Q inh_ground_gnd inh_power_vdd3
+*.PININFO A:I Q:O inh_ground_gnd:B inh_power_vdd3:B
+Xinvr_1 A Q inh_ground_gnd inh_power_vdd3 / invrv3 GT_PUL=300.00n GT_PUW=2.94u 
++ GT_PDL=350.00n GT_PDW=960.00n
+.ENDS
+
+************************************************************************
+* Library Name: D_CELLS_3V
+* Cell Name:    IN_3VX4
+* View Name:    cmos_sch
+************************************************************************
+
+.SUBCKT IN_3VX4 A Q inh_ground_gnd inh_power_vdd3
+*.PININFO A:I Q:O inh_ground_gnd:B inh_power_vdd3:B
+Xinvr_1 A Q inh_ground_gnd inh_power_vdd3 / invrv3 GT_PUL=300.00n GT_PUW=5.88u 
++ GT_PDL=350.00n GT_PDW=2.4u
+.ENDS
+
+************************************************************************
+* Library Name: ALL_TESTS
+* Cell Name:    del_test
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT del_test GNDD IN OUT OUT2 VDDD
+*.PININFO GNDD:B IN:B OUT:B OUT2:B VDDD:B
+XI2 B OUT2 GNDD VDDD / IN_3VX2
+XI0 A OUT GNDD VDDD / IN_3VX2
+XI3 IN B GNDD VDDD / IN_3VX4
+XI1 IN A GNDD VDDD / IN_3VX4
+.ENDS
+

@@ -1,0 +1,83 @@
+// VerilogA for CURRENT_SOURCE, pulse_control, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+
+`timescale 1ns / 1ps
+
+module pulse_control(VREF,C0,C1,C2);
+inout VREF,C0,C1,C2;
+electrical VREF,C0,C1,C2;
+
+parameter real td = 0.0;
+//parameter real tt = 100e-12;
+parameter real tt = 5e-9;
+
+
+real vref = 0;
+real c0 = 0;
+real c1 = 0;
+real c2 = 0;
+
+analog begin
+	@(initial_step) begin
+		vref = 0;
+		c0 = 18;
+		c1 = 0;
+		c2 = 0;
+	end
+
+	@(timer(10u)) begin
+		vref = 1;
+		c0 = 0;
+		c1 = 18;
+		c2 = 0;
+	end
+
+	@(timer(30u)) begin
+		vref = 0;
+		c0 = 18;
+		c1 = 0;
+		c2 = 0;
+	end
+
+	@(timer(50u)) begin
+		vref = 0.25;
+		c0 = 0;
+		c1 = 0;
+		c2 = 18;
+	end
+
+	@(timer(70u)) begin
+		vref = 0;
+		c0 = 18;
+		c1 = 0;
+		c2 = 0;
+	end
+
+	@(timer(90u)) begin
+		vref = 1.65;
+		c0 = 0;
+		c1 = 18;
+		c2 = 0;
+	end
+
+	@(timer(110u)) begin
+		vref = 0;
+		c0 = 1;
+		c1 = 0;
+		c2 = 0;
+	end
+
+
+
+		V(VREF) <+ transition(vref, td, tt);
+		V(C0) <+ transition(c0, td, tt);
+		V(C1) <+ transition(c1, td, tt);
+		V(C2) <+ transition(c2, td, tt);
+
+end
+
+
+endmodule

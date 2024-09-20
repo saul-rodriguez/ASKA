@@ -1,0 +1,37 @@
+// VerilogA for BANDGAP, bandgap_su, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module bandgap_su_bk(BIAS, GNDA, OUT, VDD3A);
+inout BIAS;
+electrical BIAS;
+inout GNDA;
+electrical GNDA;
+inout OUT;
+electrical OUT;
+inout VDD3A;
+electrical VDD3A;
+
+parameter real tt = 10e-9;
+
+real bias_in;
+real vref;
+
+analog begin
+	bias_in = I(BIAS);
+
+
+	if (bias_in > 0.5e-6 ) 
+		vref = 1.2;
+	else
+		vref = 0;
+
+	V(OUT) <+ transition(vref, 0, tt);
+
+
+	V(BIAS) <+ bias_in*1e6; 
+
+end
+
+endmodule

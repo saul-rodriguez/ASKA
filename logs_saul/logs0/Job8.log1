@@ -8,12 +8,12 @@
 
 	Library      = ASKA_TOP
 	Cell         = aska_top16_tb
-	View         = config_analog_extracted
+	View         = config_schem_an_schem_dig
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = POR_Sim_Short_Sim:1_state_Interactive.43
-	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43.rdb
-	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43/1/POR_Sim
+	State Name   = Current_test_Short_Sim:1_state_Interactive.75
+	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75.rdb
+	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75/1/Current_test
 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/ASKA/Sim
 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl
@@ -28,7 +28,7 @@
 
 
 
-*Info*    Run start for Point ID (4 1) on testbench [ POR_Sim ].
+*Info*    Run start for Point ID (2 1) on testbench [ Current_test ].
 
 Resetting statistical vars
 
@@ -36,24 +36,24 @@ Resetting statistical vars
 
 Setting var ADDR0 = "0"
 Setting var ADDR1 = "0"
-Setting var POR_PULSE = "-0.4"
+Setting var POR_PULSE = "0"
 Setting var RES = "100"
-Setting var VDD3 = "0"
-Setting var VDD3_PULSE = "3.3"
-Setting var VDDHV = "0"
-Setting var VDDHV_PULSE = "40"
+Setting var VDD3 = "3.3"
+Setting var VDD3_PULSE = "0"
+Setting var VDDHV = "40"
+Setting var VDDHV_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43/1/POR_Sim/netlist
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75/1/Current_test/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43/1/POR_Sim
+          /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75/1/Current_test
 
 
-*Info*    Creating Netlist for Point ID (4 1)
+*Info*    Creating Netlist for Point ID (2 1)
 
 generate netlist...
 INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -63,10 +63,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43/1/POR_Sim/netlist/digital/control
-Begin Netlisting Sep 19 21:27:34 2024
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75/1/Current_test/netlist/digital/control
+Begin Netlisting Sep 26 16:00:22 2024
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43/1/POR_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75/1/Current_test/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -89,10 +89,26 @@ INFO (VLOGNET-117): Re-netlisting the entire design.
 INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
 non-stopping cells.
  
-WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele/analog_extracted_Conly_50fF' cannot be generated because either split buses or bundle terminals are present in it.
- Therefore, an implicit netlist for this instance has been generated. 
+WARNING (VLOGNET-110): The cell 'D_CELLS_JI3V/DECAP5JI3V/cmos_sch' has no ports. Make sure that this was the intended 
+design.
+ 
+WARNING (VLOGNET-110): The cell 'D_CELLS_JI3V/DECAP7JI3V/cmos_sch' has no ports. Make sure that this was the intended 
+design.
+ 
+WARNING (VLOGNET-110): The cell 'D_CELLS_JI3V/DECAP15JI3V/cmos_sch' has no ports. Make sure that this was the intended 
+design.
+ 
+WARNING (VLOGNET-110): The cell 'D_CELLS_JI3V/DECAP25JI3V/cmos_sch' has no ports. Make sure that this was the intended 
+design.
+ 
+WARNING (VLOGNET-110): The cell 'D_CELLS_JI3V/DECAP10JI3V/cmos_sch' has no ports. Make sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-169): Module port ordering for lib 'ASKA_DIG2', cell 'aska_dig', view 'schematic' will be
+ done using the user specified port order as follows:
 
-WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+ => "clk" "reset_l" "porborn" "SPI_CS" "SPI_Clk" "SPI_MOSI" "IC_addr<1:0>" "up_switches<31:0>" 
+     "down_switches<31:0>" "DAC<5:0>" "pulse_active" "enable" 
 
 WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
 design.
@@ -104,94 +120,1186 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information -----
 LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------                   ---------            ----             
 
+PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+PRIMLIB                     pe3                         spectre              *Stopping View*  
+PRIMLIB                     ne3                         spectre              *Stopping View*  
+PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+PRIMLIB                     nedia                       spectre              *Stopping View*  
+PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+PRIMLIB                     pe3i                        spectre              *Stopping View*  
+PRIMLIB                     ne3i                        spectre              *Stopping View*  
+PRIMLIB                     ped                         spectre              *Stopping View*  
+PRIMLIB                     csf4a                       spectre              *Stopping View*  
+PRIMLIB                     dsba                        spectre              *Stopping View*  
+PRIMLIB                     dpp20                       spectre              *Stopping View*  
+PRIMLIB                     rdp3                        spectre              *Stopping View*  
+PRIMLIB                     dn3                         spectre              *Stopping View*  
+PRIMLIB                     rdn3                        spectre              *Stopping View*  
+PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+PRIMLIB                     rpp1                        spectre              *Stopping View*  
+PRIMLIB                     dp3                         spectre              *Stopping View*  
+PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+PRIMLIB                     dphnw                       spectre              *Stopping View*  
+PRIMLIB                     ddnw                        spectre              *Stopping View*  
+PRIMLIB                     pmb                         spectre              *Stopping View*  
+PRIMLIB                     rnp1                        spectre              *Stopping View*  
+PRIMLIB                     dhpw                        spectre              *Stopping View*  
+PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+PRIMLIB                     dpdnw                       spectre              *Stopping View*  
+PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+PRIMLIB                     s_res                       spectre              *Stopping View*  
 analogLib                   vpulse                      spectre              *Stopping View*  
 analogLib                   cap                         spectre              *Stopping View*  
 analogLib                   vdc                         spectre              *Stopping View*  
 analogLib                   ind                         spectre              *Stopping View*  
-PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
-PRIMLIB                     pe3i                        spectre              *Stopping View*  
-PRIMLIB                     ne3i                        spectre              *Stopping View*  
-PRIMLIB                     pe3                         spectre              *Stopping View*  
-PRIMLIB                     pmb                         spectre              *Stopping View*  
-PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
-PRIMLIB                     p_dp3                       spectre              *Stopping View*  
-PRIMLIB                     cmm5t                       spectre              *Stopping View*  
-PRIMLIB                     dp3                         spectre              *Stopping View*  
-PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
-PRIMLIB                     dsba                        spectre              *Stopping View*  
-PRIMLIB                     dphnw                       spectre              *Stopping View*  
-PRIMLIB                     dpp20                       spectre              *Stopping View*  
-PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
-PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
-PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
-PRIMLIB                     dn3                         spectre              *Stopping View*  
-PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
-PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
-PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
-PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
-PRIMLIB                     ddnw                        spectre              *Stopping View*  
-PRIMLIB                     p_dnw                       spectre              *Stopping View*  
-PRIMLIB                     rdn3                        spectre              *Stopping View*  
-PRIMLIB                     ped                         spectre              *Stopping View*  
-PRIMLIB                     mosvc3                      spectre              *Stopping View*  
-PRIMLIB                     qpvc3                       spectre              *Stopping View*  
-PRIMLIB                     nedia                       spectre              *Stopping View*  
-PRIMLIB                     p_cap                       spectre              *Stopping View*  
-PRIMLIB                     csf4a                       spectre              *Stopping View*  
-PRIMLIB                     s_res                       spectre              *Stopping View*  
-PRIMLIB                     rpp1s                       spectre              *Stopping View*  
-PRIMLIB                     rpp1                        spectre              *Stopping View*  
-PRIMLIB                     rnp1                        spectre              *Stopping View*  
-PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
-PRIMLIB                     rdp3                        spectre              *Stopping View*  
-PRIMLIB                     dhpw                        spectre              *Stopping View*  
-PRIMLIB                     ne3                         spectre              *Stopping View*  
-PRIMLIB                     rdp_io                      spectre              *Stopping View*  
 analogLib                   res                         spectre              *Stopping View*  
 ASKA_DIG2                   DIG_stimulus                verilogams_por2      *Stopping View*  
 ASKA_TOP                    aska_top16_tb               schematic                             
-ASKA_16ELE_TOP_FINAL        aska_top_16ele              analog_extracted_Conly_50fF                  
+ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2_TOP       schematic                             
+ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2           schematic                             
+ASKA_16ELE_TOP_FINAL        ioring_16ele                schematic                             
+IO_CELLS_JIC3V              APR04DPC                    cmos_sch                              
+IO_CELLS_JIC3V              jio_anrdio_pc               cmos_sch                              
+IO_CELLS_JIC3V              APR00DPC                    cmos_sch                              
+ASKA_IORING                 HVIO4X                      schematic                             
+HV_CELLS                    HVD4SJD1R5PKFs              schematic                             
+HV_CELLS                    ioh_c5pk                    schematic                             
+HV_CELLS                    ioh_pmbsabhv_750            schematic                             
+HV_CELLS                    ioh_pmbsab_15_10            schematic                             
+HV_CELLS                    ioh_pe3isabhv_1050gcr       schematic                             
+HV_CELLS                    ioh_pe3isab_15_04           schematic                             
+HV_CELLS                    ioh_iscrd2_4x100            schematic                             
+HV_CELLS                    HVDD4DJ5PKFs                schematic                             
+HV_CELLS                    ioh_d5pk                    schematic                             
+HV_CELLS                    ioh_dhpw_2x100_stack3       schematic                             
+HV_CELLS                    ioh_dhpw_2x100              schematic                             
+HV_CELLS                    HVDD4D2PK                   schematic                             
+HV_CELLS                    ioh_d2pk                    schematic                             
+HV_CELLS                    ioh_pe3isabhv_2800gcr       schematic                             
+HV_CELLS                    ioh_pe3isab_40_04           schematic                             
+HV_CELLS                    ioh_pmbsabhv_2000           schematic                             
+HV_CELLS                    ioh_pmbsab_40_10            schematic                             
+IO_CELLS_JIC3V              PWRCUTDCPC                  cmos_sch                              
+IO_CELLS_JIC3V              GNDORPADPC                  cmos_sch                              
+IO_CELLS_JIC3V              GNDPADPC                    cmos_sch                              
+IO_CELLS_JIC3V              VDDORPADPC                  cmos_sch                              
+IO_CELLS_JIC3V              VDDPADPC                    cmos_sch                              
+IO_CELLS_JIC3V              ICPC                        cmos_sch                              
+IO_CELLS_JIC3V              jio_esd1_pc                 cmos_sch                              
+IO_CELLS_JIC3V              jio_ne3is_pc                cmos_sch                              
+IO_CELLS_JIC3V              jio_resp_pc                 cmos_sch                              
+IO_CELLS_JIC3V              jio_bufc_pc                 cmos_sch                              
+IO_CELLS_JIC3V              jio_ndtr_pc                 cmos_sch                              
+IO_CELLS_JIC3V              jio_opdio_pc                cmos_sch                              
+IO_CELLS_JIC3V              jio_lviodio_pc              cmos_sch                              
+IO_CELLS_JIC3V              jio_ipdio_pc                cmos_sch                              
+IO_CELLS_JIC3V              PSUBPADPC                   cmos_sch                              
+IO_CELLS_JIC3V              jio_andio_pc                cmos_sch                              
+IO_CELLS_JIC3V              jio_ne3i_pc                 cmos_sch                              
+IO_CELLS_JIC3V              jio_pe3i_pc                 cmos_sch                              
+ASKA_16ELE_TOP_FINAL        aska_core_16ele             schematic                             
+ASKA_HBRIDGE_4X             hbridge_4x                  schematic                             
+ASKA_HVSWITCH               hvswitch8                   schematic                             
+ASKA_DIG2                   aska_dig                    schematic                             
+D_CELLS_JI3V                DECAP10JI3V                 cmos_sch                              
+D_CELLS_JI3V                DECAP25JI3V                 cmos_sch                              
+D_CELLS_JI3V                DECAP15JI3V                 cmos_sch                              
+D_CELLS_JI3V                DECAP7JI3V                  cmos_sch                              
+D_CELLS_JI3V                DECAP5JI3V                  cmos_sch                              
+D_CELLS_JI3V                NO2JI3VX2                   cmos_sch                              
+D_CELLS_JI3V                NA2JI3VX2                   cmos_sch                              
+D_CELLS_JI3V                NA2I1JI3VX2                 cmos_sch                              
+D_CELLS_JI3V                DLY2JI3VX1                  cmos_sch                              
+D_CELLS_JI3V                DFRRQJI3VX2                 cmos_sch                              
+D_CELLS_JI3V                DLY4JI3VX1                  cmos_sch                              
+D_CELLS_JI3V                BUJI3VX16                   cmos_sch                              
+D_CELLS_JI3V                EO3JI3VX1                   cmos_sch                              
+D_CELLS_JI3V                OR4JI3VX2                   cmos_sch                              
+D_CELLS_JI3V                NO3JI3VX1                   cmos_sch                              
+D_CELLS_JI3V                BUJI3VX6                    cmos_sch                              
+D_CELLS_JI3V                MU2JI3VX0                   cmos_sch                              
+GATES_JI3V                  clinvrji3v                  schematic                             
+D_CELLS_JI3V                INJI3VX2                    cmos_sch                              
+D_CELLS_JI3V                INJI3VX1                    cmos_sch                              
+D_CELLS_JI3V                BUJI3VX1                    cmos_sch                              
+D_CELLS_JI3V                ON21JI3VX4                  cmos_sch                              
+D_CELLS_JI3V                BUJI3VX3                    cmos_sch                              
+D_CELLS_JI3V                BUJI3VX2                    cmos_sch                              
+D_CELLS_JI3V                OR4JI3VX1                   cmos_sch                              
+D_CELLS_JI3V                NO2I1JI3VX2                 cmos_sch                              
+D_CELLS_JI3V                NA4JI3VX2                   cmos_sch                              
+D_CELLS_JI3V                INJI3VX3                    cmos_sch                              
+D_CELLS_JI3V                SDFRRQJI3VX1                cmos_sch                              
+D_CELLS_JI3V                EN2JI3VX0                   cmos_sch                              
+D_CELLS_JI3V                NO22JI3VX1                  cmos_sch                              
+D_CELLS_JI3V                NA3I2JI3VX1                 cmos_sch                              
+D_CELLS_JI3V                DLY1JI3VX1                  cmos_sch                              
+D_CELLS_JI3V                HAJI3VX1                    cmos_sch                              
+D_CELLS_JI3V                OA21JI3VX1                  cmos_sch                              
+GATES_JI3V                  o2na2_0ji3v                 schematic                             
+D_CELLS_JI3V                NO3I2JI3VX1                 cmos_sch                              
+D_CELLS_JI3V                EN3JI3VX1                   cmos_sch                              
+D_CELLS_JI3V                BUJI3VX0                    cmos_sch                              
+D_CELLS_JI3V                FAJI3VX1                    cmos_sch                              
+D_CELLS_JI3V                EO2JI3VX0                   cmos_sch                              
+D_CELLS_JI3V                AN31JI3VX1                  cmos_sch                              
+GATES_JI3V                  a3no2ji3v                   schematic                             
+D_CELLS_JI3V                AO22JI3VX1                  cmos_sch                              
+D_CELLS_JI3V                NO3I1JI3VX1                 cmos_sch                              
+D_CELLS_JI3V                NO3JI3VX0                   cmos_sch                              
+D_CELLS_JI3V                OR3JI3VX1                   cmos_sch                              
+GATES_JI3V                  nor3ji3v                    schematic                             
+D_CELLS_JI3V                AO21JI3VX1                  cmos_sch                              
+GATES_JI3V                  a2no2_0ji3v                 schematic                             
+D_CELLS_JI3V                DFRRQJI3VX4                 cmos_sch                              
+D_CELLS_JI3V                ON21JI3VX1                  cmos_sch                              
+GATES_JI3V                  o2na2ji3v                   schematic                             
+D_CELLS_JI3V                AN22JI3VX1                  cmos_sch                              
+GATES_JI3V                  a22no2ji3v                  schematic                             
+D_CELLS_JI3V                ON31JI3VX1                  cmos_sch                              
+GATES_JI3V                  o3na2ji3v                   schematic                             
+D_CELLS_JI3V                BUJI3VX8                    cmos_sch                              
+D_CELLS_JI3V                AND2JI3VX1                  cmos_sch                              
+D_CELLS_JI3V                BUJI3VX12                   cmos_sch                              
+D_CELLS_JI3V                OR2JI3VX0                   cmos_sch                              
+D_CELLS_JI3V                NA2I1JI3VX1                 cmos_sch                              
+D_CELLS_JI3V                NA22JI3VX1                  cmos_sch                              
+D_CELLS_JI3V                NA4JI3VX0                   cmos_sch                              
+GATES_JI3V                  nand4ji3v                   schematic                             
+D_CELLS_JI3V                NO2I1JI3VX1                 cmos_sch                              
+D_CELLS_JI3V                NA3JI3VX0                   cmos_sch                              
+D_CELLS_JI3V                NA3I1JI3VX1                 cmos_sch                              
+GATES_JI3V                  nand3ji3v                   schematic                             
+D_CELLS_JI3V                AN21JI3VX1                  cmos_sch                              
+GATES_JI3V                  a2no2ji3v                   schematic                             
+D_CELLS_JI3V                ON211JI3VX1                 cmos_sch                              
+GATES_JI3V                  o2na3ji3v                   schematic                             
+D_CELLS_JI3V                INJI3VX0                    cmos_sch                              
+D_CELLS_JI3V                AN211JI3VX1                 cmos_sch                              
+GATES_JI3V                  a2no3ji3v                   schematic                             
+D_CELLS_JI3V                ON22JI3VX1                  cmos_sch                              
+GATES_JI3V                  o22na2ji3v                  schematic                             
+D_CELLS_JI3V                NA2JI3VX0                   cmos_sch                              
+D_CELLS_JI3V                NO2JI3VX0                   cmos_sch                              
+GATES_JI3V                  nor2ji3v                    schematic                             
+D_CELLS_JI3V                DFRRQJI3VX1                 cmos_sch                              
+D_CELLS_JI3V                AND2JI3VX0                  cmos_sch                              
+GATES_JI3V                  nand2ji3v                   schematic                             
+GATES_JI3V                  invrji3v                    schematic                             
+ASKA_BIAS                   bias                        schematic                             
+ASKA_BANDGAP                bandgap_su                  schematic                             
+ASKA_REF_BIAS               ref_bias                    schematic                             
+ASKA_CONSTANT_GM            constant_gm                 schematic                             
+ASKA_PULSE_GENERATOR        pulse_generator             schematic                             
+ASKA_DAC6B                  dac6b_amp_n2                schematic                             
+ASKA_CURRENT_SOURCE         current_source_gm_10_en_r   schematic                             
+ASKA_POR                    por2                        schematic                             
+D_CELLS_3V                  STE_3VX4                    cmos_sch                              
 
 ---------- End of netlist configuration information   ----------
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43/1/POR_Sim/netlist/analog/control
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75/1/Current_test/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_3V" "STE_3VX4" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+Netlist Warning: The netlisting procedure specified for (GATES_JI3V invrji3v schematic) is 
+obsolete. You can convert your library with the 
+Tools - Conversion Tool Box menu on the CIW. 
+
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AND2JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DFRRQJI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO2JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA2JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "ON22JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AN211JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "INJI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "ON211JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AN21JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA3I1JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA3JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO2I1JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA4JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA22JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA2I1JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "OR2JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX12" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AND2JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX8" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "ON31JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AN22JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "ON21JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DFRRQJI3VX4" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AO21JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "OR3JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO3JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO3I1JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AO22JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "AN31JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "EO2JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "FAJI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "EN3JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO3I2JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "OA21JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "HAJI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DLY1JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA3I2JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO22JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "EN2JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "SDFRRQJI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "INJI3VX3" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA4JI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO2I1JI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "OR4JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX3" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "ON21JI3VX4" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "INJI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "INJI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "MU2JI3VX0" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX6" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO3JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "OR4JI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "EO3JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "BUJI3VX16" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DLY4JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DFRRQJI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DLY2JI3VX1" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA2I1JI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NA2JI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "NO2JI3VX2" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DECAP5JI3V" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DECAP7JI3V" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DECAP15JI3V" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DECAP25JI3V" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
+           than the actual number of terminals in the cellview cell-view "D_CELLS_JI3V" "DECAP10JI3V" "cmos_sch"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
 WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
 WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
-           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_core_16ele" "schematic"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "ioring_16ele" "schematic"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2" "schematic"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
+WARNING (ADE-6003): Terminal "GNDOHV", specified in the CDF termOrder, does not exist
+           in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "schematic"
 WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
            be ignored. The terminals in the cellView will be netlisted in the alphabetical
@@ -204,7 +1312,7 @@ WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and
                 Edit CDF window.
 Running netlist assembly..
 .........
-End netlisting Sep 19 21:28:40 2024
+End netlisting Sep 26 16:00:35 2024
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -214,10 +1322,10 @@ create cds_globals...
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ POR_Sim ] for Point ID (4
-          1).
+*Info*    Running simulation on testbench [ Current_test ] for Point
+          ID (2 1).
 
-Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.43/1/POR_Sim/psf.
+Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.75/1/Current_test/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...
@@ -233,8 +1341,15 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+ERROR (ADEXL-2708): Evaluation of output '((VT("/A") - VT("/ELE<0>")) / 100)' failed for point:'1' test:'Current_test'
+	Expression:'((VT("/A") - VT("/ELE<0>")) / 100)'
+	because of the following error(s)
+	*Error* difference: can't handle (nil - nil).
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (4 1) on testbench [ POR_Sim ].
+
+*Info*    Run complete for Point ID (2 1) on testbench [ Current_test
+          ].
 
 
 

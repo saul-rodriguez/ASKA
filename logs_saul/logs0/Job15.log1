@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2024.09.19 06:33:32.953
-\# Local time: CEST (UTC+02:00) 2024.09.19 08:33:32.953
+\# Program start time:     UTC 2024.09.21 06:05:51.494
+\# Local time: CEST (UTC+02:00) 2024.09.21 08:05:51.494
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 01/30/2024 20:11 (cpgbld02) $
 \o Hierarchy:		/pkg/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.35  (64-bit addresses)
-\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso5172 -mpshost s2424 -davinciService DaVinciService_5172_1726726179 -log /home/saul/projects/ASKA/logs_saul/logs0/Job15.log1 -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.s2424_5172 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 15
+\# Command line:	/pkg/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso1471 -mpshost s2424 -davinciService DaVinciService_1471_1726865621 -log /home/saul/projects/ASKA/logs_saul/logs0/Job15.log1 -licenseLockFileName /home/saul/projects/ASKA/.tmp_saul/.s2424_1471 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 15
 \# Host name (type):	s2424 (x86_64)
 \# Operating system:	Linux 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:2518 (1024x868)
+\# X display name (WxH):	:6072 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        637 MB
-\# Available memory:	     78,586 MB
+\# Initial sbrk value:	        624 MB
+\# Available memory:	     88,491 MB
 \# System memory:	     96,361 MB
-\# Maximum memory size:	     96,015 MB
-\# Max mem available:	     78,876 MB
+\# Maximum memory size:	     96,028 MB
+\# Max mem available:	     88,781 MB
 \# Initial memory used:	        291 MB
 \#        process size:	      1,888 MB
 \# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424:/home/saul/projects/ASKA
-\# Process Id:		14222
+\# Process Id:		8670
 \o 
 \o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
@@ -68,19 +68,19 @@
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
 \o Loading adexl.cxt 
-\# Memory report: using         420 MB, process size 2,140 MB at UTC 2024.09.19 06:33:35.227
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading adexlDM.cxt 
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5172, host=s2424). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\# Memory report: using         428 MB, process size 2,147 MB at UTC 2024.09.21 06:05:54.047
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso1471, host=s2424). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 14222 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 8670 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [08:33:32.512409] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
+\# [08:05:51.512409] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se
 \o Loading .cdsinit for the XH018 X-Fab XKit.
 \o     LOAD xh018_1143 SPECIFIC CALL-BACK ROUTINES
 \o     LOAD ALL AVAILABLE P-CELL FUNCTIONS
@@ -105,7 +105,6 @@
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
 \o Loading vdsil.cxt 
-\# Memory report: using         523 MB, process size 2,250 MB at UTC 2024.09.19 06:33:37.172
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
 \o Loading UltraSim.cxt 
@@ -122,8 +121,9 @@
 \o 
 \p > 
 \# Loading perfDiag...
+\# Memory report: using         546 MB, process size 2,275 MB at UTC 2024.09.21 06:05:57.031
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 14222' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 8670' to open it when Virtuoso freezes.
 \# (PerfDiag): Loading backtrace from /pkg/cadence/installs/IC618/tools/lib/64bit/cdnslibunwind.so
 \o Loading vqp.cxt 
 \o Loading hdlPkg.cxt 
@@ -137,9 +137,9 @@
 \o 	View         = config_analog_extracted
 \o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ASKA_TOP:aska_top16_tb:1_none_Interactive.18
-\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18.rdb
-\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/1/ASKA_TOP:aska_top16_tb:1
+\o 	State Name   = Short_Sim_none_Interactive.57
+\o 	Results DB   = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57.rdb
+\o 	Results Dir  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/2/Short_Sim
 \o 	Results Loc  = /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/ASKA/Sim
 \o 	Setup DB loc = /home/saul/projects/ASKA/ASKA_TOP/aska_top16_tb/adexl
@@ -169,8 +169,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (3 3) on testbench [
-\o           ASKA_TOP:aska_top16_tb:1 ].
+\o *Info*    Run start for Point ID (0 2) on testbench [ Short_Sim ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -188,14 +187,14 @@
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/3/ASKA_TOP:aska_top16_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/2/Short_Sim/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/3/ASKA_TOP:aska_top16_tb:1
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/2/Short_Sim
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (3 3)
+\o *Info*    Creating Netlist for Point ID (0 2)
 \o 
 \o generate netlist...
 \o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -206,14 +205,14 @@
 \o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o Loading verilogI.cxt 
-\# [08:33:40.370560] Periodic Lic check successful
-\# [08:33:40.370562] Feature usage summary:
+\# [08:06:00.410872] Periodic Lic check successful
+\# [08:06:00.410888] Feature usage summary:
 \o Initializing the control file using cp:
-\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/3/ASKA_TOP:aska_top16_tb:1/netlist/digital/control
-\o Begin Netlisting Sep 19 08:33:40 2024
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/2/Short_Sim/netlist/digital/control
+\o Begin Netlisting Sep 21 08:06:00 2024
 \o Loading verilogAMSNet.cxt 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/3/ASKA_TOP:aska_top16_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/2/Short_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -230,11 +229,14 @@
 \o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
 \o either in CIW or the .simrc file.
 \o  
-\# Memory report: using         966 MB, process size 2,700 MB at UTC 2024.09.19 06:33:41.493
-\# Available memory:         68,667 MB at UTC 2024.09.19 06:33:43.153
-\# Memory report: Maximum memory size now 69,746 MB at UTC 2024.09.19 06:33:43.153
-\# Thread usage report: 38 active threads, active load 1.40 at UTC 2024.09.19 06:33:43.153
-\# Memory report: using       1,080 MB, process size 2,813 MB at UTC 2024.09.19 06:33:43.154
+\# Memory report: using       1,123 MB, process size 2,856 MB at UTC 2024.09.21 06:06:01.973
+\# Available memory:         82,757 MB at UTC 2024.09.21 06:06:02.701
+\# Memory report: Maximum memory size now 84,060 MB at UTC 2024.09.21 06:06:02.701
+\# Thread usage report: 38 active threads, active load 1.40 at UTC 2024.09.21 06:06:02.701
+\# Memory report: using       1,302 MB, process size 3,036 MB at UTC 2024.09.21 06:06:02.701
+\# Memory report: using       1,707 MB, process size 3,440 MB at UTC 2024.09.21 06:06:11.354
+\# Memory report: Maximum memory size now 82,056 MB at UTC 2024.09.21 06:06:12.336
+\# Memory report: using       2,240 MB, process size 3,973 MB at UTC 2024.09.21 06:06:18.120
 \o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
 \o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
@@ -242,9 +244,15 @@
 \o non-stopping cells.
 \o  
 \o Loading digitalSim.cxt 
-\# Memory report: using       1,181 MB, process size 2,914 MB at UTC 2024.09.19 06:33:46.084
-\# Memory report: Maximum memory size now 68,304 MB at UTC 2024.09.19 06:34:03.106
-\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele/analog_extracted_Conly_50fF' cannot be generated because either split buses or bundle terminals are present in it.
+\# Memory report: using       2,342 MB, process size 4,076 MB at UTC 2024.09.21 06:06:45.118
+\# Memory report: Maximum memory size now 79,992 MB at UTC 2024.09.21 06:07:02.030
+\# Memory report: using       2,443 MB, process size 4,177 MB at UTC 2024.09.21 06:07:37.283
+\# Memory report: using       2,545 MB, process size 4,278 MB at UTC 2024.09.21 06:08:39.125
+\# Memory report: Maximum memory size now 78,394 MB at UTC 2024.09.21 06:09:12.345
+\# Memory report: using       2,645 MB, process size 4,379 MB at UTC 2024.09.21 06:09:42.192
+\# Available memory:         75,221 MB at UTC 2024.09.21 06:10:22.058
+\# Memory report: using       2,746 MB, process size 4,479 MB at UTC 2024.09.21 06:10:39.389
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele_v2_TOP/analog_extracted_RC_50fF1Ohm' cannot be generated because either split buses or bundle terminals are present in it.
 \o  Therefore, an implicit netlist for this instance has been generated. 
 \o 
 \o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
@@ -259,10 +267,6 @@
 \o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------                   ---------            ----             
 \o 
-\o analogLib                   vpulse                      spectre              *Stopping View*  
-\o analogLib                   cap                         spectre              *Stopping View*  
-\o analogLib                   vdc                         spectre              *Stopping View*  
-\o analogLib                   ind                         spectre              *Stopping View*  
 \o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
 \o PRIMLIB                     pe3i                        spectre              *Stopping View*  
 \o PRIMLIB                     ne3i                        spectre              *Stopping View*  
@@ -293,6 +297,7 @@
 \o PRIMLIB                     nedia                       spectre              *Stopping View*  
 \o PRIMLIB                     p_cap                       spectre              *Stopping View*  
 \o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     p_res                       spectre              *Stopping View*  
 \o PRIMLIB                     s_res                       spectre              *Stopping View*  
 \o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
 \o PRIMLIB                     rpp1                        spectre              *Stopping View*  
@@ -302,10 +307,14 @@
 \o PRIMLIB                     dhpw                        spectre              *Stopping View*  
 \o PRIMLIB                     ne3                         spectre              *Stopping View*  
 \o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
 \o analogLib                   res                         spectre              *Stopping View*  
 \o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
 \o ASKA_TOP                    aska_top16_tb               schematic                             
-\o ASKA_16ELE_TOP_FINAL        aska_top_16ele              analog_extracted_Conly_50fF                  
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2_TOP       analog_extracted_RC_50fF1Ohm                  
 \o 
 \o ---------- End of netlist configuration information   ----------
 \o function ansCdlCompPrim redefined
@@ -313,41 +322,46 @@
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
 \o Initializing the control file using cp:
-\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/3/ASKA_TOP:aska_top16_tb:1/netlist/analog/control
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/2/Short_Sim/netlist/analog/control
 \o Copying Spectre source file 'spectre.inp'
 \o Copying Spectre command file 'spectre.sim'
+\# Memory report: using       2,868 MB, process size 4,601 MB at UTC 2024.09.21 06:11:14.527
+\# Memory report: Maximum memory size now 76,582 MB at UTC 2024.09.21 06:15:27.126
+\# Memory report: using       2,968 MB, process size 4,701 MB at UTC 2024.09.21 06:15:39.343
 \o WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
+\o WARNING (ADE-6003): Terminal "GNDOHV", specified in the CDF termOrder, does not exist
+\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele_v2_TOP" "analog_extracted_RC_50fF1Ohm"
 \o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
 \o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
 \o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
@@ -359,11 +373,14 @@
 \o            iii) Click on the Edit button in the simulation information section of the
 \o                 Edit CDF window.
 \o Loading json.cxt 
+\# Memory report: Maximum memory size now 74,059 MB at UTC 2024.09.21 06:15:47.467
 \o Running netlist assembly..
-\# Available memory:         61,127 MB at UTC 2024.09.19 06:34:47.626
-\# Memory report: Maximum memory size now 62,379 MB at UTC 2024.09.19 06:34:47.626
+\# Memory report: Maximum memory size now 71,815 MB at UTC 2024.09.21 06:15:57.694
+\# Available memory:         67,363 MB at UTC 2024.09.21 06:16:07.707
+\# Memory report: Maximum memory size now 70,340 MB at UTC 2024.09.21 06:16:07.707
+\# Memory report: Maximum memory size now 72,983 MB at UTC 2024.09.21 06:16:37.583
 \o .........
-\o End netlisting Sep 19 08:34:54 2024
+\o End netlisting Sep 21 08:17:26 2024
 \o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -374,10 +391,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_top16_tb:1
-\o           ] for Point ID (3 3).
+\o *Info*    Running simulation on testbench [ Short_Sim ] for Point ID
+\o           (0 2).
 \o 
-\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/3/ASKA_TOP:aska_top16_tb:1/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/2/Short_Sim/psf.
 \o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
@@ -389,119 +406,75 @@
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: Maximum memory size now 65,599 MB at UTC 2024.09.19 06:34:57.301
-\# Memory report: using       1,295 MB, process size 3,079 MB at UTC 2024.09.19 06:34:57.301
-\# Memory report: Maximum memory size now 63,607 MB at UTC 2024.09.19 06:35:07.301
-\# Available memory:         51,192 MB at UTC 2024.09.19 06:35:17.301
-\# Memory report: Maximum memory size now 52,488 MB at UTC 2024.09.19 06:35:17.301
-\# Available memory:         43,611 MB at UTC 2024.09.19 06:35:27.301
-\# Memory report: Maximum memory size now 44,906 MB at UTC 2024.09.19 06:35:27.301
-\# Available memory:         38,912 MB at UTC 2024.09.19 06:35:37.302
-\# Memory report: Maximum memory size now 40,207 MB at UTC 2024.09.19 06:35:37.302
-\# Memory report: Maximum memory size now 39,349 MB at UTC 2024.09.19 06:37:07.302
-\# Memory report: Maximum memory size now 38,393 MB at UTC 2024.09.19 06:44:37.302
-\# Memory report: Maximum memory size now 37,480 MB at UTC 2024.09.19 07:04:17.302
-\# Memory report: Maximum memory size now 40,242 MB at UTC 2024.09.19 07:11:37.301
-\# Memory report: Maximum memory size now 41,033 MB at UTC 2024.09.19 07:13:07.301
-\# Memory report: Maximum memory size now 41,855 MB at UTC 2024.09.19 07:17:37.301
-\# Memory report: Maximum memory size now 40,624 MB at UTC 2024.09.19 07:20:57.301
-\# Memory report: Maximum memory size now 41,499 MB at UTC 2024.09.19 07:23:07.301
-\# Memory report: Maximum memory size now 42,661 MB at UTC 2024.09.19 07:25:57.302
-\# Memory report: Maximum memory size now 43,576 MB at UTC 2024.09.19 07:26:37.302
-\# Available memory:         42,554 MB at UTC 2024.09.19 07:26:47.302
-\# Memory report: Maximum memory size now 42,518 MB at UTC 2024.09.19 07:39:37.302
-\# Memory report: Maximum memory size now 41,417 MB at UTC 2024.09.19 07:41:07.302
-\# Memory report: Maximum memory size now 40,600 MB at UTC 2024.09.19 07:41:47.301
-\# Memory report: Maximum memory size now 41,758 MB at UTC 2024.09.19 07:44:47.302
-\# Memory report: Maximum memory size now 42,593 MB at UTC 2024.09.19 07:45:27.301
-\# Memory report: Maximum memory size now 44,271 MB at UTC 2024.09.19 07:46:17.302
-\# Memory report: Maximum memory size now 45,991 MB at UTC 2024.09.19 07:47:07.302
-\# Memory report: Maximum memory size now 47,691 MB at UTC 2024.09.19 07:54:37.301
-\# Available memory:         48,282 MB at UTC 2024.09.19 07:57:07.301
-\# Memory report: Maximum memory size now 49,577 MB at UTC 2024.09.19 07:57:07.301
-\# Memory report: Maximum memory size now 48,323 MB at UTC 2024.09.19 07:57:47.302
-\# Memory report: Maximum memory size now 47,312 MB at UTC 2024.09.19 07:59:07.301
-\# Memory report: Maximum memory size now 46,176 MB at UTC 2024.09.19 07:59:47.301
-\# Memory report: Maximum memory size now 49,234 MB at UTC 2024.09.19 08:00:17.302
-\# Memory report: Maximum memory size now 48,256 MB at UTC 2024.09.19 08:00:37.301
-\# Memory report: Maximum memory size now 46,028 MB at UTC 2024.09.19 08:00:57.301
-\# Memory report: Maximum memory size now 47,035 MB at UTC 2024.09.19 08:01:07.301
-\# Memory report: Maximum memory size now 45,386 MB at UTC 2024.09.19 08:01:17.302
-\# Memory report: Maximum memory size now 46,882 MB at UTC 2024.09.19 08:01:47.302
-\# Memory report: Maximum memory size now 45,243 MB at UTC 2024.09.19 08:01:57.302
-\# Available memory:         42,822 MB at UTC 2024.09.19 08:02:07.301
-\# Memory report: Maximum memory size now 44,117 MB at UTC 2024.09.19 08:02:07.301
-\# Memory report: Maximum memory size now 42,907 MB at UTC 2024.09.19 08:03:17.301
-\# Memory report: Maximum memory size now 42,008 MB at UTC 2024.09.19 08:03:57.301
-\# Memory report: Maximum memory size now 43,030 MB at UTC 2024.09.19 08:05:17.302
-\# Memory report: Maximum memory size now 42,047 MB at UTC 2024.09.19 08:05:27.302
-\# Memory report: Maximum memory size now 43,466 MB at UTC 2024.09.19 08:06:07.301
-\# Memory report: Maximum memory size now 44,874 MB at UTC 2024.09.19 08:06:27.301
-\# Memory report: Maximum memory size now 43,982 MB at UTC 2024.09.19 08:11:27.302
-\# Memory report: Maximum memory size now 42,677 MB at UTC 2024.09.19 08:14:07.301
-\# Memory report: Maximum memory size now 41,767 MB at UTC 2024.09.19 08:14:27.301
-\# Memory report: Maximum memory size now 42,649 MB at UTC 2024.09.19 08:14:47.301
-\# Memory report: Maximum memory size now 40,642 MB at UTC 2024.09.19 08:16:27.302
-\# Memory report: Maximum memory size now 41,828 MB at UTC 2024.09.19 08:16:47.302
-\# Memory report: Maximum memory size now 40,602 MB at UTC 2024.09.19 08:16:57.301
-\# Available memory:         38,756 MB at UTC 2024.09.19 08:17:07.301
-\# Memory report: Maximum memory size now 39,572 MB at UTC 2024.09.19 08:18:07.302
-\# Memory report: Maximum memory size now 40,705 MB at UTC 2024.09.19 08:19:27.302
-\# Memory report: Maximum memory size now 41,575 MB at UTC 2024.09.19 08:19:47.302
-\# Memory report: Maximum memory size now 42,476 MB at UTC 2024.09.19 08:21:37.302
-\# Memory report: Maximum memory size now 43,348 MB at UTC 2024.09.19 08:21:47.302
-\# Available memory:         42,936 MB at UTC 2024.09.19 08:22:17.302
-\# Memory report: Maximum memory size now 44,231 MB at UTC 2024.09.19 08:22:17.302
-\# Memory report: Maximum memory size now 45,149 MB at UTC 2024.09.19 08:22:27.301
-\# Memory report: Maximum memory size now 44,075 MB at UTC 2024.09.19 08:32:47.302
-\# Memory report: Maximum memory size now 43,093 MB at UTC 2024.09.19 08:34:27.304
-\# Memory report: Maximum memory size now 42,165 MB at UTC 2024.09.19 08:35:47.302
-\# Memory report: Maximum memory size now 41,225 MB at UTC 2024.09.19 08:36:17.305
-\# Available memory:         37,516 MB at UTC 2024.09.19 08:37:47.304
-\# Memory report: Maximum memory size now 38,811 MB at UTC 2024.09.19 08:37:47.304
-\# Memory report: Maximum memory size now 40,021 MB at UTC 2024.09.19 08:40:57.302
-\# Memory report: Maximum memory size now 40,858 MB at UTC 2024.09.19 08:41:27.301
-\# Available memory:         52,451 MB at UTC 2024.09.19 08:41:57.302
-\# Memory report: Maximum memory size now 53,746 MB at UTC 2024.09.19 08:41:57.302
-\# Memory report: Maximum memory size now 55,109 MB at UTC 2024.09.19 08:42:07.303
-\# Memory report: Maximum memory size now 56,878 MB at UTC 2024.09.19 08:42:37.301
+\# Memory report: Maximum memory size now 70,425 MB at UTC 2024.09.21 06:17:57.307
+\# Memory report: Maximum memory size now 68,667 MB at UTC 2024.09.21 06:18:17.307
+\# Memory report: Maximum memory size now 67,133 MB at UTC 2024.09.21 06:18:27.307
+\# Available memory:         59,824 MB at UTC 2024.09.21 06:18:37.308
+\# Memory report: Maximum memory size now 62,831 MB at UTC 2024.09.21 06:18:37.308
+\# Available memory:         50,590 MB at UTC 2024.09.21 06:18:47.308
+\# Memory report: Maximum memory size now 53,597 MB at UTC 2024.09.21 06:18:47.308
+\# Available memory:         39,517 MB at UTC 2024.09.21 06:18:57.307
+\# Memory report: Maximum memory size now 42,524 MB at UTC 2024.09.21 06:18:57.308
+\# Memory report: Maximum memory size now 41,485 MB at UTC 2024.09.21 06:19:17.308
+\# Memory report: Maximum memory size now 40,568 MB at UTC 2024.09.21 06:19:47.308
+\# Memory report: Maximum memory size now 38,934 MB at UTC 2024.09.21 06:20:07.308
+\# Available memory:         35,163 MB at UTC 2024.09.21 06:20:17.308
+\# Memory report: Maximum memory size now 38,170 MB at UTC 2024.09.21 06:20:17.308
+\# Memory report: Maximum memory size now 36,994 MB at UTC 2024.09.21 06:20:27.314
+\# Memory report: Maximum memory size now 36,260 MB at UTC 2024.09.21 06:20:37.307
+\# Memory report: Maximum memory size now 35,182 MB at UTC 2024.09.21 06:20:57.308
+\# Available memory:         31,863 MB at UTC 2024.09.21 06:21:47.308
+\# Memory report: Maximum memory size now 33,583 MB at UTC 2024.09.21 06:22:27.308
+\# Available memory:         28,865 MB at UTC 2024.09.21 06:22:37.307
+\# Memory report: Maximum memory size now 31,872 MB at UTC 2024.09.21 06:22:37.308
+\# Memory report: Maximum memory size now 30,382 MB at UTC 2024.09.21 06:22:47.308
+\# Memory report: Maximum memory size now 29,742 MB at UTC 2024.09.21 06:22:57.308
+\# Available memory:         26,146 MB at UTC 2024.09.21 06:23:07.307
+\# Memory report: Maximum memory size now 29,152 MB at UTC 2024.09.21 06:23:07.308
+\# Memory report: Maximum memory size now 28,478 MB at UTC 2024.09.21 06:24:07.308
+\# Memory report: Maximum memory size now 27,307 MB at UTC 2024.09.21 06:24:27.307
+\# Available memory:         23,710 MB at UTC 2024.09.21 06:24:47.308
+\# Memory report: Maximum memory size now 26,717 MB at UTC 2024.09.21 06:24:47.309
+\# Memory report: Maximum memory size now 25,667 MB at UTC 2024.09.21 06:24:57.308
+\# Memory report: Maximum memory size now 24,903 MB at UTC 2024.09.21 06:25:47.307
+\# Available memory:         21,472 MB at UTC 2024.09.21 06:33:17.308
+\# Memory report: Maximum memory size now 23,825 MB at UTC 2024.09.21 07:27:37.308
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\# Available memory:         43,922 MB at UTC 2024.09.21 07:27:57.139
+\# Memory report: Maximum memory size now 46,928 MB at UTC 2024.09.21 07:27:57.140
 \o 
-\o *Info*    Run complete for Point ID (3 3) on testbench [
-\o           ASKA_TOP:aska_top16_tb:1 ].
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (0 2) on testbench [ Short_Sim ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\# Memory report: Maximum memory size now 48,790 MB at UTC 2024.09.21 07:28:22.735
 \o 
 \o 
-\o *Info*    Run start for Point ID (3 24) on testbench [
-\o           ASKA_TOP:aska_top16_tb:1 ].
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 6) on testbench [ Short_Sim ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/24/ASKA_TOP:aska_top16_tb:1/netlist
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/6/Short_Sim/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/24/ASKA_TOP:aska_top16_tb:1
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/6/Short_Sim
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (3 24)
+\o *Info*    Creating Netlist for Point ID (0 6)
 \o 
 \o generate netlist...
 \o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -511,11 +484,9 @@
 \o  analog primitives using the Spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Initializing the control file using cp:
-\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/24/ASKA_TOP:aska_top16_tb:1/netlist/digital/control
-\o Begin Netlisting Sep 19 10:43:04 2024
+\o Begin Netlisting Sep 21 09:28:25 2024
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/24/ASKA_TOP:aska_top16_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/6/Short_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -532,17 +503,20 @@
 \o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
 \o either in CIW or the .simrc file.
 \o  
-\# Available memory:         58,033 MB at UTC 2024.09.19 08:43:07.402
-\# Memory report: Maximum memory size now 59,330 MB at UTC 2024.09.19 08:43:07.402
+\# Memory report: using       3,134 MB, process size 4,922 MB at UTC 2024.09.21 07:28:49.281
 \o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
 \o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
 \o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
 \o non-stopping cells.
 \o  
-\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele/analog_extracted_Conly_50fF' cannot be generated because either split buses or bundle terminals are present in it.
+\w *WARNING* Swap Activity: Excessive swap activity has been detected, which can cause decreased performance.  The application will continue to run, but if excessive swapping continues
+\w *WARNING* Swap Activity: due to the memory requirements of all the programs currently running on this system, the performance of this program may continue to be negatively affected.
+\w *WARNING* Swap Activity: Another warning will be output after 10 minutes if the condition persists or recurs.
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele_v2_TOP/analog_extracted_RC_50fF1Ohm' cannot be generated because either split buses or bundle terminals are present in it.
 \o  Therefore, an implicit netlist for this instance has been generated. 
 \o 
+\# Memory report: using       3,236 MB, process size 5,025 MB at UTC 2024.09.21 07:33:35.345
 \o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
 \o 
 \o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
@@ -555,10 +529,6 @@
 \o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------                   ---------            ----             
 \o 
-\o analogLib                   vpulse                      spectre              *Stopping View*  
-\o analogLib                   cap                         spectre              *Stopping View*  
-\o analogLib                   vdc                         spectre              *Stopping View*  
-\o analogLib                   ind                         spectre              *Stopping View*  
 \o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
 \o PRIMLIB                     pe3i                        spectre              *Stopping View*  
 \o PRIMLIB                     ne3i                        spectre              *Stopping View*  
@@ -589,6 +559,7 @@
 \o PRIMLIB                     nedia                       spectre              *Stopping View*  
 \o PRIMLIB                     p_cap                       spectre              *Stopping View*  
 \o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     p_res                       spectre              *Stopping View*  
 \o PRIMLIB                     s_res                       spectre              *Stopping View*  
 \o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
 \o PRIMLIB                     rpp1                        spectre              *Stopping View*  
@@ -598,68 +569,31 @@
 \o PRIMLIB                     dhpw                        spectre              *Stopping View*  
 \o PRIMLIB                     ne3                         spectre              *Stopping View*  
 \o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
 \o analogLib                   res                         spectre              *Stopping View*  
 \o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
 \o ASKA_TOP                    aska_top16_tb               schematic                             
-\o ASKA_16ELE_TOP_FINAL        aska_top_16ele              analog_extracted_Conly_50fF                  
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2_TOP       analog_extracted_RC_50fF1Ohm                  
 \o 
 \o ---------- End of netlist configuration information   ----------
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
 \o Initializing the control file using cp:
-\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/24/ASKA_TOP:aska_top16_tb:1/netlist/analog/control
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/6/Short_Sim/netlist/analog/control
 \o Copying Spectre source file 'spectre.inp'
 \o Copying Spectre command file 'spectre.sim'
-\# Memory report: Maximum memory size now 57,908 MB at UTC 2024.09.19 08:44:48.010
-\o WARNING (ADE-6003): Terminal "ELE<16>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<17>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<18>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<19>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<20>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<21>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<22>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<23>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<24>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<25>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<26>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<27>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<28>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<29>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<30>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6003): Terminal "ELE<31>", specified in the CDF termOrder, does not exist
-\o            in the cell-view "ASKA_16ELE_TOP_FINAL" "aska_top_16ele" "analog_extracted_Conly_50fF"
-\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
-\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
-\o            property to be used for netlisting.
-\o            To edit CDF of a cell, 
-\o            i) Open CIW->Tools->CDF->Edit.
-\o            ii) Select Library Name & Cell Name.
-\o            iii) Click on the Edit button in the simulation information section of the
-\o                 Edit CDF window.
+\# Memory report: using       3,342 MB, process size 5,130 MB at UTC 2024.09.21 07:34:06.176
 \o Running netlist assembly..
-\# Memory report: Maximum memory size now 59,415 MB at UTC 2024.09.19 08:45:19.588
-\# Memory report: Maximum memory size now 61,244 MB at UTC 2024.09.19 08:45:51.792
+\# Memory report: Maximum memory size now 46,921 MB at UTC 2024.09.21 07:34:16.603
+\# Memory report: Maximum memory size now 45,689 MB at UTC 2024.09.21 07:34:26.621
+\# Memory report: Maximum memory size now 44,173 MB at UTC 2024.09.21 07:34:46.649
 \o .........
-\# Memory report: Maximum memory size now 59,859 MB at UTC 2024.09.19 08:46:01.128
-\o End netlisting Sep 19 10:46:01 2024
+\# Memory report: Maximum memory size now 47,693 MB at UTC 2024.09.21 07:34:56.662
+\o End netlisting Sep 21 09:35:40 2024
 \o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -669,10 +603,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ ASKA_TOP:aska_top16_tb:1
-\o           ] for Point ID (3 24).
+\o *Info*    Running simulation on testbench [ Short_Sim ] for Point ID
+\o           (0 6).
 \o 
-\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.18/24/ASKA_TOP:aska_top16_tb:1/psf.
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/6/Short_Sim/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o validating simulator hierarchy...
@@ -681,109 +615,1218 @@
 \o To check for output from compilation, elaboration and simulation run, 
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 58,307 MB at UTC 2024.09.19 08:46:21.301
-\# Memory report: Maximum memory size now 55,815 MB at UTC 2024.09.19 08:46:41.305
-\# Memory report: Maximum memory size now 54,608 MB at UTC 2024.09.19 08:47:11.302
-\# Available memory:         52,382 MB at UTC 2024.09.19 08:47:31.301
-\# Memory report: Maximum memory size now 53,208 MB at UTC 2024.09.19 08:47:41.302
-\# Memory report: Maximum memory size now 52,021 MB at UTC 2024.09.19 08:48:01.302
-\# Memory report: Maximum memory size now 50,997 MB at UTC 2024.09.19 08:48:21.301
-\# Memory report: Maximum memory size now 52,372 MB at UTC 2024.09.19 08:48:31.301
-\# Memory report: Maximum memory size now 51,109 MB at UTC 2024.09.19 08:49:01.303
-\# Memory report: Maximum memory size now 49,487 MB at UTC 2024.09.19 08:50:41.301
-\# Available memory:         47,195 MB at UTC 2024.09.19 08:50:51.302
-\# Memory report: Maximum memory size now 48,146 MB at UTC 2024.09.19 08:51:01.301
-\# Memory report: Maximum memory size now 46,593 MB at UTC 2024.09.19 08:52:31.302
-\# Memory report: Maximum memory size now 47,825 MB at UTC 2024.09.19 08:53:21.302
-\# Memory report: Maximum memory size now 46,579 MB at UTC 2024.09.19 08:56:41.302
-\# Memory report: Maximum memory size now 45,662 MB at UTC 2024.09.19 08:57:41.302
-\# Memory report: Maximum memory size now 44,620 MB at UTC 2024.09.19 09:06:31.301
-\# Available memory:         42,888 MB at UTC 2024.09.19 09:07:11.301
-\# Memory report: Maximum memory size now 42,945 MB at UTC 2024.09.19 09:08:41.302
-\# Memory report: Maximum memory size now 40,536 MB at UTC 2024.09.19 09:09:21.301
-\# Available memory:         38,270 MB at UTC 2024.09.19 09:09:31.302
-\# Memory report: Maximum memory size now 39,611 MB at UTC 2024.09.19 09:09:31.302
-\# Memory report: Maximum memory size now 38,780 MB at UTC 2024.09.19 09:11:31.305
-\# Memory report: Maximum memory size now 39,575 MB at UTC 2024.09.19 09:11:51.303
-\# Memory report: Maximum memory size now 41,167 MB at UTC 2024.09.19 09:13:51.301
-\# Memory report: Maximum memory size now 42,539 MB at UTC 2024.09.19 09:14:01.301
-\# Available memory:         44,315 MB at UTC 2024.09.19 09:14:41.301
-\# Memory report: Maximum memory size now 45,656 MB at UTC 2024.09.19 09:14:41.301
-\# Memory report: Maximum memory size now 46,637 MB at UTC 2024.09.19 09:14:51.301
-\# Memory report: Maximum memory size now 45,019 MB at UTC 2024.09.19 09:32:21.301
-\# Memory report: Maximum memory size now 44,056 MB at UTC 2024.09.19 09:33:41.302
-\# Memory report: Maximum memory size now 41,970 MB at UTC 2024.09.19 09:34:11.302
-\# Available memory:         39,773 MB at UTC 2024.09.19 09:34:21.302
-\# Memory report: Maximum memory size now 41,114 MB at UTC 2024.09.19 09:34:21.302
-\# Memory report: Maximum memory size now 40,234 MB at UTC 2024.09.19 09:34:31.301
-\# Memory report: Maximum memory size now 39,299 MB at UTC 2024.09.19 09:35:01.301
-\# Memory report: Maximum memory size now 41,339 MB at UTC 2024.09.19 09:35:11.302
-\# Memory report: Maximum memory size now 40,417 MB at UTC 2024.09.19 09:36:01.301
-\# Memory report: Maximum memory size now 41,612 MB at UTC 2024.09.19 09:36:51.304
-\# Memory report: Maximum memory size now 42,797 MB at UTC 2024.09.19 09:37:21.301
-\# Available memory:         44,123 MB at UTC 2024.09.19 09:37:51.302
-\# Memory report: Maximum memory size now 45,464 MB at UTC 2024.09.19 09:37:51.302
-\# Memory report: Maximum memory size now 47,134 MB at UTC 2024.09.19 09:38:31.301
-\# Memory report: Maximum memory size now 48,369 MB at UTC 2024.09.19 09:38:51.302
-\# Available memory:         48,822 MB at UTC 2024.09.19 09:39:31.304
-\# Memory report: Maximum memory size now 50,163 MB at UTC 2024.09.19 09:39:31.304
-\# Memory report: Maximum memory size now 52,248 MB at UTC 2024.09.19 09:39:51.301
-\# Memory report: Maximum memory size now 53,333 MB at UTC 2024.09.19 09:40:11.302
-\# Memory report: Maximum memory size now 52,255 MB at UTC 2024.09.19 09:42:31.301
-\# Memory report: Maximum memory size now 54,057 MB at UTC 2024.09.19 09:43:41.301
-\# Memory report: Maximum memory size now 52,745 MB at UTC 2024.09.19 09:44:21.301
-\# Memory report: Maximum memory size now 51,145 MB at UTC 2024.09.19 09:44:41.302
-\# Memory report: Maximum memory size now 48,645 MB at UTC 2024.09.19 09:45:01.301
-\# Memory report: Maximum memory size now 47,417 MB at UTC 2024.09.19 09:45:51.301
-\# Memory report: Maximum memory size now 46,465 MB at UTC 2024.09.19 09:46:51.302
-\# Memory report: Maximum memory size now 48,228 MB at UTC 2024.09.19 09:47:11.302
-\# Memory report: Maximum memory size now 46,946 MB at UTC 2024.09.19 09:49:41.302
-\# Memory report: Maximum memory size now 46,011 MB at UTC 2024.09.19 09:50:51.301
-\# Available memory:         44,101 MB at UTC 2024.09.19 09:51:11.301
-\# Memory report: Maximum memory size now 44,658 MB at UTC 2024.09.19 09:52:01.302
-\# Memory report: Maximum memory size now 43,627 MB at UTC 2024.09.19 09:53:51.301
-\# Memory report: Maximum memory size now 42,472 MB at UTC 2024.09.19 09:54:01.302
-\# Memory report: Maximum memory size now 41,440 MB at UTC 2024.09.19 09:54:31.301
-\# Available memory:         39,550 MB at UTC 2024.09.19 09:54:41.302
-\# Memory report: Maximum memory size now 40,578 MB at UTC 2024.09.19 09:55:41.302
-\# Memory report: Maximum memory size now 42,416 MB at UTC 2024.09.19 09:57:31.301
-\# Memory report: Maximum memory size now 43,337 MB at UTC 2024.09.19 09:59:01.302
-\# Available memory:         45,085 MB at UTC 2024.09.19 09:59:21.302
-\# Memory report: Maximum memory size now 46,425 MB at UTC 2024.09.19 09:59:21.302
-\# Memory report: Maximum memory size now 47,362 MB at UTC 2024.09.19 09:59:51.302
-\# Memory report: Maximum memory size now 48,390 MB at UTC 2024.09.19 10:00:01.302
-\# Memory report: Maximum memory size now 46,593 MB at UTC 2024.09.19 10:16:31.302
-\# Memory report: Maximum memory size now 43,588 MB at UTC 2024.09.19 10:18:21.301
-\# Available memory:         40,471 MB at UTC 2024.09.19 10:18:51.302
-\# Memory report: Maximum memory size now 41,812 MB at UTC 2024.09.19 10:18:51.302
-\# Memory report: Maximum memory size now 40,971 MB at UTC 2024.09.19 10:20:01.305
-\# Memory report: Maximum memory size now 42,445 MB at UTC 2024.09.19 10:22:01.301
-\# Memory report: Maximum memory size now 43,477 MB at UTC 2024.09.19 10:23:31.307
-\# Available memory:         46,111 MB at UTC 2024.09.19 10:23:41.302
-\# Memory report: Maximum memory size now 47,452 MB at UTC 2024.09.19 10:23:41.302
-\# Memory report: Maximum memory size now 51,240 MB at UTC 2024.09.19 10:24:11.301
-\# Available memory:         50,902 MB at UTC 2024.09.19 10:24:21.302
-\# Memory report: Maximum memory size now 52,289 MB at UTC 2024.09.19 10:25:11.302
-\# Memory report: Maximum memory size now 54,018 MB at UTC 2024.09.19 10:27:31.301
+\# Memory report: Maximum memory size now 46,298 MB at UTC 2024.09.21 07:36:07.307
+\# Memory report: Maximum memory size now 45,316 MB at UTC 2024.09.21 07:36:27.308
+\# Memory report: Maximum memory size now 43,941 MB at UTC 2024.09.21 07:36:37.307
+\# Memory report: Maximum memory size now 46,582 MB at UTC 2024.09.21 07:36:47.307
+\# Available memory:         36,345 MB at UTC 2024.09.21 07:36:57.307
+\# Memory report: Maximum memory size now 39,699 MB at UTC 2024.09.21 07:36:57.307
+\# Available memory:         28,524 MB at UTC 2024.09.21 07:37:07.308
+\# Memory report: Maximum memory size now 31,877 MB at UTC 2024.09.21 07:37:07.308
+\# Memory report: Maximum memory size now 30,217 MB at UTC 2024.09.21 07:37:17.308
+\# Memory report: Maximum memory size now 29,288 MB at UTC 2024.09.21 07:37:57.307
+\# Available memory:         25,431 MB at UTC 2024.09.21 07:38:07.307
+\# Memory report: Maximum memory size now 28,372 MB at UTC 2024.09.21 07:38:17.307
+\# Memory report: Maximum memory size now 27,532 MB at UTC 2024.09.21 07:38:27.307
+\# Memory report: Maximum memory size now 26,712 MB at UTC 2024.09.21 07:38:47.307
+\# Available memory:         21,301 MB at UTC 2024.09.21 07:38:57.308
+\# Memory report: Maximum memory size now 24,655 MB at UTC 2024.09.21 07:38:57.308
+\# Memory report: Maximum memory size now 23,910 MB at UTC 2024.09.21 07:43:57.308
+\# Memory report: Maximum memory size now 23,202 MB at UTC 2024.09.21 08:06:07.308
+\# Available memory:         30,993 MB at UTC 2024.09.21 08:06:27.307
+\# Memory report: Maximum memory size now 34,347 MB at UTC 2024.09.21 08:06:27.308
+\# Memory report: Maximum memory size now 35,293 MB at UTC 2024.09.21 08:06:47.307
+\# Available memory:         43,712 MB at UTC 2024.09.21 08:06:57.307
+\# Memory report: Maximum memory size now 47,066 MB at UTC 2024.09.21 08:06:57.307
+\# Memory report: Maximum memory size now 48,329 MB at UTC 2024.09.21 08:07:27.308
+\# Memory report: Maximum memory size now 47,169 MB at UTC 2024.09.21 08:13:07.307
+\# Available memory:         54,428 MB at UTC 2024.09.21 08:13:27.308
+\# Memory report: Maximum memory size now 57,781 MB at UTC 2024.09.21 08:13:27.308
+\# Memory report: Maximum memory size now 56,101 MB at UTC 2024.09.21 08:14:47.307
+\# Memory report: Maximum memory size now 57,397 MB at UTC 2024.09.21 08:15:27.307
+\# Memory report: Maximum memory size now 55,778 MB at UTC 2024.09.21 08:16:37.307
+\# Available memory:         49,064 MB at UTC 2024.09.21 08:17:07.308
+\# Memory report: Maximum memory size now 52,417 MB at UTC 2024.09.21 08:17:07.308
+\# Memory report: Maximum memory size now 48,384 MB at UTC 2024.09.21 08:17:17.307
+\# Available memory:         42,650 MB at UTC 2024.09.21 08:17:27.307
+\# Memory report: Maximum memory size now 46,004 MB at UTC 2024.09.21 08:17:27.307
+\# Available memory:         38,740 MB at UTC 2024.09.21 08:17:37.307
+\# Memory report: Maximum memory size now 42,094 MB at UTC 2024.09.21 08:17:37.307
+\# Memory report: Maximum memory size now 39,416 MB at UTC 2024.09.21 08:17:47.307
+\# Available memory:         35,015 MB at UTC 2024.09.21 08:17:57.308
+\# Memory report: Maximum memory size now 38,369 MB at UTC 2024.09.21 08:17:57.308
+\# Memory report: Maximum memory size now 37,610 MB at UTC 2024.09.21 08:19:37.308
+\# Memory report: Maximum memory size now 36,845 MB at UTC 2024.09.21 08:20:27.307
+\# Memory report: Maximum memory size now 36,067 MB at UTC 2024.09.21 08:20:57.308
+\# Memory report: Maximum memory size now 37,616 MB at UTC 2024.09.21 08:21:17.307
+\# Memory report: Maximum memory size now 36,729 MB at UTC 2024.09.21 08:22:47.307
+\# Memory report: Maximum memory size now 35,884 MB at UTC 2024.09.21 08:23:17.307
+\# Available memory:         30,708 MB at UTC 2024.09.21 08:23:37.308
+\# Memory report: Maximum memory size now 34,062 MB at UTC 2024.09.21 08:23:37.308
+\# Memory report: Maximum memory size now 33,120 MB at UTC 2024.09.21 08:23:47.307
+\# Memory report: Maximum memory size now 32,361 MB at UTC 2024.09.21 08:24:07.308
+\# Available memory:         27,529 MB at UTC 2024.09.21 08:24:17.308
+\# Memory report: Maximum memory size now 30,883 MB at UTC 2024.09.21 08:24:17.308
+\# Memory report: Maximum memory size now 29,061 MB at UTC 2024.09.21 08:24:27.307
+\# Available memory:         23,953 MB at UTC 2024.09.21 08:24:37.307
+\# Memory report: Maximum memory size now 27,307 MB at UTC 2024.09.21 08:24:37.307
+\# Memory report: Maximum memory size now 26,241 MB at UTC 2024.09.21 08:24:47.307
+\# Memory report: Maximum memory size now 25,289 MB at UTC 2024.09.21 08:24:57.308
+\# Available memory:         21,729 MB at UTC 2024.09.21 08:25:57.307
+\# Memory report: Maximum memory size now 24,648 MB at UTC 2024.09.21 08:26:17.308
+\# Memory report: Maximum memory size now 23,893 MB at UTC 2024.09.21 08:26:47.308
+\# Memory report: Maximum memory size now 23,288 MB at UTC 2024.09.21 08:27:07.307
+\# Available memory:         19,659 MB at UTC 2024.09.21 08:27:17.307
+\# Memory report: Maximum memory size now 22,557 MB at UTC 2024.09.21 08:27:57.307
+\# Memory report: Maximum memory size now 22,026 MB at UTC 2024.09.21 08:35:57.307
+\# Memory report: Maximum memory size now 21,576 MB at UTC 2024.09.21 09:03:27.307
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Available memory:         29,315 MB at UTC 2024.09.21 09:04:07.983
+\# Memory report: Maximum memory size now 32,668 MB at UTC 2024.09.21 09:04:07.983
+\o 
+\o *Info*    Run complete for Point ID (0 6) on testbench [ Short_Sim ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 11) on testbench [ Short_Sim ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/11/Short_Sim/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/11/Short_Sim
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 11)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Sep 21 11:04:15 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/11/Short_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\# Memory report: using       3,540 MB, process size 5,329 MB at UTC 2024.09.21 09:04:58.809
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\# Available memory:         39,265 MB at UTC 2024.09.21 09:09:28.041
+\# Memory report: Maximum memory size now 42,814 MB at UTC 2024.09.21 09:09:28.041
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele_v2_TOP/analog_extracted_RC_50fF1Ohm' cannot be generated because either split buses or bundle terminals are present in it.
+\o  Therefore, an implicit netlist for this instance has been generated. 
+\o 
+\# Memory report: using       3,650 MB, process size 5,439 MB at UTC 2024.09.21 09:12:11.425
+\o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+\o 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     pe3i                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3i                        spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     pmb                         spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dp3                       spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     dp3                         spectre              *Stopping View*  
+\o PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dphnw                       spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+\o PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
+\o PRIMLIB                     dn3                         spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
+\o PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+\o PRIMLIB                     ddnw                        spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw                       spectre              *Stopping View*  
+\o PRIMLIB                     rdn3                        spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     p_cap                       spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     p_res                       spectre              *Stopping View*  
+\o PRIMLIB                     s_res                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rnp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     rdp3                        spectre              *Stopping View*  
+\o PRIMLIB                     dhpw                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+\o ASKA_TOP                    aska_top16_tb               schematic                             
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2_TOP       analog_extracted_RC_50fF1Ohm                  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/11/Short_Sim/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\# Memory report: Maximum memory size now 41,927 MB at UTC 2024.09.21 09:13:21.778
+\# Memory report: Maximum memory size now 40,977 MB at UTC 2024.09.21 09:14:01.823
+\o .........
+\# Memory report: Maximum memory size now 42,157 MB at UTC 2024.09.21 09:14:31.796
+\o End netlisting Sep 21 11:15:34 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\# Memory report: using       3,757 MB, process size 5,546 MB at UTC 2024.09.21 09:15:36.153
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ Short_Sim ] for Point ID
+\o           (0 11).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/11/Short_Sim/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 40,980 MB at UTC 2024.09.21 09:16:33.308
+\# Available memory:         34,671 MB at UTC 2024.09.21 09:17:13.307
+\# Memory report: Maximum memory size now 38,428 MB at UTC 2024.09.21 09:17:13.308
+\# Memory report: Maximum memory size now 35,512 MB at UTC 2024.09.21 09:17:23.308
+\# Available memory:         28,670 MB at UTC 2024.09.21 09:17:33.307
+\# Memory report: Maximum memory size now 32,427 MB at UTC 2024.09.21 09:17:33.307
+\# Memory report: Maximum memory size now 33,978 MB at UTC 2024.09.21 09:17:43.308
+\# Available memory:         31,406 MB at UTC 2024.09.21 09:18:23.307
+\# Memory report: Maximum memory size now 35,163 MB at UTC 2024.09.21 09:18:23.307
+\# Memory report: Maximum memory size now 34,311 MB at UTC 2024.09.21 09:18:43.307
+\# Memory report: Maximum memory size now 33,624 MB at UTC 2024.09.21 09:19:03.308
+\# Memory report: Maximum memory size now 32,796 MB at UTC 2024.09.21 09:19:53.307
+\# Memory report: Maximum memory size now 33,585 MB at UTC 2024.09.21 09:20:23.307
+\# Memory report: Maximum memory size now 32,570 MB at UTC 2024.09.21 09:20:33.307
+\# Available memory:         27,365 MB at UTC 2024.09.21 09:21:33.308
+\# Memory report: Maximum memory size now 31,122 MB at UTC 2024.09.21 09:21:33.314
+\# Memory report: Maximum memory size now 28,899 MB at UTC 2024.09.21 09:21:43.307
+\# Available memory:         23,161 MB at UTC 2024.09.21 09:21:53.307
+\# Memory report: Maximum memory size now 26,918 MB at UTC 2024.09.21 09:21:53.325
+\# Memory report: Maximum memory size now 26,002 MB at UTC 2024.09.21 09:22:13.307
+\# Memory report: Maximum memory size now 25,385 MB at UTC 2024.09.21 09:23:13.308
+\# Available memory:         20,867 MB at UTC 2024.09.21 09:23:43.307
+\# Memory report: Maximum memory size now 24,624 MB at UTC 2024.09.21 09:23:43.308
+\# Memory report: Maximum memory size now 23,576 MB at UTC 2024.09.21 09:24:13.308
+\# Memory report: Maximum memory size now 22,909 MB at UTC 2024.09.21 09:24:43.308
+\# Available memory:         29,761 MB at UTC 2024.09.21 09:25:03.307
+\# Memory report: Maximum memory size now 33,518 MB at UTC 2024.09.21 09:25:03.307
+\# Memory report: Maximum memory size now 32,860 MB at UTC 2024.09.21 09:29:23.308
+\# Memory report: Maximum memory size now 35,422 MB at UTC 2024.09.21 09:29:53.307
+\# Available memory:         38,613 MB at UTC 2024.09.21 09:30:03.307
+\# Memory report: Maximum memory size now 42,370 MB at UTC 2024.09.21 09:30:03.308
+\# Memory report: Maximum memory size now 41,216 MB at UTC 2024.09.21 09:31:43.308
+\# Memory report: Maximum memory size now 40,123 MB at UTC 2024.09.21 09:32:03.307
+\# Memory report: Maximum memory size now 41,777 MB at UTC 2024.09.21 09:32:13.307
+\# Memory report: Maximum memory size now 40,916 MB at UTC 2024.09.21 09:33:13.307
+\# Memory report: Maximum memory size now 39,944 MB at UTC 2024.09.21 09:33:43.308
+\# Available memory:         33,256 MB at UTC 2024.09.21 09:34:13.308
+\# Memory report: Maximum memory size now 37,013 MB at UTC 2024.09.21 09:34:13.313
+\# Available memory:         29,182 MB at UTC 2024.09.21 09:34:23.308
+\# Memory report: Maximum memory size now 32,939 MB at UTC 2024.09.21 09:34:23.313
+\# Memory report: Maximum memory size now 31,667 MB at UTC 2024.09.21 09:34:33.308
+\# Memory report: Maximum memory size now 30,616 MB at UTC 2024.09.21 09:35:13.308
+\# Available memory:         26,263 MB at UTC 2024.09.21 09:35:23.307
+\# Memory report: Maximum memory size now 29,360 MB at UTC 2024.09.21 09:35:33.307
+\# Memory report: Maximum memory size now 29,975 MB at UTC 2024.09.21 09:36:03.307
+\# Memory report: Maximum memory size now 31,446 MB at UTC 2024.09.21 09:36:43.307
+\# Memory report: Maximum memory size now 30,715 MB at UTC 2024.09.21 09:38:03.308
+\# Memory report: Maximum memory size now 29,727 MB at UTC 2024.09.21 09:38:33.307
+\# Memory report: Maximum memory size now 30,516 MB at UTC 2024.09.21 09:38:53.307
+\# Memory report: Maximum memory size now 28,010 MB at UTC 2024.09.21 09:39:13.308
+\# Available memory:         22,214 MB at UTC 2024.09.21 09:39:24.307
+\# Memory report: Maximum memory size now 25,971 MB at UTC 2024.09.21 09:39:24.308
+\# Memory report: Maximum memory size now 25,007 MB at UTC 2024.09.21 09:39:34.308
+\# Memory report: Maximum memory size now 24,372 MB at UTC 2024.09.21 09:40:34.312
+\# Available memory:         20,192 MB at UTC 2024.09.21 09:40:54.308
+\# Memory report: Maximum memory size now 23,701 MB at UTC 2024.09.21 09:41:04.307
+\# Memory report: Maximum memory size now 23,202 MB at UTC 2024.09.21 09:41:14.308
+\# Memory report: Maximum memory size now 22,499 MB at UTC 2024.09.21 09:41:54.307
+\# Available memory:         18,286 MB at UTC 2024.09.21 09:46:54.308
+\# Memory report: Maximum memory size now 22,043 MB at UTC 2024.09.21 09:46:54.312
+\# Memory report: Maximum memory size now 21,591 MB at UTC 2024.09.21 09:58:24.307
+\# Memory report: Maximum memory size now 22,221 MB at UTC 2024.09.21 09:58:54.307
+\# Available memory:         20,206 MB at UTC 2024.09.21 09:59:04.308
+\# Memory report: Maximum memory size now 23,963 MB at UTC 2024.09.21 09:59:04.312
+\# Available memory:         29,039 MB at UTC 2024.09.21 09:59:14.308
+\# Memory report: Maximum memory size now 32,796 MB at UTC 2024.09.21 09:59:14.308
+\# Memory report: Maximum memory size now 33,699 MB at UTC 2024.09.21 09:59:44.307
+\# Memory report: Maximum memory size now 32,828 MB at UTC 2024.09.21 10:10:14.308
+\# Memory report: Maximum memory size now 32,018 MB at UTC 2024.09.21 10:10:44.308
+\# Memory report: Maximum memory size now 31,381 MB at UTC 2024.09.21 10:11:34.307
+\# Memory report: Maximum memory size now 32,960 MB at UTC 2024.09.21 10:12:14.308
+\# Memory report: Maximum memory size now 31,949 MB at UTC 2024.09.21 10:14:54.308
+\# Memory report: Maximum memory size now 31,255 MB at UTC 2024.09.21 10:15:14.308
+\# Memory report: Maximum memory size now 30,242 MB at UTC 2024.09.21 10:15:54.308
+\# Available memory:         25,331 MB at UTC 2024.09.21 10:16:04.308
+\# Memory report: Maximum memory size now 29,088 MB at UTC 2024.09.21 10:16:04.308
+\# Memory report: Maximum memory size now 27,533 MB at UTC 2024.09.21 10:16:14.307
+\# Available memory:         22,600 MB at UTC 2024.09.21 10:16:24.307
+\# Memory report: Maximum memory size now 26,357 MB at UTC 2024.09.21 10:16:24.407
+\# Memory report: Maximum memory size now 25,597 MB at UTC 2024.09.21 10:16:34.307
+\# Memory report: Maximum memory size now 24,747 MB at UTC 2024.09.21 10:17:44.307
+\# Available memory:         20,493 MB at UTC 2024.09.21 10:18:04.308
+\# Memory report: Maximum memory size now 24,250 MB at UTC 2024.09.21 10:18:04.312
+\# Memory report: Maximum memory size now 23,678 MB at UTC 2024.09.21 10:18:34.307
+\# Memory report: Maximum memory size now 23,118 MB at UTC 2024.09.21 10:18:54.307
+\# Memory report: Maximum memory size now 22,653 MB at UTC 2024.09.21 10:19:44.308
+\# Available memory:         18,211 MB at UTC 2024.09.21 10:27:04.307
+\# Memory report: Maximum memory size now 21,968 MB at UTC 2024.09.21 10:27:04.312
+\# Available memory:         30,420 MB at UTC 2024.09.21 10:42:44.308
+\# Memory report: Maximum memory size now 34,177 MB at UTC 2024.09.21 10:42:44.308
+\# Memory report: Maximum memory size now 35,082 MB at UTC 2024.09.21 10:43:14.307
+\# Available memory:         43,666 MB at UTC 2024.09.21 10:47:14.308
+\# Memory report: Maximum memory size now 47,423 MB at UTC 2024.09.21 10:47:14.308
+\# Memory report: Maximum memory size now 48,461 MB at UTC 2024.09.21 10:47:44.307
+\# Memory report: Maximum memory size now 47,220 MB at UTC 2024.09.21 10:49:54.308
+\# Memory report: Maximum memory size now 46,189 MB at UTC 2024.09.21 10:50:14.308
+\# Memory report: Maximum memory size now 47,256 MB at UTC 2024.09.21 10:50:34.308
+\# Memory report: Maximum memory size now 45,596 MB at UTC 2024.09.21 10:52:04.308
+\# Available memory:         38,468 MB at UTC 2024.09.21 10:52:34.308
+\# Memory report: Maximum memory size now 42,225 MB at UTC 2024.09.21 10:52:34.308
+\# Memory report: Maximum memory size now 38,950 MB at UTC 2024.09.21 10:52:44.307
+\# Available memory:         33,993 MB at UTC 2024.09.21 10:52:54.308
+\# Memory report: Maximum memory size now 37,750 MB at UTC 2024.09.21 10:52:54.312
+\# Memory report: Maximum memory size now 36,986 MB at UTC 2024.09.21 10:53:24.307
+\# Memory report: Maximum memory size now 36,063 MB at UTC 2024.09.21 10:53:34.307
+\# Memory report: Maximum memory size now 34,962 MB at UTC 2024.09.21 10:53:44.307
+\# Available memory:         30,000 MB at UTC 2024.09.21 10:53:54.307
+\# Memory report: Maximum memory size now 33,757 MB at UTC 2024.09.21 10:53:54.308
+\# Memory report: Maximum memory size now 33,022 MB at UTC 2024.09.21 10:56:04.307
+\# Memory report: Maximum memory size now 32,349 MB at UTC 2024.09.21 10:56:24.308
+\# Memory report: Maximum memory size now 33,257 MB at UTC 2024.09.21 10:56:44.307
+\# Available memory:         26,877 MB at UTC 2024.09.21 10:56:54.307
+\# Memory report: Maximum memory size now 30,634 MB at UTC 2024.09.21 10:56:54.312
+\# Memory report: Maximum memory size now 29,707 MB at UTC 2024.09.21 10:57:04.307
+\# Available memory:         35,263 MB at UTC 2024.09.21 10:57:24.080
+\# Memory report: Maximum memory size now 39,020 MB at UTC 2024.09.21 10:57:24.081
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 24) on testbench [
-\o           ASKA_TOP:aska_top16_tb:1 ].
+\o *Info*    Run complete for Point ID (0 11) on testbench [ Short_Sim ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Available memory:         56,322 MB at UTC 2024.09.19 10:28:01.308
-\# Memory report: Maximum memory size now 57,663 MB at UTC 2024.09.19 10:28:01.308
-\# Memory report: Maximum memory size now 59,150 MB at UTC 2024.09.19 10:29:21.302
-\# Memory report: Maximum memory size now 60,972 MB at UTC 2024.09.19 10:30:21.301
-\# Memory report: Maximum memory size now 59,044 MB at UTC 2024.09.19 10:33:01.302
-\o Job 15 timed out after no activity in 300 seconds.
+\# Memory report: Maximum memory size now 39,946 MB at UTC 2024.09.21 10:58:12.993
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 18) on testbench [ Short_Sim ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/18/Short_Sim/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/18/Short_Sim
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 18)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Sep 21 12:58:18 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/18/Short_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\# Available memory:         30,855 MB at UTC 2024.09.21 10:59:06.950
+\# Memory report: Maximum memory size now 34,790 MB at UTC 2024.09.21 10:59:06.950
+\# Memory report: using       3,935 MB, process size 5,724 MB at UTC 2024.09.21 10:59:06.951
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\# Memory report: Maximum memory size now 33,827 MB at UTC 2024.09.21 10:59:36.048
+\w *WARNING* Swap Activity: Excessive swap activity has been detected, which can cause decreased performance.  The application will continue to run, but if excessive swapping continues
+\w *WARNING* Swap Activity: due to the memory requirements of all the programs currently running on this system, the performance of this program may continue to be negatively affected.
+\# Memory report: Maximum memory size now 33,124 MB at UTC 2024.09.21 11:01:06.254
+\# Memory report: Maximum memory size now 35,557 MB at UTC 2024.09.21 11:01:36.097
+\# Available memory:         40,403 MB at UTC 2024.09.21 11:01:46.103
+\# Memory report: Maximum memory size now 44,343 MB at UTC 2024.09.21 11:01:46.103
+\# Memory report: Maximum memory size now 45,279 MB at UTC 2024.09.21 11:02:16.039
+\w *WARNING* Swap Activity: Another warning will be output after 10 minutes if the condition persists or recurs.
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele_v2_TOP/analog_extracted_RC_50fF1Ohm' cannot be generated because either split buses or bundle terminals are present in it.
+\o  Therefore, an implicit netlist for this instance has been generated. 
+\o 
+\# Memory report: using       4,041 MB, process size 5,830 MB at UTC 2024.09.21 11:05:49.002
+\o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+\o 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     pe3i                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3i                        spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     pmb                         spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dp3                       spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     dp3                         spectre              *Stopping View*  
+\o PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dphnw                       spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+\o PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
+\o PRIMLIB                     dn3                         spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
+\o PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+\o PRIMLIB                     ddnw                        spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw                       spectre              *Stopping View*  
+\o PRIMLIB                     rdn3                        spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     p_cap                       spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     p_res                       spectre              *Stopping View*  
+\o PRIMLIB                     s_res                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rnp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     rdp3                        spectre              *Stopping View*  
+\o PRIMLIB                     dhpw                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+\o ASKA_TOP                    aska_top16_tb               schematic                             
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2_TOP       analog_extracted_RC_50fF1Ohm                  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/18/Short_Sim/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\# Memory report: Maximum memory size now 43,956 MB at UTC 2024.09.21 11:06:51.187
+\# Memory report: Maximum memory size now 43,021 MB at UTC 2024.09.21 11:07:21.251
+\o .........
+\# Memory report: Maximum memory size now 43,894 MB at UTC 2024.09.21 11:08:11.207
+\o End netlisting Sep 21 13:09:12 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\# Memory report: using       4,143 MB, process size 5,931 MB at UTC 2024.09.21 11:09:14.505
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ Short_Sim ] for Point ID
+\o           (0 18).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/18/Short_Sim/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 41,817 MB at UTC 2024.09.21 11:10:12.307
+\# Available memory:         36,463 MB at UTC 2024.09.21 11:10:32.308
+\# Memory report: Maximum memory size now 40,618 MB at UTC 2024.09.21 11:10:32.308
+\# Memory report: Maximum memory size now 37,616 MB at UTC 2024.09.21 11:10:52.308
+\# Available memory:         32,854 MB at UTC 2024.09.21 11:11:02.307
+\# Memory report: Maximum memory size now 36,054 MB at UTC 2024.09.21 11:11:12.308
+\# Memory report: Maximum memory size now 36,791 MB at UTC 2024.09.21 11:11:22.308
+\# Memory report: Maximum memory size now 35,953 MB at UTC 2024.09.21 11:12:12.307
+\# Available memory:         29,081 MB at UTC 2024.09.21 11:12:42.308
+\# Memory report: Maximum memory size now 33,235 MB at UTC 2024.09.21 11:12:42.308
+\# Memory report: Maximum memory size now 32,030 MB at UTC 2024.09.21 11:13:02.307
+\# Memory report: Maximum memory size now 31,093 MB at UTC 2024.09.21 11:13:42.307
+\# Available memory:         25,468 MB at UTC 2024.09.21 11:14:22.308
+\# Memory report: Maximum memory size now 29,623 MB at UTC 2024.09.21 11:14:22.308
+\# Memory report: Maximum memory size now 27,843 MB at UTC 2024.09.21 11:14:32.308
+\# Available memory:         21,661 MB at UTC 2024.09.21 11:14:42.308
+\# Memory report: Maximum memory size now 25,815 MB at UTC 2024.09.21 11:14:42.376
+\# Memory report: Maximum memory size now 24,675 MB at UTC 2024.09.21 11:14:52.307
+\# Available memory:         19,627 MB at UTC 2024.09.21 11:15:02.307
+\# Memory report: Maximum memory size now 23,781 MB at UTC 2024.09.21 11:15:02.308
+\# Memory report: Maximum memory size now 23,224 MB at UTC 2024.09.21 11:16:02.307
+\# Memory report: Maximum memory size now 22,676 MB at UTC 2024.09.21 11:16:22.307
+\# Memory report: Maximum memory size now 22,169 MB at UTC 2024.09.21 11:16:42.308
+\# Available memory:         17,772 MB at UTC 2024.09.21 11:16:52.307
+\# Memory report: Maximum memory size now 21,401 MB at UTC 2024.09.21 11:17:02.308
+\# Memory report: Maximum memory size now 20,761 MB at UTC 2024.09.21 11:17:42.307
+\# Available memory:         16,148 MB at UTC 2024.09.21 11:18:52.307
+\# Memory report: Maximum memory size now 20,303 MB at UTC 2024.09.21 11:18:52.308
+\# Memory report: Maximum memory size now 19,794 MB at UTC 2024.09.21 11:24:32.307
+\# Memory report: Maximum memory size now 19,406 MB at UTC 2024.09.21 11:45:52.307
+\# Memory report: Maximum memory size now 19,816 MB at UTC 2024.09.21 11:46:32.307
+\# Memory report: Maximum memory size now 20,230 MB at UTC 2024.09.21 11:46:42.307
+\# Available memory:         26,393 MB at UTC 2024.09.21 11:47:02.308
+\# Memory report: Maximum memory size now 30,548 MB at UTC 2024.09.21 11:47:02.308
+\# Memory report: Maximum memory size now 29,839 MB at UTC 2024.09.21 11:58:02.307
+\# Memory report: Maximum memory size now 29,171 MB at UTC 2024.09.21 11:58:52.308
+\# Memory report: Maximum memory size now 29,788 MB at UTC 2024.09.21 11:59:22.307
+\# Available memory:         37,442 MB at UTC 2024.09.21 11:59:32.307
+\# Memory report: Maximum memory size now 41,596 MB at UTC 2024.09.21 11:59:32.307
+\# Memory report: Maximum memory size now 40,164 MB at UTC 2024.09.21 12:01:42.308
+\# Memory report: Maximum memory size now 38,735 MB at UTC 2024.09.21 12:02:12.307
+\# Available memory:         31,911 MB at UTC 2024.09.21 12:02:22.307
+\# Memory report: Maximum memory size now 36,065 MB at UTC 2024.09.21 12:02:22.312
+\# Memory report: Maximum memory size now 33,645 MB at UTC 2024.09.21 12:02:32.308
+\# Available memory:         28,403 MB at UTC 2024.09.21 12:02:42.307
+\# Memory report: Maximum memory size now 32,557 MB at UTC 2024.09.21 12:02:42.312
+\# Memory report: Maximum memory size now 31,876 MB at UTC 2024.09.21 12:03:32.307
+\# Memory report: Maximum memory size now 31,211 MB at UTC 2024.09.21 12:04:22.308
+\# Memory report: Maximum memory size now 30,598 MB at UTC 2024.09.21 12:08:32.308
+\# Available memory:         25,806 MB at UTC 2024.09.21 12:09:12.307
+\# Memory report: Maximum memory size now 29,961 MB at UTC 2024.09.21 12:09:12.366
+\# Memory report: Maximum memory size now 31,313 MB at UTC 2024.09.21 12:09:42.307
+\# Available memory:         35,929 MB at UTC 2024.09.21 12:10:12.307
+\# Memory report: Maximum memory size now 40,084 MB at UTC 2024.09.21 12:10:12.307
+\# Memory report: Maximum memory size now 38,743 MB at UTC 2024.09.21 12:12:02.307
+\# Memory report: Maximum memory size now 37,852 MB at UTC 2024.09.21 12:12:32.307
+\# Available memory:         30,804 MB at UTC 2024.09.21 12:12:42.308
+\# Memory report: Maximum memory size now 34,958 MB at UTC 2024.09.21 12:12:42.312
+\# Memory report: Maximum memory size now 34,244 MB at UTC 2024.09.21 12:12:52.308
+\# Memory report: Maximum memory size now 33,534 MB at UTC 2024.09.21 12:13:52.308
+\# Memory report: Maximum memory size now 32,688 MB at UTC 2024.09.21 12:14:32.308
+\# Available memory:         27,989 MB at UTC 2024.09.21 12:15:02.308
+\# Memory report: Maximum memory size now 31,705 MB at UTC 2024.09.21 12:15:22.307
+\# Memory report: Maximum memory size now 30,958 MB at UTC 2024.09.21 12:19:12.308
+\# Memory report: Maximum memory size now 30,288 MB at UTC 2024.09.21 12:19:42.308
+\# Memory report: Maximum memory size now 31,516 MB at UTC 2024.09.21 12:20:32.308
+\# Memory report: Maximum memory size now 30,779 MB at UTC 2024.09.21 12:21:32.307
+\# Memory report: Maximum memory size now 30,099 MB at UTC 2024.09.21 12:22:32.307
+\# Memory report: Maximum memory size now 30,735 MB at UTC 2024.09.21 12:23:02.307
+\# Memory report: Maximum memory size now 29,738 MB at UTC 2024.09.21 12:23:12.307
+\# Available memory:         25,247 MB at UTC 2024.09.21 12:23:32.307
+\# Memory report: Maximum memory size now 28,149 MB at UTC 2024.09.21 12:24:22.308
+\# Available memory:         22,355 MB at UTC 2024.09.21 12:24:32.307
+\# Memory report: Maximum memory size now 26,509 MB at UTC 2024.09.21 12:24:32.813
+\# Memory report: Maximum memory size now 24,537 MB at UTC 2024.09.21 12:24:43.307
+\# Available memory:         19,118 MB at UTC 2024.09.21 12:24:53.308
+\# Memory report: Maximum memory size now 23,272 MB at UTC 2024.09.21 12:24:53.339
+\# Memory report: Maximum memory size now 22,316 MB at UTC 2024.09.21 12:25:03.307
+\# Memory report: Maximum memory size now 21,791 MB at UTC 2024.09.21 12:26:14.308
+\# Available memory:         17,211 MB at UTC 2024.09.21 12:26:34.307
+\# Memory report: Maximum memory size now 21,166 MB at UTC 2024.09.21 12:26:44.307
+\# Memory report: Maximum memory size now 20,681 MB at UTC 2024.09.21 12:27:04.308
+\# Memory report: Maximum memory size now 19,992 MB at UTC 2024.09.21 12:27:24.308
+\# Available memory:         15,458 MB at UTC 2024.09.21 12:28:04.307
+\# Memory report: Maximum memory size now 19,446 MB at UTC 2024.09.21 12:28:14.307
+\# Memory report: Maximum memory size now 18,985 MB at UTC 2024.09.21 12:30:44.307
+\# Memory report: Maximum memory size now 19,556 MB at UTC 2024.09.21 12:31:14.307
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Available memory:         25,873 MB at UTC 2024.09.21 12:31:32.032
+\# Memory report: Maximum memory size now 30,027 MB at UTC 2024.09.21 12:31:32.033
+\o 
+\o *Info*    Run complete for Point ID (0 18) on testbench [ Short_Sim ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 23) on testbench [ Short_Sim ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/23/Short_Sim/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/23/Short_Sim
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 23)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Sep 21 14:31:51 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/23/Short_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\# Memory report: using       4,332 MB, process size 6,120 MB at UTC 2024.09.21 12:32:27.905
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\w *WARNING* Swap Activity: Excessive swap activity has been detected, which can cause decreased performance.  The application will continue to run, but if excessive swapping continues
+\w *WARNING* Swap Activity: due to the memory requirements of all the programs currently running on this system, the performance of this program may continue to be negatively affected.
+\w *WARNING* Swap Activity: Another warning will be output after 10 minutes if the condition persists or recurs.
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele_v2_TOP/analog_extracted_RC_50fF1Ohm' cannot be generated because either split buses or bundle terminals are present in it.
+\o  Therefore, an implicit netlist for this instance has been generated. 
+\o 
+\# Memory report: using       4,436 MB, process size 6,225 MB at UTC 2024.09.21 12:40:59.454
+\o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+\o 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     pe3i                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3i                        spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     pmb                         spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dp3                       spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     dp3                         spectre              *Stopping View*  
+\o PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dphnw                       spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+\o PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
+\o PRIMLIB                     dn3                         spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
+\o PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+\o PRIMLIB                     ddnw                        spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw                       spectre              *Stopping View*  
+\o PRIMLIB                     rdn3                        spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     p_cap                       spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     p_res                       spectre              *Stopping View*  
+\o PRIMLIB                     s_res                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rnp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     rdp3                        spectre              *Stopping View*  
+\o PRIMLIB                     dhpw                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+\o ASKA_TOP                    aska_top16_tb               schematic                             
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2_TOP       analog_extracted_RC_50fF1Ohm                  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/23/Short_Sim/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\# Memory report: Maximum memory size now 32,543 MB at UTC 2024.09.21 12:41:42.369
+\# Available memory:         37,072 MB at UTC 2024.09.21 12:41:58.233
+\# Memory report: Maximum memory size now 41,603 MB at UTC 2024.09.21 12:41:58.233
+\o Running netlist assembly..
+\# Memory report: Maximum memory size now 40,427 MB at UTC 2024.09.21 12:42:18.897
+\# Memory report: Maximum memory size now 39,337 MB at UTC 2024.09.21 12:42:58.958
+\o .........
+\# Memory report: Maximum memory size now 40,831 MB at UTC 2024.09.21 12:43:19.214
+\o End netlisting Sep 21 14:44:19 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: using       4,542 MB, process size 6,331 MB at UTC 2024.09.21 12:44:22.093
+\o 
+\o *Info*    Running simulation on testbench [ Short_Sim ] for Point ID
+\o           (0 23).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/23/Short_Sim/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 39,815 MB at UTC 2024.09.21 12:45:20.308
+\# Available memory:         32,255 MB at UTC 2024.09.21 12:46:00.307
+\# Memory report: Maximum memory size now 36,797 MB at UTC 2024.09.21 12:46:00.307
+\# Memory report: Maximum memory size now 33,976 MB at UTC 2024.09.21 12:46:10.307
+\# Available memory:         27,682 MB at UTC 2024.09.21 12:46:20.307
+\# Memory report: Maximum memory size now 32,224 MB at UTC 2024.09.21 12:46:20.307
+\# Memory report: Maximum memory size now 31,455 MB at UTC 2024.09.21 12:48:00.308
+\# Memory report: Maximum memory size now 30,823 MB at UTC 2024.09.21 12:50:00.308
+\# Memory report: Maximum memory size now 30,133 MB at UTC 2024.09.21 12:50:40.308
+\# Available memory:         25,022 MB at UTC 2024.09.21 12:51:20.307
+\# Memory report: Maximum memory size now 29,537 MB at UTC 2024.09.21 12:51:30.308
+\# Memory report: Maximum memory size now 30,719 MB at UTC 2024.09.21 12:51:50.307
+\# Memory report: Maximum memory size now 31,389 MB at UTC 2024.09.21 12:53:10.307
+\# Memory report: Maximum memory size now 30,704 MB at UTC 2024.09.21 12:53:30.307
+\# Memory report: Maximum memory size now 29,668 MB at UTC 2024.09.21 12:54:10.307
+\# Memory report: Maximum memory size now 30,525 MB at UTC 2024.09.21 12:55:00.307
+\# Memory report: Maximum memory size now 29,215 MB at UTC 2024.09.21 12:55:10.308
+\# Memory report: Maximum memory size now 27,525 MB at UTC 2024.09.21 12:55:20.307
+\# Available memory:         21,017 MB at UTC 2024.09.21 12:55:30.308
+\# Memory report: Maximum memory size now 25,560 MB at UTC 2024.09.21 12:55:30.308
+\# Memory report: Maximum memory size now 23,901 MB at UTC 2024.09.21 12:55:40.307
+\# Available memory:         18,289 MB at UTC 2024.09.21 12:55:50.307
+\# Memory report: Maximum memory size now 22,831 MB at UTC 2024.09.21 12:55:50.307
+\# Memory report: Maximum memory size now 21,924 MB at UTC 2024.09.21 12:56:00.307
+\# Memory report: Maximum memory size now 21,355 MB at UTC 2024.09.21 12:57:20.307
+\# Available memory:         16,605 MB at UTC 2024.09.21 12:57:30.308
+\# Memory report: Maximum memory size now 20,708 MB at UTC 2024.09.21 12:57:50.308
+\# Memory report: Maximum memory size now 19,938 MB at UTC 2024.09.21 12:58:20.308
+\# Available memory:         15,038 MB at UTC 2024.09.21 12:59:00.307
+\# Memory report: Maximum memory size now 19,369 MB at UTC 2024.09.21 12:59:10.307
+\# Memory report: Maximum memory size now 18,968 MB at UTC 2024.09.21 13:09:40.308
+\# Memory report: Maximum memory size now 18,467 MB at UTC 2024.09.21 13:10:10.308
+\# Memory report: Maximum memory size now 18,867 MB at UTC 2024.09.21 13:10:20.308
+\# Available memory:         23,470 MB at UTC 2024.09.21 13:10:30.307
+\# Memory report: Maximum memory size now 28,013 MB at UTC 2024.09.21 13:10:30.308
+\# Memory report: Maximum memory size now 28,580 MB at UTC 2024.09.21 13:10:50.307
+\# Memory report: Maximum memory size now 29,337 MB at UTC 2024.09.21 13:11:20.307
+\# Memory report: Maximum memory size now 29,941 MB at UTC 2024.09.21 13:11:40.308
+\# Available memory:         25,613 MB at UTC 2024.09.21 13:11:50.308
+\# Memory report: Maximum memory size now 29,032 MB at UTC 2024.09.21 13:19:10.307
+\# Memory report: Maximum memory size now 28,397 MB at UTC 2024.09.21 13:20:00.307
+\# Memory report: Maximum memory size now 30,028 MB at UTC 2024.09.21 13:20:20.308
+\# Memory report: Maximum memory size now 29,395 MB at UTC 2024.09.21 13:21:30.307
+\# Available memory:         36,179 MB at UTC 2024.09.21 13:21:40.308
+\# Memory report: Maximum memory size now 40,721 MB at UTC 2024.09.21 13:21:40.308
+\# Memory report: Maximum memory size now 41,862 MB at UTC 2024.09.21 13:22:00.307
+\# Memory report: Maximum memory size now 40,408 MB at UTC 2024.09.21 13:22:10.308
+\# Memory report: Maximum memory size now 41,277 MB at UTC 2024.09.21 13:22:30.308
+\# Memory report: Maximum memory size now 37,853 MB at UTC 2024.09.21 13:22:40.307
+\# Available memory:         29,949 MB at UTC 2024.09.21 13:22:50.307
+\# Memory report: Maximum memory size now 34,491 MB at UTC 2024.09.21 13:22:50.308
+\# Memory report: Maximum memory size now 33,206 MB at UTC 2024.09.21 13:23:00.308
+\# Memory report: Maximum memory size now 32,314 MB at UTC 2024.09.21 13:24:10.307
+\# Available memory:         24,964 MB at UTC 2024.09.21 13:29:30.307
+\# Memory report: Maximum memory size now 29,506 MB at UTC 2024.09.21 13:29:30.308
+\# Memory report: Maximum memory size now 28,889 MB at UTC 2024.09.21 13:30:00.307
+\# Memory report: Maximum memory size now 28,299 MB at UTC 2024.09.21 13:30:30.308
+\# Memory report: Maximum memory size now 30,014 MB at UTC 2024.09.21 13:30:40.307
+\# Memory report: Maximum memory size now 29,335 MB at UTC 2024.09.21 13:32:40.308
+\# Memory report: Maximum memory size now 28,691 MB at UTC 2024.09.21 13:33:50.307
+\# Available memory:         21,830 MB at UTC 2024.09.21 13:34:00.308
+\# Memory report: Maximum memory size now 26,372 MB at UTC 2024.09.21 13:34:00.741
+\# Available memory:         19,451 MB at UTC 2024.09.21 13:34:11.307
+\# Memory report: Maximum memory size now 23,993 MB at UTC 2024.09.21 13:34:11.324
+\# Available memory:         17,610 MB at UTC 2024.09.21 13:34:21.307
+\# Memory report: Maximum memory size now 22,152 MB at UTC 2024.09.21 13:34:21.308
+\# Memory report: Maximum memory size now 21,215 MB at UTC 2024.09.21 13:34:31.308
+\# Available memory:         15,989 MB at UTC 2024.09.21 13:35:21.307
+\# Memory report: Maximum memory size now 20,531 MB at UTC 2024.09.21 13:35:21.317
+\# Memory report: Maximum memory size now 20,061 MB at UTC 2024.09.21 13:35:41.308
+\# Memory report: Maximum memory size now 19,624 MB at UTC 2024.09.21 13:35:51.307
+\# Available memory:         14,241 MB at UTC 2024.09.21 13:36:11.307
+\# Memory report: Maximum memory size now 18,783 MB at UTC 2024.09.21 13:36:11.307
+\# Memory report: Maximum memory size now 18,325 MB at UTC 2024.09.21 13:36:41.308
+\# Memory report: Maximum memory size now 17,788 MB at UTC 2024.09.21 13:41:21.307
+\# Available memory:         12,797 MB at UTC 2024.09.21 13:51:21.307
+\# Memory report: Maximum memory size now 17,340 MB at UTC 2024.09.21 13:51:21.312
+\# Memory report: Maximum memory size now 17,694 MB at UTC 2024.09.21 13:52:01.307
+\# Memory report: Maximum memory size now 18,046 MB at UTC 2024.09.21 13:52:11.307
+\# Available memory:         23,267 MB at UTC 2024.09.21 13:52:31.308
+\# Memory report: Maximum memory size now 27,809 MB at UTC 2024.09.21 13:52:31.308
+\# Memory report: Maximum memory size now 28,490 MB at UTC 2024.09.21 13:53:01.307
+\# Memory report: Maximum memory size now 29,261 MB at UTC 2024.09.21 13:53:31.308
+\# Available memory:         25,414 MB at UTC 2024.09.21 13:53:41.307
+\# Memory report: Maximum memory size now 29,956 MB at UTC 2024.09.21 13:53:41.308
+\# Memory report: Maximum memory size now 30,577 MB at UTC 2024.09.21 13:54:11.307
+\# Memory report: Maximum memory size now 29,905 MB at UTC 2024.09.21 14:04:51.307
+\# Memory report: Maximum memory size now 28,929 MB at UTC 2024.09.21 14:05:11.307
+\# Memory report: Maximum memory size now 28,205 MB at UTC 2024.09.21 14:05:51.308
+\# Available memory:         23,015 MB at UTC 2024.09.21 14:07:11.307
+\# Memory report: Maximum memory size now 27,557 MB at UTC 2024.09.21 14:07:11.312
+\# Memory report: Maximum memory size now 29,315 MB at UTC 2024.09.21 14:07:21.307
+\# Memory report: Maximum memory size now 28,672 MB at UTC 2024.09.21 14:09:21.308
+\# Memory report: Maximum memory size now 27,783 MB at UTC 2024.09.21 14:10:11.307
+\# Memory report: Maximum memory size now 27,190 MB at UTC 2024.09.21 14:11:11.307
+\# Available memory:         20,552 MB at UTC 2024.09.21 14:11:21.308
+\# Memory report: Maximum memory size now 25,094 MB at UTC 2024.09.21 14:11:21.308
+\# Available memory:         18,579 MB at UTC 2024.09.21 14:11:32.308
+\# Memory report: Maximum memory size now 23,121 MB at UTC 2024.09.21 14:11:32.476
+\# Memory report: Maximum memory size now 21,518 MB at UTC 2024.09.21 14:11:43.308
+\# Available memory:         16,300 MB at UTC 2024.09.21 14:11:53.308
+\# Memory report: Maximum memory size now 20,843 MB at UTC 2024.09.21 14:11:53.411
+\# Memory report: Maximum memory size now 20,404 MB at UTC 2024.09.21 14:12:03.307
+\# Memory report: Maximum memory size now 19,984 MB at UTC 2024.09.21 14:13:03.308
+\# Memory report: Maximum memory size now 19,525 MB at UTC 2024.09.21 14:13:23.307
+\# Available memory:         14,552 MB at UTC 2024.09.21 14:13:43.308
+\# Memory report: Maximum memory size now 19,094 MB at UTC 2024.09.21 14:13:43.308
+\# Memory report: Maximum memory size now 18,551 MB at UTC 2024.09.21 14:14:03.307
+\# Memory report: Maximum memory size now 18,183 MB at UTC 2024.09.21 14:14:13.307
+\# Available memory:         13,211 MB at UTC 2024.09.21 14:14:53.308
+\# Memory report: Maximum memory size now 17,753 MB at UTC 2024.09.21 14:14:53.313
+\# Memory report: Maximum memory size now 17,232 MB at UTC 2024.09.21 14:18:33.307
+\# Memory report: Maximum memory size now 18,579 MB at UTC 2024.09.21 14:19:13.307
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Available memory:         23,575 MB at UTC 2024.09.21 14:19:37.922
+\# Memory report: Maximum memory size now 28,117 MB at UTC 2024.09.21 14:19:37.923
+\o 
+\o *Info*    Run complete for Point ID (0 23) on testbench [ Short_Sim ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 29,045 MB at UTC 2024.09.21 14:20:04.189
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 28) on testbench [ Short_Sim ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/28/Short_Sim/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/28/Short_Sim
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 28)
+\o 
+\o generate netlist...
+\o INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+\w *WARNING* (AMS-2187): Support for the 'Connect Rule/Connect Module Based Setup' option in the Interface Element (IE) Setup form will be removed in a future release. Cadence recommends that you switch to use the 'Interface Element/IE-card Based Setup (OSS/UNL)' option in this form.
+\o INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+\o  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o  analog primitives using the Spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Netlisting Sep 21 16:20:08 2024
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/28/Short_Sim/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\# Memory report: using       4,727 MB, process size 6,515 MB at UTC 2024.09.21 14:20:52.961
+\o INFO (AMS-2150): Generating the 'changedVarsSummary' file in the 'netlist' directory. This file prints the values of the netlister control variables, which are different from their default values. To disable the file creation, type 'envSetVal("ams.netlisterOpts" "print_control_vars" 'boolean nil )' in the '.cdsinit' file.
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\w *WARNING* Swap Activity: Excessive swap activity has been detected, which can cause decreased performance.  The application will continue to run, but if excessive swapping continues
+\w *WARNING* Swap Activity: due to the memory requirements of all the programs currently running on this system, the performance of this program may continue to be negatively affected.
+\# Memory report: Maximum memory size now 28,394 MB at UTC 2024.09.21 14:26:22.079
+\# Available memory:         34,754 MB at UTC 2024.09.21 14:26:52.431
+\# Memory report: Maximum memory size now 39,500 MB at UTC 2024.09.21 14:26:52.432
+\# Memory report: Maximum memory size now 40,278 MB at UTC 2024.09.21 14:27:22.354
+\w *WARNING* Swap Activity: Another warning will be output after 10 minutes if the condition persists or recurs.
+\o WARNING (VLOGNET-199): An explicit netlist for cellview 'ASKA_16ELE_TOP_FINAL/aska_top_16ele_v2_TOP/analog_extracted_RC_50fF1Ohm' cannot be generated because either split buses or bundle terminals are present in it.
+\o  Therefore, an implicit netlist for this instance has been generated. 
+\o 
+\# Memory report: using       4,834 MB, process size 6,622 MB at UTC 2024.09.21 14:28:45.357
+\o WARNING (VLOGNET-184): Unable to generate explicit netlist for instance 'I0' in the 'ASKA_TOP/aska_top16_tb/schematic' cell view because the switch master of this instance is a text view and its place master contains split buses, bundle terminals, or both. Therefore, implicit netlist is being generated.
+\o 
+\o WARNING (VLOGNET-110): The cell 'ASKA_TOP/aska_top16_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o LIB NAME                    CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------                   ---------            ----             
+\o 
+\o PRIMLIB                     ne3i_6                      spectre              *Stopping View*  
+\o PRIMLIB                     pe3i                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3i                        spectre              *Stopping View*  
+\o PRIMLIB                     pe3                         spectre              *Stopping View*  
+\o PRIMLIB                     pmb                         spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw3                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dp3                       spectre              *Stopping View*  
+\o PRIMLIB                     cmm5t                       spectre              *Stopping View*  
+\o PRIMLIB                     dp3                         spectre              *Stopping View*  
+\o PRIMLIB                     ddnwmv                      spectre              *Stopping View*  
+\o PRIMLIB                     dsba                        spectre              *Stopping View*  
+\o PRIMLIB                     dphnw                       spectre              *Stopping View*  
+\o PRIMLIB                     dpp20                       spectre              *Stopping View*  
+\o PRIMLIB                     dnpdd_scr                   spectre              *Stopping View*  
+\o PRIMLIB                     p_dwhn                      spectre              *Stopping View*  
+\o PRIMLIB                     p_dipdnwmv                  spectre              *Stopping View*  
+\o PRIMLIB                     dn3                         spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     dipdnwmv                    spectre              *Stopping View*  
+\o PRIMLIB                     p_ddnw                      spectre              *Stopping View*  
+\o PRIMLIB                     dpdd_scr                    spectre              *Stopping View*  
+\o PRIMLIB                     ddnw                        spectre              *Stopping View*  
+\o PRIMLIB                     p_dnw                       spectre              *Stopping View*  
+\o PRIMLIB                     rdn3                        spectre              *Stopping View*  
+\o PRIMLIB                     ped                         spectre              *Stopping View*  
+\o PRIMLIB                     mosvc3                      spectre              *Stopping View*  
+\o PRIMLIB                     qpvc3                       spectre              *Stopping View*  
+\o PRIMLIB                     nedia                       spectre              *Stopping View*  
+\o PRIMLIB                     p_cap                       spectre              *Stopping View*  
+\o PRIMLIB                     csf4a                       spectre              *Stopping View*  
+\o PRIMLIB                     p_res                       spectre              *Stopping View*  
+\o PRIMLIB                     s_res                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1s                       spectre              *Stopping View*  
+\o PRIMLIB                     rpp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rnp1                        spectre              *Stopping View*  
+\o PRIMLIB                     rpp1k1_3                    spectre              *Stopping View*  
+\o PRIMLIB                     rdp3                        spectre              *Stopping View*  
+\o PRIMLIB                     dhpw                        spectre              *Stopping View*  
+\o PRIMLIB                     ne3                         spectre              *Stopping View*  
+\o PRIMLIB                     rdp_io                      spectre              *Stopping View*  
+\o analogLib                   vpulse                      spectre              *Stopping View*  
+\o analogLib                   cap                         spectre              *Stopping View*  
+\o analogLib                   vdc                         spectre              *Stopping View*  
+\o analogLib                   ind                         spectre              *Stopping View*  
+\o analogLib                   res                         spectre              *Stopping View*  
+\o ASKA_DIG2                   DIG_stimulus                verilogams           *Stopping View*  
+\o ASKA_TOP                    aska_top16_tb               schematic                             
+\o ASKA_16ELE_TOP_FINAL        aska_top_16ele_v2_TOP       analog_extracted_RC_50fF1Ohm                  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Initializing the control file using cp:
+\o     cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/28/Short_Sim/netlist/analog/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Running netlist assembly..
+\# Memory report: Maximum memory size now 39,467 MB at UTC 2024.09.21 14:29:59.081
+\# Memory report: Maximum memory size now 38,681 MB at UTC 2024.09.21 14:30:29.154
+\o .........
+\# Memory report: Maximum memory size now 39,720 MB at UTC 2024.09.21 14:31:09.118
+\# Memory report: Maximum memory size now 38,892 MB at UTC 2024.09.21 14:32:11.315
+\o End netlisting Sep 21 16:32:12 2024
+\o INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ Short_Sim ] for Point ID
+\o           (0 28).
+\o 
+\o Delete simulation data in /home/saul/projects/ASKA/Sim/ASKA_TOP/aska_top16_tb/adexl/results/data/Interactive.57/28/Short_Sim/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Available memory:         46,681 MB at UTC 2024.09.21 14:32:21.308
+\# Memory report: Maximum memory size now 51,614 MB at UTC 2024.09.21 14:32:21.308
+\# Memory report: Maximum memory size now 50,576 MB at UTC 2024.09.21 14:32:51.307
+\# Memory report: Maximum memory size now 49,225 MB at UTC 2024.09.21 14:33:21.307
+\# Available memory:         40,642 MB at UTC 2024.09.21 14:34:01.307
+\# Memory report: Maximum memory size now 45,575 MB at UTC 2024.09.21 14:34:01.308
+\# Memory report: Maximum memory size now 42,754 MB at UTC 2024.09.21 14:34:11.307
+\# Available memory:         36,687 MB at UTC 2024.09.21 14:34:21.307
+\# Memory report: Maximum memory size now 41,620 MB at UTC 2024.09.21 14:34:21.308
+\# Memory report: Maximum memory size now 40,112 MB at UTC 2024.09.21 14:35:21.307
+\# Memory report: Maximum memory size now 38,878 MB at UTC 2024.09.21 14:35:41.307
+\# Available memory:         33,312 MB at UTC 2024.09.21 14:35:51.307
+\# Memory report: Maximum memory size now 37,736 MB at UTC 2024.09.21 14:36:01.308
+\# Memory report: Maximum memory size now 38,545 MB at UTC 2024.09.21 14:36:31.308
+\# Memory report: Maximum memory size now 39,707 MB at UTC 2024.09.21 14:36:41.307
+\# Memory report: Maximum memory size now 38,918 MB at UTC 2024.09.21 14:38:31.307
+\# Memory report: Maximum memory size now 39,692 MB at UTC 2024.09.21 14:38:51.308
+\# Memory report: Maximum memory size now 38,390 MB at UTC 2024.09.21 14:39:01.308
+\# Memory report: Maximum memory size now 36,503 MB at UTC 2024.09.21 14:39:51.308
+\# Available memory:         29,373 MB at UTC 2024.09.21 14:40:01.308
+\# Memory report: Maximum memory size now 34,306 MB at UTC 2024.09.21 14:40:01.693
+\# Memory report: Maximum memory size now 32,901 MB at UTC 2024.09.21 14:40:11.307
+\# Memory report: Maximum memory size now 31,971 MB at UTC 2024.09.21 14:40:21.308
+\# Available memory:         26,463 MB at UTC 2024.09.21 14:41:01.307
+\# Memory report: Maximum memory size now 30,662 MB at UTC 2024.09.21 14:41:11.307
+\# Memory report: Maximum memory size now 29,945 MB at UTC 2024.09.21 14:42:01.307
+\# Memory report: Maximum memory size now 29,252 MB at UTC 2024.09.21 14:42:21.307
+\# Available memory:         23,777 MB at UTC 2024.09.21 14:42:31.307
+\# Available memory:         34,680 MB at UTC 2024.09.21 14:42:41.307
+\# Memory report: Maximum memory size now 39,613 MB at UTC 2024.09.21 14:42:41.307
+\# Memory report: Maximum memory size now 40,443 MB at UTC 2024.09.21 14:44:01.308
+\# Available memory:         31,493 MB at UTC 2024.09.21 14:44:31.310
+\# Memory report: Maximum memory size now 36,426 MB at UTC 2024.09.21 14:44:31.316
+\# Available memory:         27,876 MB at UTC 2024.09.21 14:44:41.308
+\# Memory report: Maximum memory size now 32,810 MB at UTC 2024.09.21 14:44:41.309
+\# Memory report: Maximum memory size now 31,799 MB at UTC 2024.09.21 14:44:51.307
+\# Memory report: Maximum memory size now 31,108 MB at UTC 2024.09.21 14:45:31.308
+\# Available memory:         25,237 MB at UTC 2024.09.21 14:46:11.307
+\# Memory report: Maximum memory size now 30,170 MB at UTC 2024.09.21 14:46:11.308
+\# Memory report: Maximum memory size now 29,412 MB at UTC 2024.09.21 14:46:31.308
+\# Memory report: Maximum memory size now 28,724 MB at UTC 2024.09.21 14:47:11.308
+\# Available memory:         22,934 MB at UTC 2024.09.21 14:53:01.541
+\# Memory report: Maximum memory size now 27,867 MB at UTC 2024.09.21 14:53:01.634
+\# Memory report: Maximum memory size now 27,233 MB at UTC 2024.09.21 14:53:21.308
+\# Memory report: Maximum memory size now 26,666 MB at UTC 2024.09.21 14:53:51.307
+\# Memory report: Maximum memory size now 27,907 MB at UTC 2024.09.21 14:55:11.308
+\# Memory report: Maximum memory size now 27,058 MB at UTC 2024.09.21 14:57:11.307
+\# Memory report: Maximum memory size now 26,342 MB at UTC 2024.09.21 14:57:51.307
+\# Available memory:         20,631 MB at UTC 2024.09.21 14:58:51.308
+\# Memory report: Maximum memory size now 25,564 MB at UTC 2024.09.21 14:58:51.310
+\# Available memory:         18,622 MB at UTC 2024.09.21 14:59:01.307
+\# Memory report: Maximum memory size now 23,555 MB at UTC 2024.09.21 14:59:01.307
+\# Available memory:         16,742 MB at UTC 2024.09.21 14:59:11.308
+\# Memory report: Maximum memory size now 21,676 MB at UTC 2024.09.21 14:59:11.313
+\# Memory report: Maximum memory size now 20,260 MB at UTC 2024.09.21 14:59:21.307
+\# Available memory:         14,547 MB at UTC 2024.09.21 14:59:31.307
+\# Memory report: Maximum memory size now 19,480 MB at UTC 2024.09.21 14:59:31.308
+\# Memory report: Maximum memory size now 19,045 MB at UTC 2024.09.21 14:59:41.307
+\# Memory report: Maximum memory size now 18,377 MB at UTC 2024.09.21 15:00:51.308
+\# Available memory:         13,168 MB at UTC 2024.09.21 15:01:01.307
+\# Memory report: Maximum memory size now 17,971 MB at UTC 2024.09.21 15:01:11.307
+\# Memory report: Maximum memory size now 17,542 MB at UTC 2024.09.21 15:01:41.307
+\# Memory report: Maximum memory size now 17,178 MB at UTC 2024.09.21 15:01:51.308
+\# Available memory:         11,892 MB at UTC 2024.09.21 15:02:31.307
+\# Memory report: Maximum memory size now 16,825 MB at UTC 2024.09.21 15:02:31.307
+\# Memory report: Maximum memory size now 16,201 MB at UTC 2024.09.21 15:09:01.308
+\# Memory report: Maximum memory size now 15,752 MB at UTC 2024.09.21 15:24:51.308
+\# Available memory:         10,669 MB at UTC 2024.09.21 15:25:01.307
+\# Memory report: Maximum memory size now 16,342 MB at UTC 2024.09.21 15:25:11.308
+\# Available memory:         11,860 MB at UTC 2024.09.21 15:25:21.307
+\# Memory report: Maximum memory size now 16,794 MB at UTC 2024.09.21 15:25:21.308
+\# Available memory:         22,337 MB at UTC 2024.09.21 15:25:41.307
+\# Memory report: Maximum memory size now 27,271 MB at UTC 2024.09.21 15:25:41.308
+\# Memory report: Maximum memory size now 27,916 MB at UTC 2024.09.21 15:26:01.308
+\# Memory report: Maximum memory size now 28,900 MB at UTC 2024.09.21 15:26:41.308
+\# Memory report: Maximum memory size now 28,300 MB at UTC 2024.09.21 15:33:01.308
+\# Memory report: Maximum memory size now 27,713 MB at UTC 2024.09.21 15:34:31.307
+\# Memory report: Maximum memory size now 26,970 MB at UTC 2024.09.21 15:35:01.308
+\# Memory report: Maximum memory size now 26,308 MB at UTC 2024.09.21 15:35:31.308
+\# Memory report: Maximum memory size now 27,911 MB at UTC 2024.09.21 15:35:51.307
+\# Memory report: Maximum memory size now 26,983 MB at UTC 2024.09.21 15:37:21.307
+\# Memory report: Maximum memory size now 26,353 MB at UTC 2024.09.21 15:37:51.307
+\# Memory report: Maximum memory size now 27,583 MB at UTC 2024.09.21 15:38:21.308
+\# Memory report: Maximum memory size now 25,814 MB at UTC 2024.09.21 15:38:31.307
+\# Available memory:         18,629 MB at UTC 2024.09.21 15:38:41.308
+\# Memory report: Maximum memory size now 23,562 MB at UTC 2024.09.21 15:38:42.039
+\# Available memory:         16,528 MB at UTC 2024.09.21 15:38:52.308
+\# Memory report: Maximum memory size now 21,462 MB at UTC 2024.09.21 15:38:52.308
+\# Memory report: Maximum memory size now 20,140 MB at UTC 2024.09.21 15:39:02.308
+\# Available memory:         14,112 MB at UTC 2024.09.21 15:39:12.308
+\# Memory report: Maximum memory size now 19,045 MB at UTC 2024.09.21 15:39:12.308
+\# Memory report: Maximum memory size now 18,339 MB at UTC 2024.09.21 15:40:02.308
+\# Memory report: Maximum memory size now 17,770 MB at UTC 2024.09.21 15:40:12.308
+\# Memory report: Maximum memory size now 18,190 MB at UTC 2024.09.21 15:40:22.308
+\# Available memory:         12,636 MB at UTC 2024.09.21 15:40:32.308
+\# Memory report: Maximum memory size now 17,569 MB at UTC 2024.09.21 15:40:32.308
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Available memory:         22,618 MB at UTC 2024.09.21 15:40:52.486
+\# Memory report: Maximum memory size now 27,552 MB at UTC 2024.09.21 15:40:52.487
+\# Memory report: Maximum memory size now 28,131 MB at UTC 2024.09.21 15:41:14.383
+\o 
+\o *Info*    Run complete for Point ID (0 28) on testbench [ Short_Sim ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 29,365 MB at UTC 2024.09.21 15:42:05.856
+\# Memory report: Maximum memory size now 28,621 MB at UTC 2024.09.21 15:44:06.308
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables1".
 \o To save future changes, copy variables to cellView before exiting.

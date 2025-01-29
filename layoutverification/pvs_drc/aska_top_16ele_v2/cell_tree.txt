@@ -1,0 +1,447 @@
+aska_top_16ele_v2
+
+hvswitch8
+	VIA1_C_CDNS_72908380542124
+	nedia_CDNS_729083805420
+	ped_CDNS_729083805421
+	nedia_CDNS_729083805422
+	ne3_CDNS_729083805423
+	rpp1k1_3_CDNS_729083805425
+	dsba_CDNS_729083805426
+	csf4a
+	dpp20_CDNS_729083805427
+	rpp1k1_3_CDNS_729083805428
+	pe3_CDNS_729083805429
+
+hbridge_4x
+	hvswitch8
+
+current_source_gm_10_en_r
+	VIA2_C_CDNS_72908380542180
+	ND_C_CDNS_72908380542188
+	ne3_CDNS_7290838054213
+	nedia_CDNS_7290838054215
+	ne3_CDNS_7290838054216
+	pe3_CDNS_7290838054217
+	pe3_CDNS_7290838054218
+	pe3_CDNS_7290838054222
+	ne3_CDNS_7290838054223
+	ne3_CDNS_7290838054224
+	pe3_CDNS_7290838054225
+	rpp1k1_3_CDNS_7290838054226
+	ne3_CDNS_7290838054229
+
+dac6b_amp_n2
+	VIA2_C_CDNS_72908380542180
+	pe3_CDNS_7290838054217
+	ne3_CDNS_7290838054229
+	pe3_CDNS_7290838054234
+	pe3_CDNS_7290838054236
+	pe3_CDNS_7290838054241
+	pe3_CDNS_7290838054243
+	pe3_CDNS_7290838054245
+	ne3_CDNS_7290838054246
+	ne3i_6_CDNS_7290838054247
+	ne3_CDNS_7290838054248
+	pe3_CDNS_7290838054249
+	ne3_CDNS_7290838054250
+
+ref_bias
+	VIA2_C_CDNS_72908380542180
+	pe3_CDNS_7290838054234
+	pe3_CDNS_7290838054241
+	ne3_CDNS_7290838054246
+	ne3i_6_CDNS_7290838054247
+	ne3_CDNS_7290838054251
+	pe3_CDNS_7290838054253
+	pe3_CDNS_7290838054257
+
+bandgap_su
+	VIA2_C_CDNS_72908380542180
+	pe3_CDNS_7290838054217
+	pe3_CDNS_7290838054222
+	pe3_CDNS_7290838054236
+	ne3_CDNS_7290838054251
+	ne3_CDNS_7290838054258
+	qpvc3
+	ne3_CDNS_7290838054261
+	ne3_CDNS_7290838054263
+	rpp1k1_3_CDNS_7290838054264
+
+constant_gm
+	pe3_CDNS_7290838054267
+	ne3_CDNS_7290838054268
+	pe3_CDNS_7290838054269
+	pe3_CDNS_7290838054271
+
+ioh_pad53_62
+	std_pad_viabtp_edge
+	std_pad_viabtp
+
+ioh_basej_pad53_inline
+	ioh_pad53_62
+	ioh_pad53_tap_inline
+
+ioh_dhpw_2x100
+	ioh_dhpw_100
+
+ioh_pmbsabhv_750
+	ioh_pmbsabhv_2x15_10
+
+ioh_pe3isabhv_1050gcr
+	ioh_pe3sab_2x15_04
+	ioh_rnp1_20k
+
+HVD4SJD1R5PKFs
+	ioh_base40_fs
+	ioh_base39_fs
+	ioh_base36_fs
+	ioh_basej_pad53_inline
+	ioh_iscrd2_4x10
+	ioh_iscrd2_e4x10
+	ioh_dhpw_2x100
+	ioh_pmbsabhv_750
+	ioh_pe3isabhv_1050gcr
+	ioh_base64_fs
+
+jio_pe3isb_pc
+	jio_via134tp_pc
+
+jio_base_ptrps_pc
+	jio_pe3isb_pc
+	jio_via234tp_pc
+
+jio_padp_pc
+	jio_viabtp_pc
+
+jio_base_metal_pc
+	jio_via34tp1r_pc
+
+jio_ne3isb_pc
+	jio_via134tp_pc
+
+jio_base_ntrb_pc
+	jio_viabtp_pc
+
+jio_base_ntr_pc
+	jio_ne3isb_pc
+	jio_base_ntrb_pc
+
+jio_basepspfl_pc
+	jio_filpoly_ap_pc
+	jio_fildifpoly_ap_pc
+	jio_fildifpolye_ap_pc
+
+jio_baseps_m2_pc
+	jio_via134tp_pc
+
+jio_pwrc_difpoly5u_pc
+	jio_fildifpoly_pc
+	jio_fildifpolye_pc
+
+jio_pcutficon_pc
+	jio_via234tp_pc
+	jio_via34tp1r_pc
+
+PWRCUTDCPC
+	jio_via34tp1r_pc
+	jio_pcutcon_pc
+	jio_pcutdio_pc
+	jio_pwrc_difpoly5u_pc
+	jio_pcutficon_pc
+
+jio_base_ptra_pc
+	jio_pe3isb_pc
+	jio_via234tp_pc
+
+jio_fildifpoly5u_pc
+	jio_fildifpoly_pc
+	jio_fildifpolye_pc
+
+jio_filldife1u_pc
+	jio_fillmetal1u_pc
+
+jio_fillmetalvia2u_pc
+	jio_via34tp1r_pc
+	jio_fillmetal1u_pc
+
+FILLER20PC
+	jio_fildifpoly5u_pc
+	jio_filldife1u_pc
+	jio_fillmetalvia2u_pc
+
+jio_base_corn_half_pc
+	jio_via234tp_pc
+	jio_fildifpoly_pc
+	jio_fildifpolye_pc
+
+CORNERPC
+	jio_base_corn_half_pc
+
+FILLER40PC
+	jio_fildifpoly5u_pc
+	jio_filldife1u_pc
+	jio_fillmetalvia2u_pc
+
+FILLER70PC
+	jio_fildifpoly5u_pc
+	jio_filldife1u_pc
+	jio_fillmetalvia2u_pc
+
+jio_base_ntrc_pc
+	jio_ne3isb_pc
+	jio_base_ntrb_pc
+
+jio_basepsc_pc
+	jio_resg_pc
+	jio_baseaps_pc
+	jio_base_ptrps_pc
+	jio_padp_pc
+	jio_via34tp1r_pc
+	jio_base_metal_pc
+	jio_basenplink_pc
+	jio_basepspfl_pc
+	jio_baseps_m2_pc
+	jio_base_ntrc_pc
+
+GNDPADPC
+	jio_basepsc_pc
+
+jio_ne3isbg_pc
+	jio_via134tp_pc
+
+jio_base_ntrbg_pc
+	jio_via134tp_pc
+
+jio_base_ngo_pc
+	jio_via234tp_pc
+	jio_viabtp_pc
+	jio_fildifpoly_pc
+	jio_fildifpolye_pc
+	jio_ne3isbg_pc
+	jio_base_ntrbg_pc
+
+GNDORPADPC
+	jio_resg_pc
+	jio_padp_pc
+	jio_via34tp1r_pc
+	jio_base_metal_pc
+	jio_basepspfl_pc
+	jio_base_ngo_pc
+
+VDDPADPC
+	jio_basepsc_pc
+
+jio_fildifpolypanc_pc
+	jio_fillpoly_pc
+
+jio_base_ptrpsfl_pc
+	jio_via234tp_pc
+	jio_fildifpolypanc_pc
+
+VDDORPADPC
+	jio_resg_pc
+	jio_baseaps_pc
+	jio_padp_pc
+	jio_via34tp1r_pc
+	jio_base_metal_pc
+	jio_base_ntr_pc
+	jio_basenplink_pc
+	jio_basepspfl_pc
+	jio_baseps_m2_pc
+	jio_base_ptrpsfl_pc
+
+jio_bufy_pc
+	jio_fillpolym1_pc
+
+jio_base_ptr_pc
+	jio_pe3isb_pc
+	jio_via234tp_pc
+
+ICPC
+	jio_resg_pc
+	jio_padp_pc
+	jio_base_metal_pc
+	jio_base_ntr_pc
+	jio_basenplink_pc
+	jio_base_m2_pc
+	jio_fillpolym1_pc
+	jio_bufy_pc
+	jio_base_ptr_pc
+
+ioh_pmbsabhv_2000
+	ioh_pmbsabhv_2x40_10
+
+ioh_pe3isabhv_2800gcr
+	ioh_rnp1_20k
+	ioh_pe3sab_2x40_04
+
+HVDD4D2PK
+	ioh_pad53_62
+	ioh_ddnw_2x100
+	ioh_pmbsabhv_2000
+	ioh_pe3isabhv_2800gcr
+
+HVSSFs
+	ioh_pad53_62
+	ioh_pad53_tap_inline
+
+aska_top_16ele_v2
+	CORNERPC
+	FILLER70PC
+	jio_fildifpoly5u_pc
+	jio_filldife1u_pc
+	jio_fillmetalvia2u_pc
+	jio_via234tp_pc
+	jio_via34tp1r_pc
+	jio_pwrc_difpoly5u_pc
+	jio_ne3isbg_pc
+	hbridge_4x
+	VIATPL_C_CDNS_7290838054293
+	VIA3_C_CDNS_7290838054244
+	VIA2_C_CDNS_7290838054245
+	VIA2_C_CDNS_7290838054269
+	ref_bias
+	bandgap_su
+	mosvc3_CDNS_7290838054265
+	constant_gm
+	VIA1_C_CDNS_72908380542308
+	VIA1_C_CDNS_72908380542309
+	VIA1_C_CDNS_72908380542310
+	VIA1_C_CDNS_72908380542311
+	EN2JI3VX0
+	NO22JI3VX1
+	BUJI3VX8
+	DFRRQJI3VX4
+	BUJI3VX1
+	NO3I2JI3VX1
+	FAJI3VX1
+	OR2JI3VX0
+	NA3I1JI3VX1
+	NA3JI3VX0
+	ON21JI3VX1
+	OA21JI3VX1
+	BUJI3VX3
+	AN211JI3VX1
+	BUJI3VX16
+	BUJI3VX0
+	NA2I1JI3VX1
+	DLY1JI3VX1
+	OR4JI3VX1
+	DFRRQJI3VX1
+	INJI3VX1
+	BUJI3VX12
+	ON22JI3VX1
+	AN31JI3VX1
+	NO3JI3VX0
+	HAJI3VX1
+	NO2I1JI3VX1
+	AO22JI3VX1
+	BUJI3VX6
+	ON31JI3VX1
+	EO3JI3VX1
+	BUJI3VX2
+	INJI3VX3
+	NA3I2JI3VX1
+	SDFRRQJI3VX1
+	NO2JI3VX0
+	NA4JI3VX0
+	NA2JI3VX0
+	ON21JI3VX4
+	AND2JI3VX1
+	EO2JI3VX0
+	AND2JI3VX0
+	AN22JI3VX1
+	AO21JI3VX1
+	NA2I1JI3VX2
+	NA22JI3VX1
+	MU2JI3VX0
+	OR3JI3VX1
+	ON211JI3VX1
+	AN21JI3VX1
+	INJI3VX0
+	NO3I1JI3VX1
+	DECAP25JI3V
+	DECAP15JI3V
+	DECAP7JI3V
+	DECAP5JI3V
+	DECAP10JI3V
+	FEED2JI3V
+	FEED3JI3V
+	FEED15JI3V
+	FEED25JI3V
+	FEED1JI3V
+	FEED7JI3V
+	FEED5JI3V
+	FEED10JI3V
+	VIA2_C_CDNS_72908380542180
+	pe3_CDNS_7290838054222
+	ne3_CDNS_7290838054251
+	ne3_CDNS_7290838054275
+	pe3_CDNS_7290838054276
+	ioh_base40_fs
+	ioh_base39_fs
+	ioh_basej_pad53_inline
+	ioh_dhpw_2x100
+	ioh_base64_fs
+	ioh_pmbsabhv_2000
+	ioh_pe3isabhv_2800gcr
+	ioh_base61_fs
+	HVD4SJD1R5PKFs
+	jio_padp_pc
+	jio_basepspfl_pc
+	jio_fildifpoly_pc
+	jio_fildifpolye_pc
+	jio_pcutdio_pc
+	HVSSFs
+	VIATP_C_CDNS_7290838054220
+	VIATP_C_CDNS_7290838054221
+	VIA3_C_CDNS_7290838054255
+	VIA2_C_CDNS_7290838054275
+	VIATPL_C_CDNS_72908380542100
+	jio_resg_pc
+	jio_via134tp_pc
+	jio_base_ptrps_pc
+	jio_viabtp_pc
+	jio_base_ntr_pc
+	jio_basenplink_pc
+	jio_pcutcon_pc
+	jio_base_ptra_pc
+	jio_fillpolym1_pc
+	VIA1_C_CDNS_7290838054211
+	VIATP_C_CDNS_7290838054226
+	VIATPL_C_CDNS_7290838054286
+	VIATPL_C_CDNS_7290838054287
+	jio_fillmetal1u_pc
+	FILLER20PC
+	FILLER40PC
+	GNDPADPC
+	VIATP_C_CDNS_7290838054217
+	VIA3_C_CDNS_7290838054218
+	VIA2_C_CDNS_7290838054219
+	VIA3_C_CDNS_7290838054227
+	VIA2_C_CDNS_7290838054228
+	VIA2_C_CDNS_7290838054270
+	VIA2_C_CDNS_7290838054273
+	VIA2_C_CDNS_7290838054276
+	GNDORPADPC
+	VDDPADPC
+	VIA3_C_CDNS_7290838054230
+	VIA2_C_CDNS_7290838054263
+	VIA2_C_CDNS_7290838054283
+	VIATPL_C_CDNS_72908380542104
+	VIATPL_C_CDNS_72908380542107
+	current_source_gm_10_en_r
+	mosvc3_CDNS_7290838054232
+	mosvc3_CDNS_7290838054233
+	dac6b_amp_n2
+	PWRCUTDCPC
+	VDDORPADPC
+	ICPC
+	VIA2_C_CDNS_7290838054278
+	VIATP_C_CDNS_7290838054222
+	VIA3_C_CDNS_7290838054256
+	VIA3_C_CDNS_7290838054260
+	VIATPL_C_CDNS_7290838054289
+	HVDD4D2PK
+

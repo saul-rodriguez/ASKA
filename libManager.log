@@ -1,12 +1,12 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 01/17/2024 18:07 (csvcm36c-7) $
 \o Sub version:		sub-version  s353 
-\o Arguments:		-mpssession virtuoso19508 -mpshost s2424 
+\o Arguments:		-mpssession virtuoso3440 -mpshost s2424 
 \o Working Directory:	s2424:/home/saul/projects/ASKA
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o Log file is "/home/saul/projects/ASKA/libManager.log".
 \o Opening libManager window.
-\a nrResizeWindow(cdsLibManager list(1920 27 960 1016))
+\a nrResizeWindow(cdsLibManager list(2015 166 840 808))
 \a nrSetCurrentWindow(cdsLibManager)
 \o MPS virtuoso types registered: 68
 \o changeWorkingDir("/home/saul/projects/ASKA") unnecessary.
@@ -15,385 +15,34 @@
 \o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_BK_2024_10_01"
 \a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_BK_2024_10_01"
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL"
-\a lmgrLogShowPopup("mainListPopup0" 136 23 2 "ASKA_16ELE_TOP_FINAL")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CopyFromLibrary->value = "ALL_TESTS"
-\a basicCopyForm->CopyToLibrary->value = "ALL_TESTS"
-\a basicCopyForm->CopyFromLibrary->value = "ASKA_16ELE_TOP_FINAL"
-\a basicCopyForm->CopyToLibrary->value = "ASKA_16ELE_TOP_FINAL"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(2239 337 303 316))
-\a basicCopyForm->CopyToLibrary->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a basicCopyForm->OK->value = t
-\o Beginning simple copy to library "ASKA_16ELE_TOP_FINAL_2024_10_16".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrResizeWindow(workingDialogForm list(2254 429 273 133))
-\a nrSetCurrentWindow(workingDialogForm)
-\a NewLibShell->newLibNameText->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\o INFO (CLM-130): Your operation specified a new destination library.\n\nThis dialog requires you to specify the location where \nthe new library's directory will be created when OK'd.\n\nYou will not create a new library if this dialog is cancelled.
-\a nrSetWindowVisibility(NewLibShell "show")
-\a nrResizeWindow(NewLibShell list(2137 149 507 692))
-\a nrSetCurrentWindow(NewLibShell)
-\a nrSetCurrentWindow(NewLibShell->subDialog)
-\a nrResizeWindow(workingDialogForm list(2254 392 273 133))
-\a nrResizeWindow(NewLibShell list(2147 189 507 692))
-\a nrResizeWindow(NewLibShell->subDialog list(9 9 441 255))
-\a NewLibShell->newLibOKButton->value = t
-\a nrResizeWindow(workingDialogForm list(2254 466 434 133))
-\o Created new library "ASKA_16ELE_TOP_FINAL_2024_10_16" at /home/saul/projects/ASKA/ASKA_16ELE_TOP_FINAL_2024_10_16.
-\a nrResizeWindow(workingDialogForm list(2173 466 434 133))
+\a cdsLibManager->libListBox->value = "ALL_TESTS"
+\a cdsLibManager->libLineEdit->value = "ALL_TESTS"
+\a cdsLibManager->libListBox->value = "ASKA_TOP"
+\a cdsLibManager->libLineEdit->value = "ASKA_TOP"
+\a cdsLibManager->cellListBox->value = "aska_top16_tb"
+\a cdsLibManager->cellLineEdit->value = "aska_top16_tb"
+\a nrResizeWindow(cdsLibManager list(2015 166 1017 808))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL"
-\a nrResizeWindow(NewLibShell list(2147 152 507 692))
-\a nrResizeWindow(basicCopyForm list(2239 300 303 316))
-\a workingDialogForm->Close->value = t
+\a cdsLibManager->viewListBox->value = "config_analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "config_analog_extracted"
+\a cdsLibManager->viewListBox->value = "config_schem_an_fun_dig"
+\a cdsLibManager->viewLineEdit->value = "config_schem_an_fun_dig"
+\a cdsLibManager->viewListBox->value = "config_schem_an_gate_dig"
+\a cdsLibManager->viewLineEdit->value = "config_schem_an_gate_dig"
+\a cdsLibManager->viewListBox->value = "config_schem_an_schem_dig"
+\a cdsLibManager->viewLineEdit->value = "config_schem_an_schem_dig"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config_schem_an_schem_dig"
+\a cdsLibManager->viewLineEdit->value = "config_schem_an_schem_dig"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 5 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(2173 429 434 133))
-\o Batching session updates...
-\o Copy succeeded.
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL"
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_50fF"
-\a lmgrLogShowPopup("mainListPopup2" 80 13 2 "analog_extracted_Conly_50fF")
-\a cdsLibManager->editDeleteButton->value = t
-\a deleteForm->deleteFilterEdit->value = "*"
-\a deleteForm->notDeleteFilterEdit->value = "*"
-\a nrSetWindowVisibility(deleteForm "show")
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(2077 283 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(2256 450 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "analog_extracted_Conly_50fF" from cell "aska_top_16ele_v2_TOP" in library "ASKA_16ELE_TOP_FINAL_2024_10_16".
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele_v2_TOP/analog_extracted_Conly_50fF'.
-\a nrSetCurrentWindow(deleteForm)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deletion of 1 view done.
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_CurPath_10fF"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(workingDialogForm list(2262 466 268 133))
-\a nrResizeWindow(deleteForm list(2077 246 627 425))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(2262 429 268 133))
-\a cdsLibManager->viewListBox->value = "analog_extracted_CurPath_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_CurPath_10fF"
-\a lmgrLogShowPopup("mainListPopup2" 121 12 2 "analog_extracted_CurPath_10fF")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(2077 283 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(2256 450 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "analog_extracted_CurPath_10fF" from cell "aska_top_16ele_v2_TOP" in library "ASKA_16ELE_TOP_FINAL_2024_10_16".
-\a nrResizeWindow(workingDialogForm list(2256 466 268 133))
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele_v2_TOP/analog_extracted_CurPath_10fF'.
-\a nrSetCurrentWindow(deleteForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deletion of 1 view done.
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_CurPath_50fF"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(deleteForm list(2077 246 627 425))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(2256 429 268 133))
-\a cdsLibManager->viewListBox->value = "analog_extracted_CurPath_50fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_CurPath_50fF"
-\a lmgrLogShowPopup("mainListPopup2" 116 4 2 "analog_extracted_CurPath_50fF")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(2077 283 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(2256 450 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "analog_extracted_CurPath_50fF" from cell "aska_top_16ele_v2_TOP" in library "ASKA_16ELE_TOP_FINAL_2024_10_16".
-\a nrResizeWindow(workingDialogForm list(2256 466 268 133))
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele_v2_TOP/analog_extracted_CurPath_50fF'.
-\a nrSetCurrentWindow(deleteForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deletion of 1 view done.
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_RC_50fF1Ohm"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(deleteForm list(2077 246 627 425))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(2256 429 268 133))
-\a cdsLibManager->viewListBox->value = "analog_extracted_RC_50fF1Ohm"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_RC_50fF1Ohm"
-\a lmgrLogShowPopup("mainListPopup2" 108 9 2 "analog_extracted_RC_50fF1Ohm")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(2077 283 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(2256 450 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "analog_extracted_RC_50fF1Ohm" from cell "aska_top_16ele_v2_TOP" in library "ASKA_16ELE_TOP_FINAL_2024_10_16".
-\a nrResizeWindow(workingDialogForm list(2256 466 268 133))
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele_v2_TOP/analog_extracted_RC_50fF1Ohm'.
-\a nrSetCurrentWindow(deleteForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deletion of 1 view done.
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrResizeWindow(deleteForm list(2077 246 627 425))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(2256 429 268 133))
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellListBox->value = "aska_core_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_core_16ele"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a lmgrLogShowPopup("mainListPopup2" 101 9 2 "analog_extracted_Conly_10fF")
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->cellListBox->value = "aska_core_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_core_16ele"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "aska_top_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 59 94 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2075 27 960 1016))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a lmgrLogShowPopup("mainListPopup2" 104 6 2 "analog_extracted_Conly_10fF")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(2077 283 627 425))
-\a deleteForm->Cancel->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(deleteForm list(2077 246 627 425))
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewListBox->value = "analog_extracted_Conly_10fF"
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_10fF"
-\a lmgrLogShowPopup("mainListPopup2" 90 7 2 "analog_extracted_Conly_10fF")
-\a cdsLibManager->editDeleteButton->value = t
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(2077 283 627 425))
-\a deleteForm->notDeleteListBox->value = '("analog_extracted_Conly_50fF" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("analog_extracted_Conly_GNDOHV" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("analog_extracted_Cur" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("analog_extracted_RC" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 5 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(2256 450 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting 5 views from cell "aska_top_16ele" in library "ASKA_16ELE_TOP_FINAL_2024_10_16".
-\o Deleting view "analog_extracted_Conly_10fF".
-\a nrResizeWindow(workingDialogForm list(2411 466 268 133))
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele/analog_extracted_Conly_10fF'.
-\a nrSetCurrentWindow(deleteForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\o Deleting view "analog_extracted_Conly_50fF".
-\a cdsLibManager->viewLineEdit->value = "analog_extracted_Conly_50fF"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele/analog_extracted_Conly_50fF'.
-\o Deleting view "analog_extracted_Conly_GNDOHV".
-\a nrResizeWindow(deleteForm list(2077 246 627 425))
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele/analog_extracted_Conly_GNDOHV'.
-\o Deleting view "analog_extracted_Cur".
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele/analog_extracted_Cur'.
-\o Deleting view "analog_extracted_RC".
-\o Deleted cellview 'ASKA_16ELE_TOP_FINAL_2024_10_16/aska_top_16ele/analog_extracted_RC'.
-\o Deletion of 5 views done.
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->libLineEdit->value = "ASKA_16ELE_TOP_FINAL_2024_10_16"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(2411 429 268 133))
-\a cdsLibManager->cellListBox->value = "JLCC44_Package"
-\a cdsLibManager->cellLineEdit->value = "JLCC44_Package"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "QFN44_Package"
-\a cdsLibManager->cellLineEdit->value = "QFN44_Package"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "JLCC44_Package"
-\a cdsLibManager->cellLineEdit->value = "JLCC44_Package"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 30 12 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "QFN44_Package"
-\a cdsLibManager->cellLineEdit->value = "QFN44_Package"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "aska_core_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_core_16ele"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->cellLineEdit->value = "aska_top_16ele_v2_TOP"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "ioring_16ele"
-\a cdsLibManager->cellLineEdit->value = "ioring_16ele"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "ioring_16ele_LVS_Test"
-\a cdsLibManager->cellLineEdit->value = "ioring_16ele_LVS_Test"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
